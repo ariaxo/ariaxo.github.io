@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>测试</title>
+      <link href="/2022/01/18/%E6%B5%8B%E8%AF%95/"/>
+      <url>/2022/01/18/%E6%B5%8B%E8%AF%95/</url>
+      
+        <content type="html"><![CDATA[<p>hello, world!</p><table><thead><tr><th>table 4 test</th><th></th><th></th></tr></thead><tbody><tr><td>1</td><td></td><td></td></tr><tr><td>2</td><td></td><td></td></tr><tr><td>3</td><td></td><td></td></tr></tbody></table><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hello world!</span><br></pre></td></tr></table></figure><p>$$<br>x^3-6x-4=0<br>$$</p><blockquote><p>“Hello world!”</p></blockquote><ol><li>home</li><li>sweet</li><li>home<ul><li>home</li><li>sweet</li><li>home</li></ul></li></ol><p><a href="https://markdown.com.cn/basic-syntax/headings.html">https://markdown.com.cn/basic-syntax/headings.html</a></p><p>![pic](C:\Users\thuli\Pictures\Saved Pictures\20210926094710.png)</p><p><u>das ende</u></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> test </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> test </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2022/01/17/hello-world/"/>
       <url>/2022/01/17/hello-world/</url>
