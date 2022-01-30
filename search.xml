@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>以后会用到的小TIPS</title>
+      <link href="/2022/01/30/Tips-1/"/>
+      <url>/2022/01/30/Tips-1/</url>
+      
+        <content type="html"><![CDATA[<ul><li>调整<code>&lt;img&gt;</code>图像大小时最好用Photoshop等工具调整————用width/height属性调整的弊端：尺寸属性不改变图像大小，只是帮助浏览器确定需要预留的空间，仍然会下载完整大小的图像.</li><li>视障人士/网络故障友好：在<code>&lt;img&gt;</code>标签内添加alt=”description”。</li><li>一个经验：图像宽度小于800像素（一般浏览器默认宽度）</li><li>反锯齿处理：柔化文本、透明图像的边缘，更有可读性。</li></ul><h1 id="工业级HTML"><a href="#工业级HTML" class="headerlink" title="工业级HTML"></a>工业级HTML</h1><h2 id="标准"><a href="#标准" class="headerlink" title="标准"></a>标准</h2><p>HTML标准是一种“living standard”，由W3C制定，HTML5为当前标准，向后兼容。<br>可用验证工具验证HTML代码的严谨性。</p><h2 id="核对"><a href="#核对" class="headerlink" title="核对"></a>核对</h2><ul><li>Visual Code中，输入英文“!”+TAB，快速生成包括<code>doctype, &lt;html&gt;, &lt;meta&gt;, &lt;body&gt;</code>HTML结构；</li><li>同上，输入tag名+TAB，生成tag结构；以上两条可以减少疏漏。</li><li>注意嵌套规则：<ul><li>至多嵌套一层</li><li>内联元素不可嵌套</li></ul></li><li>检查tag的属性是否全面。</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> CS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> HTML </tag>
+            
+            <tag> frontend </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>测试</title>
       <link href="/2022/01/18/%E6%B5%8B%E8%AF%95/"/>
       <url>/2022/01/18/%E6%B5%8B%E8%AF%95/</url>
