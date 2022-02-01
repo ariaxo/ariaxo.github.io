@@ -143,11 +143,16 @@ var _hmt = _hmt || [];
   <div class="row">
 	
 	
-		<h1 id="背景知识"><a href="#背景知识" class="headerlink" title="背景知识"></a>背景知识</h1><h2 id="TCP-IP协议族"><a href="#TCP-IP协议族" class="headerlink" title="TCP/IP协议族"></a>TCP/IP协议族</h2><p><em>以后可能会写TCP/IP的笔记，大概…</em></p>
-<blockquote>
-<p>通常使用的网络是在TCP/IP协议族的基础上运行的，HTTP属于其子集。</p>
-</blockquote>
-
+		<h1 id="背景知识"><a href="#背景知识" class="headerlink" title="背景知识"></a>背景知识</h1><h1 id="1-TCP-IP协议族"><a href="#1-TCP-IP协议族" class="headerlink" title="1. TCP/IP协议族"></a>1. TCP/IP协议族</h1><p>  <em>以后可能会写TCP/IP的笔记，大概…</em><br>  通常使用的网络是在TCP/IP协议族的基础上运行的，HTTP属于其子集。</p>
+<p>  解释：网络设备间的互相通信必须基于相同的方法：如何探测目标、发起通信、使用语言、结束通信。这一切的规则被称为协议（protocol）。与互联网有关的协议的集合称为TCP/IP。</p>
+<h4 id="1-1-TCP-IP分层管理"><a href="#1-1-TCP-IP分层管理" class="headerlink" title="1.1 TCP/IP分层管理"></a>1.1 TCP/IP分层管理</h4><h3 id="分层的优势"><a href="#分层的优势" class="headerlink" title="分层的优势"></a>分层的优势</h3><p>  各层次接口调整好后，每个层次内部可以自由改动。</p>
+<h3 id="分层"><a href="#分层" class="headerlink" title="分层"></a>分层</h3><ol>
+<li>应用层<br>应用层决定向用户提供应用服务时通信的活动。<strong>HTTP属于该层。</strong></li>
+<li>传输层<br>传输层提供<strong>处于网络连接中的</strong>两台计算机的<strong>数据传输</strong>，有两个性质不同的协议：TCP（Transmission control protocol）与UDP（User data protocol）。</li>
+<li>网络层<br>网络层规定了到达用户计算机并传输数据的传输路线。</li>
+<li>链路层<br>即硬件部分。</li>
+</ol>
+<h4 id="1-2-TCP-IP数据传输流"><a href="#1-2-TCP-IP数据传输流" class="headerlink" title="1.2 TCP/IP数据传输流"></a>1.2 TCP/IP数据传输流</h4>
 	
 	</div>
   <a type="button" href="/2022/02/01/HTTP_notes/#more" class="btn btn-default more">Read More</a>
@@ -321,15 +326,15 @@ var _hmt = _hmt || [];
 		<h4>Tag Cloud</h4>
 		<ul class="tag_box inline list-unstyled">		
 		
-			<li><a href="/tags/test/">test<span>1</span></a></li>
-		
 			<li><a href="/tags/HTML/">HTML<span>1</span></a></li>
-		
-			<li><a href="/tags/HTTP/">HTTP<span>1</span></a></li>
 		
 			<li><a href="/tags/frontend/">frontend<span>2</span></a></li>
 		
 			<li><a href="/tags/InfoSec/">InfoSec<span>1</span></a></li>
+		
+			<li><a href="/tags/HTTP/">HTTP<span>1</span></a></li>
+		
+			<li><a href="/tags/test/">test<span>1</span></a></li>
 		
 		 
 		</ul>
