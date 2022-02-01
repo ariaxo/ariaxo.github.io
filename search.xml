@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>HTTP学习笔记</title>
+      <link href="/2022/02/01/HTTP_notes/"/>
+      <url>/2022/02/01/HTTP_notes/</url>
+      
+        <content type="html"><![CDATA[<h1 id="背景知识"><a href="#背景知识" class="headerlink" title="背景知识"></a>背景知识</h1><h2 id="TCP-IP协议族"><a href="#TCP-IP协议族" class="headerlink" title="TCP/IP协议族"></a>TCP/IP协议族</h2><p><em>以后可能会写TCP/IP的笔记，大概…</em></p><blockquote><p>通常使用的网络是在TCP/IP协议族的基础上运行的，HTTP属于其子集。</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> CS </category>
+          
+          <category> CN </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> frontend </tag>
+            
+            <tag> HTTP </tag>
+            
+            <tag> InfoSec </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>以后会用到的小TIPS</title>
       <link href="/2022/01/30/Tips-1/"/>
       <url>/2022/01/30/Tips-1/</url>
@@ -14,6 +45,8 @@
       <categories>
           
           <category> CS </category>
+          
+          <category> CN </category>
           
       </categories>
       
