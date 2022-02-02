@@ -162,6 +162,29 @@ var _hmt = _hmt || [];
 <li>绝对URL</li>
 <li>相对URL</li>
 </ul>
+<hr>
+<h1 id="HTTP基础"><a href="#HTTP基础" class="headerlink" title="HTTP基础"></a>HTTP基础</h1><p>HTTP用于客户端和服务器之间的通信，HTTP协议能够明确区分客户端与服务器。</p>
+<h2 id="请求和响应"><a href="#请求和响应" class="headerlink" title="请求和响应"></a>请求和响应</h2><p>HTTP协议规定，请求从客户端发出，服务器响应请求————通信从客户端开始建立。</p>
+<h3 id="请求的组成"><a href="#请求的组成" class="headerlink" title="请求的组成"></a>请求的组成</h3><ol>
+<li>方法（method），表示请求访问服务器的类型；</li>
+<li>请求URI（request-URI）；</li>
+<li>HTTP版本号；</li>
+<li>可选的请求首部字段；</li>
+<li>内容实体。</li>
+</ol>
+<h3 id="响应的组成"><a href="#响应的组成" class="headerlink" title="响应的组成"></a>响应的组成</h3><ol>
+<li>版本号；</li>
+<li>状态码；</li>
+<li>原因短语；</li>
+<li>可选的响应首部字段；</li>
+<li>内容实体。</li>
+</ol>
+<h2 id="HTTP是一种无状态（stateless）协议，不对请求和响应之间的通信状态进行保存"><a href="#HTTP是一种无状态（stateless）协议，不对请求和响应之间的通信状态进行保存" class="headerlink" title="HTTP是一种无状态（stateless）协议，不对请求和响应之间的通信状态进行保存"></a>HTTP是一种无状态（stateless）协议，不对请求和响应之间的通信状态进行保存</h2><p>为了处理大量事务，确保可伸缩性（？）。如需保存状态，需要cookie技术。</p>
+<blockquote>
+<h2 id="Cookie状态管理"><a href="#Cookie状态管理" class="headerlink" title="Cookie状态管理"></a>Cookie状态管理</h2><p>Cookie技术通过在请求/响应报文中写入Cookie信息控制客户端状态。<br>过程：Cookie根据服务器发送的响应报文内的Set-Cookie首部字段信息通知客户端保存Cookie，<strong>下次</strong>客户端再次发送请求时会自动加入Cookie信息。服务端收到客户端发来的Cookie后，会检查是哪个客户端的记录，接着对比服务器记录，得到之前的状态信息。</p>
+</blockquote>
+<h2 id="HTTP1-1新特性"><a href="#HTTP1-1新特性" class="headerlink" title="HTTP1.1新特性"></a>HTTP1.1新特性</h2><h3 id="恒久连接（Persistent-connections）"><a href="#恒久连接（Persistent-connections）" class="headerlink" title="恒久连接（Persistent connections）"></a>恒久连接（Persistent connections）</h3><p>HTTP1.1中所有连接默认为恒久连接，即任意一方未提出断开连接时保持TCP的连接状态。<br>这样做减少了服务器开销。</p>
+<h3 id="管线化（pipelining）"><a href="#管线化（pipelining）" class="headerlink" title="管线化（pipelining）"></a>管线化（pipelining）</h3><p>同时并行发送多个请求，不必等待响应。</p>
 	  
 	</div>
 
