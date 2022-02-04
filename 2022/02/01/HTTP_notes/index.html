@@ -194,6 +194,35 @@ var _hmt = _hmt || [];
 </blockquote>
 <h2 id="HTTP1-1新特性"><a href="#HTTP1-1新特性" class="headerlink" title="HTTP1.1新特性"></a>HTTP1.1新特性</h2><h3 id="恒久连接（Persistent-connections）"><a href="#恒久连接（Persistent-connections）" class="headerlink" title="恒久连接（Persistent connections）"></a>恒久连接（Persistent connections）</h3><p>HTTP1.1中所有连接默认为恒久连接，即任意一方未提出断开连接时保持TCP的连接状态。<br>这样做减少了服务器开销。</p>
 <h3 id="管线化（pipelining）"><a href="#管线化（pipelining）" class="headerlink" title="管线化（pipelining）"></a>管线化（pipelining）</h3><p>同时并行发送多个请求，不必等待响应。</p>
+<hr>
+<h1 id="HTTP报文内的信息"><a href="#HTTP报文内的信息" class="headerlink" title="HTTP报文内的信息"></a>HTTP报文内的信息</h1><p>报文是HTTP通信基本单位，由8位组字节流组成。</p>
+<h2 id="HTTP报文的结构"><a href="#HTTP报文的结构" class="headerlink" title="HTTP报文的结构"></a>HTTP报文的结构</h2><ol>
+<li>报文首部（请求/状态行，请求/响应首部字段，通用首部字段，实体首部字段）</li>
+<li>空行；</li>
+<li>主体。</li>
+</ol>
+<p><strong>实体</strong>由实体首部和主体组成，作为请求和响应的补充项。 </p>
+<h2 id="常用返回状态码"><a href="#常用返回状态码" class="headerlink" title="常用返回状态码"></a>常用返回状态码</h2><ul>
+<li>2xx成功；</li>
+<li>3xx重定向；</li>
+<li>4xx客户端错误；<ul>
+<li>400 bad request：报文存在语法错误</li>
+<li>402 unauthorized：需要通过HTTP认证</li>
+<li>403 forbidd：请求资源被服务器拒绝</li>
+<li>404 not found：服务器上无法找到请求资源</li>
+</ul>
+</li>
+<li>5xx服务器错误<ul>
+<li>503 service unavailable：服务器繁忙或正在维护</li>
+</ul>
+</li>
+</ul>
+<p>有时状态码与结果不一致。</p>
+<h2 id="提升传输效率"><a href="#提升传输效率" class="headerlink" title="提升传输效率"></a>提升传输效率</h2><ul>
+<li>内容编码压缩传输；</li>
+<li>分块传输编码；</li>
+<li>范围请求。</li>
+</ul>
 	  
 	</div>
 

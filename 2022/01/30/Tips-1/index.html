@@ -9,7 +9,8 @@
   <title>以后会用到的小TIPS | Voidhead</title>
   <meta name="author" content="Ariax">
   
-  <meta name="description" content="调整&amp;lt;img&amp;gt;图像大小时最好用Photoshop等工具调整————用width/height属性调整的弊端：尺寸属性不改变图像大小，只是帮助浏览器确定需要预留的空间，仍然会下载完整大小的图像.
+  <meta name="description" content="HTML
+调整&amp;lt;img&amp;gt;图像大小时最好用Photoshop等工具调整————用width/height属性调整的弊端：尺寸属性不改变图像大小，只是帮助浏览器确定需要预留的空间，仍然会下载完整大小的图像.
 视障人士/网络故障友好：在&amp;lt;img&amp;gt;标签内添加alt=”description”。
 一个经验：图像宽度小于800像素（一般浏览器默认宽度）
 反锯齿处理：柔化文本、透明图像的边缘，更有可读性。
@@ -23,7 +24,16 @@ Visual Code中，输入英文“!”+TAB，快速生成包括doctype, &amp;lt;ht
 内联元素不可嵌套
 
 
-检查tag的属性是否全面。">
+检查tag的属性是否全面。
+
+
+CSS
+font-family
+serif：带有衬线的字体；
+sans-serif：没有衬线的字体；
+cursive： 看起来像手写的字体；
+monospace： 字符固定宽度的字体；
+fantasy：某种风格的装饰字体。">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -146,7 +156,7 @@ var _hmt = _hmt || [];
 	<div class="mypage">		
 	  		
 
-	  <ul>
+	  <h1 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h1><ul>
 <li>调整<code>&lt;img&gt;</code>图像大小时最好用Photoshop等工具调整————用width/height属性调整的弊端：尺寸属性不改变图像大小，只是帮助浏览器确定需要预留的空间，仍然会下载完整大小的图像.</li>
 <li>视障人士/网络故障友好：在<code>&lt;img&gt;</code>标签内添加alt=”description”。</li>
 <li>一个经验：图像宽度小于800像素（一般浏览器默认宽度）</li>
@@ -162,6 +172,35 @@ var _hmt = _hmt || [];
 </ul>
 </li>
 <li>检查tag的属性是否全面。</li>
+</ul>
+<hr>
+<h1 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h1><ul>
+<li>font-family<ol>
+<li>serif：带有衬线的字体；</li>
+<li>sans-serif：没有衬线的字体；</li>
+<li>cursive： 看起来像手写的字体；</li>
+<li>monospace： 字符固定宽度的字体；</li>
+<li>fantasy：某种风格的装饰字体。</li>
+</ol>
+</li>
+</ul>
+<p>指定的字体系列是一个候选<strong>列表</strong>，最后一个总是系列名，取代它的是电脑默认字体。</p>
+<ul>
+<li><p>woff（web open font format）是web字体的标准格式。有些浏览器可能不支持woff格式，需要多个格式作为候选。要使用一个web字体，需要在一个服务器上托管字体文件。</p>
+</li>
+<li><p>@font-face规则为用户提供字体。放在文件最上。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@font-face&#123;</span><br><span class="line">   font-family: &quot;Emblema One&quot;;</span><br><span class="line">   src: url(&quot;http://..../emblema-one.woff&quot;);</span><br><span class="line">   url(&quot;http://..../emblema-one.ttf&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>@font-face不是一个选择器规则，可以理解为一种内置规则。<br>定制多个字体时，每个字体使用一个font-family。</p>
+</li>
+<li><p>font-size指定方法</p>
+<ol>
+<li>直接使用px；</li>
+<li>用百分数或em，指相对于父元素(body)的大小；</li>
+<li>关键字。</li>
+</ol>
+</li>
+<li><p>color规则实际上控制着字体的前景色，包括文本和边框颜色。</p>
+</li>
 </ul>
 	  
 	</div>
