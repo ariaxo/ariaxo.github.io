@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <meta charset="utf-8">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
   <meta http-equiv="pragma" content="no-cache">
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
@@ -58,10 +58,11 @@ var _hmt = _hmt || [];
 </script>
 
 
-<meta name="generator" content="Hexo 6.0.0"></head>
+<meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="Voidhead" type="application/atom+xml"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</head>
 
  <body>  
-  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
       <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 		<span class="sr-only">Toggle navigation</span>
@@ -135,6 +136,55 @@ var _hmt = _hmt || [];
 <div class="row">
 	<div class="col-md-8">
 		<h3 class="title">
+			<a href="/2022/02/06/test/" >新插件测试</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2022-02-06  </div>
+		</div>
+	</div>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<p>代码高亮</p>
+<pre><code>&#x2F;&#x2F;java冒泡排序示例
+public class PaoPaixu {
+	public static void sort(int[] data){
+		int tmp;
+		for (int i &#x3D; 0; i &lt; data.length; i++) {
+			for (int j &#x3D; i+1; j &lt; data.length; j++) {
+				if(data[i]&gt;data[j]){
+					data[i]&#x3D;data[i]+data[j];
+					data[j]&#x3D;data[i]-data[j];
+					data[i]&#x3D;data[i]-data[j];
+				}
+			}
+		}
+	}
+	public static void main(String[] args) {
+		int data &#x3D;{5,4,2,1,8,9,4,3} ;
+		sort(data);
+		for (int i &#x3D; 0; i &lt; data.length; i++) {
+			System.out.println(data[i]);
+		}
+	}
+}</code></pre>
+	
+	</div>
+  <a type="button" href="/2022/02/06/test/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
 			<a href="/2022/02/01/HTTP_notes/" >HTTP学习笔记</a>
 		</h3>
 		</div>
@@ -200,7 +250,14 @@ var _hmt = _hmt || [];
 <li>内联元素不可嵌套</li>
 </ul>
 </li>
-<li>检查tag的属性是否全面。</li>
+<li>检查tag的属性是否全面。<h2 id="HTML5新特性"><a href="#HTML5新特性" class="headerlink" title="HTML5新特性"></a>HTML5新特性</h2>HTML5非常适合创建博客。</li>
+<li><code>&lt;header&gt;</code>与<code>&lt;footer&gt;</code>属性：页眉页脚。</li>
+<li><code>&lt;aside&gt;</code>属性：侧边栏。</li>
+<li><code>&lt;section&gt;</code>属性：一组相关内容。</li>
+<li><code>&lt;article&gt;</code>属性：一篇博客。</li>
+<li><code>&lt;time&gt;</code>属性：日期/时间。</li>
+<li><code>&lt;nav&gt;</code>属性：导航。</li>
+<li><code>&lt;video&gt;</code>属性：增加视频文件。</li>
 </ul>
 <hr>
 <h1 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h1><ul>
@@ -216,77 +273,6 @@ var _hmt = _hmt || [];
 	
 	</div>
   <a type="button" href="/2022/01/30/Tips-1/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
-			
-	
-	<!-- display as entry -->
-<div class="row">
-	<div class="col-md-8">
-		<h3 class="title">
-			<a href="/2022/01/18/测试/" >测试</a>
-		</h3>
-		</div>
-	<div class="col-md-4">
-		<div class="date">post @ 2022-01-18  </div>
-		</div>
-	</div>
-	
-
-
-			<div class="entry">
-  <div class="row">
-	
-	
-		<p>hello, world!</p>
-<table>
-<thead>
-<tr>
-<th>table 4 test</th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>2</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>3</td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hello world!</span><br></pre></td></tr></table></figure>
-
-<p>$$<br>x^3-6x-4=0<br>$$</p>
-<blockquote>
-<p>“Hello world!”</p>
-</blockquote>
-<ol>
-<li>home</li>
-<li>sweet</li>
-<li>home<ul>
-<li>home</li>
-<li>sweet</li>
-<li>home</li>
-</ul>
-</li>
-</ol>
-<p><a target="_blank" rel="noopener" href="https://markdown.com.cn/basic-syntax/headings.html">https://markdown.com.cn/basic-syntax/headings.html</a></p>
-<p>![pic](C:\Users\thuli\Pictures\Saved Pictures\20210926094710.png)</p>
-<p><u>das ende</u></p>
-
-	
-	</div>
-  <a type="button" href="/2022/01/18/测试/#more" class="btn btn-default more">Read More</a>
 </div>
 
 		
@@ -331,8 +317,6 @@ var _hmt = _hmt || [];
 		
 			<li><a href="/categories/CS/">CS<span>2</span></a></li>
 		
-			<li><a href="/categories/test/">test<span>1</span></a></li>
-		
 		</ul>
 	</div>
 
@@ -344,15 +328,13 @@ var _hmt = _hmt || [];
 		
 			<li><a href="/tags/HTTP/">HTTP<span>1</span></a></li>
 		
-			<li><a href="/tags/frontend/">frontend<span>2</span></a></li>
-		
-			<li><a href="/tags/HTML/">HTML<span>1</span></a></li>
-		
-			<li><a href="/tags/test/">test<span>1</span></a></li>
-		
 			<li><a href="/tags/CSS/">CSS<span>1</span></a></li>
 		
 			<li><a href="/tags/InfoSec/">InfoSec<span>1</span></a></li>
+		
+			<li><a href="/tags/frontend/">frontend<span>2</span></a></li>
+		
+			<li><a href="/tags/HTML/">HTML<span>1</span></a></li>
 		
 		 
 		</ul>
@@ -366,15 +348,15 @@ var _hmt = _hmt || [];
   <ul class="entry list-unstyled">
     
       <li>
+        <a href="/2022/02/06/test/" ><i class="fa fa-file-o"></i>新插件测试</a>
+      </li>
+    
+      <li>
         <a href="/2022/02/01/HTTP_notes/" ><i class="fa fa-file-o"></i>HTTP学习笔记</a>
       </li>
     
       <li>
         <a href="/2022/01/30/Tips-1/" ><i class="fa fa-file-o"></i>以后会用到的小TIPS</a>
-      </li>
-    
-      <li>
-        <a href="/2022/01/18/测试/" ><i class="fa fa-file-o"></i>测试</a>
       </li>
     
   </ul>
@@ -442,7 +424,7 @@ var _hmt = _hmt || [];
 	 }
 	 var path = "/" + search_path;
      searchFunc(path, 'local-search-input', 'local-search-result');
-   </script>
+   </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 </body>
    </html>

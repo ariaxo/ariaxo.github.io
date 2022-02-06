@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Voidhead</title>
+  <icon>http://example.com/icon.png</icon>
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2022-02-06T02:31:18.830Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Ariax</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>新插件测试</title>
+    <link href="http://example.com/2022/02/06/test/"/>
+    <id>http://example.com/2022/02/06/test/</id>
+    <published>2022-02-05T16:00:00.000Z</published>
+    <updated>2022-02-06T02:31:18.830Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;代码高亮&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;#x2F;&amp;#x2F;java冒泡排序示例
+public class PaoPaixu {
+	public static void sort(int[] data){
+		int tmp;
+		for (int i &amp;#x3D; 0; i &amp;lt; data.length; i++) {
+			for (int j &amp;#x3D; i+1; j &amp;lt; data.length; j++) {
+				if(data[i]&amp;gt;data[j]){
+					data[i]&amp;#x3D;data[i]+data[j];
+					data[j]&amp;#x3D;data[i]-data[j];
+					data[i]&amp;#x3D;data[i]-data[j];
+				}
+			}
+		}
+	}
+	public static void main(String[] args) {
+		int data &amp;#x3D;{5,4,2,1,8,9,4,3} ;
+		sort(data);
+		for (int i &amp;#x3D; 0; i &amp;lt; data.length; i++) {
+			System.out.println(data[i]);
+		}
+	}
+}&lt;/code&gt;&lt;/pre&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>HTTP学习笔记</title>
+    <link href="http://example.com/2022/02/01/HTTP_notes/"/>
+    <id>http://example.com/2022/02/01/HTTP_notes/</id>
+    <published>2022-02-01T12:32:01.000Z</published>
+    <updated>2022-02-04T08:53:25.481Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;背景知识&quot;&gt;&lt;a href=&quot;#背景知识&quot; class=&quot;headerlink&quot; title=&quot;背景知识&quot;&gt;&lt;/a&gt;背景知识&lt;/h1&gt;&lt;h1 id=&quot;1-TCP-IP协议族&quot;&gt;&lt;a href=&quot;#1-TCP-IP协议族&quot; class=&quot;headerlink&quot; title=&quot;1. TCP/IP协议族&quot;&gt;&lt;/a&gt;1. TCP/IP协议族&lt;/h1&gt;&lt;p&gt;  &lt;em&gt;以后可能会写TCP/IP的笔记，大概…&lt;/em&gt;&lt;br&gt;  通常使用的网络是在TCP/IP协议族的基础上运行的，HTTP属于其子集。&lt;/p&gt;
+&lt;p&gt;  解释：网络设备间的互相通信必须基于相同的方法：如何探测目标、发起通信、使用语言、结束通信。这一切的规则被称为协议（protocol）。与互联网有关的协议的集合称为TCP/IP。&lt;/p&gt;
+&lt;h4 id=&quot;1-1-TCP-IP分层管理&quot;&gt;&lt;a href=&quot;#1-1-TCP-IP分层管理&quot; class=&quot;headerlink&quot; title=&quot;1.1 TCP/IP分层管理&quot;&gt;&lt;/a&gt;1.1 TCP/IP分层管理&lt;/h4&gt;&lt;h3 id=&quot;分层的优势&quot;&gt;&lt;a href=&quot;#分层的优势&quot; class=&quot;headerlink&quot; title=&quot;分层的优势&quot;&gt;&lt;/a&gt;分层的优势&lt;/h3&gt;&lt;p&gt;  各层次接口调整好后，每个层次内部可以自由改动。&lt;/p&gt;
+&lt;h3 id=&quot;分层&quot;&gt;&lt;a href=&quot;#分层&quot; class=&quot;headerlink&quot; title=&quot;分层&quot;&gt;&lt;/a&gt;分层&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;应用层&lt;br&gt;应用层决定向用户提供应用服务时通信的活动。&lt;strong&gt;HTTP属于该层。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;传输层&lt;br&gt;传输层提供&lt;strong&gt;处于网络连接中的&lt;/strong&gt;两台计算机的&lt;strong&gt;数据传输&lt;/strong&gt;，有两个性质不同的协议：TCP（Transmission control protocol）与UDP（User data protocol）。&lt;/li&gt;
+&lt;li&gt;网络层&lt;br&gt;网络层规定了到达用户计算机并传输数据的传输路线。&lt;/li&gt;
+&lt;li&gt;链路层&lt;br&gt;即硬件部分。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&quot;1-2-TCP-IP数据传输流&quot;&gt;&lt;a href=&quot;#1-2-TCP-IP数据传输流&quot; class=&quot;headerlink&quot; title=&quot;1.2 TCP/IP数据传输流&quot;&gt;&lt;/a&gt;1.2 TCP/IP数据传输流&lt;/h4&gt;</summary>
+    
+    
+    
+    <category term="CS" scheme="http://example.com/categories/CS/"/>
+    
+    <category term="CN" scheme="http://example.com/categories/CS/CN/"/>
+    
+    
+    <category term="frontend" scheme="http://example.com/tags/frontend/"/>
+    
+    <category term="HTTP" scheme="http://example.com/tags/HTTP/"/>
+    
+    <category term="InfoSec" scheme="http://example.com/tags/InfoSec/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>以后会用到的小TIPS</title>
+    <link href="http://example.com/2022/01/30/Tips-1/"/>
+    <id>http://example.com/2022/01/30/Tips-1/</id>
+    <published>2022-01-30T11:09:01.000Z</published>
+    <updated>2022-02-06T02:09:46.482Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;HTML&quot;&gt;&lt;a href=&quot;#HTML&quot; class=&quot;headerlink&quot; title=&quot;HTML&quot;&gt;&lt;/a&gt;HTML&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;调整&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;图像大小时最好用Photoshop等工具调整————用width/height属性调整的弊端：尺寸属性不改变图像大小，只是帮助浏览器确定需要预留的空间，仍然会下载完整大小的图像.&lt;/li&gt;
+&lt;li&gt;视障人士/网络故障友好：在&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;标签内添加alt=”description”。&lt;/li&gt;
+&lt;li&gt;一个经验：图像宽度小于800像素（一般浏览器默认宽度）&lt;/li&gt;
+&lt;li&gt;反锯齿处理：柔化文本、透明图像的边缘，更有可读性。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;工业级HTML&quot;&gt;&lt;a href=&quot;#工业级HTML&quot; class=&quot;headerlink&quot; title=&quot;工业级HTML&quot;&gt;&lt;/a&gt;工业级HTML&lt;/h1&gt;&lt;h2 id=&quot;标准&quot;&gt;&lt;a href=&quot;#标准&quot; class=&quot;headerlink&quot; title=&quot;标准&quot;&gt;&lt;/a&gt;标准&lt;/h2&gt;&lt;p&gt;HTML标准是一种“living standard”，由W3C制定，HTML5为当前标准，向后兼容。&lt;br&gt;可用验证工具验证HTML代码的严谨性。&lt;/p&gt;
+&lt;h2 id=&quot;核对&quot;&gt;&lt;a href=&quot;#核对&quot; class=&quot;headerlink&quot; title=&quot;核对&quot;&gt;&lt;/a&gt;核对&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Visual Code中，输入英文“!”+TAB，快速生成包括&lt;code&gt;doctype, &amp;lt;html&amp;gt;, &amp;lt;meta&amp;gt;, &amp;lt;body&amp;gt;&lt;/code&gt;HTML结构；&lt;/li&gt;
+&lt;li&gt;同上，输入tag名+TAB，生成tag结构；以上两条可以减少疏漏。&lt;/li&gt;
+&lt;li&gt;注意嵌套规则：&lt;ul&gt;
+&lt;li&gt;至多嵌套一层&lt;/li&gt;
+&lt;li&gt;内联元素不可嵌套&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;检查tag的属性是否全面。&lt;h2 id=&quot;HTML5新特性&quot;&gt;&lt;a href=&quot;#HTML5新特性&quot; class=&quot;headerlink&quot; title=&quot;HTML5新特性&quot;&gt;&lt;/a&gt;HTML5新特性&lt;/h2&gt;HTML5非常适合创建博客。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt;与&lt;code&gt;&amp;lt;footer&amp;gt;&lt;/code&gt;属性：页眉页脚。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;aside&amp;gt;&lt;/code&gt;属性：侧边栏。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt;属性：一组相关内容。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt;属性：一篇博客。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;time&amp;gt;&lt;/code&gt;属性：日期/时间。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;nav&amp;gt;&lt;/code&gt;属性：导航。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;video&amp;gt;&lt;/code&gt;属性：增加视频文件。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;CSS&quot;&gt;&lt;a href=&quot;#CSS&quot; class=&quot;headerlink&quot; title=&quot;CSS&quot;&gt;&lt;/a&gt;CSS&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;font-family&lt;ol&gt;
+&lt;li&gt;serif：带有衬线的字体；&lt;/li&gt;
+&lt;li&gt;sans-serif：没有衬线的字体；&lt;/li&gt;
+&lt;li&gt;cursive： 看起来像手写的字体；&lt;/li&gt;
+&lt;li&gt;monospace： 字符固定宽度的字体；&lt;/li&gt;
+&lt;li&gt;fantasy：某种风格的装饰字体。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="CS" scheme="http://example.com/categories/CS/"/>
+    
+    <category term="CN" scheme="http://example.com/categories/CS/CN/"/>
+    
+    
+    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
+    
+    <category term="CSS" scheme="http://example.com/tags/CSS/"/>
+    
+    <category term="frontend" scheme="http://example.com/tags/frontend/"/>
+    
+  </entry>
+  
+</feed>

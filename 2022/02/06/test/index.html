@@ -1,18 +1,42 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <meta charset="utf-8">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
   <meta http-equiv="pragma" content="no-cache">
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>test | Voidhead</title>
+  <title>新插件测试 | Voidhead</title>
   <meta name="author" content="Ariax">
+  
+  <meta name="description" content="代码高亮
+&amp;#x2F;&amp;#x2F;java冒泡排序示例
+public class PaoPaixu {
+	public static void sort(int[] data){
+		int tmp;
+		for (int i &amp;#x3D; 0; i &amp;lt; data.length; i++) {
+			for (int j &amp;#x3D; i+1; j &amp;lt; data.length; j++) {
+				if(data[i]&amp;gt;data[j]){
+					data[i]&amp;#x3D;data[i]+data[j];
+					data[j]&amp;#x3D;data[i]-data[j];
+					data[i]&amp;#x3D;data[i]-data[j];
+				}
+			}
+		}
+	}
+	public static void main(String[] args) {
+		int data &amp;#x3D;{5,4,2,1,8,9,4,3} ;
+		sort(data);
+		for (int i &amp;#x3D; 0; i &amp;lt; data.length; i++) {
+			System.out.println(data[i]);
+		}
+	}
+}">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="新插件测试"/>
   <meta property="og:site_name" content="Voidhead"/>
 
   
@@ -58,10 +82,11 @@ var _hmt = _hmt || [];
 </script>
 
 
-<meta name="generator" content="Hexo 6.0.0"></head>
+<meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="Voidhead" type="application/atom+xml"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</head>
 
  <body>  
-  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
       <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 		<span class="sr-only">Toggle navigation</span>
@@ -107,131 +132,99 @@ var _hmt = _hmt || [];
   	<div class="content">
     	 
 
-<!-- title -->
-<div class="page-header">
-  <h1 class="archive-title-category"><i class="fa fa-archive"></i> test</h1>
-</div>
 
-<div class="row page">
-  <!-- cols -->
-  
-  <div class="col-md-9">
 	
-
-	  <div id="top_search"></div>
-
-	  <div class="archive">
-		
-		
-		
-			
-			
-			<h4 class="archive-ul" data-toggle="collapse" data-target="#2022">2022<b class="caret"></b></h4>
-			<ul id="2022" class="collapse in">
-			
-		
-		<li class="listing-item">
-		<span class="date_class"> 2022-01-18 </span> &raquo;
-		
-		   <span class="title"><a href="/2022/01/18/测试/" >测试</a></span>
-		
-		</li>			
-		
-		</ul>
+		<div class="page-header">
+			<h1> 新插件测试</h1>
 		</div>
-
-</div> <!-- col-md-9/col-md-12 -->
-
-
-<div class="col-md-3">
-	<div id="sidebar">
 	
-			
-  <div id="site_search">
-   <div class="form-group">
-    <input type="text" id="local-search-input" name="q" results="0" placeholder="Search" class="st-search-input st-default-search-input form-control"/>
-   </div>  
-  <div id="local-search-result"></div>
-  </div>
 
 
-		
-			
-	<div class="widget">
-		<h4>Categories</h4>
-		<ul class="tag_box inline list-unstyled">
-		
-			<li><a href="/categories/CS/CN/">CN<span>2</span></a></li>
-		
-			<li><a href="/categories/CS/">CS<span>2</span></a></li>
-		
-			<li><a href="/categories/test/">test<span>1</span></a></li>
-		
-		</ul>
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <p>代码高亮</p>
+<pre><code>&#x2F;&#x2F;java冒泡排序示例
+public class PaoPaixu {
+	public static void sort(int[] data){
+		int tmp;
+		for (int i &#x3D; 0; i &lt; data.length; i++) {
+			for (int j &#x3D; i+1; j &lt; data.length; j++) {
+				if(data[i]&gt;data[j]){
+					data[i]&#x3D;data[i]+data[j];
+					data[j]&#x3D;data[i]-data[j];
+					data[i]&#x3D;data[i]-data[j];
+				}
+			}
+		}
+	}
+	public static void main(String[] args) {
+		int data &#x3D;{5,4,2,1,8,9,4,3} ;
+		sort(data);
+		for (int i &#x3D; 0; i &lt; data.length; i++) {
+			System.out.println(data[i]);
+		}
+	}
+}</code></pre>	  
 	</div>
 
-		
-			
-	<div class="widget">
-		<h4>Tag Cloud</h4>
-		<ul class="tag_box inline list-unstyled">		
-		
-			<li><a href="/tags/frontend/">frontend<span>2</span></a></li>
-		
-			<li><a href="/tags/test/">test<span>1</span></a></li>
-		
-			<li><a href="/tags/CSS/">CSS<span>1</span></a></li>
-		
-			<li><a href="/tags/InfoSec/">InfoSec<span>1</span></a></li>
-		
-			<li><a href="/tags/HTML/">HTML<span>1</span></a></li>
-		
-			<li><a href="/tags/HTTP/">HTTP<span>1</span></a></li>
-		
-		 
-		</ul>
+	<div>
+  	<center>
+	<div class="pagination">
+
+    
+    
+    <a type="button" class="btn btn-default disabled"><i class="fa fa-arrow-circle-o-left"></i>Prev</a>
+    
+
+    <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
+    
+    <a href="/2022/02/01/HTTP_notes/" type="button" class="btn btn-default ">Next<i
+                class="fa fa-arrow-circle-o-right"></i></a>
+    
+
+    
+</div>
+
+    </center>
 	</div>
-
-
-		
-			
-<div class="widget">
-  <h4>Recent Posts</h4>
-  <ul class="entry list-unstyled">
-    
-      <li>
-        <a href="/2022/02/01/HTTP_notes/" ><i class="fa fa-file-o"></i>HTTP学习笔记</a>
-      </li>
-    
-      <li>
-        <a href="/2022/01/30/Tips-1/" ><i class="fa fa-file-o"></i>以后会用到的小TIPS</a>
-      </li>
-    
-      <li>
-        <a href="/2022/01/18/测试/" ><i class="fa fa-file-o"></i>测试</a>
-      </li>
-    
-  </ul>
-</div>
-
-		
-			
-<div class="widget">
-	<h4>Links</h4>
-	<ul class="blogroll list-unstyled">
 	
-		<li><i class=" "></i><a href="links" title="Friends." target="_blank">❀ Friends</a></li>
+	<!-- comment -->
 	
-	</ul>
-</div>
+		<section id="comments" style="margin:10px;padding:10px;background:#fff;">
+		  <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'false' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "1Hxnm6F8hDTnqxsEbyiPXYv1-gzGzoHsz",
+            app_key: "7NgOIHajK6tDaSREwoQSfUSt",
+            placeholder: "Just go go",
+            avatar:"retro"
+        });
+    }
+</script>
 
-
-		
-	</div> <!-- sidebar -->
-</div> <!-- col-md-3 -->
-
-
-
+		</section>
+	  
 
 	</div>
   </div>
@@ -276,7 +269,7 @@ var _hmt = _hmt || [];
 	 }
 	 var path = "/" + search_path;
      searchFunc(path, 'local-search-input', 'local-search-result');
-   </script>
+   </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 </body>
    </html>

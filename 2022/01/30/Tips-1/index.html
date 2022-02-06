@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <meta charset="utf-8">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
   <meta http-equiv="pragma" content="no-cache">
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
@@ -24,7 +24,14 @@ Visual Code中，输入英文“!”+TAB，快速生成包括doctype, &amp;lt;ht
 内联元素不可嵌套
 
 
-检查tag的属性是否全面。
+检查tag的属性是否全面。HTML5新特性HTML5非常适合创建博客。
+&amp;lt;header&amp;gt;与&amp;lt;footer&amp;gt;属性：页眉页脚。
+&amp;lt;aside&amp;gt;属性：侧边栏。
+&amp;lt;section&amp;gt;属性：一组相关内容。
+&amp;lt;article&amp;gt;属性：一篇博客。
+&amp;lt;time&amp;gt;属性：日期/时间。
+&amp;lt;nav&amp;gt;属性：导航。
+&amp;lt;video&amp;gt;属性：增加视频文件。
 
 
 CSS
@@ -84,10 +91,11 @@ var _hmt = _hmt || [];
 </script>
 
 
-<meta name="generator" content="Hexo 6.0.0"></head>
+<meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="Voidhead" type="application/atom+xml"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</head>
 
  <body>  
-  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
       <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 		<span class="sr-only">Toggle navigation</span>
@@ -171,7 +179,14 @@ var _hmt = _hmt || [];
 <li>内联元素不可嵌套</li>
 </ul>
 </li>
-<li>检查tag的属性是否全面。</li>
+<li>检查tag的属性是否全面。<h2 id="HTML5新特性"><a href="#HTML5新特性" class="headerlink" title="HTML5新特性"></a>HTML5新特性</h2>HTML5非常适合创建博客。</li>
+<li><code>&lt;header&gt;</code>与<code>&lt;footer&gt;</code>属性：页眉页脚。</li>
+<li><code>&lt;aside&gt;</code>属性：侧边栏。</li>
+<li><code>&lt;section&gt;</code>属性：一组相关内容。</li>
+<li><code>&lt;article&gt;</code>属性：一篇博客。</li>
+<li><code>&lt;time&gt;</code>属性：日期/时间。</li>
+<li><code>&lt;nav&gt;</code>属性：导航。</li>
+<li><code>&lt;video&gt;</code>属性：增加视频文件。</li>
 </ul>
 <hr>
 <h1 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h1><ul>
@@ -189,7 +204,12 @@ var _hmt = _hmt || [];
 <li><p>woff（web open font format）是web字体的标准格式。有些浏览器可能不支持woff格式，需要多个格式作为候选。要使用一个web字体，需要在一个服务器上托管字体文件。</p>
 </li>
 <li><p>@font-face规则为用户提供字体。放在文件最上。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@font-face&#123;</span><br><span class="line">   font-family: &quot;Emblema One&quot;;</span><br><span class="line">   src: url(&quot;http://..../emblema-one.woff&quot;);</span><br><span class="line">   url(&quot;http://..../emblema-one.ttf&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code>@font-face&#123;
+ font-family: &quot;Emblema One&quot;;
+ src: url(&quot;http://..../emblema-one.woff&quot;);
+ url(&quot;http://..../emblema-one.ttf&quot;);
+&#125;
+</code></pre>
 <p>@font-face不是一个选择器规则，可以理解为一种内置规则。<br>定制多个字体时，每个字体使用一个font-family。</p>
 </li>
 <li><p>font-size指定方法</p>
@@ -206,7 +226,13 @@ var _hmt = _hmt || [];
 <li>对于希望成组指定样式的元素使用class，为元素指定<strong>唯一</strong>一个名字/样式时使用id。</li>
 <li>id选择器：#xxx。</li>
 <li>HTML中可以有多个样式器，最下方的优先级最高。</li>
-<li>在HTML的<code>&lt;link&gt;</code>元素中可以使用媒体查询，如<code>&lt;link rel=&quot;stylesheet&quot; href=&quot;tablet-landscape.css&quot; media=&quot;screen and (max-device-width:1024px) and (orientation: landscape)&quot;&gt;</code>,或者使用css中的@media规则，如<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@media screen and (max-device-width: 481px)&#123;</span><br><span class="line">   #xxx&#123;</span><br><span class="line">      ...</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>在HTML的<code>&lt;link&gt;</code>元素中可以使用媒体查询，如<code>&lt;link rel=&quot;stylesheet&quot; href=&quot;tablet-landscape.css&quot; media=&quot;screen and (max-device-width:1024px) and (orientation: landscape)&quot;&gt;</code>,或者使用css中的@media规则，如<pre><code>@media screen and (max-device-width: 481px)&#123;
+ #xxx&#123;
+    ...
+ &#125;
+&#125;
+</code></pre>
+</li>
 </ul>
 	  
 	</div>
@@ -223,8 +249,7 @@ var _hmt = _hmt || [];
 
     <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
     
-    <a href="/2022/01/18/测试/" type="button" class="btn btn-default ">Next<i
-                class="fa fa-arrow-circle-o-right"></i></a>
+    <a type="button" class="btn btn-default disabled">Next<i class="fa fa-arrow-circle-o-right"></i></a>
     
 
     
@@ -301,7 +326,7 @@ var _hmt = _hmt || [];
 	 }
 	 var path = "/" + search_path;
      searchFunc(path, 'local-search-input', 'local-search-result');
-   </script>
+   </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 </body>
    </html>
