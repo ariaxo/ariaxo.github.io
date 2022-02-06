@@ -206,18 +206,20 @@ public class PaoPaixu {
 </ol>
 <h1 id="HTTP-Secure"><a href="#HTTP-Secure" class="headerlink" title="HTTP Secure"></a>HTTP Secure</h1><p>HTTPS就是被SSL（secure socket layer)/TLS协议代替通信接口部分的HTTP。<br>HTTPS=HTTP+加密+认证+完整性保护。</p>
 <h2 id="通信加密"><a href="#通信加密" class="headerlink" title="通信加密"></a>通信加密</h2><ul>
-<li><p>SSL（secure socket layer)<br>是独立的协议，其他运行在应用层的协议都可以配合SSL使用。</p>
-<blockquote>
-<p>公开密钥加密<br>共享密钥加密</p>
+<li>SSL（secure socket layer)<br>是独立的协议，其他运行在应用层的协议都可以配合SSL使用。<blockquote>
+<p><strong>公开密钥加密</strong>：也称为非对称加密（asymmetric cryptography），一种密码学算法类型，在这种密码学方法中，需要一对密钥，一个是私人密钥，另一个则是公开密钥。 这两个密钥是数学相关，用某用户密钥加密后所得的信息，只能用该用户的解密密钥才能解密。<br><strong>共享密钥加密</strong>：共享密钥加密是加密和解密都是用相同密钥的一种加密方式，由于使用的密钥相同，所以这种算法也被称为“对称加密”<br>证书可以验证密钥正确性。</p>
 </blockquote>
 </li>
-<li><p>TLS（transport layer security）</p>
-<h2 id="验证身份"><a href="#验证身份" class="headerlink" title="验证身份"></a>验证身份</h2><p>使用SSL可以验明通信方，使用一种叫<strong>证书</strong>的手段。<br>证书由第三方机构颁发。</p>
-<h2 id="验证完整性"><a href="#验证完整性" class="headerlink" title="验证完整性"></a>验证完整性</h2><p>遭到攻击者拦截并篡改内容的攻击：中间人攻击。</p>
-<h3 id="防止篡改"><a href="#防止篡改" class="headerlink" title="防止篡改"></a>防止篡改</h3><p>使用散列值校验方法：MD5,SHA-1。<br>提供下载服务的网站也会提供PGP（完美隐私）创建的数字签名。<br>都需要用户亲自验证，浏览器无法自动检查。</p>
-</li>
 </ul>
-
+<p>SSL的速度问题：</p>
+<ol>
+<li>除了HTTP通信外还需要进行SSL通信，增加了通信量；</li>
+<li>SSL进行加密处理，更多地耗费硬件资源。</li>
+</ol>
+<p>没有根本的解决方案，只能使用SSL加速器（专用服务器）改善问题。</p>
+<ul>
+<li>TLS（transport layer security）</li>
+</ul>
 	
 	</div>
   <a type="button" href="/2022/02/06/HTTPSwebsec/#more" class="btn btn-default more">Read More</a>
@@ -371,17 +373,17 @@ public class PaoPaixu {
 		<h4>Tag Cloud</h4>
 		<ul class="tag_box inline list-unstyled">		
 		
-			<li><a href="/tags/InfoSec/">InfoSec<span>1</span></a></li>
-		
-			<li><a href="/tags/HTML/">HTML<span>1</span></a></li>
+			<li><a href="/tags/HTTP/">HTTP<span>2</span></a></li>
 		
 			<li><a href="/tags/websec/">websec<span>1</span></a></li>
 		
-			<li><a href="/tags/frontend/">frontend<span>2</span></a></li>
+			<li><a href="/tags/InfoSec/">InfoSec<span>1</span></a></li>
 		
 			<li><a href="/tags/CSS/">CSS<span>1</span></a></li>
 		
-			<li><a href="/tags/HTTP/">HTTP<span>2</span></a></li>
+			<li><a href="/tags/frontend/">frontend<span>2</span></a></li>
+		
+			<li><a href="/tags/HTML/">HTML<span>1</span></a></li>
 		
 		 
 		</ul>

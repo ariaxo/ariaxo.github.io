@@ -58,7 +58,7 @@ public class PaoPaixu {
     <link href="http://example.com/2022/02/06/HTTPSwebsec/"/>
     <id>http://example.com/2022/02/06/HTTPSwebsec/</id>
     <published>2022-02-05T16:00:00.000Z</published>
-    <updated>2022-02-06T03:51:35.328Z</updated>
+    <updated>2022-02-06T03:56:36.996Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;HTTP的安全漏洞&quot;&gt;&lt;a href=&quot;#HTTP的安全漏洞&quot; class=&quot;headerlink&quot; title=&quot;HTTP的安全漏洞&quot;&gt;&lt;/a&gt;HTTP的安全漏洞&lt;/h1&gt;&lt;ol&gt;
@@ -68,18 +68,20 @@ public class PaoPaixu {
 &lt;/ol&gt;
 &lt;h1 id=&quot;HTTP-Secure&quot;&gt;&lt;a href=&quot;#HTTP-Secure&quot; class=&quot;headerlink&quot; title=&quot;HTTP Secure&quot;&gt;&lt;/a&gt;HTTP Secure&lt;/h1&gt;&lt;p&gt;HTTPS就是被SSL（secure socket layer)/TLS协议代替通信接口部分的HTTP。&lt;br&gt;HTTPS=HTTP+加密+认证+完整性保护。&lt;/p&gt;
 &lt;h2 id=&quot;通信加密&quot;&gt;&lt;a href=&quot;#通信加密&quot; class=&quot;headerlink&quot; title=&quot;通信加密&quot;&gt;&lt;/a&gt;通信加密&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;SSL（secure socket layer)&lt;br&gt;是独立的协议，其他运行在应用层的协议都可以配合SSL使用。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;公开密钥加密&lt;br&gt;共享密钥加密&lt;/p&gt;
+&lt;li&gt;SSL（secure socket layer)&lt;br&gt;是独立的协议，其他运行在应用层的协议都可以配合SSL使用。&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;公开密钥加密&lt;/strong&gt;：也称为非对称加密（asymmetric cryptography），一种密码学算法类型，在这种密码学方法中，需要一对密钥，一个是私人密钥，另一个则是公开密钥。 这两个密钥是数学相关，用某用户密钥加密后所得的信息，只能用该用户的解密密钥才能解密。&lt;br&gt;&lt;strong&gt;共享密钥加密&lt;/strong&gt;：共享密钥加密是加密和解密都是用相同密钥的一种加密方式，由于使用的密钥相同，所以这种算法也被称为“对称加密”&lt;br&gt;证书可以验证密钥正确性。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;TLS（transport layer security）&lt;/p&gt;
-&lt;h2 id=&quot;验证身份&quot;&gt;&lt;a href=&quot;#验证身份&quot; class=&quot;headerlink&quot; title=&quot;验证身份&quot;&gt;&lt;/a&gt;验证身份&lt;/h2&gt;&lt;p&gt;使用SSL可以验明通信方，使用一种叫&lt;strong&gt;证书&lt;/strong&gt;的手段。&lt;br&gt;证书由第三方机构颁发。&lt;/p&gt;
-&lt;h2 id=&quot;验证完整性&quot;&gt;&lt;a href=&quot;#验证完整性&quot; class=&quot;headerlink&quot; title=&quot;验证完整性&quot;&gt;&lt;/a&gt;验证完整性&lt;/h2&gt;&lt;p&gt;遭到攻击者拦截并篡改内容的攻击：中间人攻击。&lt;/p&gt;
-&lt;h3 id=&quot;防止篡改&quot;&gt;&lt;a href=&quot;#防止篡改&quot; class=&quot;headerlink&quot; title=&quot;防止篡改&quot;&gt;&lt;/a&gt;防止篡改&lt;/h3&gt;&lt;p&gt;使用散列值校验方法：MD5,SHA-1。&lt;br&gt;提供下载服务的网站也会提供PGP（完美隐私）创建的数字签名。&lt;br&gt;都需要用户亲自验证，浏览器无法自动检查。&lt;/p&gt;
-&lt;/li&gt;
 &lt;/ul&gt;
-</summary>
+&lt;p&gt;SSL的速度问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;除了HTTP通信外还需要进行SSL通信，增加了通信量；&lt;/li&gt;
+&lt;li&gt;SSL进行加密处理，更多地耗费硬件资源。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;没有根本的解决方案，只能使用SSL加速器（专用服务器）改善问题。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TLS（transport layer security）&lt;/li&gt;
+&lt;/ul&gt;</summary>
     
     
     
