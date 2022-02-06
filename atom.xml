@@ -131,7 +131,7 @@ public class PaoPaixu {
     <link href="http://example.com/2022/01/30/Tips-1/"/>
     <id>http://example.com/2022/01/30/Tips-1/</id>
     <published>2022-01-30T11:09:01.000Z</published>
-    <updated>2022-02-06T02:09:46.482Z</updated>
+    <updated>2022-02-06T10:03:01.537Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;HTML&quot;&gt;&lt;a href=&quot;#HTML&quot; class=&quot;headerlink&quot; title=&quot;HTML&quot;&gt;&lt;/a&gt;HTML&lt;/h1&gt;&lt;ul&gt;
@@ -141,9 +141,14 @@ public class PaoPaixu {
 &lt;li&gt;反锯齿处理：柔化文本、透明图像的边缘，更有可读性。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&quot;工业级HTML&quot;&gt;&lt;a href=&quot;#工业级HTML&quot; class=&quot;headerlink&quot; title=&quot;工业级HTML&quot;&gt;&lt;/a&gt;工业级HTML&lt;/h1&gt;&lt;h2 id=&quot;标准&quot;&gt;&lt;a href=&quot;#标准&quot; class=&quot;headerlink&quot; title=&quot;标准&quot;&gt;&lt;/a&gt;标准&lt;/h2&gt;&lt;p&gt;HTML标准是一种“living standard”，由W3C制定，HTML5为当前标准，向后兼容。&lt;br&gt;可用验证工具验证HTML代码的严谨性。&lt;/p&gt;
-&lt;h2 id=&quot;核对&quot;&gt;&lt;a href=&quot;#核对&quot; class=&quot;headerlink&quot; title=&quot;核对&quot;&gt;&lt;/a&gt;核对&lt;/h2&gt;&lt;ul&gt;
+&lt;h2 id=&quot;核对-EMMET语法&quot;&gt;&lt;a href=&quot;#核对-EMMET语法&quot; class=&quot;headerlink&quot; title=&quot;核对/EMMET语法&quot;&gt;&lt;/a&gt;核对/EMMET语法&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Visual Code中，输入英文“!”+TAB，快速生成包括&lt;code&gt;doctype, &amp;lt;html&amp;gt;, &amp;lt;meta&amp;gt;, &amp;lt;body&amp;gt;&lt;/code&gt;HTML结构；&lt;/li&gt;
 &lt;li&gt;同上，输入tag名+TAB，生成tag结构；以上两条可以减少疏漏。&lt;/li&gt;
+&lt;li&gt;输入tag*数字生成多个tag。&lt;/li&gt;
+&lt;li&gt;父子关系标签，如ul&amp;gt;li。&lt;/li&gt;
+&lt;li&gt;兄弟关系标签，如div+p。&lt;/li&gt;
+&lt;li&gt;生成类名或id名的，.xxx/#xxx（以上默认div）/p.xxx等。&lt;/li&gt;
+&lt;li&gt;div类名有顺序：.xxx$数字。&lt;/li&gt;
 &lt;li&gt;注意嵌套规则：&lt;ul&gt;
 &lt;li&gt;至多嵌套一层&lt;/li&gt;
 &lt;li&gt;内联元素不可嵌套&lt;/li&gt;
