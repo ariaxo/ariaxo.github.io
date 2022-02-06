@@ -17,6 +17,27 @@
     
     
     <entry>
+      <title>HTTP与web安全</title>
+      <link href="/2022/02/06/HTTPSwebsec/"/>
+      <url>/2022/02/06/HTTPSwebsec/</url>
+      
+        <content type="html"><![CDATA[<h1 id="HTTP的安全漏洞"><a href="#HTTP的安全漏洞" class="headerlink" title="HTTP的安全漏洞"></a>HTTP的安全漏洞</h1><ol><li>通信使用明文，可能会被窃听；</li><li>不验证通信方的身份，可能被伪装；</li><li>无法验证报文的完整性，有可能遭到篡改。</li></ol><h1 id="HTTP-Secure"><a href="#HTTP-Secure" class="headerlink" title="HTTP Secure"></a>HTTP Secure</h1><p>HTTPS就是被SSL（secure socket layer)/TLS协议代替通信接口部分的HTTP。<br>HTTPS=HTTP+加密+认证+完整性保护。</p><h2 id="通信加密"><a href="#通信加密" class="headerlink" title="通信加密"></a>通信加密</h2><ul><li><p>SSL（secure socket layer)<br>是独立的协议，其他运行在应用层的协议都可以配合SSL使用。</p><blockquote><p>公开密钥加密<br>共享密钥加密</p></blockquote></li><li><p>TLS（transport layer security）</p><h2 id="验证身份"><a href="#验证身份" class="headerlink" title="验证身份"></a>验证身份</h2><p>使用SSL可以验明通信方，使用一种叫<strong>证书</strong>的手段。<br>证书由第三方机构颁发。</p><h2 id="验证完整性"><a href="#验证完整性" class="headerlink" title="验证完整性"></a>验证完整性</h2><p>遭到攻击者拦截并篡改内容的攻击：中间人攻击。</p><h3 id="防止篡改"><a href="#防止篡改" class="headerlink" title="防止篡改"></a>防止篡改</h3><p>使用散列值校验方法：MD5,SHA-1。<br>提供下载服务的网站也会提供PGP（完美隐私）创建的数字签名。<br>都需要用户亲自验证，浏览器无法自动检查。</p></li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> HTTP </tag>
+            
+            <tag> websec </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>HTTP学习笔记</title>
       <link href="/2022/02/01/HTTP_notes/"/>
       <url>/2022/02/01/HTTP_notes/</url>

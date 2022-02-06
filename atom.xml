@@ -54,6 +54,43 @@ public class PaoPaixu {
   </entry>
   
   <entry>
+    <title>HTTP与web安全</title>
+    <link href="http://example.com/2022/02/06/HTTPSwebsec/"/>
+    <id>http://example.com/2022/02/06/HTTPSwebsec/</id>
+    <published>2022-02-05T16:00:00.000Z</published>
+    <updated>2022-02-06T03:51:35.328Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;HTTP的安全漏洞&quot;&gt;&lt;a href=&quot;#HTTP的安全漏洞&quot; class=&quot;headerlink&quot; title=&quot;HTTP的安全漏洞&quot;&gt;&lt;/a&gt;HTTP的安全漏洞&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;通信使用明文，可能会被窃听；&lt;/li&gt;
+&lt;li&gt;不验证通信方的身份，可能被伪装；&lt;/li&gt;
+&lt;li&gt;无法验证报文的完整性，有可能遭到篡改。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;HTTP-Secure&quot;&gt;&lt;a href=&quot;#HTTP-Secure&quot; class=&quot;headerlink&quot; title=&quot;HTTP Secure&quot;&gt;&lt;/a&gt;HTTP Secure&lt;/h1&gt;&lt;p&gt;HTTPS就是被SSL（secure socket layer)/TLS协议代替通信接口部分的HTTP。&lt;br&gt;HTTPS=HTTP+加密+认证+完整性保护。&lt;/p&gt;
+&lt;h2 id=&quot;通信加密&quot;&gt;&lt;a href=&quot;#通信加密&quot; class=&quot;headerlink&quot; title=&quot;通信加密&quot;&gt;&lt;/a&gt;通信加密&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;SSL（secure socket layer)&lt;br&gt;是独立的协议，其他运行在应用层的协议都可以配合SSL使用。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;公开密钥加密&lt;br&gt;共享密钥加密&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;TLS（transport layer security）&lt;/p&gt;
+&lt;h2 id=&quot;验证身份&quot;&gt;&lt;a href=&quot;#验证身份&quot; class=&quot;headerlink&quot; title=&quot;验证身份&quot;&gt;&lt;/a&gt;验证身份&lt;/h2&gt;&lt;p&gt;使用SSL可以验明通信方，使用一种叫&lt;strong&gt;证书&lt;/strong&gt;的手段。&lt;br&gt;证书由第三方机构颁发。&lt;/p&gt;
+&lt;h2 id=&quot;验证完整性&quot;&gt;&lt;a href=&quot;#验证完整性&quot; class=&quot;headerlink&quot; title=&quot;验证完整性&quot;&gt;&lt;/a&gt;验证完整性&lt;/h2&gt;&lt;p&gt;遭到攻击者拦截并篡改内容的攻击：中间人攻击。&lt;/p&gt;
+&lt;h3 id=&quot;防止篡改&quot;&gt;&lt;a href=&quot;#防止篡改&quot; class=&quot;headerlink&quot; title=&quot;防止篡改&quot;&gt;&lt;/a&gt;防止篡改&lt;/h3&gt;&lt;p&gt;使用散列值校验方法：MD5,SHA-1。&lt;br&gt;提供下载服务的网站也会提供PGP（完美隐私）创建的数字签名。&lt;br&gt;都需要用户亲自验证，浏览器无法自动检查。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</summary>
+    
+    
+    
+    
+    <category term="HTTP" scheme="http://example.com/tags/HTTP/"/>
+    
+    <category term="websec" scheme="http://example.com/tags/websec/"/>
+    
+  </entry>
+  
+  <entry>
     <title>HTTP学习笔记</title>
     <link href="http://example.com/2022/02/01/HTTP_notes/"/>
     <id>http://example.com/2022/02/01/HTTP_notes/</id>
