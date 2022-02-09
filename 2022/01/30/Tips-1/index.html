@@ -234,8 +234,7 @@ var _hmt = _hmt || [];
 <li><p>color规则实际上控制着字体的前景色，包括文本和边框颜色。</p>
 </li>
 </ul>
-<h2 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h2><h3 id="组成部分"><a href="#组成部分" class="headerlink" title="组成部分"></a>组成部分</h3><p>border（边框），content（内容），padding（内边距），margin（外边距）</p>
-<h2 id="边框复合写法"><a href="#边框复合写法" class="headerlink" title="边框复合写法"></a>边框复合写法</h2><h2 id="关于class与id"><a href="#关于class与id" class="headerlink" title="关于class与id"></a>关于class与id</h2><ul>
+<h2 id="关于class与id"><a href="#关于class与id" class="headerlink" title="关于class与id"></a>关于class与id</h2><ul>
 <li>对于希望成组指定样式的元素使用class，为元素指定<strong>唯一</strong>一个名字/样式时使用id。</li>
 <li>id选择器：#xxx。</li>
 <li>HTML中可以有多个样式器，最下方的优先级最高。</li>
@@ -245,8 +244,58 @@ var _hmt = _hmt || [];
  &#125;
 &#125;
 </code></pre>
-<h2 id="emmet语法"><a href="#emmet语法" class="headerlink" title="emmet语法"></a>emmet语法</h2>基本采取简写形式即可。<br>如：width：100px；（w100px）</li>
+</li>
 </ul>
+<h2 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h2><h3 id="组成部分"><a href="#组成部分" class="headerlink" title="组成部分"></a>组成部分</h3><p>border（边框），content（内容），padding（内边距），margin（外边距）</p>
+<h3 id="复合写法"><a href="#复合写法" class="headerlink" title="复合写法"></a>复合写法</h3><ul>
+<li><p>border属性<br>border-width：边框粗细；<br>border-style：边框样式；<br>border-color：边框颜色。<br><strong>border-collapse</strong>表示相邻边框合在一起。</p>
+</li>
+<li><p><code>border：1px solid red;</code>没有顺序。注意优先级顺序。</p>
+</li>
+<li><p><code>padding:上下左右;</code>,margin同。</p>
+</li>
+</ul>
+<h3 id="盒子实际大小"><a href="#盒子实际大小" class="headerlink" title="盒子实际大小"></a>盒子实际大小</h3><ul>
+<li>border会影响盒子的实际大小。<br>解决方法：<ol>
+<li>测量盒子大小时不量边框；</li>
+<li>如果包含边框，需要width/hight减去边框宽度。</li>
+</ol>
+</li>
+</ul>
+<p>-padding会影响盒子的实际大小。<br>解决方法同上。<br>盒子本身没有指定w/h属性，padding不会撑开盒子大小。</p>
+<h3 id="块级盒子水平居中"><a href="#块级盒子水平居中" class="headerlink" title="块级盒子水平居中"></a>块级盒子水平居中</h3><p>必须指定宽度，左右margin设置为auto。（<code>margin:0 auto</code>）</p>
+<h3 id="行内（块）元素水平居中"><a href="#行内（块）元素水平居中" class="headerlink" title="行内（块）元素水平居中"></a>行内（块）元素水平居中</h3><p>给父元素添加<code>text-align: center;</code></p>
+<h3 id="父元素塌陷"><a href="#父元素塌陷" class="headerlink" title="父元素塌陷"></a>父元素塌陷</h3><p>两个嵌套元素的块元素，父元素和子元素都有上外边距时，此时父元素会塌陷较大的外边距值。<br>解决方案：</p>
+<ol>
+<li>为父元素定义上边框；</li>
+<li>为父元素定义上内边框；</li>
+<li><strong>为父元素添加：overflow：hidden。</strong></li>
+</ol>
+<h3 id="清除内外边距"><a href="#清除内外边距" class="headerlink" title="清除内外边距"></a>清除内外边距</h3><p>不同元素带有不同的内外边距，不同浏览器也不同。</p>
+<pre class=" language-[lang:css]"><code class="language-[lang:css]">*&#123;
+   padding: 0;
+   margin: 0;
+&#125;
+</code></pre>
+<p>行内元素为了兼容。尽量只设置左右边距。转换为（行内）块级元素就可以了。</p>
+<h2 id="浮动"><a href="#浮动" class="headerlink" title="浮动"></a>浮动</h2><p><code>float: right/left/none</code></p>
+<h3 id="传统网页的三种布局方式"><a href="#传统网页的三种布局方式" class="headerlink" title="传统网页的三种布局方式"></a>传统网页的三种布局方式</h3><ol>
+<li>标准流</li>
+<li>浮动</li>
+<li>定位 <h3 id="为什么需要浮动"><a href="#为什么需要浮动" class="headerlink" title="为什么需要浮动"></a>为什么需要浮动</h3>标准流很难实现某种效果。可以改变标签默认排列方式。纵向排列用标准流，横向排列用浮动。<h3 id="排列特性"><a href="#排列特性" class="headerlink" title="排列特性"></a><strong>排列特性</strong></h3></li>
+<li>浮动元素脱离标准流；<br>脱离标准流的控制，移动到指定位置；<strong>浮动的盒子不在保留原先位置。</strong>影响后面的标准流。</li>
+<li>浮动元素一行内显示，顶部对齐；<br>父级宽度不够时，另起一行显示。</li>
+<li>浮动元素具有行内块元素特性。<br>行内元素/块级元素都可以。<br>如果块级盒子没有设置宽度，默认和父级一样宽。添加浮动后，大小根据内容定。</li>
+</ol>
+<h3 id="浮动元素和标准流父级搭配使用"><a href="#浮动元素和标准流父级搭配使用" class="headerlink" title="浮动元素和标准流父级搭配使用"></a><strong>浮动元素和标准流父级搭配使用</strong></h3><p>先用标准流父级上下排列，内部子元素浮动排列左右位置。</p>
+<h3 id="清除浮动"><a href="#清除浮动" class="headerlink" title="清除浮动"></a>清除浮动</h3><p>为什么需要清除浮动：父元素不一定有高度，盒子浮动不占有位置。<br>本质：清除浮动的影响。<br>清除浮动的方法： <code>clear: left/right/both</code>闭合浮动</p>
+<ol>
+<li>额外标签法：最后一个元素末尾添加空标签（必须是块级元素），结构性较差；</li>
+<li>父级添加<code>overflow:hidden, auto, scroll</code>，无法显示溢出；</li>
+<li>after伪元素；</li>
+<li>双伪元素。</li>
+</ol>
+<h2 id="emmet语法"><a href="#emmet语法" class="headerlink" title="emmet语法"></a>emmet语法</h2><p>基本采取简写形式即可。<br>如：width：100px；（w100px）</p>
 <hr>
 <h1 id="查阅文档"><a href="#查阅文档" class="headerlink" title="查阅文档"></a>查阅文档</h1><p>查阅文档是一个好习惯。w3c，mozilla都是可用的资源。</p>
 
