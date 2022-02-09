@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-02-06T10:59:43.753Z</updated>
+  <updated>2022-02-09T10:50:29.527Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Notes on Intro to Philosophy (Uni of Edinburgh)</title>
+    <link href="http://example.com/2022/02/09/phil_intro/"/>
+    <id>http://example.com/2022/02/09/phil_intro/</id>
+    <published>2022-02-09T10:04:14.774Z</published>
+    <updated>2022-02-09T10:50:29.527Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;What-is-Philosophy&quot;&gt;&lt;a href=&quot;#What-is-Philosophy&quot; class=&quot;headerlink&quot; title=&quot;What is Philosophy?&quot;&gt;&lt;/a&gt;What is Philosophy?&lt;/h1&gt;&lt;p&gt;A activity we have to engage in, something we have do.&lt;br&gt;“step back, and work out the best solution.”&lt;br&gt;Philosophical is fundamental and questions can arise anywhere.&lt;/p&gt;
+&lt;h1 id=&quot;How-we-do-philosophy-What-it-means-to-think-things-in-a-better-or-proper-way&quot;&gt;&lt;a href=&quot;#How-we-do-philosophy-What-it-means-to-think-things-in-a-better-or-proper-way&quot; class=&quot;headerlink&quot; title=&quot;How we do philosophy? What it means to think things in a better or proper way?&quot;&gt;&lt;/a&gt;How we do philosophy? What it means to think things in a better or proper way?&lt;/h1&gt;&lt;p&gt;jargon:&lt;br&gt;premises, conclusions.&lt;br&gt;question the relatity or necessity.&lt;br&gt;E.g.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;pre: The way the world was in the past controls exactly how it is in the present and hownit will be in the future.&lt;br&gt;      We are part of the world just like everything around us.&lt;br&gt;      We can’t control how things were in the past, or the way the past controls the present and future.&lt;br&gt; con: We dont’t control anything that happens in the world, including all the things that we think, sat and do.&lt;/p&gt;
+&lt;/blockquote&gt;
+</summary>
+    
+    
+    
+    
+    <category term="notes" scheme="http://example.com/tags/notes/"/>
+    
+  </entry>
   
   <entry>
     <title>新插件测试</title>
@@ -135,7 +157,7 @@
     <link href="http://example.com/2022/01/30/Tips-1/"/>
     <id>http://example.com/2022/01/30/Tips-1/</id>
     <published>2022-01-30T11:09:01.000Z</published>
-    <updated>2022-02-09T00:56:49.007Z</updated>
+    <updated>2022-02-09T00:58:14.526Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;HTML&quot;&gt;&lt;a href=&quot;#HTML&quot; class=&quot;headerlink&quot; title=&quot;HTML&quot;&gt;&lt;/a&gt;HTML&lt;/h1&gt;&lt;ul&gt;
