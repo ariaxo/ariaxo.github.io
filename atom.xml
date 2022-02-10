@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-02-09T11:57:50.267Z</updated>
+  <updated>2022-02-10T04:16:22.748Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2022-02 书评/笔记</title>
+    <link href="http://example.com/2022/02/10/book_note_1/"/>
+    <id>http://example.com/2022/02/10/book_note_1/</id>
+    <published>2022-02-10T03:59:46.632Z</published>
+    <updated>2022-02-10T04:16:22.748Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;中东史&quot;&gt;&lt;a href=&quot;#中东史&quot; class=&quot;headerlink&quot; title=&quot;中东史&quot;&gt;&lt;/a&gt;中东史&lt;/h1&gt;&lt;h2 id=&quot;独立诸国的现代领导人&quot;&gt;&lt;a href=&quot;#独立诸国的现代领导人&quot; class=&quot;headerlink&quot; title=&quot;独立诸国的现代领导人&quot;&gt;&lt;/a&gt;独立诸国的现代领导人&lt;/h2&gt;&lt;h3 id=&quot;土耳其&quot;&gt;&lt;a href=&quot;#土耳其&quot; class=&quot;headerlink&quot; title=&quot;土耳其&quot;&gt;&lt;/a&gt;土耳其&lt;/h3&gt;&lt;p&gt;民族主义者面临的挑战：奥斯曼苏丹对西方列强言听计从。1918-1919流感肆虐，煤炭短缺。1911年来得战争耗尽男性青年和国库收入。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;凯末尔&lt;/strong&gt;，一位西化改革家，土耳其民族主义者。&lt;br&gt;外交：《色佛尔条约》，苏俄援助，消灭亚美尼亚共和国。&lt;br&gt;内政：&lt;strong&gt;使土耳其从伊斯兰堡垒转变为世俗国家&lt;/strong&gt;，凯末尔反对马克思主义与法西斯主义，崇尚民主，但认为土耳其人民没有做好当家作主的准备。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;改变衣着，“带上礼帽”；&lt;/li&gt;
+&lt;li&gt;改用拉丁字母书写土耳其语，扩大语言教学范围；&lt;/li&gt;
+&lt;li&gt;要求所有土耳其人取姓；&lt;/li&gt;
+&lt;li&gt;迁都安卡拉；&lt;/li&gt;
+&lt;li&gt;工业化。请苏联经济专家做第一个五年计划。&lt;br&gt;综上措施，削弱了土耳其的帝国/宗教传统，但再凯末尔去世后，一些较为激进的措施被取消了。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;二战（后）&lt;/strong&gt;&lt;br&gt;在美国的保护下壮大军事力量。新型民主党挑战凯末尔主义的共和党，军官军事政变取缔民主党。随之而来的挑战是正义党，军队又一次干预。马克思主义政党和新穆斯林党发展壮大并冲突后，军队接管政府。&lt;/p&gt;
+</summary>
+    
+    
+    
+    
+    <category term="history" scheme="http://example.com/tags/history/"/>
+    
+    <category term="philosophy" scheme="http://example.com/tags/philosophy/"/>
+    
+    <category term="sociology" scheme="http://example.com/tags/sociology/"/>
+    
+  </entry>
   
   <entry>
     <title>Notes on Intro to Philosophy (Uni of Edinburgh)</title>
