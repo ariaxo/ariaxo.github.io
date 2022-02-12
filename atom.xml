@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-02-10T04:16:22.748Z</updated>
+  <updated>2022-02-12T05:52:21.708Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,57 +17,22 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>2022-02 书评/笔记</title>
-    <link href="http://example.com/2022/02/10/book_note_1/"/>
-    <id>http://example.com/2022/02/10/book_note_1/</id>
-    <published>2022-02-10T03:59:46.632Z</published>
-    <updated>2022-02-10T04:16:22.748Z</updated>
+    <title>git学习笔记</title>
+    <link href="http://example.com/2022/02/12/gitnotes/"/>
+    <id>http://example.com/2022/02/12/gitnotes/</id>
+    <published>2022-02-11T16:00:00.000Z</published>
+    <updated>2022-02-12T05:52:21.708Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;中东史&quot;&gt;&lt;a href=&quot;#中东史&quot; class=&quot;headerlink&quot; title=&quot;中东史&quot;&gt;&lt;/a&gt;中东史&lt;/h1&gt;&lt;h2 id=&quot;独立诸国的现代领导人&quot;&gt;&lt;a href=&quot;#独立诸国的现代领导人&quot; class=&quot;headerlink&quot; title=&quot;独立诸国的现代领导人&quot;&gt;&lt;/a&gt;独立诸国的现代领导人&lt;/h2&gt;&lt;h3 id=&quot;土耳其&quot;&gt;&lt;a href=&quot;#土耳其&quot; class=&quot;headerlink&quot; title=&quot;土耳其&quot;&gt;&lt;/a&gt;土耳其&lt;/h3&gt;&lt;p&gt;民族主义者面临的挑战：奥斯曼苏丹对西方列强言听计从。1918-1919流感肆虐，煤炭短缺。1911年来得战争耗尽男性青年和国库收入。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;凯末尔&lt;/strong&gt;，一位西化改革家，土耳其民族主义者。&lt;br&gt;外交：《色佛尔条约》，苏俄援助，消灭亚美尼亚共和国。&lt;br&gt;内政：&lt;strong&gt;使土耳其从伊斯兰堡垒转变为世俗国家&lt;/strong&gt;，凯末尔反对马克思主义与法西斯主义，崇尚民主，但认为土耳其人民没有做好当家作主的准备。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;改变衣着，“带上礼帽”；&lt;/li&gt;
-&lt;li&gt;改用拉丁字母书写土耳其语，扩大语言教学范围；&lt;/li&gt;
-&lt;li&gt;要求所有土耳其人取姓；&lt;/li&gt;
-&lt;li&gt;迁都安卡拉；&lt;/li&gt;
-&lt;li&gt;工业化。请苏联经济专家做第一个五年计划。&lt;br&gt;综上措施，削弱了土耳其的帝国/宗教传统，但再凯末尔去世后，一些较为激进的措施被取消了。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;二战（后）&lt;/strong&gt;&lt;br&gt;在美国的保护下壮大军事力量。新型民主党挑战凯末尔主义的共和党，军官军事政变取缔民主党。随之而来的挑战是正义党，军队又一次干预。马克思主义政党和新穆斯林党发展壮大并冲突后，军队接管政府。&lt;/p&gt;
+    <summary type="html">&lt;h1 id=&quot;git常用命令&quot;&gt;&lt;a href=&quot;#git常用命令&quot; class=&quot;headerlink&quot; title=&quot;git常用命令&quot;&gt;&lt;/a&gt;git常用命令&lt;/h1&gt;&lt;p&gt;&lt;code&gt;git init&lt;/code&gt; 初始化git生成git仓库&lt;br&gt;&lt;code&gt;git status&lt;/code&gt; 查看git状态&lt;br&gt;&lt;code&gt;git add&lt;/code&gt; &lt;filename&gt;添文件到暂存区&lt;br&gt;&lt;code&gt;git add .&lt;/code&gt;加入所有文件到暂存区&lt;br&gt;&lt;code&gt;git commit -m &amp;#39;message&amp;#39;&lt;/code&gt;提交文件到本地仓库，message为变更描述。每个commit会生成一个唯一的哈希值。&lt;br&gt;&lt;code&gt;git log&lt;/code&gt;查看日志&lt;br&gt;&lt;code&gt;git reset &amp;lt;filename&amp;gt;&lt;/code&gt;将尚没有commite之前加入到暂存区的文件重新拉回&lt;/filename&gt;&lt;/p&gt;
+&lt;p&gt;文件状态：&lt;br&gt;1.没有被add过的文件叫untracked&lt;br&gt;2.add之后文件处于staged状态等待commite&lt;br&gt;3.commit之后文件处于unmodified这里之所以是modified是因为文件会跟仓库中的文件对比&lt;br&gt;4.当unmodified的文件被修改则会变为modified状态&lt;br&gt;5.modified之后的文件add之后将继续变为staged状态&lt;br&gt;6.unmodifed的文件还有一种可能是已经不再需要了，那么可以remove它不再追踪变为untracked状态​&lt;/p&gt;
+&lt;p&gt;git checkout &lt;newbranchname&gt; &lt;refbranch&gt;以参考分支为模板创建新分支&lt;br&gt;git checkout &lt;branchname&gt;切换到指定分支​&lt;/branchname&gt;&lt;/refbranch&gt;&lt;/newbranchname&gt;&lt;/p&gt;
 </summary>
     
     
     
     
-    <category term="history" scheme="http://example.com/tags/history/"/>
-    
-    <category term="philosophy" scheme="http://example.com/tags/philosophy/"/>
-    
-    <category term="sociology" scheme="http://example.com/tags/sociology/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Notes on Intro to Philosophy (Uni of Edinburgh)</title>
-    <link href="http://example.com/2022/02/09/phil_intro/"/>
-    <id>http://example.com/2022/02/09/phil_intro/</id>
-    <published>2022-02-09T10:04:14.774Z</published>
-    <updated>2022-02-09T11:57:50.267Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;What-is-Philosophy&quot;&gt;&lt;a href=&quot;#What-is-Philosophy&quot; class=&quot;headerlink&quot; title=&quot;What is Philosophy?&quot;&gt;&lt;/a&gt;What is Philosophy?&lt;/h1&gt;&lt;p&gt;A activity we have to engage in, something we have do.&lt;br&gt;“step back, and work out the best solution.”&lt;br&gt;Philosophical is fundamental and questions can arise anywhere.&lt;/p&gt;
-&lt;h1 id=&quot;How-we-do-philosophy-What-it-means-to-think-things-in-a-better-or-proper-way&quot;&gt;&lt;a href=&quot;#How-we-do-philosophy-What-it-means-to-think-things-in-a-better-or-proper-way&quot; class=&quot;headerlink&quot; title=&quot;How we do philosophy? What it means to think things in a better or proper way?&quot;&gt;&lt;/a&gt;How we do philosophy? What it means to think things in a better or proper way?&lt;/h1&gt;&lt;p&gt;jargon:&lt;br&gt;premises, conclusions.&lt;br&gt;question the relatity or necessity.&lt;br&gt;E.g.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;pre: The way the world was in the past controls exactly how it is in the present and hownit will be in the future.&lt;br&gt;      We are part of the world just like everything around us.&lt;br&gt;      We can’t control how things were in the past, or the way the past controls the present and future.&lt;br&gt; con: We dont’t control anything that happens in the world, including all the things that we think, sat and do.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h1 id=&quot;Basic-constituents-of-knowledge&quot;&gt;&lt;a href=&quot;#Basic-constituents-of-knowledge&quot; class=&quot;headerlink&quot; title=&quot;Basic constituents of knowledge&quot;&gt;&lt;/a&gt;Basic constituents of knowledge&lt;/h1&gt;&lt;h2 id=&quot;Propositional-konwledge&quot;&gt;&lt;a href=&quot;#Propositional-konwledge&quot; class=&quot;headerlink&quot; title=&quot;Propositional konwledge&quot;&gt;&lt;/a&gt;Propositional konwledge&lt;/h2&gt;&lt;p&gt;Knowledge that something is the case, the kind of thing that can be true or false.&lt;/p&gt;
-&lt;h2 id=&quot;Ability-knowledge&quot;&gt;&lt;a href=&quot;#Ability-knowledge&quot; class=&quot;headerlink&quot; title=&quot;Ability  knowledge&quot;&gt;&lt;/a&gt;Ability  knowledge&lt;/h2&gt;</summary>
-    
-    
-    
-    
-    <category term="notes" scheme="http://example.com/tags/notes/"/>
+    <category term="git" scheme="http://example.com/tags/git/"/>
     
   </entry>
   
@@ -156,7 +121,7 @@
     <link href="http://example.com/2022/02/01/HTTP_notes/"/>
     <id>http://example.com/2022/02/01/HTTP_notes/</id>
     <published>2022-02-01T12:32:01.000Z</published>
-    <updated>2022-02-04T08:53:25.481Z</updated>
+    <updated>2022-02-12T05:46:31.133Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;背景知识&quot;&gt;&lt;a href=&quot;#背景知识&quot; class=&quot;headerlink&quot; title=&quot;背景知识&quot;&gt;&lt;/a&gt;背景知识&lt;/h1&gt;&lt;h1 id=&quot;1-TCP-IP协议族&quot;&gt;&lt;a href=&quot;#1-TCP-IP协议族&quot; class=&quot;headerlink&quot; title=&quot;1. TCP/IP协议族&quot;&gt;&lt;/a&gt;1. TCP/IP协议族&lt;/h1&gt;&lt;p&gt;  &lt;em&gt;以后可能会写TCP/IP的笔记，大概…&lt;/em&gt;&lt;br&gt;  通常使用的网络是在TCP/IP协议族的基础上运行的，HTTP属于其子集。&lt;/p&gt;
@@ -176,12 +141,12 @@
     
     <category term="CN" scheme="http://example.com/categories/CS/CN/"/>
     
+    <category term="InfoSec" scheme="http://example.com/categories/CS/CN/InfoSec/"/>
     
-    <category term="frontend" scheme="http://example.com/tags/frontend/"/>
     
     <category term="HTTP" scheme="http://example.com/tags/HTTP/"/>
     
-    <category term="InfoSec" scheme="http://example.com/tags/InfoSec/"/>
+    <category term="websec" scheme="http://example.com/tags/websec/"/>
     
   </entry>
   

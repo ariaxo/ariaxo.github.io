@@ -6,13 +6,17 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>notes | Voidhead</title>
+  <title>git学习笔记 | Voidhead</title>
   <meta name="author" content="Ariax">
+  
+  <meta name="description" content="git常用命令git init 初始化git生成git仓库git status 查看git状态git add 添文件到暂存区git add .加入所有文件到暂存区git commit -m &amp;#39;message&amp;#39;提交文件到本地仓库，message为变更描述。每个commit会生成一个唯一的哈希值。git log查看日志git reset &amp;lt;filename&amp;gt;将尚没有commite之前加入到暂存区的文件重新拉回
+文件状态：1.没有被add过的文件叫untracked2.add之后文件处于staged状态等待commite3.commit之后文件处于unmodified这里之所以是modified是因为文件会跟仓库中的文件对比4.当unmodified的文件被修改则会变为modified状态5.modified之后的文件add之后将继续变为staged状态6.unmodifed的文件还有一种可能是已经不再需要了，那么可以remove它不再追踪变为untracked状态​
+git checkout  以参考分支为模板创建新分支git checkout 切换到指定分支​">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="git学习笔记"/>
   <meta property="og:site_name" content="Voidhead"/>
 
   
@@ -108,145 +112,83 @@ var _hmt = _hmt || [];
   	<div class="content">
     	 
 
-<!-- title -->
-<div class="page-header">
-  <h1 class="archive-title-tag"><i class="fa fa-archive"></i> notes</h1>
-</div>
 
-<div class="row page">
-  <!-- cols -->
-  
-  <div class="col-md-9">
 	
-
-	  <div id="top_search"></div>
-
-	  <div class="archive">
-		
-		
-		
-			
-			
-			<h4 class="archive-ul" data-toggle="collapse" data-target="#2022">2022<b class="caret"></b></h4>
-			<ul id="2022" class="collapse in">
-			
-		
-		<li class="listing-item">
-		<span class="date_class"> 2022-02-09 </span> &raquo;
-		
-		   <span class="title"><a href="/2022/02/09/phil_intro/" >Notes on Intro to Philosophy (Uni of Edinburgh)</a></span>
-		
-		</li>			
-		
-		</ul>
+		<div class="page-header">
+			<h1> git学习笔记</h1>
 		</div>
-
-</div> <!-- col-md-9/col-md-12 -->
-
-
-<div class="col-md-3">
-	<div id="sidebar">
 	
-			
-  <div id="site_search">
-   <div class="form-group">
-    <input type="text" id="local-search-input" name="q" results="0" placeholder="Search" class="st-search-input st-default-search-input form-control"/>
-   </div>  
-  <div id="local-search-result"></div>
-  </div>
 
 
-		
-			
-	<div class="widget">
-		<h4>Categories</h4>
-		<ul class="tag_box inline list-unstyled">
-		
-			<li><a href="/categories/CS/CN/">CN<span>2</span></a></li>
-		
-			<li><a href="/categories/CS/">CS<span>2</span></a></li>
-		
-		</ul>
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <h1 id="git常用命令"><a href="#git常用命令" class="headerlink" title="git常用命令"></a>git常用命令</h1><p><code>git init</code> 初始化git生成git仓库<br><code>git status</code> 查看git状态<br><code>git add</code> <filename>添文件到暂存区<br><code>git add .</code>加入所有文件到暂存区<br><code>git commit -m &#39;message&#39;</code>提交文件到本地仓库，message为变更描述。每个commit会生成一个唯一的哈希值。<br><code>git log</code>查看日志<br><code>git reset &lt;filename&gt;</code>将尚没有commite之前加入到暂存区的文件重新拉回</p>
+<p>文件状态：<br>1.没有被add过的文件叫untracked<br>2.add之后文件处于staged状态等待commite<br>3.commit之后文件处于unmodified这里之所以是modified是因为文件会跟仓库中的文件对比<br>4.当unmodified的文件被修改则会变为modified状态<br>5.modified之后的文件add之后将继续变为staged状态<br>6.unmodifed的文件还有一种可能是已经不再需要了，那么可以remove它不再追踪变为untracked状态​</p>
+<p>git checkout <newbranchname> <refbranch>以参考分支为模板创建新分支<br>git checkout <branchname>切换到指定分支​</p>
+
+	  	  
 	</div>
 
-		
-			
-	<div class="widget">
-		<h4>Tag Cloud</h4>
-		<ul class="tag_box inline list-unstyled">		
-		
-			<li><a href="/tags/HTML/">HTML<span>1</span></a></li>
-		
-			<li><a href="/tags/sociology/">sociology<span>1</span></a></li>
-		
-			<li><a href="/tags/HTTP/">HTTP<span>2</span></a></li>
-		
-			<li><a href="/tags/CSS/">CSS<span>1</span></a></li>
-		
-			<li><a href="/tags/websec/">websec<span>1</span></a></li>
-		
-			<li><a href="/tags/frontend/">frontend<span>2</span></a></li>
-		
-			<li><a href="/tags/philosophy/">philosophy<span>1</span></a></li>
-		
-			<li><a href="/tags/history/">history<span>1</span></a></li>
-		
-			<li><a href="/tags/notes/">notes<span>1</span></a></li>
-		
-			<li><a href="/tags/InfoSec/">InfoSec<span>1</span></a></li>
-		
-		 
-		</ul>
+	<div>
+  	<center>
+	<div class="pagination">
+
+    
+    
+    <a type="button" class="btn btn-default disabled"><i class="fa fa-arrow-circle-o-left"></i>Prev</a>
+    
+
+    <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
+    
+    <a href="/2022/02/06/test/" type="button" class="btn btn-default ">Next<i
+                class="fa fa-arrow-circle-o-right"></i></a>
+    
+
+    
+</div>
+
+    </center>
 	</div>
 
 
-		
-			
-<div class="widget">
-  <h4>Recent Posts</h4>
-  <ul class="entry list-unstyled">
-    
-      <li>
-        <a href="/2022/02/10/book_note_1/" ><i class="fa fa-file-o"></i>2022-02 书评/笔记</a>
-      </li>
-    
-      <li>
-        <a href="/2022/02/09/phil_intro/" ><i class="fa fa-file-o"></i>Notes on Intro to Philosoph...</a>
-      </li>
-    
-      <li>
-        <a href="/2022/02/06/test/" ><i class="fa fa-file-o"></i>新插件测试</a>
-      </li>
-    
-      <li>
-        <a href="/2022/02/06/HTTPSwebsec/" ><i class="fa fa-file-o"></i>HTTP与web安全</a>
-      </li>
-    
-      <li>
-        <a href="/2022/02/01/HTTP_notes/" ><i class="fa fa-file-o"></i>HTTP学习笔记</a>
-      </li>
-    
-  </ul>
-</div>
-
-		
-			
-<div class="widget">
-	<h4>Links</h4>
-	<ul class="blogroll list-unstyled">
 	
-		<li><i class=" "></i><a href="links" title="Friends." target="_blank">❀ Friends</a></li>
+	<!-- comment -->
 	
-	</ul>
-</div>
+		<section id="comments" style="margin:10px;padding:10px;background:#fff;">
+		  <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'false' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "1Hxnm6F8hDTnqxsEbyiPXYv1-gzGzoHsz",
+            app_key: "7NgOIHajK6tDaSREwoQSfUSt",
+            placeholder: "Just go go",
+            avatar:"retro"
+        });
+    }
+</script>
 
-
-		
-	</div> <!-- sidebar -->
-</div> <!-- col-md-3 -->
-
-
-
+		</section>
+	  
 
 	</div>
   </div>

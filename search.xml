@@ -4,40 +4,17 @@
   
     
     <entry>
-      <title>2022-02 书评/笔记</title>
-      <link href="/2022/02/10/book_note_1/"/>
-      <url>/2022/02/10/book_note_1/</url>
+      <title>git学习笔记</title>
+      <link href="/2022/02/12/gitnotes/"/>
+      <url>/2022/02/12/gitnotes/</url>
       
-        <content type="html"><![CDATA[<h1 id="中东史"><a href="#中东史" class="headerlink" title="中东史"></a>中东史</h1><h2 id="独立诸国的现代领导人"><a href="#独立诸国的现代领导人" class="headerlink" title="独立诸国的现代领导人"></a>独立诸国的现代领导人</h2><h3 id="土耳其"><a href="#土耳其" class="headerlink" title="土耳其"></a>土耳其</h3><p>民族主义者面临的挑战：奥斯曼苏丹对西方列强言听计从。1918-1919流感肆虐，煤炭短缺。1911年来得战争耗尽男性青年和国库收入。</p><p><strong>凯末尔</strong>，一位西化改革家，土耳其民族主义者。<br>外交：《色佛尔条约》，苏俄援助，消灭亚美尼亚共和国。<br>内政：<strong>使土耳其从伊斯兰堡垒转变为世俗国家</strong>，凯末尔反对马克思主义与法西斯主义，崇尚民主，但认为土耳其人民没有做好当家作主的准备。</p><ol><li>改变衣着，“带上礼帽”；</li><li>改用拉丁字母书写土耳其语，扩大语言教学范围；</li><li>要求所有土耳其人取姓；</li><li>迁都安卡拉；</li><li>工业化。请苏联经济专家做第一个五年计划。<br>综上措施，削弱了土耳其的帝国/宗教传统，但再凯末尔去世后，一些较为激进的措施被取消了。</li></ol><p><strong>二战（后）</strong><br>在美国的保护下壮大军事力量。新型民主党挑战凯末尔主义的共和党，军官军事政变取缔民主党。随之而来的挑战是正义党，军队又一次干预。马克思主义政党和新穆斯林党发展壮大并冲突后，军队接管政府。</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> history </tag>
-            
-            <tag> philosophy </tag>
-            
-            <tag> sociology </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Notes on Intro to Philosophy (Uni of Edinburgh)</title>
-      <link href="/2022/02/09/phil_intro/"/>
-      <url>/2022/02/09/phil_intro/</url>
-      
-        <content type="html"><![CDATA[<h1 id="What-is-Philosophy"><a href="#What-is-Philosophy" class="headerlink" title="What is Philosophy?"></a>What is Philosophy?</h1><p>A activity we have to engage in, something we have do.<br>“step back, and work out the best solution.”<br>Philosophical is fundamental and questions can arise anywhere.</p><h1 id="How-we-do-philosophy-What-it-means-to-think-things-in-a-better-or-proper-way"><a href="#How-we-do-philosophy-What-it-means-to-think-things-in-a-better-or-proper-way" class="headerlink" title="How we do philosophy? What it means to think things in a better or proper way?"></a>How we do philosophy? What it means to think things in a better or proper way?</h1><p>jargon:<br>premises, conclusions.<br>question the relatity or necessity.<br>E.g.</p><blockquote><p>pre: The way the world was in the past controls exactly how it is in the present and hownit will be in the future.<br>      We are part of the world just like everything around us.<br>      We can’t control how things were in the past, or the way the past controls the present and future.<br> con: We dont’t control anything that happens in the world, including all the things that we think, sat and do.</p></blockquote><hr><h1 id="Basic-constituents-of-knowledge"><a href="#Basic-constituents-of-knowledge" class="headerlink" title="Basic constituents of knowledge"></a>Basic constituents of knowledge</h1><h2 id="Propositional-konwledge"><a href="#Propositional-konwledge" class="headerlink" title="Propositional konwledge"></a>Propositional konwledge</h2><p>Knowledge that something is the case, the kind of thing that can be true or false.</p><h2 id="Ability-knowledge"><a href="#Ability-knowledge" class="headerlink" title="Ability  knowledge"></a>Ability  knowledge</h2><p>knowledge connecting with the manifestation of ability or skill.4</p><h2 id="You-must-believe-the-proposition"><a href="#You-must-believe-the-proposition" class="headerlink" title="You must believe the proposition."></a>You must believe the proposition.</h2>]]></content>
+        <content type="html"><![CDATA[<h1 id="git常用命令"><a href="#git常用命令" class="headerlink" title="git常用命令"></a>git常用命令</h1><p><code>git init</code> 初始化git生成git仓库<br><code>git status</code> 查看git状态<br><code>git add</code> <filename>添文件到暂存区<br><code>git add .</code>加入所有文件到暂存区<br><code>git commit -m &#39;message&#39;</code>提交文件到本地仓库，message为变更描述。每个commit会生成一个唯一的哈希值。<br><code>git log</code>查看日志<br><code>git reset &lt;filename&gt;</code>将尚没有commite之前加入到暂存区的文件重新拉回</p><p>文件状态：<br>1.没有被add过的文件叫untracked<br>2.add之后文件处于staged状态等待commite<br>3.commit之后文件处于unmodified这里之所以是modified是因为文件会跟仓库中的文件对比<br>4.当unmodified的文件被修改则会变为modified状态<br>5.modified之后的文件add之后将继续变为staged状态<br>6.unmodifed的文件还有一种可能是已经不再需要了，那么可以remove它不再追踪变为untracked状态​</p><p>git checkout <newbranchname> <refbranch>以参考分支为模板创建新分支<br>git checkout <branchname>切换到指定分支​</p>]]></content>
       
       
       
         <tags>
             
-            <tag> notes </tag>
+            <tag> git </tag>
             
         </tags>
       
@@ -93,16 +70,16 @@
           
           <category> CN </category>
           
+          <category> InfoSec </category>
+          
       </categories>
       
       
         <tags>
             
-            <tag> frontend </tag>
-            
             <tag> HTTP </tag>
             
-            <tag> InfoSec </tag>
+            <tag> websec </tag>
             
         </tags>
       
