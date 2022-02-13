@@ -6,8 +6,14 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>PTA基础题解 | Voidhead</title>
+  <title>PTA基础题解 | Voidhead</title><meta name="robots" content="noindex">
   <meta name="author" content="Ariax">
+  
+  <meta name="description" content="6-2 多项式求值 (15 分)本题要求实现一个函数，计算阶数为n，系数为a[0] … a[n]的多项式f(x)=∑ (i=0~n)(a[i]*x^i) 在x点的值。
+函数接口定义：
+double f( int n, double a[], double x );
+
+其中n是多项式的阶数，a[]中存">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -131,24 +137,62 @@ var _hmt = _hmt || [];
 	<div class="mypage">		
 	  		
 
-	  
+	  <h2 id="6-2-多项式求值-15-分"><a href="#6-2-多项式求值-15-分" class="headerlink" title="6-2 多项式求值 (15 分)"></a>6-2 多项式求值 (15 分)</h2><p>本题要求实现一个函数，计算阶数为n，系数为a[0] … a[n]的多项式f(x)=∑ (i=0~n)(a[i]*x^i) 在x点的值。</p>
+<p>函数接口定义：</p>
+<pre class=" language-[c++]"><code class="language-[c++]">double f( int n, double a[], double x );
+</code></pre>
+<p>其中n是多项式的阶数，a[]中存储系数，x是给定点。函数须返回多项式f(x)的值。</p>
+<p>裁判测试程序样例：</p>
+<pre class=" language-[c++]"><code class="language-[c++]">#include <stdio.h>
+
+#define MAXN 10
+
+double f( int n, double a[], double x );
+
+int main()
+&#123;
+    int n, i;
+    double a[MAXN], x;
+    
+    scanf("%d %lf", &n, &x);
+    for ( i=0; i<=n; i++ )
+        scanf("%lf", &a[i]);
+    printf("%.1f\n", f(n, a, x));
+    return 0;
+&#125;
+
+/* 你的代码将被嵌在这里 */
+</code></pre>
+<h3 id="分析："><a href="#分析：" class="headerlink" title="分析："></a>分析：</h3><blockquote>
+<p>逻辑过程为：</p>
+</blockquote>
+<ol>
+<li>获取每个数组元素；</li>
+<li>通过获取的数组index计算并保存x的幂；</li>
+<li>数组元素*x的幂；</li>
+<li>上述相加，返回。</li>
+</ol>
+<p>实现：</p>
+<pre class=" language-[c++]"><code class="language-[c++]">double f( int n, double a[], double x )
+&#123;
+    int i=1;
+    double sum=a[0],m=1.00;
+    for(i;i<=n;i++)//可以同时获取index与value；
+    &#123;
+        m*=x;//m储存x的幂；
+        sum+=a[i]*m;
+    &#125;
+    return sum;
+&#125;
+</code></pre>
+<h3 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h3><p>sum=0;从数组最开始获取如何？<br>答：不可以。m在i=0时也会*x，造成错误。</p>
+<!-- flag of hidden posts -->
 	  	  
 	</div>
 
 	<div>
   	<center>
 	<div class="pagination">
-
-    
-    
-    <a type="button" class="btn btn-default disabled"><i class="fa fa-arrow-circle-o-left"></i>Prev</a>
-    
-
-    <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
-    
-    <a href="/2022/02/12/gitnotes/" type="button" class="btn btn-default ">Next<i
-                class="fa fa-arrow-circle-o-right"></i></a>
-    
 
     
 </div>

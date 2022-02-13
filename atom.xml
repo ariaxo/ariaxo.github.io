@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-02-13T02:38:36.982Z</updated>
+  <updated>2022-02-13T03:11:45.314Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,17 +17,22 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>PTA基础题解</title>
-    <link href="http://example.com/2022/02/13/pta_base/"/>
-    <id>http://example.com/2022/02/13/pta_base/</id>
-    <published>2022-02-13T02:38:36.953Z</published>
-    <updated>2022-02-13T02:38:36.982Z</updated>
+    <title>刷题记录/Writeup log</title>
+    <link href="http://example.com/2022/02/13/writeups/"/>
+    <id>http://example.com/2022/02/13/writeups/</id>
+    <published>2022-02-13T02:47:03.254Z</published>
+    <updated>2022-02-13T03:11:45.314Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;PTA-C&quot;&gt;&lt;a href=&quot;#PTA-C&quot; class=&quot;headerlink&quot; title=&quot;PTA/C++&quot;&gt;&lt;/a&gt;PTA/C++&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.ariax.icu/2022/02/13/pta_base/&quot; title=&quot;PTA BASICS&quot;&gt;PTA基础题&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</summary>
     
     
     
     
-    
-    <category term="hide" scheme="http://example.com/tags/hide/"/>
+    <category term="Writeup" scheme="http://example.com/tags/Writeup/"/>
     
   </entry>
   
