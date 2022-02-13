@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-02-12T05:52:21.708Z</updated>
+  <updated>2022-02-13T02:38:36.982Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,16 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>PTA基础题解</title>
+    <link href="http://example.com/2022/02/13/pta_base/"/>
+    <id>http://example.com/2022/02/13/pta_base/</id>
+    <published>2022-02-13T02:38:36.953Z</published>
+    <updated>2022-02-13T02:38:36.982Z</updated>
+    
+    
+    
+    
+    
+    <category term="hide" scheme="http://example.com/tags/hide/"/>
+    
+  </entry>
+  
+  <entry>
     <title>git学习笔记</title>
     <link href="http://example.com/2022/02/12/gitnotes/"/>
     <id>http://example.com/2022/02/12/gitnotes/</id>
     <published>2022-02-11T16:00:00.000Z</published>
-    <updated>2022-02-12T05:52:21.708Z</updated>
+    <updated>2022-02-12T05:54:12.224Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;git常用命令&quot;&gt;&lt;a href=&quot;#git常用命令&quot; class=&quot;headerlink&quot; title=&quot;git常用命令&quot;&gt;&lt;/a&gt;git常用命令&lt;/h1&gt;&lt;p&gt;&lt;code&gt;git init&lt;/code&gt; 初始化git生成git仓库&lt;br&gt;&lt;code&gt;git status&lt;/code&gt; 查看git状态&lt;br&gt;&lt;code&gt;git add&lt;/code&gt; &lt;filename&gt;添文件到暂存区&lt;br&gt;&lt;code&gt;git add .&lt;/code&gt;加入所有文件到暂存区&lt;br&gt;&lt;code&gt;git commit -m &amp;#39;message&amp;#39;&lt;/code&gt;提交文件到本地仓库，message为变更描述。每个commit会生成一个唯一的哈希值。&lt;br&gt;&lt;code&gt;git log&lt;/code&gt;查看日志&lt;br&gt;&lt;code&gt;git reset &amp;lt;filename&amp;gt;&lt;/code&gt;将尚没有commite之前加入到暂存区的文件重新拉回&lt;/filename&gt;&lt;/p&gt;
+    <summary type="html">&lt;h1 id=&quot;git常用命令&quot;&gt;&lt;a href=&quot;#git常用命令&quot; class=&quot;headerlink&quot; title=&quot;git常用命令&quot;&gt;&lt;/a&gt;git常用命令&lt;/h1&gt;&lt;p&gt;&lt;code&gt;git init&lt;/code&gt; 初始化git生成git仓库&lt;br&gt;&lt;code&gt;git status&lt;/code&gt; 查看git状态&lt;br&gt;&lt;code&gt;git add&lt;/code&gt; &lt;filename&gt;添文件到暂存区&lt;br&gt;&lt;code&gt;git add .&lt;/code&gt;加入所有文件到暂存区&lt;br&gt;&lt;code&gt;git commit -m &amp;#39;message&amp;#39;&lt;/code&gt;提交文件到本地仓库，message为变更描述。每个commit会生成一个唯一的哈希值&lt;br&gt;&lt;code&gt;git log&lt;/code&gt;查看日志&lt;br&gt;&lt;code&gt;git reset &amp;lt;filename&amp;gt;&lt;/code&gt;将尚没有commite之前加入到暂存区的文件重新拉回&lt;/filename&gt;&lt;/p&gt;
 &lt;p&gt;文件状态：&lt;br&gt;1.没有被add过的文件叫untracked&lt;br&gt;2.add之后文件处于staged状态等待commite&lt;br&gt;3.commit之后文件处于unmodified这里之所以是modified是因为文件会跟仓库中的文件对比&lt;br&gt;4.当unmodified的文件被修改则会变为modified状态&lt;br&gt;5.modified之后的文件add之后将继续变为staged状态&lt;br&gt;6.unmodifed的文件还有一种可能是已经不再需要了，那么可以remove它不再追踪变为untracked状态​&lt;/p&gt;
-&lt;p&gt;git checkout &lt;newbranchname&gt; &lt;refbranch&gt;以参考分支为模板创建新分支&lt;br&gt;git checkout &lt;branchname&gt;切换到指定分支​&lt;/branchname&gt;&lt;/refbranch&gt;&lt;/newbranchname&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git checkout&lt;/code&gt; &lt;newbranchname&gt; &lt;refbranch&gt;以参考分支为模板创建新分支&lt;br&gt;&lt;code&gt;git checkout&lt;/code&gt; &lt;branchname&gt;切换到指定分支​&lt;/branchname&gt;&lt;/refbranch&gt;&lt;/newbranchname&gt;&lt;/p&gt;
 </summary>
     
     

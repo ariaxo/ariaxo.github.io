@@ -9,7 +9,7 @@
   <title>git学习笔记 | Voidhead</title>
   <meta name="author" content="Ariax">
   
-  <meta name="description" content="git常用命令git init 初始化git生成git仓库git status 查看git状态git add 添文件到暂存区git add .加入所有文件到暂存区git commit -m &amp;#39;message&amp;#39;提交文件到本地仓库，message为变更描述。每个commit会生成一个唯一的哈希值。git log查看日志git reset &amp;lt;filename&amp;gt;将尚没有commite之前加入到暂存区的文件重新拉回
+  <meta name="description" content="git常用命令git init 初始化git生成git仓库git status 查看git状态git add 添文件到暂存区git add .加入所有文件到暂存区git commit -m &amp;#39;message&amp;#39;提交文件到本地仓库，message为变更描述。每个commit会生成一个唯一的哈希值git log查看日志git reset &amp;lt;filename&amp;gt;将尚没有commite之前加入到暂存区的文件重新拉回
 文件状态：1.没有被add过的文件叫untracked2.add之后文件处于staged状态等待commite3.commit之后文件处于unmodified这里之所以是modified是因为文件会跟仓库中的文件对比4.当unmodified的文件被修改则会变为modified状态5.modified之后的文件add之后将继续变为staged状态6.unmodifed的文件还有一种可能是已经不再需要了，那么可以remove它不再追踪变为untracked状态​
 git checkout  以参考分支为模板创建新分支git checkout 切换到指定分支​">
   
@@ -135,9 +135,9 @@ var _hmt = _hmt || [];
 	<div class="mypage">		
 	  		
 
-	  <h1 id="git常用命令"><a href="#git常用命令" class="headerlink" title="git常用命令"></a>git常用命令</h1><p><code>git init</code> 初始化git生成git仓库<br><code>git status</code> 查看git状态<br><code>git add</code> <filename>添文件到暂存区<br><code>git add .</code>加入所有文件到暂存区<br><code>git commit -m &#39;message&#39;</code>提交文件到本地仓库，message为变更描述。每个commit会生成一个唯一的哈希值。<br><code>git log</code>查看日志<br><code>git reset &lt;filename&gt;</code>将尚没有commite之前加入到暂存区的文件重新拉回</p>
+	  <h1 id="git常用命令"><a href="#git常用命令" class="headerlink" title="git常用命令"></a>git常用命令</h1><p><code>git init</code> 初始化git生成git仓库<br><code>git status</code> 查看git状态<br><code>git add</code> <filename>添文件到暂存区<br><code>git add .</code>加入所有文件到暂存区<br><code>git commit -m &#39;message&#39;</code>提交文件到本地仓库，message为变更描述。每个commit会生成一个唯一的哈希值<br><code>git log</code>查看日志<br><code>git reset &lt;filename&gt;</code>将尚没有commite之前加入到暂存区的文件重新拉回</p>
 <p>文件状态：<br>1.没有被add过的文件叫untracked<br>2.add之后文件处于staged状态等待commite<br>3.commit之后文件处于unmodified这里之所以是modified是因为文件会跟仓库中的文件对比<br>4.当unmodified的文件被修改则会变为modified状态<br>5.modified之后的文件add之后将继续变为staged状态<br>6.unmodifed的文件还有一种可能是已经不再需要了，那么可以remove它不再追踪变为untracked状态​</p>
-<p>git checkout <newbranchname> <refbranch>以参考分支为模板创建新分支<br>git checkout <branchname>切换到指定分支​</p>
+<p><code>git checkout</code> <newbranchname> <refbranch>以参考分支为模板创建新分支<br><code>git checkout</code> <branchname>切换到指定分支​</p>
 
 	  	  
 	</div>
@@ -148,7 +148,8 @@ var _hmt = _hmt || [];
 
     
     
-    <a type="button" class="btn btn-default disabled"><i class="fa fa-arrow-circle-o-left"></i>Prev</a>
+    <a href="/2022/02/13/pta_base/" type="button" class="btn btn-default"><i
+                class="fa fa-arrow-circle-o-left"></i> Prev</a>
     
 
     <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
