@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-02-14T02:48:14.788Z</updated>
+  <updated>2022-02-14T07:15:14.010Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2022/02/14/intro_websec/"/>
+    <id>http://example.com/2022/02/14/intro_websec/</id>
+    <published>2022-02-14T07:04:36.611Z</published>
+    <updated>2022-02-14T07:15:14.010Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;WEB发展史&quot;&gt;&lt;a href=&quot;#WEB发展史&quot; class=&quot;headerlink&quot; title=&quot;WEB发展史&quot;&gt;&lt;/a&gt;WEB发展史&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;web1.0时代：主要危害web服务器&lt;/li&gt;
+&lt;li&gt;web2.0时代：主要危害web用户&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;web流程&quot;&gt;&lt;a href=&quot;#web流程&quot; class=&quot;headerlink&quot; title=&quot;web流程&quot;&gt;&lt;/a&gt;web流程&lt;/h2&gt;&lt;p&gt;可见的流程：用户请求访问网站，浏览器返回网页界面。（客户端/前端）&lt;br&gt;不可见的流程：浏览器向服务器请求资源，服务器与数据库交互，返回网页信息。（服务端/后端）&lt;br&gt;上述问题也可以用客户端/服务端分类&lt;/p&gt;
+&lt;h2 id=&quot;浏览器工作原理&quot;&gt;&lt;a href=&quot;#浏览器工作原理&quot; class=&quot;headerlink&quot; title=&quot;浏览器工作原理&quot;&gt;&lt;/a&gt;浏览器工作原理&lt;/h2&gt;&lt;p&gt;浏览器通过DNS解析将获取的域名解析为IT地址，通过HTTP协议进行通信。&lt;br&gt;开发者工具-network。&lt;/p&gt;
+</summary>
+    
+    
+    
+    
+    <category term="websec" scheme="http://example.com/tags/websec/"/>
+    
+  </entry>
   
   <entry>
     <title>PTA基础题解</title>
