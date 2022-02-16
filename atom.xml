@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-02-14T07:15:14.010Z</updated>
+  <updated>2022-02-16T03:59:34.952Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,47 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>《解放的悖论——世俗革命与宗教反革命》笔记</title>
+    <link href="http://example.com/2022/02/16/PofLnotes/"/>
+    <id>http://example.com/2022/02/16/PofLnotes/</id>
+    <published>2022-02-16T03:21:22.862Z</published>
+    <updated>2022-02-16T03:59:34.952Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;民族解放的悖论&quot;&gt;&lt;a href=&quot;#民族解放的悖论&quot; class=&quot;headerlink&quot; title=&quot;民族解放的悖论&quot;&gt;&lt;/a&gt;民族解放的悖论&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;为何革命是左翼的革命，共和却是原教旨的？&lt;br&gt;必须彻底摈弃过去，但有很多人珍视自己的生活方式。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;民族解放的两个任务：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;从外部压迫中得到解放；&lt;/li&gt;
+&lt;li&gt;从外部压迫的内部影响——自我压迫中解放。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;宗教为什么不是解放的力量？&lt;br&gt;解放创造“新人”，宗教宣扬的是一种服从主流社会秩序、安于现状的哲学。&lt;br&gt;大多数宗教制定了一种现世可行的修行制度，要求信徒服从并给予领袖权威，而这些宗教领袖往往接受殖民者的任命。&lt;br&gt;民族解放需要与现存的国家斗争，千年盛世的思想看似在反抗殖民者统治，长远来看却是一种政治适应——因为它无法形成稳定持久的意识形态与反抗力量。&lt;br&gt;获得政治独立后，传统宗教会开始构建一种反革命的政治。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;解放者&lt;br&gt;解放者往往在压迫者的家乡和文化中接受教育。阿尔及利亚民族解放阵线中讲法语/热爱法国文化者并不少见，尼赫鲁在英国学校接受了八年教育，印度共产党的几位领导人都在英国接受教育。&lt;br&gt;解放者往往认同宗主国中反对派的意识形态。&lt;br&gt;现代意识形态、平等地位、与权威决裂。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;解放&lt;br&gt;人民对统治者的文化和政治同情更少。&lt;br&gt;当解放者更可能胜出时，传统的政治宗教领袖往往被边缘化。“传统主义似乎被击败了。”&lt;br&gt;例外是甘地，现代主义者把印度解放后异常强大的宗教民族主义归于甘地。如今的左翼分子对甘地也采取批判态度。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;那么解放后政治化的宗教是怎么产生的？&lt;br&gt;解放者的执政党逐渐疲软——腐败和宗教复兴看起来是同时发生的。&lt;br&gt;解放后宗教的影响依旧很大，民族主义领袖会发现宗教对统治的帮助很大，新统治者不敢像布尔什维克那样攻击宗教，相信“衰落是宗教的命运”。&lt;br&gt;旧的方式在宗教场所延续——更重要的是，在人际关系、家庭、生老病死中延续。&lt;br&gt;新兴精英被迫采取/主动拥抱极权政治和父权统治，民众对精英的反感推动了宗教复兴。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;结果是，落后回归了，讽刺地，它的回归主要借助于解放中建立的民主制度。&lt;/p&gt;
+&lt;h1 id=&quot;否定悖论&quot;&gt;&lt;a href=&quot;#否定悖论&quot; class=&quot;headerlink&quot; title=&quot;否定悖论&quot;&gt;&lt;/a&gt;否定悖论&lt;/h1&gt;&lt;h1 id=&quot;民族解放的未来&quot;&gt;&lt;a href=&quot;#民族解放的未来&quot; class=&quot;headerlink&quot; title=&quot;民族解放的未来&quot;&gt;&lt;/a&gt;民族解放的未来&lt;/h1&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>web安全笔记</title>
     <link href="http://example.com/2022/02/14/intro_websec/"/>
     <id>http://example.com/2022/02/14/intro_websec/</id>
     <published>2022-02-14T07:04:36.611Z</published>
-    <updated>2022-02-14T07:15:14.010Z</updated>
+    <updated>2022-02-16T03:54:22.708Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;WEB发展史&quot;&gt;&lt;a href=&quot;#WEB发展史&quot; class=&quot;headerlink&quot; title=&quot;WEB发展史&quot;&gt;&lt;/a&gt;WEB发展史&lt;/h2&gt;&lt;ol&gt;
@@ -29,7 +65,7 @@
 &lt;li&gt;web2.0时代：主要危害web用户&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&quot;web流程&quot;&gt;&lt;a href=&quot;#web流程&quot; class=&quot;headerlink&quot; title=&quot;web流程&quot;&gt;&lt;/a&gt;web流程&lt;/h2&gt;&lt;p&gt;可见的流程：用户请求访问网站，浏览器返回网页界面。（客户端/前端）&lt;br&gt;不可见的流程：浏览器向服务器请求资源，服务器与数据库交互，返回网页信息。（服务端/后端）&lt;br&gt;上述问题也可以用客户端/服务端分类&lt;/p&gt;
-&lt;h2 id=&quot;浏览器工作原理&quot;&gt;&lt;a href=&quot;#浏览器工作原理&quot; class=&quot;headerlink&quot; title=&quot;浏览器工作原理&quot;&gt;&lt;/a&gt;浏览器工作原理&lt;/h2&gt;&lt;p&gt;浏览器通过DNS解析将获取的域名解析为IT地址，通过HTTP协议进行通信。&lt;br&gt;开发者工具-network。&lt;/p&gt;
+&lt;h2 id=&quot;浏览器工作原理&quot;&gt;&lt;a href=&quot;#浏览器工作原理&quot; class=&quot;headerlink&quot; title=&quot;浏览器工作原理&quot;&gt;&lt;/a&gt;浏览器工作原理&lt;/h2&gt;&lt;p&gt;浏览器通过DNS解析将获取的域名解析为IP地址，通过HTTP协议进行通信。&lt;br&gt;开发者工具-network。&lt;/p&gt;
 </summary>
     
     
