@@ -54,11 +54,11 @@
   </entry>
   
   <entry>
-    <title>web安全笔记</title>
+    <title>web安全概览</title>
     <link href="http://example.com/2022/02/14/intro_websec/"/>
     <id>http://example.com/2022/02/14/intro_websec/</id>
     <published>2022-02-14T07:04:36.611Z</published>
-    <updated>2022-02-20T09:10:38.028Z</updated>
+    <updated>2022-02-20T11:19:54.977Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;1-Web介绍&quot;&gt;&lt;a href=&quot;#1-Web介绍&quot; class=&quot;headerlink&quot; title=&quot;1. Web介绍&quot;&gt;&lt;/a&gt;1. Web介绍&lt;/h1&gt;&lt;h2 id=&quot;Web发展史&quot;&gt;&lt;a href=&quot;#Web发展史&quot; class=&quot;headerlink&quot; title=&quot;Web发展史&quot;&gt;&lt;/a&gt;Web发展史&lt;/h2&gt;&lt;ol&gt;
@@ -67,7 +67,15 @@
 &lt;/ol&gt;
 &lt;h2 id=&quot;web流程（见HTTP学习笔记）&quot;&gt;&lt;a href=&quot;#web流程（见HTTP学习笔记）&quot; class=&quot;headerlink&quot; title=&quot;web流程（见HTTP学习笔记）&quot;&gt;&lt;/a&gt;web流程（见&lt;a href=&quot;https://blog.ariax.icu/2022/02/01/HTTP_notes/&quot;&gt;HTTP学习笔记&lt;/a&gt;）&lt;/h2&gt;&lt;p&gt;可见的流程：用户请求访问网站，浏览器返回网页界面。（客户端/前端）&lt;br&gt;不可见的流程：浏览器向服务器请求资源，服务器与数据库交互，返回网页信息。（服务端/后端）&lt;br&gt;上述问题也可以用客户端/服务端分类&lt;/p&gt;
 &lt;h2 id=&quot;浏览器工作原理（见浏览器学习笔记）&quot;&gt;&lt;a href=&quot;#浏览器工作原理（见浏览器学习笔记）&quot; class=&quot;headerlink&quot; title=&quot;浏览器工作原理（见浏览器学习笔记）&quot;&gt;&lt;/a&gt;浏览器工作原理（见&lt;a href=&quot;#&quot;&gt;浏览器学习笔记&lt;/a&gt;）&lt;/h2&gt;&lt;p&gt;浏览器通过DNS解析将获取的域名解析为IP地址，通过HTTP协议进行通信。&lt;br&gt;开发者工具-network。&lt;/p&gt;
-&lt;h1 id=&quot;2-语言基础&quot;&gt;&lt;a href=&quot;#2-语言基础&quot; class=&quot;headerlink&quot; title=&quot;2. 语言基础&quot;&gt;&lt;/a&gt;2. 语言基础&lt;/h1&gt;&lt;h2 id=&quot;Web前端&quot;&gt;&lt;a href=&quot;#Web前端&quot; class=&quot;headerlink&quot; title=&quot;Web前端&quot;&gt;&lt;/a&gt;Web前端&lt;/h2&gt;&lt;h3 id=&quot;见：HTML与DOM&quot;&gt;&lt;a href=&quot;#见：HTML与DOM&quot; class=&quot;headerlink&quot; title=&quot;见：HTML与DOM&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#&quot;&gt;见：HTML与DOM&lt;/a&gt;&lt;/h3&gt;</summary>
+&lt;h2 id=&quot;术语&quot;&gt;&lt;a href=&quot;#术语&quot; class=&quot;headerlink&quot; title=&quot;术语&quot;&gt;&lt;/a&gt;术语&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;webshell&lt;br&gt;Webshell就是以asp、php、jsp或者cgi等网页文件形式存在的一种代码执行环境。“shell”的含义是取得对服务器某种程度上操作权限。webshell常常被称为入侵者通过网站端口对网站服务器的某种程度上操作的权限。由于webshell其大多是以动态脚本的形式出现，也有人称之为网站的后门工具。&lt;/li&gt;
+&lt;li&gt;菜刀&lt;br&gt;连接服务器的工具。&lt;/li&gt;
+&lt;li&gt;0day&lt;br&gt;又称“零日漏洞”(zero-day)，是已经被发现(有可能未被公开)，而官方还没有相关补丁的漏洞。&lt;/li&gt;
+&lt;li&gt;SQL注入&lt;br&gt;发生在 Web 程序中数据库层的安全漏洞。主要原因是程序对用户输入数据的合法性没有判断和处理，导致攻击者可以在 Web 应用程序中事先定义好的 SQL 语句中添加额外的 SQL 语句，在管理员不知情的情况下实现非法操作，以此来实现欺骗数据库服务器执行非授权的任意查询，从而进一步获取到数据信息。&lt;/li&gt;
+&lt;li&gt;文件上传漏洞&lt;br&gt;由于程序员在对用户文件上传部分的控制不足或者处理缺陷，而导致的用户可以越过其本身权限向服务器上上传可执行的动态脚本文件。这里上传的文件可以是木马，病毒，恶意脚本或者WebShell等。&lt;/li&gt;
+&lt;li&gt;一句话木马&lt;br&gt;通过向服务端提交一句简短的代码来达到向服务器插入木马并最终获得webshell的方法。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;2-语言基础&quot;&gt;&lt;a href=&quot;#2-语言基础&quot; class=&quot;headerlink&quot; title=&quot;2. 语言基础&quot;&gt;&lt;/a&gt;2. 语言基础&lt;/h1&gt;</summary>
     
     
     
@@ -187,6 +195,31 @@
     <category term="HTTP" scheme="http://example.com/tags/HTTP/"/>
     
     <category term="websec" scheme="http://example.com/tags/websec/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript学习笔记</title>
+    <link href="http://example.com/2022/02/02/JSnotes/"/>
+    <id>http://example.com/2022/02/02/JSnotes/</id>
+    <published>2022-02-01T16:00:00.000Z</published>
+    <updated>2022-02-20T08:50:21.558Z</updated>
+    
+    
+    
+    
+    <category term="CS" scheme="http://example.com/categories/CS/"/>
+    
+    <category term="CN" scheme="http://example.com/categories/CS/CN/"/>
+    
+    <category term="Frontend" scheme="http://example.com/categories/CS/CN/Frontend/"/>
+    
+    
+    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
+    
+    <category term="CSS" scheme="http://example.com/tags/CSS/"/>
+    
+    <category term="frontend" scheme="http://example.com/tags/frontend/"/>
     
   </entry>
   

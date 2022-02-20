@@ -191,7 +191,7 @@ var _hmt = _hmt || [];
 <div class="row">
 	<div class="col-md-8">
 		<h3 class="title">
-			<a href="/2022/02/14/intro_websec/" >web安全笔记</a>
+			<a href="/2022/02/14/intro_websec/" >web安全概览</a>
 		</h3>
 		</div>
 	<div class="col-md-4">
@@ -211,7 +211,15 @@ var _hmt = _hmt || [];
 </ol>
 <h2 id="web流程（见HTTP学习笔记）"><a href="#web流程（见HTTP学习笔记）" class="headerlink" title="web流程（见HTTP学习笔记）"></a>web流程（见<a target="_blank" rel="noopener" href="https://blog.ariax.icu/2022/02/01/HTTP_notes/">HTTP学习笔记</a>）</h2><p>可见的流程：用户请求访问网站，浏览器返回网页界面。（客户端/前端）<br>不可见的流程：浏览器向服务器请求资源，服务器与数据库交互，返回网页信息。（服务端/后端）<br>上述问题也可以用客户端/服务端分类</p>
 <h2 id="浏览器工作原理（见浏览器学习笔记）"><a href="#浏览器工作原理（见浏览器学习笔记）" class="headerlink" title="浏览器工作原理（见浏览器学习笔记）"></a>浏览器工作原理（见<a href="#">浏览器学习笔记</a>）</h2><p>浏览器通过DNS解析将获取的域名解析为IP地址，通过HTTP协议进行通信。<br>开发者工具-network。</p>
-<h1 id="2-语言基础"><a href="#2-语言基础" class="headerlink" title="2. 语言基础"></a>2. 语言基础</h1><h2 id="Web前端"><a href="#Web前端" class="headerlink" title="Web前端"></a>Web前端</h2><h3 id="见：HTML与DOM"><a href="#见：HTML与DOM" class="headerlink" title="见：HTML与DOM"></a><a href="#">见：HTML与DOM</a></h3>
+<h2 id="术语"><a href="#术语" class="headerlink" title="术语"></a>术语</h2><ul>
+<li>webshell<br>Webshell就是以asp、php、jsp或者cgi等网页文件形式存在的一种代码执行环境。“shell”的含义是取得对服务器某种程度上操作权限。webshell常常被称为入侵者通过网站端口对网站服务器的某种程度上操作的权限。由于webshell其大多是以动态脚本的形式出现，也有人称之为网站的后门工具。</li>
+<li>菜刀<br>连接服务器的工具。</li>
+<li>0day<br>又称“零日漏洞”(zero-day)，是已经被发现(有可能未被公开)，而官方还没有相关补丁的漏洞。</li>
+<li>SQL注入<br>发生在 Web 程序中数据库层的安全漏洞。主要原因是程序对用户输入数据的合法性没有判断和处理，导致攻击者可以在 Web 应用程序中事先定义好的 SQL 语句中添加额外的 SQL 语句，在管理员不知情的情况下实现非法操作，以此来实现欺骗数据库服务器执行非授权的任意查询，从而进一步获取到数据信息。</li>
+<li>文件上传漏洞<br>由于程序员在对用户文件上传部分的控制不足或者处理缺陷，而导致的用户可以越过其本身权限向服务器上上传可执行的动态脚本文件。这里上传的文件可以是木马，病毒，恶意脚本或者WebShell等。</li>
+<li>一句话木马<br>通过向服务端提交一句简短的代码来达到向服务器插入木马并最终获得webshell的方法。</li>
+</ul>
+<h1 id="2-语言基础"><a href="#2-语言基础" class="headerlink" title="2. 语言基础"></a>2. 语言基础</h1>
 	
 	</div>
   <a type="button" href="/2022/02/14/intro_websec/#more" class="btn btn-default more">Read More</a>
@@ -368,6 +376,33 @@ var _hmt = _hmt || [];
 <div class="row">
 	<div class="col-md-8">
 		<h3 class="title">
+			<a href="/2022/02/02/JSnotes/" >JavaScript学习笔记</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2022-02-02  </div>
+		</div>
+	</div>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		
+	
+	</div>
+  <a type="button" href="/2022/02/02/JSnotes/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
 			<a href="/2022/02/01/HTTP_notes/" >HTTP学习笔记</a>
 		</h3>
 		</div>
@@ -502,9 +537,11 @@ var _hmt = _hmt || [];
 		<h4>Categories</h4>
 		<ul class="tag_box inline list-unstyled">
 		
-			<li><a href="/categories/CS/CN/">CN<span>2</span></a></li>
+			<li><a href="/categories/CS/CN/">CN<span>3</span></a></li>
 		
-			<li><a href="/categories/CS/">CS<span>2</span></a></li>
+			<li><a href="/categories/CS/">CS<span>3</span></a></li>
+		
+			<li><a href="/categories/CS/CN/Frontend/">Frontend<span>1</span></a></li>
 		
 			<li><a href="/categories/CS/CN/InfoSec/">InfoSec<span>1</span></a></li>
 		
@@ -517,17 +554,17 @@ var _hmt = _hmt || [];
 		<h4>Tag Cloud</h4>
 		<ul class="tag_box inline list-unstyled">		
 		
-			<li><a href="/tags/CSS/">CSS<span>1</span></a></li>
-		
-			<li><a href="/tags/HTML/">HTML<span>1</span></a></li>
+			<li><a href="/tags/frontend/">frontend<span>2</span></a></li>
 		
 			<li><a href="/tags/websec/">websec<span>3</span></a></li>
 		
 			<li><a href="/tags/git/">git<span>1</span></a></li>
 		
-			<li><a href="/tags/frontend/">frontend<span>1</span></a></li>
-		
 			<li><a href="/tags/HTTP/">HTTP<span>2</span></a></li>
+		
+			<li><a href="/tags/HTML/">HTML<span>2</span></a></li>
+		
+			<li><a href="/tags/CSS/">CSS<span>2</span></a></li>
 		
 		 
 		</ul>
@@ -545,7 +582,7 @@ var _hmt = _hmt || [];
       </li>
     
       <li>
-        <a href="/2022/02/14/intro_websec/" ><i class="fa fa-file-o"></i>web安全笔记</a>
+        <a href="/2022/02/14/intro_websec/" ><i class="fa fa-file-o"></i>web安全概览</a>
       </li>
     
       <li>
