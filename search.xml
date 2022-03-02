@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>TCP/IP笔记</title>
+      <link href="/2022/03/02/TCP_IP/"/>
+      <url>/2022/03/02/TCP_IP/</url>
+      
+        <content type="html"><![CDATA[<h1 id="1-计算机网络基础"><a href="#1-计算机网络基础" class="headerlink" title="1. 计算机网络基础"></a>1. 计算机网络基础</h1><h2 id="计算机网络历史"><a href="#计算机网络历史" class="headerlink" title="计算机网络历史"></a>计算机网络历史</h2><ol><li>批处理</li><li>分时系统<br>见操作系统笔记。</li><li>计算机间通信<br>计算机之间有通信线路连接，逐渐使用多台计算机分布式处理。</li><li>计算机网络产生<br>各式各样的计算机得以互相连接/窗口系统的产生。</li><li>互联网的普及</li></ol><h2 id="协议"><a href="#协议" class="headerlink" title="协议"></a>协议</h2><p>协议可以理解为计算机与计算机通信之前达成的一种约定，只要遵循相同的协议就能够实现互相通信。<br>计算机从物理地连接层面到应用层面都必须遵守协议才能实现真正的通信。</p><h3 id="协议的制定"><a href="#协议的制定" class="headerlink" title="协议的制定"></a>协议的制定</h3><p>ISO对通信系统进行了标准化：OSI标准，但没有得到普及。<br><strong>TCP/IP并非国际标准，而是IETF致力于推进标准化作业的一种协议。</strong></p><h3 id="协议的分层"><a href="#协议的分层" class="headerlink" title="协议的分层"></a>协议的分层</h3><p>OSI参考模型，被分为七层。上下层之间进行交互时遵循的约定叫做接口，同一层之间交互遵循的约定叫做协议。<br>从上（用户）到下：应用层，表示层，会话层，传输层，网路层，数据链路层，物理层。<br>硬件部分详见网络硬件笔记。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>《解放的悖论——世俗革命与宗教反革命》笔记</title>
       <link href="/2022/02/16/PofLnotes/"/>
       <url>/2022/02/16/PofLnotes/</url>
@@ -81,39 +94,6 @@
             <tag> HTTP </tag>
             
             <tag> websec </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>JavaScript学习笔记</title>
-      <link href="/2022/02/02/JSnotes/"/>
-      <url>/2022/02/02/JSnotes/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> CS </category>
-          
-          <category> CN </category>
-          
-          <category> Frontend </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> HTML </tag>
-            
-            <tag> CSS </tag>
-            
-            <tag> frontend </tag>
             
         </tags>
       

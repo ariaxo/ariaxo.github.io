@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-02-16T08:54:03.888Z</updated>
+  <updated>2022-03-02T11:51:57.499Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>TCP/IP笔记</title>
+    <link href="http://example.com/2022/03/02/TCP_IP/"/>
+    <id>http://example.com/2022/03/02/TCP_IP/</id>
+    <published>2022-03-01T16:00:00.000Z</published>
+    <updated>2022-03-02T11:51:57.499Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;1-计算机网络基础&quot;&gt;&lt;a href=&quot;#1-计算机网络基础&quot; class=&quot;headerlink&quot; title=&quot;1. 计算机网络基础&quot;&gt;&lt;/a&gt;1. 计算机网络基础&lt;/h1&gt;&lt;h2 id=&quot;计算机网络历史&quot;&gt;&lt;a href=&quot;#计算机网络历史&quot; class=&quot;headerlink&quot; title=&quot;计算机网络历史&quot;&gt;&lt;/a&gt;计算机网络历史&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;批处理&lt;/li&gt;
+&lt;li&gt;分时系统&lt;br&gt;见操作系统笔记。&lt;/li&gt;
+&lt;li&gt;计算机间通信&lt;br&gt;计算机之间有通信线路连接，逐渐使用多台计算机分布式处理。&lt;/li&gt;
+&lt;li&gt;计算机网络产生&lt;br&gt;各式各样的计算机得以互相连接/窗口系统的产生。&lt;/li&gt;
+&lt;li&gt;互联网的普及&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;协议&quot;&gt;&lt;a href=&quot;#协议&quot; class=&quot;headerlink&quot; title=&quot;协议&quot;&gt;&lt;/a&gt;协议&lt;/h2&gt;&lt;p&gt;协议可以理解为计算机与计算机通信之前达成的一种约定，只要遵循相同的协议就能够实现互相通信。&lt;br&gt;计算机从物理地连接层面到应用层面都必须遵守协议才能实现真正的通信。&lt;/p&gt;
+&lt;h3 id=&quot;协议的制定&quot;&gt;&lt;a href=&quot;#协议的制定&quot; class=&quot;headerlink&quot; title=&quot;协议的制定&quot;&gt;&lt;/a&gt;协议的制定&lt;/h3&gt;&lt;p&gt;ISO对通信系统进行了标准化：OSI标准，但没有得到普及。&lt;br&gt;&lt;strong&gt;TCP/IP并非国际标准，而是IETF致力于推进标准化作业的一种协议。&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;协议的分层&quot;&gt;&lt;a href=&quot;#协议的分层&quot; class=&quot;headerlink&quot; title=&quot;协议的分层&quot;&gt;&lt;/a&gt;协议的分层&lt;/h3&gt;&lt;p&gt;OSI参考模型，被分为七层。上下层之间进行交互时遵循的约定叫做接口，同一层之间交互遵循的约定叫做协议。&lt;br&gt;从上（用户）到下：应用层，表示层，会话层，传输层，网路层，数据链路层，物理层。&lt;br&gt;硬件部分详见网络硬件笔记。&lt;/p&gt;
+</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>《解放的悖论——世俗革命与宗教反革命》笔记</title>
@@ -195,31 +220,6 @@
     <category term="HTTP" scheme="http://example.com/tags/HTTP/"/>
     
     <category term="websec" scheme="http://example.com/tags/websec/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript学习笔记</title>
-    <link href="http://example.com/2022/02/02/JSnotes/"/>
-    <id>http://example.com/2022/02/02/JSnotes/</id>
-    <published>2022-02-01T16:00:00.000Z</published>
-    <updated>2022-02-20T08:50:21.558Z</updated>
-    
-    
-    
-    
-    <category term="CS" scheme="http://example.com/categories/CS/"/>
-    
-    <category term="CN" scheme="http://example.com/categories/CS/CN/"/>
-    
-    <category term="Frontend" scheme="http://example.com/categories/CS/CN/Frontend/"/>
-    
-    
-    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
-    
-    <category term="CSS" scheme="http://example.com/tags/CSS/"/>
-    
-    <category term="frontend" scheme="http://example.com/tags/frontend/"/>
     
   </entry>
   
