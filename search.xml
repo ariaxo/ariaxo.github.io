@@ -8,7 +8,7 @@
       <link href="/2022/10/31/ok/"/>
       <url>/2022/10/31/ok/</url>
       
-        <content type="html"><![CDATA[<p>只是在学校机房坐牢而已。</p><p>发这篇的时候顺便de了一堆bug…</p><p>hexo d对远程进行部署时提示 Spawn Error，按网上说的删除.deploy_git再回滚的方式无用<br>后来发现是根目录下的配置文件有问题，Deploy下没写repo。。。<br>添加repo（SSH方法，https方法似乎也会造成spawn error）后正常。</p><p>然后自订域名就失效了…<br>检查github仓库发现CNAME文件消失，检查域名控制台状态正常</p><p>在仓库的设定中添加costume domain，再次访问。ok。<br>（之前添加的居然是A记录，不知道当初github怎么check过的）</p>]]></content>
+        <content type="html"><![CDATA[<p>只是在学校机房坐牢而已。</p><p>发这篇的时候顺便de了一堆bug…</p><p>hexo d对远程进行部署时提示 Spawn Error，按网上说的删除.deploy_git再回滚的方式无用<br>后来发现是根目录下的配置文件有问题，Deploy下的repo用了https方法，更换为SSH方法后ok。</p><p>然后自订域名就失效了…<br>检查github仓库发现CNAME文件消失，检查域名控制台状态正常</p><p>在仓库的设定中添加costume domain，再次访问。ok。<br>（之前添加的居然是A记录，不知道当初github怎么check过的）</p>]]></content>
       
       
       
@@ -21,7 +21,7 @@
       <link href="/2022/03/02/TCP_IP/"/>
       <url>/2022/03/02/TCP_IP/</url>
       
-        <content type="html"><![CDATA[<h1 id="1-计算机网络基础"><a href="#1-计算机网络基础" class="headerlink" title="1. 计算机网络基础"></a>1. 计算机网络基础</h1><h2 id="计算机网络历史"><a href="#计算机网络历史" class="headerlink" title="计算机网络历史"></a>计算机网络历史</h2><ol><li>批处理</li><li>分时系统<br>见操作系统笔记。</li><li>计算机间通信<br>计算机之间有通信线路连接，逐渐使用多台计算机分布式处理。</li><li>计算机网络产生<br>各式各样的计算机得以互相连接/窗口系统的产生。</li><li>互联网的普及</li></ol><h2 id="协议"><a href="#协议" class="headerlink" title="协议"></a>协议</h2><p>协议可以理解为计算机与计算机通信之前达成的一种约定，只要遵循相同的协议就能够实现互相通信。<br>计算机从物理地连接层面到应用层面都必须遵守协议才能实现真正的通信。</p><h3 id="协议的制定"><a href="#协议的制定" class="headerlink" title="协议的制定"></a>协议的制定</h3><p>ISO对通信系统进行了标准化：OSI标准，但没有得到普及。<br><strong>TCP/IP并非国际标准，而是IETF致力于推进标准化作业的一种协议。</strong></p><h3 id="协议的分层"><a href="#协议的分层" class="headerlink" title="协议的分层"></a>协议的分层</h3><p>OSI参考模型，被分为七层。上下层之间进行交互时遵循的约定叫做接口，同一层之间交互遵循的约定叫做协议。<br>从上（用户）到下：应用层，表示层，会话层，传输层，网路层，数据链路层，物理层。<br>硬件部分详见网络硬件笔记。</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="1-计算机网络基础"><a href="#1-计算机网络基础" class="headerlink" title="1. 计算机网络基础"></a>1. 计算机网络基础</h1><h2 id="计算机网络历史"><a href="#计算机网络历史" class="headerlink" title="计算机网络历史"></a>计算机网络历史</h2><ol><li>批处理</li><li>分时系统<br>见操作系统笔记。</li><li>计算机间通信<br>计算机之间有通信线路连接，逐渐使用多台计算机分布式处理。</li><li>计算机网络产生<br>各式各样的计算机得以互相连接/窗口系统的产生。</li><li>互联网的普及</li></ol><h2 id="协议"><a href="#协议" class="headerlink" title="协议"></a>协议</h2><p>协议可以理解为计算机与计算机通信之前达成的一种约定，只要遵循相同的协议就能够实现互相通信。<br>计算机从物理地连接层面到应用层面都必须遵守协议才能实现真正的通信。</p><h3 id="协议的制定"><a href="#协议的制定" class="headerlink" title="协议的制定"></a>协议的制定</h3><p>ISO对通信系统进行了标准化：OSI标准，但没有得到普及。<br><strong>TCP/IP并非国际标准，而是IETF致力于推进标准化作业的一种协议。</strong></p><h3 id="协议的分层"><a href="#协议的分层" class="headerlink" title="协议的分层"></a>协议的分层</h3><p>OSI参考模型，被分为七层。上下层之间进行交互时遵循的约定叫做接口，同一层之间交互遵循的约定叫做协议。<br>从上（用户）到下：应用层，表示层，会话层，传输层，网路层，数据链路层，物理层。<br>硬件部分详见网络硬件笔记。</p><p>考完了懒得继续写，，，</p>]]></content>
       
       
       

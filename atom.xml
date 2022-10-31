@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-10-31T07:04:38.322Z</updated>
+  <updated>2022-10-31T07:47:47.297Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,12 +21,12 @@
     <link href="http://example.com/2022/10/31/ok/"/>
     <id>http://example.com/2022/10/31/ok/</id>
     <published>2022-10-31T06:03:00.000Z</published>
-    <updated>2022-10-31T07:04:38.322Z</updated>
+    <updated>2022-10-31T07:47:47.297Z</updated>
     
     
     <summary type="html">&lt;p&gt;只是在学校机房坐牢而已。&lt;/p&gt;
 &lt;p&gt;发这篇的时候顺便de了一堆bug…&lt;/p&gt;
-&lt;p&gt;hexo d对远程进行部署时提示 Spawn Error，按网上说的删除.deploy_git再回滚的方式无用&lt;br&gt;后来发现是根目录下的配置文件有问题，Deploy下没写repo。。。&lt;br&gt;添加repo（SSH方法，https方法似乎也会造成spawn error）后正常。&lt;/p&gt;
+&lt;p&gt;hexo d对远程进行部署时提示 Spawn Error，按网上说的删除.deploy_git再回滚的方式无用&lt;br&gt;后来发现是根目录下的配置文件有问题，Deploy下的repo用了https方法，更换为SSH方法后ok。&lt;/p&gt;
 &lt;p&gt;然后自订域名就失效了…&lt;br&gt;检查github仓库发现CNAME文件消失，检查域名控制台状态正常&lt;/p&gt;
 &lt;p&gt;在仓库的设定中添加costume domain，再次访问。ok。&lt;br&gt;（之前添加的居然是A记录，不知道当初github怎么check过的）&lt;/p&gt;
 </summary>
@@ -41,7 +41,7 @@
     <link href="http://example.com/2022/03/02/TCP_IP/"/>
     <id>http://example.com/2022/03/02/TCP_IP/</id>
     <published>2022-03-01T16:00:00.000Z</published>
-    <updated>2022-03-02T11:51:57.499Z</updated>
+    <updated>2022-10-31T07:48:14.386Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;1-计算机网络基础&quot;&gt;&lt;a href=&quot;#1-计算机网络基础&quot; class=&quot;headerlink&quot; title=&quot;1. 计算机网络基础&quot;&gt;&lt;/a&gt;1. 计算机网络基础&lt;/h1&gt;&lt;h2 id=&quot;计算机网络历史&quot;&gt;&lt;a href=&quot;#计算机网络历史&quot; class=&quot;headerlink&quot; title=&quot;计算机网络历史&quot;&gt;&lt;/a&gt;计算机网络历史&lt;/h2&gt;&lt;ol&gt;
@@ -54,7 +54,7 @@
 &lt;h2 id=&quot;协议&quot;&gt;&lt;a href=&quot;#协议&quot; class=&quot;headerlink&quot; title=&quot;协议&quot;&gt;&lt;/a&gt;协议&lt;/h2&gt;&lt;p&gt;协议可以理解为计算机与计算机通信之前达成的一种约定，只要遵循相同的协议就能够实现互相通信。&lt;br&gt;计算机从物理地连接层面到应用层面都必须遵守协议才能实现真正的通信。&lt;/p&gt;
 &lt;h3 id=&quot;协议的制定&quot;&gt;&lt;a href=&quot;#协议的制定&quot; class=&quot;headerlink&quot; title=&quot;协议的制定&quot;&gt;&lt;/a&gt;协议的制定&lt;/h3&gt;&lt;p&gt;ISO对通信系统进行了标准化：OSI标准，但没有得到普及。&lt;br&gt;&lt;strong&gt;TCP/IP并非国际标准，而是IETF致力于推进标准化作业的一种协议。&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&quot;协议的分层&quot;&gt;&lt;a href=&quot;#协议的分层&quot; class=&quot;headerlink&quot; title=&quot;协议的分层&quot;&gt;&lt;/a&gt;协议的分层&lt;/h3&gt;&lt;p&gt;OSI参考模型，被分为七层。上下层之间进行交互时遵循的约定叫做接口，同一层之间交互遵循的约定叫做协议。&lt;br&gt;从上（用户）到下：应用层，表示层，会话层，传输层，网路层，数据链路层，物理层。&lt;br&gt;硬件部分详见网络硬件笔记。&lt;/p&gt;
-</summary>
+&lt;p&gt;考完了懒得继续写，，，&lt;/p&gt;</summary>
     
     
     

@@ -11,7 +11,7 @@
   
   <meta name="description" content="只是在学校机房坐牢而已。
 发这篇的时候顺便de了一堆bug…
-hexo d对远程进行部署时提示 Spawn Error，按网上说的删除.deploy_git再回滚的方式无用后来发现是根目录下的配置文件有问题，Deploy下没写repo。。。添加repo（SSH方法，https方法似乎也会造成spawn error）后正常。
+hexo d对远程进行部署时提示 Spawn Error，按网上说的删除.deploy_git再回滚的方式无用后来发现是根目录下的配置文件有问题，Deploy下的repo用了https方法，更换为SSH方法后ok。
 然后自订域名就失效了…检查github仓库发现CNAME文件消失，检查域名控制台状态正常
 在仓库的设定中添加costume domain，再次访问。ok。（之前添加的居然是A记录，不知道当初github怎么check过的）">
   
@@ -145,7 +145,7 @@ var _hmt = _hmt || [];
 
 	  <p>只是在学校机房坐牢而已。</p>
 <p>发这篇的时候顺便de了一堆bug…</p>
-<p>hexo d对远程进行部署时提示 Spawn Error，按网上说的删除.deploy_git再回滚的方式无用<br>后来发现是根目录下的配置文件有问题，Deploy下没写repo。。。<br>添加repo（SSH方法，https方法似乎也会造成spawn error）后正常。</p>
+<p>hexo d对远程进行部署时提示 Spawn Error，按网上说的删除.deploy_git再回滚的方式无用<br>后来发现是根目录下的配置文件有问题，Deploy下的repo用了https方法，更换为SSH方法后ok。</p>
 <p>然后自订域名就失效了…<br>检查github仓库发现CNAME文件消失，检查域名控制台状态正常</p>
 <p>在仓库的设定中添加costume domain，再次访问。ok。<br>（之前添加的居然是A记录，不知道当初github怎么check过的）</p>
 
