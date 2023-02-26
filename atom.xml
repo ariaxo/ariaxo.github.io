@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-10-31T07:47:47.297Z</updated>
+  <updated>2023-02-26T15:00:23.186Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,10 +21,10 @@
     <link href="http://example.com/2022/10/31/ok/"/>
     <id>http://example.com/2022/10/31/ok/</id>
     <published>2022-10-31T06:03:00.000Z</published>
-    <updated>2022-10-31T07:47:47.297Z</updated>
+    <updated>2023-02-26T15:00:23.186Z</updated>
     
     
-    <summary type="html">&lt;p&gt;只是在学校机房坐牢而已。&lt;/p&gt;
+    <summary type="html">&lt;p&gt;只是在学校坐牢而已。&lt;/p&gt;
 &lt;p&gt;发这篇的时候顺便de了一堆bug…&lt;/p&gt;
 &lt;p&gt;hexo d对远程进行部署时提示 Spawn Error，按网上说的删除.deploy_git再回滚的方式无用&lt;br&gt;后来发现是根目录下的配置文件有问题，Deploy下的repo用了https方法，更换为SSH方法后ok。&lt;/p&gt;
 &lt;p&gt;然后自订域名就失效了…&lt;br&gt;检查github仓库发现CNAME文件消失，检查域名控制台状态正常&lt;/p&gt;
