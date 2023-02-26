@@ -10,7 +10,6 @@
   <meta name="author" content="Ariax">
   
   <meta name="description" content="背景知识1. TCP/IP协议族  以后可能会写TCP/IP的笔记，大概…  通常使用的网络是在TCP/IP协议族的基础上运行的，HTTP属于其子集。
-  解释：网络设备间的互相通信必须基于相同的方法：如何探测目标、发起通信、使用语言、结束通信。这一切的规则被称为协议（protocol）。与互联网有关的协议的集合称为TCP/IP。
 1.1 TCP/IP分层管理分层的优势  各层次接口调整好后，每个层次内部可以自由改动。
 分层
 应用层应用层决定向用户提供应用服务时通信的活动。HTTP属于该层。
@@ -18,7 +17,7 @@
 网络层网络层规定了到达用户计算机并传输数据的传输路线。
 链路层即硬件部分。
 
-1.2 TCP/IP数据传输流">
+1.2 TCP/IP数据传输流  客户端&amp;lt;-&amp;gt;层&amp;lt;-&amp;gt;服务器  发送端传输数据时，每经过一层必定被打上一个该层所属的首部信息，反之，接收端接收数据时，每经过一层必定会把对应的首部消去。这种方法称为封装。">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -149,7 +148,6 @@ var _hmt = _hmt || [];
 	  		
 
 	  <h1 id="背景知识"><a href="#背景知识" class="headerlink" title="背景知识"></a>背景知识</h1><h1 id="1-TCP-IP协议族"><a href="#1-TCP-IP协议族" class="headerlink" title="1. TCP/IP协议族"></a>1. TCP/IP协议族</h1><p>  <em>以后可能会写TCP/IP的笔记，大概…</em><br>  通常使用的网络是在TCP/IP协议族的基础上运行的，HTTP属于其子集。</p>
-<p>  解释：网络设备间的互相通信必须基于相同的方法：如何探测目标、发起通信、使用语言、结束通信。这一切的规则被称为协议（protocol）。与互联网有关的协议的集合称为TCP/IP。</p>
 <h4 id="1-1-TCP-IP分层管理"><a href="#1-1-TCP-IP分层管理" class="headerlink" title="1.1 TCP/IP分层管理"></a>1.1 TCP/IP分层管理</h4><h3 id="分层的优势"><a href="#分层的优势" class="headerlink" title="分层的优势"></a>分层的优势</h3><p>  各层次接口调整好后，每个层次内部可以自由改动。</p>
 <h3 id="分层"><a href="#分层" class="headerlink" title="分层"></a>分层</h3><ol>
 <li>应用层<br>应用层决定向用户提供应用服务时通信的活动。<strong>HTTP属于该层。</strong></li>
@@ -166,12 +164,12 @@ var _hmt = _hmt || [];
 <p>IP间通信时，利用下一站中转设备的MAC地址搜索下一个中转目标，通过ARP协议（Address resolution protocol），根据对方IP地址反查MAC地址。<br>网络设备在到达中转目标的过程中，只能很粗略地获悉传输路线。这种机制称为路由选择（Routing）。换言之，<strong>不可能掌握互联网中的细节。</strong></p>
 <h3 id="TCP"><a href="#TCP" class="headerlink" title="TCP"></a>TCP</h3><p>TCP协议的作用是提供可靠的字节流服务。</p>
 <blockquote>
-<p>字节流服务（Byte stream protocol）：为了方便传输，将大块数据分成以报文段（Segment）为单位的数据包进行管理，<br>TCP协议可以确定数据是否到达。</p>
+<p>字节流服务（Byte stream protocol）：将大块数据分成以报文段（Segment）为单位的数据包进行管理，TCP协议可以确定数据是否到达。</p>
 </blockquote>
 <p>三次握手（three-way handshaking）策略：使用带TCP的标志（flag）————SYN（synchronize）与ACK（acknowledgement）进行传输————发送端发送带SYN的数据包，接收端收到后回传带有SYN/ACK标志的数据包，最后发送端回传带ACK标志的数据包。  </p>
 <h3 id="DNS"><a href="#DNS" class="headerlink" title="DNS"></a>DNS</h3><p>DNS服务提供从域名到IP的解析服务：通过域名查找IP地址，或从IP地址反查域名。</p>
 <h1 id="2-URI与URL"><a href="#2-URI与URL" class="headerlink" title="2. URI与URL"></a>2. URI与URL</h1><p><em>（属于TCP/IP族，但还是分开了…）</em></p>
-<h4 id="URI（Uniform-resource-identifier）"><a href="#URI（Uniform-resource-identifier）" class="headerlink" title="URI（Uniform resource identifier）"></a>URI（Uniform resource identifier）</h4><p>URI用字符串标识某一互联网资源，标准的URI协议有30种左右。</p>
+<h4 id="URI（Uniform-resource-identifier）"><a href="#URI（Uniform-resource-identifier）" class="headerlink" title="URI（Uniform resource identifier）"></a>URI（Uniform resource identifier）</h4><p>URI用字符串标识某一互联网资源。</p>
 <h4 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h4><p>表示资源的地点，是URI的子集。</p>
 <h4 id="URI的格式"><a href="#URI的格式" class="headerlink" title="URI的格式"></a>URI的格式</h4><ul>
 <li>绝对URI：涵盖全部必要信息</li>
@@ -181,21 +179,7 @@ var _hmt = _hmt || [];
 <hr>
 <h1 id="HTTP基础"><a href="#HTTP基础" class="headerlink" title="HTTP基础"></a>HTTP基础</h1><p>HTTP用于客户端和服务器之间的通信，HTTP协议能够明确区分客户端与服务器。</p>
 <h2 id="请求和响应"><a href="#请求和响应" class="headerlink" title="请求和响应"></a>请求和响应</h2><p>HTTP协议规定，请求从客户端发出，服务器响应请求————通信从客户端开始建立。</p>
-<h3 id="请求的组成"><a href="#请求的组成" class="headerlink" title="请求的组成"></a>请求的组成</h3><ol>
-<li>方法（method），表示请求访问服务器的类型；</li>
-<li>请求URI（request-URI）；</li>
-<li>HTTP版本号；</li>
-<li>可选的请求首部字段；</li>
-<li>内容实体。</li>
-</ol>
-<h3 id="响应的组成"><a href="#响应的组成" class="headerlink" title="响应的组成"></a>响应的组成</h3><ol>
-<li>版本号；</li>
-<li>状态码；</li>
-<li>原因短语；</li>
-<li>可选的响应首部字段；</li>
-<li>内容实体。</li>
-</ol>
-<h2 id="HTTP是一种无状态（stateless）协议，不对请求和响应之间的通信状态进行保存"><a href="#HTTP是一种无状态（stateless）协议，不对请求和响应之间的通信状态进行保存" class="headerlink" title="HTTP是一种无状态（stateless）协议，不对请求和响应之间的通信状态进行保存"></a>HTTP是一种无状态（stateless）协议，不对请求和响应之间的通信状态进行保存</h2><p>为了处理大量事务，确保可伸缩性（？）。如需保存状态，需要cookie技术。</p>
+<h2 id="HTTP是一种无状态（stateless）协议，不对请求和响应之间的通信状态进行保存"><a href="#HTTP是一种无状态（stateless）协议，不对请求和响应之间的通信状态进行保存" class="headerlink" title="HTTP是一种无状态（stateless）协议，不对请求和响应之间的通信状态进行保存"></a>HTTP是一种无状态（stateless）协议，不对请求和响应之间的通信状态进行保存</h2><p>如需保存状态，需要cookie技术。</p>
 <blockquote>
 <h2 id="Cookie状态管理"><a href="#Cookie状态管理" class="headerlink" title="Cookie状态管理"></a>Cookie状态管理</h2><p>Cookie技术通过在请求/响应报文中写入Cookie信息控制客户端状态。<br>过程：Cookie根据服务器发送的响应报文内的Set-Cookie首部字段信息通知客户端保存Cookie，<strong>下次</strong>客户端再次发送请求时会自动加入Cookie信息。服务端收到客户端发来的Cookie后，会检查是哪个客户端的记录，接着对比服务器记录，得到之前的状态信息。</p>
 </blockquote>
@@ -209,22 +193,6 @@ var _hmt = _hmt || [];
 <li>主体。</li>
 </ol>
 <p><strong>实体</strong>由实体首部和主体组成，作为请求和响应的补充项。 </p>
-<h2 id="常用返回状态码"><a href="#常用返回状态码" class="headerlink" title="常用返回状态码"></a>常用返回状态码</h2><ul>
-<li>2xx成功；</li>
-<li>3xx重定向；</li>
-<li>4xx客户端错误；<ul>
-<li>400 bad request：报文存在语法错误</li>
-<li>402 unauthorized：需要通过HTTP认证</li>
-<li>403 forbidd：请求资源被服务器拒绝</li>
-<li>404 not found：服务器上无法找到请求资源</li>
-</ul>
-</li>
-<li>5xx服务器错误<ul>
-<li>503 service unavailable：服务器繁忙或正在维护</li>
-</ul>
-</li>
-</ul>
-<p>有时状态码与结果不一致。</p>
 <h2 id="提升传输效率"><a href="#提升传输效率" class="headerlink" title="提升传输效率"></a>提升传输效率</h2><ul>
 <li>内容编码压缩传输；</li>
 <li>分块传输编码；</li>
@@ -246,8 +214,7 @@ var _hmt = _hmt || [];
 
     <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
     
-    <a href="/2022/01/30/Tips-1/" type="button" class="btn btn-default ">Next<i
-                class="fa fa-arrow-circle-o-right"></i></a>
+    <a type="button" class="btn btn-default disabled">Next<i class="fa fa-arrow-circle-o-right"></i></a>
     
 
     
@@ -287,7 +254,7 @@ var _hmt = _hmt || [];
   </div>
   <div class="container-narrow">
   <footer> <p>
-  &copy; 2022 Ariax
+  &copy; 2023 Ariax
   
       with help from <a href="http://hexo.io/" target="_blank">Hexo</a>,<a target="_blank" rel="noopener" href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>,<a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a> and <a href="http://getbootstrap.com/" target="_blank">BOOTSTRA.386</a>. 
      <br> Theme by <a target="_blank" rel="noopener" href="http://github.com/wzpan/hexo-theme-freemind/">Freemind.386</a>.    

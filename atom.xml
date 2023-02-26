@@ -37,31 +37,6 @@
   </entry>
   
   <entry>
-    <title>TCP/IP笔记</title>
-    <link href="http://example.com/2022/03/02/TCP_IP/"/>
-    <id>http://example.com/2022/03/02/TCP_IP/</id>
-    <published>2022-03-01T16:00:00.000Z</published>
-    <updated>2022-10-31T07:48:14.386Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;1-计算机网络基础&quot;&gt;&lt;a href=&quot;#1-计算机网络基础&quot; class=&quot;headerlink&quot; title=&quot;1. 计算机网络基础&quot;&gt;&lt;/a&gt;1. 计算机网络基础&lt;/h1&gt;&lt;h2 id=&quot;计算机网络历史&quot;&gt;&lt;a href=&quot;#计算机网络历史&quot; class=&quot;headerlink&quot; title=&quot;计算机网络历史&quot;&gt;&lt;/a&gt;计算机网络历史&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;批处理&lt;/li&gt;
-&lt;li&gt;分时系统&lt;br&gt;见操作系统笔记。&lt;/li&gt;
-&lt;li&gt;计算机间通信&lt;br&gt;计算机之间有通信线路连接，逐渐使用多台计算机分布式处理。&lt;/li&gt;
-&lt;li&gt;计算机网络产生&lt;br&gt;各式各样的计算机得以互相连接/窗口系统的产生。&lt;/li&gt;
-&lt;li&gt;互联网的普及&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;协议&quot;&gt;&lt;a href=&quot;#协议&quot; class=&quot;headerlink&quot; title=&quot;协议&quot;&gt;&lt;/a&gt;协议&lt;/h2&gt;&lt;p&gt;协议可以理解为计算机与计算机通信之前达成的一种约定，只要遵循相同的协议就能够实现互相通信。&lt;br&gt;计算机从物理地连接层面到应用层面都必须遵守协议才能实现真正的通信。&lt;/p&gt;
-&lt;h3 id=&quot;协议的制定&quot;&gt;&lt;a href=&quot;#协议的制定&quot; class=&quot;headerlink&quot; title=&quot;协议的制定&quot;&gt;&lt;/a&gt;协议的制定&lt;/h3&gt;&lt;p&gt;ISO对通信系统进行了标准化：OSI标准，但没有得到普及。&lt;br&gt;&lt;strong&gt;TCP/IP并非国际标准，而是IETF致力于推进标准化作业的一种协议。&lt;/strong&gt;&lt;/p&gt;
-&lt;h3 id=&quot;协议的分层&quot;&gt;&lt;a href=&quot;#协议的分层&quot; class=&quot;headerlink&quot; title=&quot;协议的分层&quot;&gt;&lt;/a&gt;协议的分层&lt;/h3&gt;&lt;p&gt;OSI参考模型，被分为七层。上下层之间进行交互时遵循的约定叫做接口，同一层之间交互遵循的约定叫做协议。&lt;br&gt;从上（用户）到下：应用层，表示层，会话层，传输层，网路层，数据链路层，物理层。&lt;br&gt;硬件部分详见网络硬件笔记。&lt;/p&gt;
-&lt;p&gt;考完了懒得继续写，，，&lt;/p&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>《解放的悖论——世俗革命与宗教反革命》笔记</title>
     <link href="http://example.com/2022/02/16/PofLnotes/"/>
     <id>http://example.com/2022/02/16/PofLnotes/</id>
@@ -99,136 +74,27 @@
   </entry>
   
   <entry>
-    <title>web安全概览</title>
-    <link href="http://example.com/2022/02/14/intro_websec/"/>
-    <id>http://example.com/2022/02/14/intro_websec/</id>
-    <published>2022-02-14T07:04:36.611Z</published>
-    <updated>2022-02-22T06:40:44.920Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;1-Web介绍&quot;&gt;&lt;a href=&quot;#1-Web介绍&quot; class=&quot;headerlink&quot; title=&quot;1. Web介绍&quot;&gt;&lt;/a&gt;1. Web介绍&lt;/h1&gt;&lt;h2 id=&quot;Web发展史&quot;&gt;&lt;a href=&quot;#Web发展史&quot; class=&quot;headerlink&quot; title=&quot;Web发展史&quot;&gt;&lt;/a&gt;Web发展史&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;web1.0时代：主要危害web服务器&lt;/li&gt;
-&lt;li&gt;web2.0时代：主要危害web用户&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;web流程（见HTTP学习笔记）&quot;&gt;&lt;a href=&quot;#web流程（见HTTP学习笔记）&quot; class=&quot;headerlink&quot; title=&quot;web流程（见HTTP学习笔记）&quot;&gt;&lt;/a&gt;web流程（见&lt;a href=&quot;https://blog.ariax.icu/2022/02/01/HTTP_notes/&quot;&gt;HTTP学习笔记&lt;/a&gt;）&lt;/h2&gt;&lt;p&gt;可见的流程：用户请求访问网站，浏览器返回网页界面。（客户端/前端）&lt;br&gt;不可见的流程：浏览器向服务器请求资源，服务器与数据库交互，返回网页信息。（服务端/后端）&lt;br&gt;上述问题也可以用客户端/服务端分类&lt;/p&gt;
-&lt;h2 id=&quot;浏览器工作原理（见浏览器学习笔记）&quot;&gt;&lt;a href=&quot;#浏览器工作原理（见浏览器学习笔记）&quot; class=&quot;headerlink&quot; title=&quot;浏览器工作原理（见浏览器学习笔记）&quot;&gt;&lt;/a&gt;浏览器工作原理（见&lt;a href=&quot;#&quot;&gt;浏览器学习笔记&lt;/a&gt;）&lt;/h2&gt;&lt;p&gt;浏览器通过DNS解析将获取的域名解析为IP地址，通过HTTP协议进行通信。&lt;br&gt;开发者工具-network。&lt;/p&gt;
-&lt;h2 id=&quot;术语&quot;&gt;&lt;a href=&quot;#术语&quot; class=&quot;headerlink&quot; title=&quot;术语&quot;&gt;&lt;/a&gt;术语&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;webshell&lt;br&gt;Webshell就是以asp、php、jsp或者cgi等网页文件形式存在的一种代码执行环境。“shell”的含义是取得对服务器某种程度上操作权限。webshell常常被称为入侵者通过网站端口对网站服务器的某种程度上操作的权限。由于webshell其大多是以动态脚本的形式出现，也有人称之为网站的后门工具。&lt;/li&gt;
-&lt;li&gt;菜刀&lt;br&gt;连接服务器的工具。&lt;/li&gt;
-&lt;li&gt;0day&lt;br&gt;又称“零日漏洞”(zero-day)，是已经被发现(有可能未被公开)，而官方还没有相关补丁的漏洞。&lt;/li&gt;
-&lt;li&gt;SQL注入&lt;br&gt;发生在 Web 程序中数据库层的安全漏洞。主要原因是程序对用户输入数据的合法性没有判断和处理，导致攻击者可以在 Web 应用程序中事先定义好的 SQL 语句中添加额外的 SQL 语句，在管理员不知情的情况下实现非法操作，以此来实现欺骗数据库服务器执行非授权的任意查询，从而进一步获取到数据信息。&lt;/li&gt;
-&lt;li&gt;文件上传漏洞&lt;br&gt;由于程序员在对用户文件上传部分的控制不足或者处理缺陷，而导致的用户可以越过其本身权限向服务器上上传可执行的动态脚本文件。这里上传的文件可以是木马，病毒，恶意脚本或者WebShell等。&lt;/li&gt;
-&lt;li&gt;一句话木马&lt;br&gt;通过向服务端提交一句简短的代码来达到向服务器插入木马并最终获得webshell的方法。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;2-语言基础&quot;&gt;&lt;a href=&quot;#2-语言基础&quot; class=&quot;headerlink&quot; title=&quot;2. 语言基础&quot;&gt;&lt;/a&gt;2. 语言基础&lt;/h1&gt;</summary>
-    
-    
-    
-    
-    <category term="websec" scheme="http://example.com/tags/websec/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PTA基础题解</title>
-    <link href="http://example.com/2022/02/13/pta_base/"/>
-    <id>http://example.com/2022/02/13/pta_base/</id>
-    <published>2022-02-13T02:38:36.953Z</published>
-    <updated>2022-02-14T02:48:14.788Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;6-2-多项式求值-15-分&quot;&gt;&lt;a href=&quot;#6-2-多项式求值-15-分&quot; class=&quot;headerlink&quot; title=&quot;6-2 多项式求值 (15 分)&quot;&gt;&lt;/a&gt;6-2 多项式求值 (15 分)&lt;/h2&gt;&lt;p&gt;本题要求实现一个函数，计算阶数为n，系数为a[0] … a[n]的多项式f(x)=∑ (i=0~n)(a[i]*x^i) 在x点的值。&lt;/p&gt;
-&lt;p&gt;函数接口定义：&lt;/p&gt;
-&lt;pre class=&quot; language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;double&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;double&lt;/span&gt; x &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;其中n是多项式的阶数，a[]中存储系数，x是给定点。函数须返回多项式f(x)的值。&lt;/p&gt;
-&lt;p&gt;裁判测试程序样例：&lt;/p&gt;
-&lt;pre class=&quot; language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span class=&quot;token macro property&quot;&gt;#&lt;span class=&quot;token directive keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&amp;lt;stdio.h&gt;&lt;/span&gt;&lt;/span&gt;
-
-&lt;span class=&quot;token macro property&quot;&gt;#&lt;span class=&quot;token directive keyword&quot;&gt;define&lt;/span&gt; MAXN 10&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;double&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;double&lt;/span&gt; x &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;token operator&quot;&gt;&amp;amp;&lt;/span&gt;#&lt;span class=&quot;token number&quot;&gt;123&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; i&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;double&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;MAXN&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    
-    &lt;span class=&quot;token function&quot;&gt;scanf&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;%d %lf&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&lt;/span&gt;x&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;token function&quot;&gt;scanf&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;%lf&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token function&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;%.1f\n&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token operator&quot;&gt;&amp;amp;&lt;/span&gt;#&lt;span class=&quot;token number&quot;&gt;125&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;/* 你的代码将被嵌在这里 */&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;分析：&quot;&gt;&lt;a href=&quot;#分析：&quot; class=&quot;headerlink&quot; title=&quot;分析：&quot;&gt;&lt;/a&gt;分析：&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;逻辑过程为：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;获取每个数组元素；&lt;/li&gt;
-&lt;li&gt;通过获取的数组index计算并保存x的幂；&lt;/li&gt;
-&lt;li&gt;数组元素*x的幂；&lt;/li&gt;
-&lt;li&gt;上述相加，返回。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;实现：&lt;/p&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>git学习笔记</title>
-    <link href="http://example.com/2022/02/12/gitnotes/"/>
-    <id>http://example.com/2022/02/12/gitnotes/</id>
-    <published>2022-02-11T16:00:00.000Z</published>
-    <updated>2022-02-15T02:20:39.585Z</updated>
-    
-    
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;参考:&lt;a href=&quot;https://www.runoob.com/git/git-basic-operations.html&quot;&gt;菜鸟git教程&lt;/a&gt;&lt;br&gt;    &lt;a href=&quot;https://edu.aliyun.com/roadmap/frontend&quot;&gt;阿里云git教程&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;git常用命令&quot;&gt;&lt;a href=&quot;#git常用命令&quot; class=&quot;headerlink&quot; title=&quot;git常用命令&quot;&gt;&lt;/a&gt;git常用命令&lt;/h1&gt;&lt;p&gt;&lt;code&gt;git init&lt;/code&gt; 初始化git生成git仓库&lt;br&gt;&lt;code&gt;git status&lt;/code&gt; 查看git状态&lt;br&gt;&lt;code&gt;git add &amp;lt;filename&amp;gt;&lt;/code&gt;添文件到暂存区&lt;br&gt;&lt;code&gt;git add .&lt;/code&gt;加入所有文件到暂存区&lt;br&gt;&lt;code&gt;git commit -m &amp;#39;message&amp;#39;&lt;/code&gt;提交文件到本地仓库，message为变更描述。每个commit会生成一个唯一的哈希值&lt;br&gt;&lt;code&gt;git reflog&lt;/code&gt;查看日志&lt;br&gt;&lt;code&gt;git reset &amp;lt;filename&amp;gt;&lt;/code&gt;将尚没有commite之前加入到暂存区的文件重新拉回&lt;br&gt;&lt;code&gt;git checkout &amp;lt;newbranchname&amp;gt; &amp;lt;refbranch&amp;gt;&lt;/code&gt;以参考分支为模板创建新分支&lt;br&gt;&lt;code&gt;git checkout &amp;lt;branchname&amp;gt;&lt;/code&gt;切换到指定分支​&lt;/p&gt;
-&lt;h1 id=&quot;文件状态：&quot;&gt;&lt;a href=&quot;#文件状态：&quot; class=&quot;headerlink&quot; title=&quot;文件状态：&quot;&gt;&lt;/a&gt;文件状态：&lt;/h1&gt;&lt;p&gt;工作区：就是你在电脑里能看到的目录。&lt;/p&gt;
-&lt;p&gt;暂存区：英文叫stage, 或index。一般存放在 “.git目录下” 下的index文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。&lt;/p&gt;
-&lt;p&gt;版本库：工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库。&lt;/p&gt;
-&lt;p&gt;1.没有被add过的文件叫untracked&lt;br&gt;2.add之后文件处于staged状态等待commite&lt;br&gt;3.commit之后文件处于unmodified这里之所以是modified是因为文件会跟仓库中的文件对比&lt;br&gt;4.当unmodified的文件被修改则会变为modified状态&lt;br&gt;5.modified之后的文件add之后将继续变为staged状态&lt;br&gt;6.unmodifed的文件还有一种可能是已经不再需要了，那么可以remove它不再追踪变为untracked状态​&lt;/p&gt;
-</summary>
-    
-    
-    
-    
-    <category term="git" scheme="http://example.com/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
     <title>HTTP与web安全</title>
     <link href="http://example.com/2022/02/06/HTTPSwebsec/"/>
     <id>http://example.com/2022/02/06/HTTPSwebsec/</id>
     <published>2022-02-05T16:00:00.000Z</published>
-    <updated>2022-02-06T08:57:52.072Z</updated>
+    <updated>2023-02-26T14:20:51.919Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;HTTP的安全漏洞&quot;&gt;&lt;a href=&quot;#HTTP的安全漏洞&quot; class=&quot;headerlink&quot; title=&quot;HTTP的安全漏洞&quot;&gt;&lt;/a&gt;HTTP的安全漏洞&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;通信使用明文，可能会被窃听；&lt;/li&gt;
-&lt;li&gt;不验证通信方的身份，可能被伪装；&lt;/li&gt;
-&lt;li&gt;无法验证报文的完整性，有可能遭到篡改。&lt;/li&gt;
+&lt;li&gt;窃听；&lt;/li&gt;
+&lt;li&gt;伪装；&lt;/li&gt;
+&lt;li&gt;篡改。&lt;br&gt;（安全经典三漏洞…）&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h1 id=&quot;HTTP-Secure&quot;&gt;&lt;a href=&quot;#HTTP-Secure&quot; class=&quot;headerlink&quot; title=&quot;HTTP Secure&quot;&gt;&lt;/a&gt;HTTP Secure&lt;/h1&gt;&lt;p&gt;HTTPS就是被SSL（secure socket layer)/TLS协议代替通信接口部分的HTTP。&lt;br&gt;HTTPS=HTTP+加密+认证+完整性保护。&lt;/p&gt;
 &lt;h2 id=&quot;通信加密&quot;&gt;&lt;a href=&quot;#通信加密&quot; class=&quot;headerlink&quot; title=&quot;通信加密&quot;&gt;&lt;/a&gt;通信加密&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;SSL（secure socket layer)&lt;br&gt;是独立的协议，其他运行在应用层的协议都可以配合SSL使用。&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;公开密钥加密&lt;/strong&gt;：也称为非对称加密（asymmetric cryptography），一种密码学算法类型，在这种密码学方法中，需要一对密钥，一个是私人密钥，另一个则是公开密钥。 这两个密钥是数学相关，用某用户密钥加密后所得的信息，只能用该用户的解密密钥才能解密。&lt;br&gt;&lt;strong&gt;共享密钥加密&lt;/strong&gt;：共享密钥加密是加密和解密都是用相同密钥的一种加密方式，由于使用的密钥相同，所以这种算法也被称为“对称加密”&lt;br&gt;证书可以验证密钥正确性。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;公开密钥加密&lt;/strong&gt;：在这种方法中，需要一对密钥，一个是私人密钥，另一个则是公开密钥。&lt;br&gt;&lt;strong&gt;共享密钥加密&lt;/strong&gt;：共享密钥加密是加密和解密都是用相同密钥的一种加密方式，这种算法也被称为“对称加密”&lt;br&gt;证书可以验证密钥正确性。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;浏览器提示你证书不正确/已过期时发生了什么？&lt;/p&gt;
 &lt;p&gt;SSL的速度问题：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;除了HTTP通信外还需要进行SSL通信，增加了通信量；&lt;/li&gt;
-&lt;li&gt;SSL进行加密处理，更多地耗费硬件资源。&lt;/li&gt;
-&lt;/ol&gt;
 &lt;p&gt;没有根本的解决方案，只能使用SSL加速器（专用服务器）改善问题。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;TLS（transport layer security）&lt;/li&gt;
@@ -248,11 +114,10 @@
     <link href="http://example.com/2022/02/01/HTTP_notes/"/>
     <id>http://example.com/2022/02/01/HTTP_notes/</id>
     <published>2022-02-01T12:32:01.000Z</published>
-    <updated>2022-02-12T05:46:31.133Z</updated>
+    <updated>2023-02-26T14:17:42.963Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;背景知识&quot;&gt;&lt;a href=&quot;#背景知识&quot; class=&quot;headerlink&quot; title=&quot;背景知识&quot;&gt;&lt;/a&gt;背景知识&lt;/h1&gt;&lt;h1 id=&quot;1-TCP-IP协议族&quot;&gt;&lt;a href=&quot;#1-TCP-IP协议族&quot; class=&quot;headerlink&quot; title=&quot;1. TCP/IP协议族&quot;&gt;&lt;/a&gt;1. TCP/IP协议族&lt;/h1&gt;&lt;p&gt;  &lt;em&gt;以后可能会写TCP/IP的笔记，大概…&lt;/em&gt;&lt;br&gt;  通常使用的网络是在TCP/IP协议族的基础上运行的，HTTP属于其子集。&lt;/p&gt;
-&lt;p&gt;  解释：网络设备间的互相通信必须基于相同的方法：如何探测目标、发起通信、使用语言、结束通信。这一切的规则被称为协议（protocol）。与互联网有关的协议的集合称为TCP/IP。&lt;/p&gt;
 &lt;h4 id=&quot;1-1-TCP-IP分层管理&quot;&gt;&lt;a href=&quot;#1-1-TCP-IP分层管理&quot; class=&quot;headerlink&quot; title=&quot;1.1 TCP/IP分层管理&quot;&gt;&lt;/a&gt;1.1 TCP/IP分层管理&lt;/h4&gt;&lt;h3 id=&quot;分层的优势&quot;&gt;&lt;a href=&quot;#分层的优势&quot; class=&quot;headerlink&quot; title=&quot;分层的优势&quot;&gt;&lt;/a&gt;分层的优势&lt;/h3&gt;&lt;p&gt;  各层次接口调整好后，每个层次内部可以自由改动。&lt;/p&gt;
 &lt;h3 id=&quot;分层&quot;&gt;&lt;a href=&quot;#分层&quot; class=&quot;headerlink&quot; title=&quot;分层&quot;&gt;&lt;/a&gt;分层&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;应用层&lt;br&gt;应用层决定向用户提供应用服务时通信的活动。&lt;strong&gt;HTTP属于该层。&lt;/strong&gt;&lt;/li&gt;
@@ -260,7 +125,7 @@
 &lt;li&gt;网络层&lt;br&gt;网络层规定了到达用户计算机并传输数据的传输路线。&lt;/li&gt;
 &lt;li&gt;链路层&lt;br&gt;即硬件部分。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h4 id=&quot;1-2-TCP-IP数据传输流&quot;&gt;&lt;a href=&quot;#1-2-TCP-IP数据传输流&quot; class=&quot;headerlink&quot; title=&quot;1.2 TCP/IP数据传输流&quot;&gt;&lt;/a&gt;1.2 TCP/IP数据传输流&lt;/h4&gt;</summary>
+&lt;h4 id=&quot;1-2-TCP-IP数据传输流&quot;&gt;&lt;a href=&quot;#1-2-TCP-IP数据传输流&quot; class=&quot;headerlink&quot; title=&quot;1.2 TCP/IP数据传输流&quot;&gt;&lt;/a&gt;1.2 TCP/IP数据传输流&lt;/h4&gt;&lt;p&gt;  客户端&amp;lt;-&amp;gt;层&amp;lt;-&amp;gt;服务器&lt;br&gt;  发送端传输数据时，每经过一层必定被打上一个该层所属的首部信息，反之，接收端接收数据时，每经过一层必定会把对应的首部消去。这种方法称为&lt;strong&gt;封装&lt;/strong&gt;。&lt;/p&gt;</summary>
     
     
     
@@ -274,71 +139,6 @@
     <category term="HTTP" scheme="http://example.com/tags/HTTP/"/>
     
     <category term="websec" scheme="http://example.com/tags/websec/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>以后会用到的小TIPS</title>
-    <link href="http://example.com/2022/01/30/Tips-1/"/>
-    <id>http://example.com/2022/01/30/Tips-1/</id>
-    <published>2022-01-30T11:09:01.000Z</published>
-    <updated>2022-02-09T00:58:14.526Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;HTML&quot;&gt;&lt;a href=&quot;#HTML&quot; class=&quot;headerlink&quot; title=&quot;HTML&quot;&gt;&lt;/a&gt;HTML&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;调整&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;图像大小时最好用Photoshop等工具调整————用width/height属性调整的弊端：尺寸属性不改变图像大小，只是帮助浏览器确定需要预留的空间，仍然会下载完整大小的图像.&lt;/li&gt;
-&lt;li&gt;视障人士/网络故障友好：在&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;标签内添加alt=”description”。&lt;/li&gt;
-&lt;li&gt;一个经验：图像宽度小于800像素（一般浏览器默认宽度）&lt;/li&gt;
-&lt;li&gt;反锯齿处理：柔化文本、透明图像的边缘，更有可读性。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;工业级HTML&quot;&gt;&lt;a href=&quot;#工业级HTML&quot; class=&quot;headerlink&quot; title=&quot;工业级HTML&quot;&gt;&lt;/a&gt;工业级HTML&lt;/h1&gt;&lt;h2 id=&quot;标准&quot;&gt;&lt;a href=&quot;#标准&quot; class=&quot;headerlink&quot; title=&quot;标准&quot;&gt;&lt;/a&gt;标准&lt;/h2&gt;&lt;p&gt;HTML标准是一种“living standard”，由W3C制定，HTML5为当前标准，向后兼容。&lt;br&gt;可用验证工具验证HTML代码的严谨性。&lt;/p&gt;
-&lt;h2 id=&quot;核对-EMMET语法&quot;&gt;&lt;a href=&quot;#核对-EMMET语法&quot; class=&quot;headerlink&quot; title=&quot;核对/EMMET语法&quot;&gt;&lt;/a&gt;核对/EMMET语法&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Visual Code中，输入英文“!”+TAB，快速生成包括&lt;code&gt;doctype, &amp;lt;html&amp;gt;, &amp;lt;meta&amp;gt;, &amp;lt;body&amp;gt;&lt;/code&gt;HTML结构；&lt;/li&gt;
-&lt;li&gt;同上，输入tag名+TAB，生成tag结构；以上两条可以减少疏漏。&lt;/li&gt;
-&lt;li&gt;输入tag*数字生成多个tag。&lt;/li&gt;
-&lt;li&gt;父子关系标签，如ul&amp;gt;li。&lt;/li&gt;
-&lt;li&gt;兄弟关系标签，如div+p。&lt;/li&gt;
-&lt;li&gt;生成类名或id名的，.xxx/#xxx（以上默认div）/p.xxx等。&lt;/li&gt;
-&lt;li&gt;div类名有顺序：.xxx$数字。&lt;/li&gt;
-&lt;li&gt;想生成的内容包含在{}内。&lt;/li&gt;
-&lt;li&gt;注意嵌套规则：&lt;ul&gt;
-&lt;li&gt;至多嵌套一层&lt;/li&gt;
-&lt;li&gt;内联元素不可嵌套&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;检查tag的属性是否全面。&lt;h2 id=&quot;HTML5新特性&quot;&gt;&lt;a href=&quot;#HTML5新特性&quot; class=&quot;headerlink&quot; title=&quot;HTML5新特性&quot;&gt;&lt;/a&gt;HTML5新特性&lt;/h2&gt;HTML5非常适合创建博客。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt;与&lt;code&gt;&amp;lt;footer&amp;gt;&lt;/code&gt;属性：页眉页脚。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;aside&amp;gt;&lt;/code&gt;属性：侧边栏。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt;属性：一组相关内容。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt;属性：一篇博客。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;time&amp;gt;&lt;/code&gt;属性：日期/时间。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;nav&amp;gt;&lt;/code&gt;属性：导航。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;video&amp;gt;&lt;/code&gt;属性：增加视频文件。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h1 id=&quot;CSS&quot;&gt;&lt;a href=&quot;#CSS&quot; class=&quot;headerlink&quot; title=&quot;CSS&quot;&gt;&lt;/a&gt;CSS&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;font-family&lt;ol&gt;
-&lt;li&gt;serif：带有衬线的字体；&lt;/li&gt;
-&lt;li&gt;sans-serif：没有衬线的字体；&lt;/li&gt;
-&lt;li&gt;cursive： 看起来像手写的字体；&lt;/li&gt;
-&lt;li&gt;monospace： 字符固定宽度的字体；&lt;/li&gt;
-&lt;li&gt;fantasy：某种风格的装饰字体。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="CS" scheme="http://example.com/categories/CS/"/>
-    
-    <category term="CN" scheme="http://example.com/categories/CS/CN/"/>
-    
-    
-    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
-    
-    <category term="CSS" scheme="http://example.com/tags/CSS/"/>
-    
-    <category term="frontend" scheme="http://example.com/tags/frontend/"/>
     
   </entry>
   
