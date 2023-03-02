@@ -6,13 +6,21 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>websec | Voidhead</title>
+  <title>现代密码学自学笔记 | Voidhead</title>
   <meta name="author" content="Ariax">
+  
+  <meta name="description" content="很大程度上是数学原理，很少有技术相关，嗯…而且不会有古典密码学相关
+流密码简而言之，流密码是一种 通过短密钥k产生一串密钥流，进行逐字符加密的体制。为了记忆密钥k，电路中需要有记忆元件，这也是流密码的不同之处目前最常用的是二元加法流。OFB与CTR皆为常用的流密码模式，CTR加密过程多一个计数器
+有限状态自动机简单理解即为state =fEvent=&amp;gt; newState的数学模型fEvent：反馈函数流密码的密钥流产生器即为一种有限状态自动机，见下
+移位寄存器每时刻的state都是一个n维向量，有2^n种可能的状态。
+反馈移位寄存器的计算方法先输出a1初始状态，移位，最后一位用反馈结果补位
+
+线性反馈移位寄存器（LFSR）的计算方法">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="现代密码学自学笔记"/>
   <meta property="og:site_name" content="Voidhead"/>
 
   
@@ -114,140 +122,88 @@ var _hmt = _hmt || [];
   	<div class="content">
     	 
 
-<!-- title -->
-<div class="page-header">
-  <h1 class="archive-title-tag"><i class="fa fa-archive"></i> websec</h1>
-</div>
 
-<div class="row page">
-  <!-- cols -->
-  
-  <div class="col-md-9">
 	
-
-	  <div id="top_search"></div>
-
-	  <div class="archive">
-		
-		
-		
-			
-			
-			<h4 class="archive-ul" data-toggle="collapse" data-target="#2022">2022<b class="caret"></b></h4>
-			<ul id="2022" class="collapse in">
-			
-		
-		<li class="listing-item">
-		<span class="date_class"> 2022-02-06 </span> &raquo;
-		
-		   <span class="title"><a href="/2022/02/06/HTTPSwebsec/" >HTTP与web安全</a></span>
-		
-		</li>			
-		
-		
-		
-		<li class="listing-item">
-		<span class="date_class"> 2022-02-01 </span> &raquo;
-		
-		   <span class="title"><a href="/2022/02/01/HTTP_notes/" >HTTP学习笔记</a></span>
-		
-		</li>			
-		
-		</ul>
+		<div class="page-header">
+			<h1> 现代密码学自学笔记</h1>
 		</div>
-
-</div> <!-- col-md-9/col-md-12 -->
-
-
-<div class="col-md-3">
-	<div id="sidebar">
 	
-			
-  <div id="site_search">
-   <div class="form-group">
-    <input type="text" id="local-search-input" name="q" results="0" placeholder="Search" class="st-search-input st-default-search-input form-control"/>
-   </div>  
-  <div id="local-search-result"></div>
-  </div>
 
 
-		
-			
-	<div class="widget">
-		<h4>Categories</h4>
-		<ul class="tag_box inline list-unstyled">
-		
-			<li><a href="/categories/CS/CN/">CN<span>1</span></a></li>
-		
-			<li><a href="/categories/CS/">CS<span>1</span></a></li>
-		
-			<li><a href="/categories/CS/CN/InfoSec/">InfoSec<span>1</span></a></li>
-		
-		</ul>
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <p>很大程度上是数学原理，很少有技术相关，嗯…而且不会有古典密码学相关</p>
+<h1 id="流密码"><a href="#流密码" class="headerlink" title="流密码"></a>流密码</h1><p>简而言之，流密码是一种 通过短密钥k产生一串密钥流，进行逐字符加密的体制。<br>为了记忆密钥k，电路中需要有记忆元件，这也是流密码的不同之处<br>目前最常用的是二元加法流。OFB与CTR皆为常用的流密码模式，CTR加密过程多一个计数器</p>
+<h2 id="有限状态自动机"><a href="#有限状态自动机" class="headerlink" title="有限状态自动机"></a>有限状态自动机</h2><p>简单理解即为state =fEvent=&gt; newState的数学模型<br>fEvent：反馈函数<br>流密码的密钥流产生器即为一种有限状态自动机，见下</p>
+<h2 id="移位寄存器"><a href="#移位寄存器" class="headerlink" title="移位寄存器"></a>移位寄存器</h2><p>每时刻的state都是一个n维向量，有2^n种可能的状态。</p>
+<h3 id="反馈移位寄存器的计算方法"><a href="#反馈移位寄存器的计算方法" class="headerlink" title="反馈移位寄存器的计算方法"></a>反馈移位寄存器的计算方法</h3><pre><code>先输出a1初始状态，移位，最后一位用反馈结果补位
+</code></pre>
+<h3 id="线性反馈移位寄存器（LFSR）的计算方法"><a href="#线性反馈移位寄存器（LFSR）的计算方法" class="headerlink" title="线性反馈移位寄存器（LFSR）的计算方法"></a>线性反馈移位寄存器（LFSR）的计算方法</h3><p><em>头好晕</em></p>
+<h2 id="m序列"><a href="#m序列" class="headerlink" title="m序列"></a>m序列</h2>
+	  	  
 	</div>
 
-		
-			
-	<div class="widget">
-		<h4>Tag Cloud</h4>
-		<ul class="tag_box inline list-unstyled">		
-		
-			<li><a href="/tags/HTTP/">HTTP<span>2</span></a></li>
-		
-			<li><a href="/tags/websec/">websec<span>2</span></a></li>
-		
-		 
-		</ul>
+	<div>
+  	<center>
+	<div class="pagination">
+
+    
+    
+    <a href="/2023/03/01/mukbangCritique/" type="button" class="btn btn-default"><i
+                class="fa fa-arrow-circle-o-left"></i> Prev</a>
+    
+
+    <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
+    
+    <a href="/2022/10/31/ok/" type="button" class="btn btn-default ">Next<i
+                class="fa fa-arrow-circle-o-right"></i></a>
+    
+
+    
+</div>
+
+    </center>
 	</div>
 
 
-		
-			
-<div class="widget">
-  <h4>Recent Posts</h4>
-  <ul class="entry list-unstyled">
-    
-      <li>
-        <a href="/2023/03/01/mukbangCritique/" ><i class="fa fa-file-o"></i>观看女性进食——对“神奇饮食”与吃播的批判</a>
-      </li>
-    
-      <li>
-        <a href="/2023/03/01/cryptonotes/" ><i class="fa fa-file-o"></i>现代密码学自学笔记</a>
-      </li>
-    
-      <li>
-        <a href="/2022/10/31/ok/" ><i class="fa fa-file-o"></i>An unexpected post after lo...</a>
-      </li>
-    
-      <li>
-        <a href="/2022/02/16/PofLnotes/" ><i class="fa fa-file-o"></i>《解放的悖论——世俗革命与宗教反革命》笔记</a>
-      </li>
-    
-      <li>
-        <a href="/2022/02/06/HTTPSwebsec/" ><i class="fa fa-file-o"></i>HTTP与web安全</a>
-      </li>
-    
-  </ul>
-</div>
-
-		
-			
-<div class="widget">
-	<h4>Links</h4>
-	<ul class="blogroll list-unstyled">
 	
-		<li><i class=" "></i><a href="links" title="Friends." target="_blank">❀ Friends</a></li>
+	<!-- comment -->
 	
-	</ul>
-</div>
+		<section id="comments" style="margin:10px;padding:10px;background:#fff;">
+		  <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'true' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "ZZsWQ0ECZQNeNLtfO8C0d9u3-MdYXbMMI/",
+            app_key: "GeiR2hbRL78Gajj3SJgaGpBl",
+            placeholder: "Just go go",
+            avatar:"retro"
+        });
+    }
+</script>
 
-
-		
-	</div> <!-- sidebar -->
-</div> <!-- col-md-3 -->
-
-
-
+		</section>
+	  
 
 	</div>
   </div>
