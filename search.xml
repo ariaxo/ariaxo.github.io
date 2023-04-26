@@ -4,6 +4,32 @@
   
     
     <entry>
+      <title>远程监控的实现（On Windows）</title>
+      <link href="/2023/04/26/remote_contrl/"/>
+      <url>/2023/04/26/remote_contrl/</url>
+      
+        <content type="html"><![CDATA[<h1 id="IIS-service-enable"><a href="#IIS-service-enable" class="headerlink" title="IIS service enable"></a>IIS service enable</h1><p>Similar to enabling Telnet client, enable IIS service in “Turn Windows features on or off” menu.<br><img src="\img\W1.png"><br>To verify that the service has started successfully, open the IIS Manager<br><img src="\img\control.png"><br>and open localhost:80 in browser, see the following page if the service has been successfully started.<br><img src="\img\success.png"></p><hr><p>Everytime previewing my post, i use the localhost:4000, so what’s the diff?</p><p><em>IIS servers typically use port 80 because it is the default port for the HTTP protocol. When a user enters a website URL in their browser, it defaults to port 80 for accessing the site. Therefore, IIS defaults to using port 80 so that users can access websites directly using a domain name or IP address.</em></p><p><em>Hexo is a static website generator that generates static HTML files locally and publishes them to a web server. When previewING blog locally, Hexo starts a local server and uses port 4000 to provide local access. The 4000 port is not used in production, but only for development and testing purposes.</em></p><hr>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>最近的更新和计划</title>
+      <link href="/2023/04/26/updates_n_projs/"/>
+      <url>/2023/04/26/updates_n_projs/</url>
+      
+        <content type="html"><![CDATA[<ol><li>更新了Valine评论系统（不过因为应用本身已停止更新，以后会找替代品）；</li><li></li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>加速主义政治宣言</title>
       <link href="/2023/03/02/AccManifesto/"/>
       <url>/2023/03/02/AccManifesto/</url>

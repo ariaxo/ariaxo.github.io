@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-03-02T14:39:46.581Z</updated>
+  <updated>2023-04-26T07:56:47.979Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>远程监控的实现（On Windows）</title>
+    <link href="http://example.com/2023/04/26/remote_contrl/"/>
+    <id>http://example.com/2023/04/26/remote_contrl/</id>
+    <published>2023-04-26T07:33:27.574Z</published>
+    <updated>2023-04-26T07:56:47.979Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;IIS-service-enable&quot;&gt;&lt;a href=&quot;#IIS-service-enable&quot; class=&quot;headerlink&quot; title=&quot;IIS service enable&quot;&gt;&lt;/a&gt;IIS service enable&lt;/h1&gt;&lt;p&gt;Similar to enabling Telnet client, enable IIS service in “Turn Windows features on or off” menu.&lt;br&gt;&lt;img src=&quot;\img\W1.png&quot;&gt;&lt;br&gt;To verify that the service has started successfully, open the IIS Manager&lt;br&gt;&lt;img src=&quot;\img\control.png&quot;&gt;&lt;br&gt;and open localhost:80 in browser, see the following page if the service has been successfully started.&lt;br&gt;&lt;img src=&quot;\img\success.png&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Everytime previewing my post, i use the localhost:4000, so what’s the diff?&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;IIS servers typically use port 80 because it is the default port for the HTTP protocol. When a user enters a website URL in their browser, it defaults to port 80 for accessing the site. Therefore, IIS defaults to using port 80 so that users can access websites directly using a domain name or IP address.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Hexo is a static website generator that generates static HTML files locally and publishes them to a web server. When previewING blog locally, Hexo starts a local server and uses port 4000 to provide local access. The 4000 port is not used in production, but only for development and testing purposes.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>最近的更新和计划</title>
+    <link href="http://example.com/2023/04/26/updates_n_projs/"/>
+    <id>http://example.com/2023/04/26/updates_n_projs/</id>
+    <published>2023-04-26T07:15:37.164Z</published>
+    <updated>2023-04-26T07:33:30.825Z</updated>
+    
+    
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;更新了Valine评论系统（不过因为应用本身已停止更新，以后会找替代品）；&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>加速主义政治宣言</title>
