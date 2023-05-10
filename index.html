@@ -490,11 +490,20 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 <p>浏览器提示你证书不正确/已过期时发生了什么？</p>
-<blockquote>
-<p>浏览器提示证书不正确或已过期时，实际上发生了以下情况：</p>
-</blockquote>
-<p>浏览器向服务器发起HTTPS请求，服务器会返回自己的SSL证书。</p>
-<p>浏览器会对服务器返回的SSL证书进行验证，验证证书的颁发机构、证书的有效期、证书中的主题等等，以确保证书的真实性和有效性。</p>
+<ul>
+<li><p>浏览器提示证书不正确或已过期时，实际上发生了以下情况：</p>
+<ol>
+<li><p>浏览器向服务器发起HTTPS请求，服务器会返回自己的SSL证书。</p>
+</li>
+<li><p>浏览器会对服务器返回的SSL证书进行验证，验证证书的颁发机构、证书的有效期、证书中的主题等等，以确保证书的真实性和有效性。</p>
+</li>
+<li><p>如果证书验证失败，浏览器会弹出提示框，告诉用户证书不正确或已过期，并提示用户是否继续访问该网站。如果用户选择继续访问，浏览器会继续建立HTTPS连接，但会在地址栏中显示警告信息，提醒用户存在风险。</p>
+</li>
+</ol>
+</li>
+</ul>
+<p>SSL的速度问题：</p>
+<p>没有根本的解决方案，只能使用SSL加速器（专用服务器）改善问题。</p>
 	
 	</div>
   <a type="button" href="/2022/02/06/HTTPSwebsec/#more" class="btn btn-default more">Read More</a>
@@ -588,9 +597,9 @@ var _hmt = _hmt || [];
 		<h4>Tag Cloud</h4>
 		<ul class="tag_box inline list-unstyled">		
 		
-			<li><a href="/tags/HTTP/">HTTP<span>2</span></a></li>
-		
 			<li><a href="/tags/websec/">websec<span>2</span></a></li>
+		
+			<li><a href="/tags/HTTP/">HTTP<span>2</span></a></li>
 		
 		 
 		</ul>

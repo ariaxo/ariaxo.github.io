@@ -258,7 +258,7 @@
     <link href="http://example.com/2022/02/06/HTTPSwebsec/"/>
     <id>http://example.com/2022/02/06/HTTPSwebsec/</id>
     <published>2022-02-05T16:00:00.000Z</published>
-    <updated>2023-04-26T13:15:30.771Z</updated>
+    <updated>2023-04-26T13:17:43.437Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;HTTP的安全漏洞&quot;&gt;&lt;a href=&quot;#HTTP的安全漏洞&quot; class=&quot;headerlink&quot; title=&quot;HTTP的安全漏洞&quot;&gt;&lt;/a&gt;HTTP的安全漏洞&lt;/h1&gt;&lt;ol&gt;
@@ -274,11 +274,20 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;浏览器提示你证书不正确/已过期时发生了什么？&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;浏览器提示证书不正确或已过期时，实际上发生了以下情况：&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;浏览器向服务器发起HTTPS请求，服务器会返回自己的SSL证书。&lt;/p&gt;
-&lt;p&gt;浏览器会对服务器返回的SSL证书进行验证，验证证书的颁发机构、证书的有效期、证书中的主题等等，以确保证书的真实性和有效性。&lt;/p&gt;</summary>
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;浏览器提示证书不正确或已过期时，实际上发生了以下情况：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;浏览器向服务器发起HTTPS请求，服务器会返回自己的SSL证书。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;浏览器会对服务器返回的SSL证书进行验证，验证证书的颁发机构、证书的有效期、证书中的主题等等，以确保证书的真实性和有效性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;如果证书验证失败，浏览器会弹出提示框，告诉用户证书不正确或已过期，并提示用户是否继续访问该网站。如果用户选择继续访问，浏览器会继续建立HTTPS连接，但会在地址栏中显示警告信息，提醒用户存在风险。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;SSL的速度问题：&lt;/p&gt;
+&lt;p&gt;没有根本的解决方案，只能使用SSL加速器（专用服务器）改善问题。&lt;/p&gt;</summary>
     
     
     
