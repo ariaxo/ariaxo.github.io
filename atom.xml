@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-05-17T07:52:57.457Z</updated>
+  <updated>2023-05-17T10:10:55.631Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,16 +21,17 @@
     <link href="http://example.com/2023/05/17/AndroidRev/"/>
     <id>http://example.com/2023/05/17/AndroidRev/</id>
     <published>2023-05-17T07:09:15.878Z</published>
-    <updated>2023-05-17T07:52:57.457Z</updated>
+    <updated>2023-05-17T10:10:55.631Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;前期准备&quot;&gt;&lt;a href=&quot;#前期准备&quot; class=&quot;headerlink&quot; title=&quot;前期准备&quot;&gt;&lt;/a&gt;前期准备&lt;/h1&gt;&lt;h2 id=&quot;进入开发者模式，enable-USB侦错&quot;&gt;&lt;a href=&quot;#进入开发者模式，enable-USB侦错&quot;</summary>
-        
-      
+    <summary type="html">&lt;h1 id=&quot;前期准备&quot;&gt;&lt;a href=&quot;#前期准备&quot; class=&quot;headerlink&quot; title=&quot;前期准备&quot;&gt;&lt;/a&gt;前期准备&lt;/h1&gt;&lt;h2 id=&quot;进入开发者模式，enable-USB侦错&quot;&gt;&lt;a href=&quot;#进入开发者模式，enable-USB侦错&quot; class=&quot;headerlink&quot; title=&quot;进入开发者模式，enable USB侦错&quot;&gt;&lt;/a&gt;进入开发者模式，enable USB侦错&lt;/h2&gt;&lt;img src=&quot;/img/AR1.jpg&quot;&gt;
+
+&lt;h2 id=&quot;透过GOOGLE商店下载应用锁，随便设置一下&quot;&gt;&lt;a href=&quot;#透过GOOGLE商店下载应用锁，随便设置一下&quot; class=&quot;headerlink&quot; title=&quot;透过GOOGLE商店下载应用锁，随便设置一下&quot;&gt;&lt;/a&gt;透过GOOGLE商店下载应用锁，随便设置一下&lt;/h2&gt;&lt;img src=&quot;/img/AR2.jpg&quot;&gt;
+
+&lt;h2 id=&quot;adb-exe&quot;&gt;&lt;a href=&quot;#adb-exe&quot; class=&quot;headerlink&quot; title=&quot;adb.exe&quot;&gt;&lt;/a&gt;adb.exe&lt;/h2&gt;&lt;p&gt;adb.exe是Android Debug Bridge（ADB）的命令行工具。ADB提供了一组命令，可以在计算机和Android设备之间进行通信和交互。通过ADB，开发人员可以在计算机上执行各种操作，包括安装和卸载应用程序、传输文件、执行命令、查看设备日志和调试应用程序等。ADB还可以用于模拟用户操作，如发送按键事件和触摸事件。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;解决adb.exe的闪退&lt;/p&gt;
+&lt;p&gt;右键+shift开放powershell视窗，在powershell中运行adb.exe即可（cmd有同样的功能，不赘述）&lt;/p&gt;</summary>
     
     
     
@@ -45,13 +46,13 @@
     <updated>2023-04-26T07:56:47.979Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;IIS-service-enable&quot;&gt;&lt;a href=&quot;#IIS-service-enable&quot; class=&quot;headerlink&quot; title=&quot;IIS service enable&quot;&gt;&lt;/a&gt;IIS service</summary>
-        
-      
+    <summary type="html">&lt;h1 id=&quot;IIS-service-enable&quot;&gt;&lt;a href=&quot;#IIS-service-enable&quot; class=&quot;headerlink&quot; title=&quot;IIS service enable&quot;&gt;&lt;/a&gt;IIS service enable&lt;/h1&gt;&lt;p&gt;Similar to enabling Telnet client, enable IIS service in “Turn Windows features on or off” menu.&lt;br&gt;&lt;img src=&quot;\img\W1.png&quot;&gt;&lt;br&gt;To verify that the service has started successfully, open the IIS Manager&lt;br&gt;&lt;img src=&quot;\img\control.png&quot;&gt;&lt;br&gt;and open localhost:80 in browser, see the following page if the service has been successfully started.&lt;br&gt;&lt;img src=&quot;\img\success.png&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Everytime previewing my post, i use the localhost:4000, so what’s the diff?&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;IIS servers typically use port 80 because it is the default port for the HTTP protocol. When a user enters a website URL in their browser, it defaults to port 80 for accessing the site. Therefore, IIS defaults to using port 80 so that users can access websites directly using a domain name or IP address.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Hexo is a static website generator that generates static HTML files locally and publishes them to a web server. When previewING blog locally, Hexo starts a local server and uses port 4000 to provide local access. The 4000 port is not used in production, but only for development and testing purposes.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+</summary>
     
     
     
@@ -66,14 +67,93 @@
     <updated>2023-03-02T14:39:46.581Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;p&gt;作者：Alex Williams &amp;amp; Nick Srnicek&lt;/p&gt;
-&lt;p&gt;&lt;a</summary>
-        
-      
+&lt;p&gt;&lt;a href=&quot;http://www.cs.gettysburg.edu/~duncjo01/assets/writings/library/accelerate_manifesto.html&quot;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;加速主义推动着一个更为现代的未来，一个新自由主义本质上无法创造的另类现代性。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&quot;01-引言：论时局&quot;&gt;&lt;a href=&quot;#01-引言：论时局&quot; class=&quot;headerlink&quot; title=&quot;01 引言：论时局&quot;&gt;&lt;/a&gt;01 引言：论时局&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;21世纪第二个十年初，全球文明面临一种新型的灾难。这些即将到来的末日事件嘲笑着在国家诞生、资本主义崛起和前所未有的战争构成的政治规范和组织结构。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;最重要的是全球气候系统的破坏。随着时间的推移，这将威胁到现有全球人口的继续存在。虽然这是面临人类的最关键威胁，但还有一系列次要但同样具有潜在破坏性的问题与之并存并交错。终极资源枯竭，尤其是水和能源储备，带来了大规模饥荒、崩溃的经济范式以及新的热战和冷战前景。持续的金融危机迫使政府采取瘫痪的死亡螺旋政策，包括紧缩、社会福利服务的私有化、大规模失业和工资停滞。生产过程中“智力劳动力”的自动化不断增加，是资本主义的世俗危机的证据，很快将使其甚至无法维持北半球旧中产阶级的当前生活水平。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;相比于这些不断加速的灾难，当今的政治面临着一个无力创造新思想和组织方式的难题，而这些新思想和组织方式才是必要的，才能转型我们的社会，迎接和解决即将到来的毁灭。危机在迅速积聚，而政治却在衰退和退缩。在政治想象力的瘫痪中，未来被取消了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;自1979年以来，主导全球政治的意识形态是新自由主义，虽然在领先的经济大国中有一些变体。尽管新的全球性问题给新自由主义带来了深层次的挑战，特别是2007-2008年以来的信贷、金融和财政危机，但新自由主义计划仅在加深方面发展了。这个新自由主义计划的延续，或者说新自由主义2.0，已经开始在鼓励私营部门对社会民主机构和服务的剩余部分进行新的侵略性进攻方面施加另一轮结构性调整。这是尽管这些政策立即产生了负面的经济和社会影响，而新的全球性危机带来的长期根本障碍也非常明显。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 右翼政府、非政府组织和企业力量能够推进新自由主义至少部分原因在于，许多剩余的左翼力量仍然处于瘫痪和无效状态。三十年的新自由主义使得大多数左翼政党失去了激进思想，空心化，并且缺乏普遍的授权。他们最多只是呼吁回归凯恩斯主义经济体系来应对当下的危机，尽管这种体系发生的条件已经不存在了。我们无法通过法令回到大规模工业化-福特主义劳动时代，如果有的话。即使是南美洲的波利瓦尔革命的新社会主义政权，虽然在抵抗当代资本主义的教条方面具有振奋人心的能力，但令人失望的是，他们无法超越20世纪中叶社会主义的范畴。受新自由主义项目所带来的变化而逐渐削弱的有组织劳动在制度层面上已经硬化，最多只能在缓解新的结构性调整方面稍微起到作用。但是，由于缺乏建立新经济的系统方法或实现此类变革所需的结构性团结，有组织劳动目前仍然相对无能。自冷战结束以来出现的新社会运动在2008年之后经历了一次复兴，但同样无法设计出新的政治意识形态愿景。相反，他们将大量精力用于内部直接民主进程和情感自我赞美，而不是战略上的成效，并经常主张一种新原始主义的本土主义，好像要用群体的直接性来对抗全球资本的抽象暴力。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在没有一个根本性的新的社会、政治、组织和经济愿景的情况下，右派的霸权力量将继续在任何证据面前推进其狭隘的想象。充其量，左派可能暂时能够部分抵制一些最糟糕的侵犯。但这相当于像克努特王一样站在一股最终不可抗拒的潮流前面。要生成一个新的左翼全球霸权，就需要恢复失去的可能的未来，甚至是恢复未来本身。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;02-权力空位期（INTEREGNUM）：关于加速主义&quot;&gt;&lt;a href=&quot;#02-权力空位期（INTEREGNUM）：关于加速主义&quot; class=&quot;headerlink&quot; title=&quot;02 权力空位期（INTEREGNUM）：关于加速主义&quot;&gt;&lt;/a&gt;02 权力空位期（INTEREGNUM）：关于加速主义&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;如果要说哪个体系与加速主义的思想联系最紧密，那一定是资本主义。资本主义的基本代谢过程要求经济增长，而个体资本主义实体之间的竞争则推动着日益增长的技术发展，以期取得竞争优势，同时也伴随着日益增多的社会疏离。在其新自由主义形式中，其意识形态的自我呈现是解放创造性毁灭的力量，释放出日益加速的技术和社会创新。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;哲学家尼克兰德以一种狭隘但令人着迷的信仰捕捉了这一点，即资本主义的速度本身可以生成全球范围内前所未有的技术奇点。在这种资本主义的构想中，人类最终可以被抛弃，成为抽象的行星智能体系的负担，而这一体系正在迅速构建自身，以前文明的拼凑碎片为材料。然而，兰德的新自由主义混淆了速度和加速度。我们可能移动得很快，但仅限于一个严格定义的资本主义参数集内，这些参数本身从未动摇。我们只经历了本地视野不断增长的速度，只是简单的脑死亡冲刺，而不是一种也具有导航性质的加速度，即在可能性的普遍空间内进行发现的实验性过程。后者的加速度模式是我们认为至关重要的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;更糟糕的是，正如德勒兹和瓜塔里所认识到的那样，资本主义的速度从一开始就在用一只手解除领土约束（deterritorializes），而用另一只手重新约束（reterritorializes）。进步被限制在剩余价值、劳动力储备和自由流动的资本框架内。现代性被简化为经济增长的统计度量，社会创新被困于我们共同过去的陈词滥调。撒切尔和里根式的去规范化和维多利亚时期“回归基本家庭和宗教价值观”的理念并存。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在新自由主义内部存在着更深层次的紧张关系，它在自我形象上扮演着现代性的载体，被视为现代化的同义词，同时承诺提供一种其本质上无法实现的未来。实际上，随着新自由主义的发展，它不是在促进个人创造力，而是趋向于消除认知创新，转而推崇一个脚本化交互的情感生产线，与全球供应链和新福特主义的东方生产区相结合。一个微小的精英知识工人群体正在逐年缩小，特别是在算法自动化在情感和知识劳动领域传播的同时，这种趋势变得越来越明显。虽然新自由主义把自己定位为必要的历史发展，但事实上，它只是一种应对上世纪70年代出现的价值危机的偶然手段。不可避免地，这种方式只是对危机的曲折处理，而不是对它的最终克服。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;马克思和兰德都是典型的加速主义思想家，尽管有人批评，甚至一些当代马克思主义者的行为与之相悖，我们必须记住马克思本人使用了当时最先进的理论工具和实证数据来试图充分理解和改变他所处的世界。他不是一个抵制现代性的思想家，而是一个试图分析和干预现代性的思想家，他认识到尽管资本主义存在剥削和腐败，但它仍然是迄今为止最先进的经济体制。其获得的成果不应该被逆转，而应该被加速超越资本主义价值形式的限制。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;实际上，甚至列宁都在1918年的《“左翼”幼稚病》一文中写到：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;社会主义离不开基于现代科学最新发现的大规模资本主义工程。离不开有计划的国家组织，让数千万人遵守统一的生产和分配标准。我们马克思主义者一直这样说，不值得花两秒钟时间与不理解这一点（如无政府主义者和左翼社会革命党人的好几位）的人谈话。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;正如马克思所意识到的，资本主义不能被视为真正加速的推手。同样，将左派政治视为与技术社会加速相对立的评价，也至少在一定程度上是一种严重的误解。实际上，如果政治左派要有未来，它必须最大程度地拥抱这种被压制的加速主义倾向。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;03-宣言：未来&quot;&gt;&lt;a href=&quot;#03-宣言：未来&quot; class=&quot;headerlink&quot; title=&quot;03 宣言：未来&quot;&gt;&lt;/a&gt;03 宣言：未来&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;我们认为当今左派中最重要的分裂是在那些坚持民间政治、本土主义、直接行动和毫不妥协的横向主义（horizontalism）者，和那些阐述了被称为加速主义政治的人之间。前者满足于建立小而临时的非资本主义社会关系空间，回避面对本质上是非本地化、抽象化的对手和深植于我们日常基础设施中的实际问题。这种政治的失败从一开始就注定了。相比之下，加速主义政治旨在保留晚期资本主义的成果，同时超越其价值体系、治理结构和大众病态所允许的范围。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;我们都想减少工作时间。令人感兴趣的问题是，为什么战后时期世界领先的经济学家认为开明的资本主义不可避免地朝着彻底减少工作时间的方向发展。凯恩斯在《我们子孙的经济前景（In The Economic Prospects for Our Grandchildren）》（写于1930年）中预测了一个资本主义的未来，个人的工作时间将被缩减到每天三小时。然而，实际发生的是工作与生活的界限被逐渐消除，工作渗透到新兴社会工厂的方方面面。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;资本主义已经开始限制技术生产力，或者至少将其导向毫无必要的狭隘目标。专利战争和思想垄断是当代现象，它们指向了资本需要超越竞争的需求，以及资本日益倒退的技术方法。新自由主义的加速主义收益并没有减少工作量或减轻压力。我们所存在的时代不是一个充满太空旅行、未来冲击和革命技术潜力的世界，而是一个只有略微更好的消费小玩意儿不断出现的时代。对同一基本产品的无休止迭代，以维持微弱的消费需求，牺牲了人类的加速。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;我们不想回到福特主义。福特主义已经不可能回归。资本主义的“黄金时代”建立在有序的工厂环境生产范式的基础上，（男性）工人得到安全保障和基本生活标准，作为交换，他们要忍受终身枯燥乏味和社会压抑。这种系统依赖于殖民地和帝国、欠发达地区的国际等级制度；种族主义和性别歧视的国家等级制度；以及女性受压迫的严格家庭等级制度。尽管许多人可能会怀念这种制度，但它既不可取，也在实践上不可能回到过去。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;加速主义者想要释放潜在的生产力。在这个项目中，新自由主义的物质平台不需要被摧毁。它需要被重新用于共同的目标。现有的基础设施不是要被粉碎的资本主义舞台，而是一个向后资本主义发展的跳板。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;鉴于技术科学自1970年代末以来被奴役于资本主义目标（尤其是自1980年代以来），我们当然不知道现代技术社会体能做些什么。我们中间谁能完全认识到已经开发出来的技术中等待被挖掘的潜力？我们打赌，很多技术和科学研究的真正转型潜力仍未被开发，其中充满了目前多余的功能（或预先适应性），在跨越短视的资本主义社会之后，这些功能可以变得决定性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;我们希望加速技术进化的过程。但我们所主张的不是技术乌托邦主义。永远不要相信技术足以拯救我们。技术是必要的，但如果没有社会政治行动，它永远不足够。技术和社会是紧密相连的，两者的变化相互作用和加强。而技术乌托邦主义者则主张通过加速技术进程来自动地克服社会冲突，而我们的立场是，应该加速技术进化，因为技术在赢得社会冲突方面是必需的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;我们认为任何后资本主义都需要后资本主义规划。如果将信仰寄托在这样一个想法上——即在革命后，人民会自发地构建一个不仅仅是回归到资本主义的新的社会经济体系——这种想法在最好的情况下是天真的，最坏的情况下是无知的。为了进一步实现这一目标，我们必须同时开发出现有系统的认知图和未来经济体系的推测形象。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;因此，左翼必须利用资本主义社会所可能提供的每一个技术和科学进步。我们宣称，量化并不是要被消除的邪恶，而是应该被以最有效的方式使用的工具。经济建模是为了让复杂的世界变得清晰明了的必要手段。2008年的金融危机揭示了盲目接受数学模型的风险，然而这是权威非法的问题，而不是数学本身的问题。社会网络分析、基于代理的建模、大数据分析以及非平衡经济模型等工具，是理解现代经济这样的复杂系统所必须的认知媒介。加速主义左翼必须掌握这些技术领域的知识。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;任何社会的转型都必须涉及经济和社会实验。智利的Cybersyn项目就象征了这种实验性态度——它将先进的控制论技术与复杂的经济模型融合，以及在技术基础设施中实现的民主平台。在20世纪50年代和60年代，苏联的经济学家也进行了类似的实验，他们采用了控制论和线性规划等技术，试图克服第一个共产主义经济所面临的新问题。然而，由于这些早期的控制论者所面临的政治和技术限制，导致这些实验最终都没有成功。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;左派必须发展社会技术霸权：在思想领域和物质平台领域都如此。平台是全球社会的基础设施。它们建立了行为和意识形态的基本参数。在这个意义上，它们体现了社会的物质性超验：它们是特定行为、关系和权力的基础。尽管当前的全球平台在很大程度上偏向于资本主义社会关系，但这并非不可避免的必要性。这些生产、金融、物流和消费的物质平台可以而且将会被重新编程和重新格式化，以达到后资本主义的目的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;我们不认为直接行动足以实现这一切。示威、举牌和建立临时自治区的惯常策略可能会变成令人安心的替代品，而非有效的成功之路。 “至少我们做了一些事情”是那些注重自尊而非有效行动的人的呼声。唯一的良好策略标准是它是否能带来重大成功。我们必须摒弃迷信特定的行动模式。政治必须被视为一组动态系统，充满了冲突、适应和反适应以及战略军备竞赛。这意味着每种个别的政治行动模式随着对立方适应，逐渐变得迟钝和无效。没有任何一种特定的政治行动模式在历史上是不可侵犯的。事实上，随着对立方学会有效地防御和反击，丢弃熟悉策略的需要越来越大。这在一定程度上是当代左派无法做到的，这是当代病态的核心所在。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;当今“激进”左派普遍将民主过程作为最为重要的事情，这种做法需要被抛弃。对于开放、水平、包容的过度追求，会导致政治行动失去效力。在实现有效的政治行动中，保密、垂直和排斥等做法同样具有必要性（当然，并非唯一必要的做法）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;民主不能简单地通过投票、讨论或大会来定义。真正的民主必须通过集体的自我掌控来定义。这是一个将政治与启蒙思想遗产对齐的项目。仅有通过调动我们更好地了解自己和我们的世界（社会、技术、经济、心理世界）的能力，我们才能自我治理。为了避免成为极权中央集权或超出我们控制的多变的新秩序的奴隶，我们需要同时实现一个集体控制的合法垂直权威和分布式的水平社交形式。规划的命令必须与网络的自发秩序相结合。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;我们不认为任何特定的组织是体现这些向量的理想手段。需要的是一个组织生态系统，一个力量的多元化，不断地共鸣和反馈它们各自的优势。教条主义和集权主义同样是左派的丧钟，因此我们继续欢迎不同战术的尝试（即使是我们不同意的那些）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;我们有三个中期具体目标。首先，我们需要建立一个知识基础设施。这类似于新自由主义革命中的蒙特佩勒林协会（Mont Pelerin Society），其任务是创造一种新的意识形态、新的经济和社会模式，以及一个超越我们今天所统治的贫瘠理想的愿景。这是一种基础设施，需要建立不仅是思想，而且需要建立机构和物质途径来灌输、体现和传播它们。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;我们需要建立广泛的媒介改革。尽管互联网和社交媒体似乎提供了民主化的可能性，但传统媒体机构仍然在选择和框定叙述方面至关重要，同时具有展开调查性新闻报道的资金。让这些机构尽可能地接近大众控制对于推翻当前的事态呈现至关重要。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;最后，我们需要重建各种形式的阶级力量。这样的重建必须超越一个有机产生的全球无产阶级的观念。相反，它必须试图将各种零散的部分无产阶级身份联系起来，这些身份通常体现在后福特时代的不稳定劳动形式中。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;已经有团体和个人在各自努力实现这些目标，但每个目标单独都不足够。需要的是三者相互反馈，每个目标在当代情境中进行修正，使其他目标变得更加有效。这是一种基础设施、意识形态、社会和经济转型的正反馈循环，产生一个新的复杂霸权，一个新的后资本主义技术社会平台。历史表明，总是广泛的战术和组织带来了系统性的变革，这些经验必须被学习。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;要实现这些目标，从最实际的层面上讲，加速主义左派必须更加认真地思考建立一个有效的新政治基础设施所需的资源和资金流动。除了街头的“人民力量”外，我们需要资金支持，无论是来自政府、机构、智库、工会还是个人捐助者。我们认为定位和引导这种资金流动对于开始重建有效加速主义左翼组织的生态系统至关重要。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;我们宣布，只有最大限度地掌握社会和其环境的普罗米修斯式政治才能处理全球问题或战胜资本。这种掌握必须区别于启蒙思想家钟摆式的掌控。拉普拉斯的机械宇宙——只要有足够的信息就很容易掌控——已经从严肃科学理解的议程中消失了。但这并不意味着我们要与后现代主义的疲惫残余对立，谴责掌控是一种原法西斯主义（proto-fascistic）或权威为本质上非法。相反，我们提议，困扰我们星球和物种的问题迫使我们以一种新的复杂方式重新装饰掌控；虽然我们无法预测我们行动的具体结果，但我们可以确定概率范围内的可能结果。必须与这种复杂系统分析相结合的是一种新形式的行动：即通过行动中发现的偶然性来执行设计的即兴性实践，在地理社会艺术和机智的理性政治中工作。这是一种寻求在复杂世界中行动的最佳方式的推导性实验形式。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;我们需要重拾传统上为后资本主义辩护的观点：资本主义不仅是一种不公正和扭曲的制度，而且也是一种阻碍进步的制度。我们的技术发展正在受到资本主义的压制，尽管它也已经被释放出来。加速主义的基本信念是，通过超越资本主义社会所施加的限制，这些能力可以和应该被释放出来。超越我们当前限制的运动必须包括更多的内容，不仅仅是争取更加合理的全球社会的斗争。我们认为，它还必须包括恢复自19世纪中叶直到新自由主义黎明期间迷住许多人的梦想，即智人超越地球和我们的直接身体形式的追求。这些愿景今天被视为纯真时代的遗物。然而，它们既诊断了我们当今时代惊人的想象力匮乏，又提供了对一个情感上激励人心、思想上充满活力的未来的承诺。毕竟，只有后资本主义社会，由加速主义政治可能实现的社会，才能够履行20世纪中期的太空计划的兑现承诺，超越微小的技术升级，实现全面性的变革。走向集体自我掌控的时代，以及可能实现这一点的真正外来（alien）未来。走向启蒙项目的自我批判和自我掌控的完成，而不是消失。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;我们面临的选择非常严峻：要么是全球化的后资本主义，要么是向原始主义、永无止境的危机和地球生态崩溃的缓慢分裂。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;未来需要被建构。它已经被新自由主义资本主义摧毁，并被削减为更大的不平等、冲突和混乱的廉价承诺。这种未来观的崩溃是我们这个时代历史退步的症状，而不是像政治光谱上的愤世嫉俗者所说的那样，是怀疑主义成熟的标志。加速主义所推动的是更加现代的未来——一种新自由主义无法生成的替代现代性。未来必须再次被打开，将我们的视野解放到外在世界（the Outside）的普遍可能性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</summary>
     
     
     
@@ -88,13 +168,13 @@
     <updated>2023-03-02T14:41:51.551Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;本文是对&lt;a href=&quot;https://scholarworks.unr.edu/bitstream/handle/11714/6027/Gillespie_unr_0139M_12971.pdf&quot;&gt;Samantha</summary>
-        
-      
+    <summary type="html">&lt;p&gt;本文是对&lt;a href=&quot;https://scholarworks.unr.edu/bitstream/handle/11714/6027/Gillespie_unr_0139M_12971.pdf&quot;&gt;Samantha Gillespie的论文&lt;/a&gt;的&lt;strong&gt;节选&lt;/strong&gt;翻译&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/mukbang.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;摘要&quot;&gt;&lt;a href=&quot;#摘要&quot; class=&quot;headerlink&quot; title=&quot;摘要&quot;&gt;&lt;/a&gt;摘要&lt;/h1&gt;&lt;p&gt;本研究关注吃播现象如何以反叛姿态重构瘦身文化，并揭示了霸权主义在此过程中的变化。观众的言语和对女性在公共场所进食方式的讨论，进一步巩固了瘦身文化叙事框架，虽然这并非他们本意。这种叙事框架是由主导性的叙述构建而成，将女性在公共场所进食视为一种禁忌行为。&lt;/p&gt;
+&lt;h1 id=&quot;理论来源&quot;&gt;&lt;a href=&quot;#理论来源&quot; class=&quot;headerlink&quot; title=&quot;理论来源&quot;&gt;&lt;/a&gt;理论来源&lt;/h1&gt;&lt;h2 id=&quot;女性主义文化视角&quot;&gt;&lt;a href=&quot;#女性主义文化视角&quot; class=&quot;headerlink&quot; title=&quot;女性主义文化视角&quot;&gt;&lt;/a&gt;女性主义文化视角&lt;/h2&gt;&lt;p&gt;从女性主义文化的角度来审视媒体对女性与食物以及饮食行为的关系对女性产生的影响。在Bordo（2003）的研究中，她提到了19世纪维多利亚时代的文化意识形态，这是有记载以来第一个影响性别化饮食的文化因素。&lt;/p&gt;
+&lt;p&gt;食品政治已经支配了几十年的权力流动（Counihan，1992; Goody，1982）。在许多文化中，食品政治直到今天仍在制约种姓、性别、种族和阶级的差异。它确实限制了谁有机会获得食物，谁种植食物，谁有机会获得有营养的食物以及接受烹饪食物的教育（Counihan，1992; Adams，1990）。Bordo（2003）将现今规范女性饮食欲望的文化与维多利亚时代最初的饥饿和限制性饮食的做法联系起来。维多利亚时代还利用媒体传播向女性灌输限制性饮食的意识形态，将女性气质等同于控制饮食和过度放纵的危险（Bordo，2003）。&lt;/p&gt;
+&lt;p&gt;此外，Bordo（2003）利用Dijkstra（1986）的工作，认为这种开始控制女性饮食习惯的现象是从那个时期出现的压迫 “新女性 “的暗流中孕育出来的。Bordo (2003)还将这些规范的普及（女性控制饮食）与男人的推动联系起来。男人对女人的性感到恐惧，历史上，妇女的饥饿感与她们的性能力有关，这可以从 “食人者 “（man-eater）与其他比喻中看出。妇女的性能力和权力来自于她对吞噬男人不可控制的冲动（Bordo，2003）。&lt;/p&gt;
+&lt;p&gt;结果是，这导致了几代女性吃（或不吃）有害习惯的形成。Sadie Stein（2009）在她的文章中指出，媒体和广告业对女性的身体形态和食物选择产生了深远的影响。在情景喜剧和其他类型的娱乐节目中，女性角色经常被描绘成可以大吃大喝，却依然保持苗条的形象。这种呈现方式不仅对女性身体形态产生了负面影响，也对女性对食物的态度和行为产生了影响。女性往往感到内疚和羞耻，因为她们没有遵循社会对她们的饮食行为的规范。&lt;/p&gt;</summary>
     
     
     
@@ -109,14 +189,13 @@
     <updated>2023-03-01T12:56:05.748Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;p&gt;很大程度上是数学原理，很少有技术相关，嗯…而且不会有古典密码学相关&lt;/p&gt;
-&lt;h1 id=&quot;流密码&quot;&gt;&lt;a href=&quot;#流密码&quot; class=&quot;headerlink&quot; title=&quot;流密码&quot;&gt;&lt;/a&gt;流密码&lt;/h1&gt;&lt;p&gt;简而言之，流密码是一种</summary>
-        
-      
+&lt;h1 id=&quot;流密码&quot;&gt;&lt;a href=&quot;#流密码&quot; class=&quot;headerlink&quot; title=&quot;流密码&quot;&gt;&lt;/a&gt;流密码&lt;/h1&gt;&lt;p&gt;简而言之，流密码是一种 通过短密钥k产生一串密钥流，进行逐字符加密的体制。&lt;br&gt;为了记忆密钥k，电路中需要有记忆元件，这也是流密码的不同之处&lt;br&gt;目前最常用的是二元加法流。OFB与CTR皆为常用的流密码模式，CTR加密过程多一个计数器&lt;/p&gt;
+&lt;h2 id=&quot;有限状态自动机&quot;&gt;&lt;a href=&quot;#有限状态自动机&quot; class=&quot;headerlink&quot; title=&quot;有限状态自动机&quot;&gt;&lt;/a&gt;有限状态自动机&lt;/h2&gt;&lt;p&gt;简单理解即为state =fEvent=&amp;gt; newState的数学模型&lt;br&gt;fEvent：反馈函数&lt;br&gt;流密码的密钥流产生器即为一种有限状态自动机，见下&lt;/p&gt;
+&lt;h2 id=&quot;移位寄存器&quot;&gt;&lt;a href=&quot;#移位寄存器&quot; class=&quot;headerlink&quot; title=&quot;移位寄存器&quot;&gt;&lt;/a&gt;移位寄存器&lt;/h2&gt;&lt;p&gt;每时刻的state都是一个n维向量，有2^n种可能的状态。&lt;/p&gt;
+&lt;h3 id=&quot;反馈移位寄存器的计算方法&quot;&gt;&lt;a href=&quot;#反馈移位寄存器的计算方法&quot; class=&quot;headerlink&quot; title=&quot;反馈移位寄存器的计算方法&quot;&gt;&lt;/a&gt;反馈移位寄存器的计算方法&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;先输出a1初始状态，移位，最后一位用反馈结果补位
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;线性反馈移位寄存器（LFSR）的计算方法&quot;&gt;&lt;a href=&quot;#线性反馈移位寄存器（LFSR）的计算方法&quot; class=&quot;headerlink&quot; title=&quot;线性反馈移位寄存器（LFSR）的计算方法&quot;&gt;&lt;/a&gt;线性反馈移位寄存器（LFSR）的计算方法&lt;/h3&gt;</summary>
     
     
     
@@ -131,13 +210,9 @@
     <updated>2023-03-01T05:06:44.986Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;I was just doing time in school, no thing too major. While I was at it, I fixed of a bunch of bugs… I tried to deploy remotely with</summary>
-        
-      
+    <summary type="html">&lt;p&gt;I was just doing time in school, no thing too major. While I was at it, I fixed of a bunch of bugs… I tried to deploy remotely with ‘hexo d’, but got hit with a ‘Spawn Error’. I tried deleting ‘.deploy_git’ and rolling back like they suggested online, but proved ineffective. Turned out the config file in the root directory was the issue. The ‘Deploy’ repo was using ‘https’ method, but after switching to ‘SSH’, everything worked fine.&lt;/p&gt;
+&lt;p&gt;But then my custom domain stopped working… Checked the GitHub repo and saw that the ‘CNAME’ file had vanished. Domain control panel looked normal though. Added a custom domain in the repo settings, and voila. (Turns out I had added an ‘A record’ earlier - go figure how GitHub missed it.)&lt;/p&gt;
+</summary>
     
     
     
@@ -152,13 +227,29 @@
     <updated>2022-02-16T08:54:03.888Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;民族解放的悖论&quot;&gt;&lt;a href=&quot;#民族解放的悖论&quot; class=&quot;headerlink&quot;</summary>
-        
-      
+    <summary type="html">&lt;h1 id=&quot;民族解放的悖论&quot;&gt;&lt;a href=&quot;#民族解放的悖论&quot; class=&quot;headerlink&quot; title=&quot;民族解放的悖论&quot;&gt;&lt;/a&gt;民族解放的悖论&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;为何革命是左翼的革命，共和却是原教旨的？&lt;br&gt;必须彻底摈弃过去，但有很多人珍视自己的生活方式。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;民族解放的两个任务：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;从外部压迫中得到解放；&lt;/li&gt;
+&lt;li&gt;从外部压迫的内部影响——自我压迫中解放。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;宗教为什么不是解放的力量？&lt;br&gt;解放创造“新人”，宗教宣扬的是一种服从主流社会秩序、安于现状的哲学。&lt;br&gt;大多数宗教制定了一种现世可行的修行制度，要求信徒服从并给予领袖权威，而这些宗教领袖往往接受殖民者的任命。&lt;br&gt;民族解放需要与现存的国家斗争，千年盛世的思想看似在反抗殖民者统治，长远来看却是一种政治适应——因为它无法形成稳定持久的意识形态与反抗力量。&lt;br&gt;获得政治独立后，传统宗教会开始构建一种反革命的政治。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;解放者&lt;br&gt;解放者往往在压迫者的家乡和文化中接受教育。阿尔及利亚民族解放阵线中讲法语/热爱法国文化者并不少见，尼赫鲁在英国学校接受了八年教育，印度共产党的几位领导人都在英国接受教育。&lt;br&gt;解放者往往认同宗主国中反对派的意识形态。&lt;br&gt;现代意识形态、平等地位、与权威决裂。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;解放&lt;br&gt;人民对统治者的文化和政治同情更少。&lt;br&gt;当解放者更可能胜出时，传统的政治宗教领袖往往被边缘化。“传统主义似乎被击败了。”&lt;br&gt;例外是甘地，现代主义者把印度解放后异常强大的宗教民族主义归于甘地。如今的左翼分子对甘地也采取批判态度。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;那么解放后政治化的宗教是怎么产生的？&lt;br&gt;解放者的执政党逐渐疲软——腐败和宗教复兴看起来是同时发生的。&lt;br&gt;解放后宗教的影响依旧很大，民族主义领袖会发现宗教对统治的帮助很大，新统治者不敢像布尔什维克那样攻击宗教，相信“衰落是宗教的命运”。&lt;br&gt;旧的方式在宗教场所延续——更重要的是，在人际关系、家庭、生老病死中延续。&lt;br&gt;新兴精英被迫采取/主动拥抱极权政治和父权统治，民众对精英的反感推动了宗教复兴。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;结果是，落后回归了，讽刺地，它的回归主要借助于解放中建立的民主制度。&lt;/p&gt;
+&lt;h1 id=&quot;否定悖论&quot;&gt;&lt;a href=&quot;#否定悖论&quot; class=&quot;headerlink&quot; title=&quot;否定悖论&quot;&gt;&lt;/a&gt;否定悖论&lt;/h1&gt;&lt;p&gt;本书的悖论与解放者与人民的紧张关系有关——同情与敌意。&lt;/p&gt;
+&lt;h3 id=&quot;马克思主义的解释&quot;&gt;&lt;a href=&quot;#马克思主义的解释&quot; class=&quot;headerlink&quot; title=&quot;马克思主义的解释&quot;&gt;&lt;/a&gt;马克思主义的解释&lt;/h3&gt;&lt;p&gt;宗教信仰以及信仰造就的身份认同都是伪意识，并未接触到阶级斗争中的真实世界。解放者的民族主义未能战胜宗教，是因为民族主义也是一种源自同样原始思想和情感的伪意识。无论民族主义与宗教复兴之间的争端有多激烈，它们实际上是相互扶持的，共同促进一种狭隘的政治。实际上，殖民化是非民族的，如果解放者以为自己是在为民族解放作斗争，那就大错特错了。&lt;/p&gt;</summary>
     
     
     
@@ -173,13 +264,33 @@
     <updated>2023-04-26T13:17:43.437Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;HTTP的安全漏洞&quot;&gt;&lt;a href=&quot;#HTTP的安全漏洞&quot; class=&quot;headerlink&quot;</summary>
-        
-      
+    <summary type="html">&lt;h1 id=&quot;HTTP的安全漏洞&quot;&gt;&lt;a href=&quot;#HTTP的安全漏洞&quot; class=&quot;headerlink&quot; title=&quot;HTTP的安全漏洞&quot;&gt;&lt;/a&gt;HTTP的安全漏洞&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;窃听；&lt;/li&gt;
+&lt;li&gt;伪装；&lt;/li&gt;
+&lt;li&gt;篡改。&lt;br&gt;（安全经典三漏洞…）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;HTTP-Secure&quot;&gt;&lt;a href=&quot;#HTTP-Secure&quot; class=&quot;headerlink&quot; title=&quot;HTTP Secure&quot;&gt;&lt;/a&gt;HTTP Secure&lt;/h1&gt;&lt;p&gt;HTTPS就是被SSL（secure socket layer)/TLS协议代替通信接口部分的HTTP。&lt;br&gt;HTTPS=HTTP+加密+认证+完整性保护。&lt;/p&gt;
+&lt;h2 id=&quot;通信加密&quot;&gt;&lt;a href=&quot;#通信加密&quot; class=&quot;headerlink&quot; title=&quot;通信加密&quot;&gt;&lt;/a&gt;通信加密&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;SSL（secure socket layer)&lt;br&gt;是独立的协议，其他运行在应用层的协议都可以配合SSL使用。&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;公开密钥加密&lt;/strong&gt;：在这种方法中，需要一对密钥，一个是私人密钥，另一个则是公开密钥。&lt;br&gt;&lt;strong&gt;共享密钥加密&lt;/strong&gt;：共享密钥加密是加密和解密都是用相同密钥的一种加密方式，这种算法也被称为“对称加密”&lt;br&gt;证书可以验证密钥正确性。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;浏览器提示你证书不正确/已过期时发生了什么？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;浏览器提示证书不正确或已过期时，实际上发生了以下情况：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;浏览器向服务器发起HTTPS请求，服务器会返回自己的SSL证书。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;浏览器会对服务器返回的SSL证书进行验证，验证证书的颁发机构、证书的有效期、证书中的主题等等，以确保证书的真实性和有效性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;如果证书验证失败，浏览器会弹出提示框，告诉用户证书不正确或已过期，并提示用户是否继续访问该网站。如果用户选择继续访问，浏览器会继续建立HTTPS连接，但会在地址栏中显示警告信息，提醒用户存在风险。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;SSL的速度问题：&lt;/p&gt;
+&lt;p&gt;没有根本的解决方案，只能使用SSL加速器（专用服务器）改善问题。&lt;/p&gt;</summary>
     
     
     
@@ -198,13 +309,15 @@
     <updated>2023-02-26T14:17:42.963Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;背景知识&quot;&gt;&lt;a href=&quot;#背景知识&quot; class=&quot;headerlink&quot; title=&quot;背景知识&quot;&gt;&lt;/a&gt;背景知识&lt;/h1&gt;&lt;h1 id=&quot;1-TCP-IP协议族&quot;&gt;&lt;a href=&quot;#1-TCP-IP协议族&quot; class=&quot;headerlink&quot;</summary>
-        
-      
+    <summary type="html">&lt;h1 id=&quot;背景知识&quot;&gt;&lt;a href=&quot;#背景知识&quot; class=&quot;headerlink&quot; title=&quot;背景知识&quot;&gt;&lt;/a&gt;背景知识&lt;/h1&gt;&lt;h1 id=&quot;1-TCP-IP协议族&quot;&gt;&lt;a href=&quot;#1-TCP-IP协议族&quot; class=&quot;headerlink&quot; title=&quot;1. TCP/IP协议族&quot;&gt;&lt;/a&gt;1. TCP/IP协议族&lt;/h1&gt;&lt;p&gt;  &lt;em&gt;以后可能会写TCP/IP的笔记，大概…&lt;/em&gt;&lt;br&gt;  通常使用的网络是在TCP/IP协议族的基础上运行的，HTTP属于其子集。&lt;/p&gt;
+&lt;h4 id=&quot;1-1-TCP-IP分层管理&quot;&gt;&lt;a href=&quot;#1-1-TCP-IP分层管理&quot; class=&quot;headerlink&quot; title=&quot;1.1 TCP/IP分层管理&quot;&gt;&lt;/a&gt;1.1 TCP/IP分层管理&lt;/h4&gt;&lt;h3 id=&quot;分层的优势&quot;&gt;&lt;a href=&quot;#分层的优势&quot; class=&quot;headerlink&quot; title=&quot;分层的优势&quot;&gt;&lt;/a&gt;分层的优势&lt;/h3&gt;&lt;p&gt;  各层次接口调整好后，每个层次内部可以自由改动。&lt;/p&gt;
+&lt;h3 id=&quot;分层&quot;&gt;&lt;a href=&quot;#分层&quot; class=&quot;headerlink&quot; title=&quot;分层&quot;&gt;&lt;/a&gt;分层&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;应用层&lt;br&gt;应用层决定向用户提供应用服务时通信的活动。&lt;strong&gt;HTTP属于该层。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;传输层&lt;br&gt;传输层提供&lt;strong&gt;处于网络连接中的&lt;/strong&gt;两台计算机的&lt;strong&gt;数据传输&lt;/strong&gt;，有两个性质不同的协议：TCP（Transmission control protocol）与UDP（User data protocol）。&lt;/li&gt;
+&lt;li&gt;网络层&lt;br&gt;网络层规定了到达用户计算机并传输数据的传输路线。&lt;/li&gt;
+&lt;li&gt;链路层&lt;br&gt;即硬件部分。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&quot;1-2-TCP-IP数据传输流&quot;&gt;&lt;a href=&quot;#1-2-TCP-IP数据传输流&quot; class=&quot;headerlink&quot; title=&quot;1.2 TCP/IP数据传输流&quot;&gt;&lt;/a&gt;1.2 TCP/IP数据传输流&lt;/h4&gt;&lt;p&gt;  客户端&amp;lt;-&amp;gt;层&amp;lt;-&amp;gt;服务器&lt;br&gt;  发送端传输数据时，每经过一层必定被打上一个该层所属的首部信息，反之，接收端接收数据时，每经过一层必定会把对应的首部消去。这种方法称为&lt;strong&gt;封装&lt;/strong&gt;。&lt;/p&gt;</summary>
     
     
     
