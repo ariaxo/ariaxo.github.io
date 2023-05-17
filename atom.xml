@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-04-26T07:56:47.979Z</updated>
+  <updated>2023-05-17T07:52:57.457Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Android Reverse 尝试——分析Smart AppLock并破解密码</title>
+    <link href="http://example.com/2023/05/17/AndroidRev/"/>
+    <id>http://example.com/2023/05/17/AndroidRev/</id>
+    <published>2023-05-17T07:09:15.878Z</published>
+    <updated>2023-05-17T07:52:57.457Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;前期准备&quot;&gt;&lt;a href=&quot;#前期准备&quot; class=&quot;headerlink&quot; title=&quot;前期准备&quot;&gt;&lt;/a&gt;前期准备&lt;/h1&gt;&lt;h2 id=&quot;进入开发者模式，enable-USB侦错&quot;&gt;&lt;a href=&quot;#进入开发者模式，enable-USB侦错&quot; class=&quot;headerlink&quot; title=&quot;进入开发者模式，enable USB侦错&quot;&gt;&lt;/a&gt;进入开发者模式，enable USB侦错&lt;/h2&gt;&lt;img src=&quot;/img/AR1.jpg&quot;&gt;
+
+&lt;h2 id=&quot;透过GOOGLE商店下载应用锁，随便设置一下&quot;&gt;&lt;a href=&quot;#透过GOOGLE商店下载应用锁，随便设置一下&quot; class=&quot;headerlink&quot; title=&quot;透过GOOGLE商店下载应用锁，随便设置一下&quot;&gt;&lt;/a&gt;透过GOOGLE商店下载应用锁，随便设置一下&lt;/h2&gt;&lt;img src=&quot;/img/AR2.JPG&quot;&gt;
+
+&lt;h2 id=&quot;adb-exe&quot;&gt;&lt;a href=&quot;#adb-exe&quot; class=&quot;headerlink&quot; title=&quot;adb.exe&quot;&gt;&lt;/a&gt;adb.exe&lt;/h2&gt;&lt;p&gt;adb.exe是Android Debug Bridge（ADB）的命令行工具。ADB提供了一组命令，可以在计算机和Android设备之间进行通信和交互。通过ADB，开发人员可以在计算机上执行各种操作，包括安装和卸载应用程序、传输文件、执行命令、查看设备日志和调试应用程序等。ADB还可以用于模拟用户操作，如发送按键事件和触摸事件。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;解决adb.exe的闪退&lt;/p&gt;
+&lt;p&gt;右键+shift开放powershell视窗，在powershell中运行adb.exe即可（cmd有同样的功能，不赘述）&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>远程监控的实现（On Windows）</title>
