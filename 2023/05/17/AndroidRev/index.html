@@ -156,17 +156,20 @@ var _hmt = _hmt || [];
 <p>右键+shift开放powershell视窗，在powershell中运行adb.exe即可（cmd有同样的功能，不赘述）</p>
 <hr>
 <p>另：adb.exe文件必须与正确的ADB驱动程序一起使用，并且需要配置正确的环境变量才能在任意位置运行adb命令<br><IMG src="/img/AR3.png"><br><IMG SRC="/IMG/AR4.png"></p>
+<p>接下来用USB连接手机与电脑，在adb命令行中出现以下内容即为成功<br><img src="/img/ar5.png"></p>
 <h1 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h1><p>Android API Level 8 及以上的 Android 系统提供了应用程序数据的备份和恢复功能，此功能的开关由应用程序中 AndroidManifest.xml 文件allowBackup属性值决定，其属性值默认为<code>true</code>。当 allowBackup 标志为<code>true</code>时，用户即可通过 adb backup 和 adb restore 命令对应用数据进行备份和恢复。但是通过备份功能，攻击者也可以在无设备ROOT权限时获取程序的隐私数据</p>
-<h2 id="JADX"><a href="#JADX" class="headerlink" title="JADX"></a>JADX</h2><p>找到并加载Smart Lockfree目录，找到<code>Resources/AndroidManifest.xml</code>搜索package，可以发现<code>allowBackup= &quot;true&quot;</code></p>
-<h2 id="ADB"><a href="#ADB" class="headerlink" title="ADB"></a>ADB</h2><p>在adb中用<code>adb backup -f</code>命令进行备份，获取到backup.ab文件，解压得到apps文件夹，浏览得到app_lock.xml文件中与密码有关的hash信息：</p>
-<h2 id="回到JADX"><a href="#回到JADX" class="headerlink" title="回到JADX"></a>回到JADX</h2><p>通过text search搜索hash值对应的变量名</p>
-<p>通过变量名找到函数-&gt;再跳转源文件</p>
-<p>查看源文件函数调用情况</p>
-<p>查找包含hash算法的函数，可以发现这个算法进行了SHA-1与MD5运算</p>
-<p>得到SHA-1值：</p>
-<p>MD5：</p>
-<h2 id="破解Hash"><a href="#破解Hash" class="headerlink" title="破解Hash"></a>破解Hash</h2><p>得到手势密码</p>
-<p>如果在第一步里设置的是PIN码，操作一样</p>
+<h2 id="JADX"><a href="#JADX" class="headerlink" title="JADX"></a>JADX</h2><p>找到并加载Smart Lockfree目录，找到<code>Resources/AndroidManifest.xml</code>搜索package，可以发现<code>allowBackup= &quot;true&quot;</code>（图不放了反正是这样的）<br><img src="/img/ar6.png"><br><img src="/img/ar7.png"></p>
+<h2 id="ADB"><a href="#ADB" class="headerlink" title="ADB"></a>ADB</h2><p>在adb中用<code>adb backup -f</code>命令进行备份，获取到backup.ab文件<br><img src="/img/ar8.png"><br><img src="/img/ar9.jpg"><br>解压得到apps文件夹<br><img src="/img/ar10.png"><br>浏览得到app_lock.xml文件中与密码有关的hash信息：<br><img src="/img/ar11.png"></p>
+<h2 id="回到JADX"><a href="#回到JADX" class="headerlink" title="回到JADX"></a>回到JADX</h2><p>通过text search搜索hash值对应的变量名<br><img src="/img/ar12.png"><br>通过变量名找到函数-&gt;再跳转源文件<br><img src="/img/ar13.png"></p>
+<p>查看源文件函数调用情况<br><img src="/img/ar14.png"></p>
+<p>查找包含hash算法的函数，可以发现这个算法进行了SHA-1与MD5运算<br><img src="/img/sha.png"></p>
+<p>由此猜测<code>962AA61D74078F2E4390F31368DD8F05540495E5F8218F3E5F939A92BE368D802A63FA9B</code>为SHA-1与MD5的连接值<br>得到SHA-1值：<code>962AA61D74078F2E4390F31368DD8F05540495E5</code><br>MD5：<code>F8218F3E5F939A92BE368D802A63FA9B</code></p>
+<pre><code>SHA-1 算法的摘要长度为 160 位，转化为十六进制字符串为 40 个字符，而 MD5 算法的摘要长度为 128 位，十六进制字符串长度为 32，两者连接长度为 72 个字符，恰好与 pattern_code_hash 的长相同。
+</code></pre>
+<h2 id="破解Hash"><a href="#破解Hash" class="headerlink" title="破解Hash"></a>破解Hash</h2><img src="/img/sha2.png">
+此数字串应当为节点的映射，得到手势密码。
+
+<p>如果在第一步里设置的是PIN码，操作一样，不赘述：<br><img src="/img/pin.jpg"><br><img src="/img/pin2.png"><br><img src="/img/pin3.png"></p>
 <h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><ol>
 <li><p>除了利用备份获取隐私数据，其他获取数据的方法包括使用系统实用程序，例如Linux命令行工具“ls”，网络工具如netstat、iptables和nslookup可以用于查询和检索系统中的数据。</p>
 </li>
