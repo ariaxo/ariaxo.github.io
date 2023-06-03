@@ -6,7 +6,7 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>SHA-1的JavaScript实现（简化） | Voidhead</title>
+  <title>SHA-1的JavaScript实现（简化） | Voidhead</title><meta name="robots" content="noindex">
   <meta name="author" content="Ariax">
   
   <meta name="description" content="function sha1(message) &amp;#123;
@@ -14,104 +14,7 @@
     return (n &amp;lt;&amp;lt; s) | (n &amp;gt;&amp;gt;&amp;gt; (32 - s));
   &amp;#125;
 
-  function toHex(value) &amp;#123;
-    var hex = &amp;quot;&amp;quot;;
-    for (var i = 0; i &amp;lt; 8; i++) &amp;#123;
-      hex += ((value &amp;gt;&amp;gt;&amp;gt; (28 - i * 4)) &amp;amp; 0xf).toString(16);
-    &amp;#125;
-    return hex;
-  &amp;#125;
-
-  function preProcessMessage(message) &amp;#123;
-    var originalLength = message.length * 8;
-    var appendedOne = 1 &amp;lt;&amp;lt; 7;
-    message.push(appendedOne);
-
-    while (message.length % 64 !== 56) &amp;#123;
-      message.push(0);
-    &amp;#125;
-
-    var lengthBytes = new Array(8);
-    for (var i = 0; i &amp;lt; 8; i++) &amp;#123;
-      lengthBytes[i] = (originalLength &amp;gt;&amp;gt;&amp;gt; (56 - i * 8)) &amp;amp; 0xff;
-    &amp;#125;
-    message = message.concat(lengthBytes);
-
-    return message;
-  &amp;#125;
-
-  var h0 = 0x67452301;
-  var h1 = 0xefcdab89;
-  var h2 = 0x98badcfe;
-  var h3 = 0x10325476;
-  var h4 = 0xc3d2e1f0;
-
-  var messageBytes = [];
-  for (var i = 0; i &amp;lt; message.length; i++) &amp;#123;
-    messageBytes.push(message.charCodeAt(i) &amp;amp; 0xff);
-  &amp;#125;
-
-  messageBytes = preProcessMessage(messageBytes);
-
-  var blocks = messageBytes.length / 64;
-  for (var i = 0; i &amp;lt; blocks; i++) &amp;#123;
-    var words = new Array(80);
-    for (var j = 0; j &amp;lt; 16; j++) &amp;#123;
-      words[j] = (messageBytes[i * 64 + j * 4] &amp;lt;&amp;lt; 24) |
-                 (messageBytes[i * 64 + j * 4 + 1] &amp;lt;&amp;lt; 16) |
-                 (messageBytes[i * 64 + j * 4 + 2] &amp;lt;&amp;lt; 8) |
-                 (messageBytes[i * 64 + j * 4 + 3]);
-    &amp;#125;
-
-    for (var j = 16; j &amp;lt; 80; j++) &amp;#123;
-      words[j] = rotateLeft((words[j - 3] ^ words[j - 8] ^ words[j - 14] ^ words[j - 16]), 1);
-    &amp;#125;
-
-    var a = h0;
-    var b = h1;
-    var c = h2;
-    var d = h3;
-    var e = h4;
-
-    for (var j = 0; j &amp;lt; 80; j++) &amp;#123;
-      var f, k;
-      if (j &amp;lt; 20) &amp;#123;
-        f = (b &amp;amp; c) | ((~b) &amp;amp; d);
-        k = 0x5a827999;
-      &amp;#125; else if (j &amp;lt; 40) &amp;#123;
-        f = b ^ c ^ d;
-        k = 0x6ed9eba1;
-      &amp;#125; else if (j &amp;lt; 60) &amp;#123;
-        f = (b &amp;amp; c) | (b &amp;amp; d) | (c &amp;amp; d);
-        k = 0x8f1bbcdc;
-      &amp;#125; else &amp;#123;
-        f = b ^ c ^ d;
-        k = 0xca62c1d6;
-      &amp;#125;
-
-      var temp = rotateLeft(a, 5) + f + e + k + words[j];
-      e = d;
-      d = c;
-      c = rotateLeft(b, 30);
-      b = a;
-      a = temp;
-    &amp;#125;
-
-    h0 += a;
-    h1 += b;
-    h2 += c;
-    h3 += d;
-    h4 += e;
-  &amp;#125;
-
-  var hash = toHex(h0) + toHex(h1) + toHex(h2) + toHex(h3) + toHex(h4);
-  return hash;
-&amp;#125;
-
-// 示例用法
-var plaintext = &amp;quot;Hello, SHA-1!&amp;quot;;
-var hashedText = sha1(plaintext);
-console.log(&amp;quot;Hashed Text:&amp;quot;, hashedText);">
+  function toHex(val">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -345,24 +248,13 @@ var plaintext = &quot;Hello, SHA-1!&quot;;
 var hashedText = sha1(plaintext);
 console.log(&quot;Hashed Text:&quot;, hashedText);
 </code></pre>
-
+<!-- flag of hidden posts -->
 	  	  
 	</div>
 
 	<div>
   	<center>
 	<div class="pagination">
-
-    
-    
-    <a type="button" class="btn btn-default disabled"><i class="fa fa-arrow-circle-o-left"></i>Prev</a>
-    
-
-    <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
-    
-    <a href="/2023/05/29/crypto/" type="button" class="btn btn-default ">Next<i
-                class="fa fa-arrow-circle-o-right"></i></a>
-    
 
     
 </div>

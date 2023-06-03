@@ -142,137 +142,6 @@ var _hmt = _hmt || [];
 <div class="row">
 	<div class="col-md-8">
 		<h3 class="title">
-			<a href="/2023/05/29/sha1/" >SHA-1的JavaScript实现（简化）</a>
-		</h3>
-		</div>
-	<div class="col-md-4">
-		<div class="date">post @ 2023-05-29  </div>
-		</div>
-	</div>
-	
-
-
-			<div class="entry">
-  <div class="row">
-	
-	
-		<pre><code>function sha1(message) &#123;
-  function rotateLeft(n, s) &#123;
-    return (n &lt;&lt; s) | (n &gt;&gt;&gt; (32 - s));
-  &#125;
-
-  function toHex(value) &#123;
-    var hex = &quot;&quot;;
-    for (var i = 0; i &lt; 8; i++) &#123;
-      hex += ((value &gt;&gt;&gt; (28 - i * 4)) &amp; 0xf).toString(16);
-    &#125;
-    return hex;
-  &#125;
-
-  function preProcessMessage(message) &#123;
-    var originalLength = message.length * 8;
-    var appendedOne = 1 &lt;&lt; 7;
-    message.push(appendedOne);
-
-    while (message.length % 64 !== 56) &#123;
-      message.push(0);
-    &#125;
-
-    var lengthBytes = new Array(8);
-    for (var i = 0; i &lt; 8; i++) &#123;
-      lengthBytes[i] = (originalLength &gt;&gt;&gt; (56 - i * 8)) &amp; 0xff;
-    &#125;
-    message = message.concat(lengthBytes);
-
-    return message;
-  &#125;
-
-  var h0 = 0x67452301;
-  var h1 = 0xefcdab89;
-  var h2 = 0x98badcfe;
-  var h3 = 0x10325476;
-  var h4 = 0xc3d2e1f0;
-
-  var messageBytes = [];
-  for (var i = 0; i &lt; message.length; i++) &#123;
-    messageBytes.push(message.charCodeAt(i) &amp; 0xff);
-  &#125;
-
-  messageBytes = preProcessMessage(messageBytes);
-
-  var blocks = messageBytes.length / 64;
-  for (var i = 0; i &lt; blocks; i++) &#123;
-    var words = new Array(80);
-    for (var j = 0; j &lt; 16; j++) &#123;
-      words[j] = (messageBytes[i * 64 + j * 4] &lt;&lt; 24) |
-                 (messageBytes[i * 64 + j * 4 + 1] &lt;&lt; 16) |
-                 (messageBytes[i * 64 + j * 4 + 2] &lt;&lt; 8) |
-                 (messageBytes[i * 64 + j * 4 + 3]);
-    &#125;
-
-    for (var j = 16; j &lt; 80; j++) &#123;
-      words[j] = rotateLeft((words[j - 3] ^ words[j - 8] ^ words[j - 14] ^ words[j - 16]), 1);
-    &#125;
-
-    var a = h0;
-    var b = h1;
-    var c = h2;
-    var d = h3;
-    var e = h4;
-
-    for (var j = 0; j &lt; 80; j++) &#123;
-      var f, k;
-      if (j &lt; 20) &#123;
-        f = (b &amp; c) | ((~b) &amp; d);
-        k = 0x5a827999;
-      &#125; else if (j &lt; 40) &#123;
-        f = b ^ c ^ d;
-        k = 0x6ed9eba1;
-      &#125; else if (j &lt; 60) &#123;
-        f = (b &amp; c) | (b &amp; d) | (c &amp; d);
-        k = 0x8f1bbcdc;
-      &#125; else &#123;
-        f = b ^ c ^ d;
-        k = 0xca62c1d6;
-      &#125;
-
-      var temp = rotateLeft(a, 5) + f + e + k + words[j];
-      e = d;
-      d = c;
-      c = rotateLeft(b, 30);
-      b = a;
-      a = temp;
-    &#125;
-
-    h0 += a;
-    h1 += b;
-    h2 += c;
-    h3 += d;
-    h4 += e;
-  &#125;
-
-  var hash = toHex(h0) + toHex(h1) + toHex(h2) + toHex(h3) + toHex(h4);
-  return hash;
-&#125;
-
-// 示例用法
-var plaintext = &quot;Hello, SHA-1!&quot;;
-var hashedText = sha1(plaintext);
-console.log(&quot;Hashed Text:&quot;, hashedText);
-</code></pre>
-
-	
-	</div>
-  <a type="button" href="/2023/05/29/sha1/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
-			
-	
-	<!-- display as entry -->
-<div class="row">
-	<div class="col-md-8">
-		<h3 class="title">
 			<a href="/2023/05/29/crypto/" >快速上手密码学</a>
 		</h3>
 		</div>
@@ -372,7 +241,8 @@ console.log(&quot;Hashed Text:&quot;, hashedText);
 <blockquote>
 <p>素数检测算法的复杂性：目前常用的素数检测算法如试除法、费马测试、Miller-Rabin测试等，这些算法在大素数上的执行时间与输入的位数呈指数关系。随着位数的增加，算法的执行时间呈爆炸式增长，使得寻找大素数变得非常耗时和困难。</p>
 </blockquote>
-<h2 id="2-欧几里得算法（Euclidean-algorithm）"><a href="#2-欧几里得算法（Euclidean-algorithm）" class="headerlink" title="2. 欧几里得算法（Euclidean algorithm）"></a>2. <a name="Euclideanalgorithm"></a>欧几里得算法（Euclidean algorithm）</h2><p>计算两个整数最大公约数（GCD）</p>
+<p>6.3注：大整数分解困难问题是RSA算法的基础。另还有基于离散对数困难问题的Diffie-Hellman密钥交换协议、Elgamal加密以及DSA算法、基于椭圆曲线上离散对数困难问题的椭圆曲线密码体制。</p>
+<h2 id="2-欧几里得算法（Euclidean-algorithm）"><a href="#2-欧几里得算法（Euclidean-algorithm）" class="headerlink" title="2. 欧几里得算法（Euclidean algorithm）"></a>2. <a name="Euclideanalgorithm"></a>欧几里得算法（Euclidean algorithm）</h2>
 	
 	</div>
   <a type="button" href="/2023/05/29/crypto/#more" class="btn btn-default more">Read More</a>
@@ -756,6 +626,41 @@ console.log(&quot;Hashed Text:&quot;, hashedText);
 </div>
 
 		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
+			<a href="/2022/02/01/HTTP_notes/" >HTTP学习笔记</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2022-02-01  </div>
+		</div>
+	</div>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h1 id="背景知识"><a href="#背景知识" class="headerlink" title="背景知识"></a>背景知识</h1><h1 id="1-TCP-IP协议族"><a href="#1-TCP-IP协议族" class="headerlink" title="1. TCP/IP协议族"></a>1. TCP/IP协议族</h1><p>  <em>以后可能会写TCP/IP的笔记，大概…</em><br>  通常使用的网络是在TCP/IP协议族的基础上运行的，HTTP属于其子集。</p>
+<h4 id="1-1-TCP-IP分层管理"><a href="#1-1-TCP-IP分层管理" class="headerlink" title="1.1 TCP/IP分层管理"></a>1.1 TCP/IP分层管理</h4><h3 id="分层的优势"><a href="#分层的优势" class="headerlink" title="分层的优势"></a>分层的优势</h3><p>  各层次接口调整好后，每个层次内部可以自由改动。</p>
+<h3 id="分层"><a href="#分层" class="headerlink" title="分层"></a>分层</h3><ol>
+<li>应用层<br>应用层决定向用户提供应用服务时通信的活动。<strong>HTTP属于该层。</strong></li>
+<li>传输层<br>传输层提供<strong>处于网络连接中的</strong>两台计算机的<strong>数据传输</strong>，有两个性质不同的协议：TCP（Transmission control protocol）与UDP（User data protocol）。</li>
+<li>网络层<br>网络层规定了到达用户计算机并传输数据的传输路线。</li>
+<li>链路层<br>即硬件部分。</li>
+</ol>
+<h4 id="1-2-TCP-IP数据传输流"><a href="#1-2-TCP-IP数据传输流" class="headerlink" title="1.2 TCP/IP数据传输流"></a>1.2 TCP/IP数据传输流</h4><p>  客户端&lt;-&gt;层&lt;-&gt;服务器<br>  发送端传输数据时，每经过一层必定被打上一个该层所属的首部信息，反之，接收端接收数据时，每经过一层必定会把对应的首部消去。这种方法称为<strong>封装</strong>。</p>
+	
+	</div>
+  <a type="button" href="/2022/02/01/HTTP_notes/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
 
 		</div>
 
@@ -765,16 +670,6 @@ console.log(&quot;Hashed Text:&quot;, hashedText);
 		<div class="pagination">
 
    
-    
-           <a type="button" class="btn btn-default disabled"><i class="fa fa-arrow-circle-o-left"></i>Prev</a>
-        
-
-        <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
- 
-       <a href="/page/2/" type="button" class="btn btn-default ">Next<i class="fa fa-arrow-circle-o-right"></i></a>     
-        
-
-  
 </div>
 
   		</center>
@@ -834,10 +729,6 @@ console.log(&quot;Hashed Text:&quot;, hashedText);
   <ul class="entry list-unstyled">
     
       <li>
-        <a href="/2023/05/29/sha1/" ><i class="fa fa-file-o"></i>SHA-1的JavaScript实现（简化）</a>
-      </li>
-    
-      <li>
         <a href="/2023/05/29/crypto/" ><i class="fa fa-file-o"></i>快速上手密码学</a>
       </li>
     
@@ -851,6 +742,10 @@ console.log(&quot;Hashed Text:&quot;, hashedText);
     
       <li>
         <a href="/2023/03/02/AccManifesto/" ><i class="fa fa-file-o"></i>加速主义政治宣言</a>
+      </li>
+    
+      <li>
+        <a href="/2023/03/01/mukbangCritique/" ><i class="fa fa-file-o"></i>观看女性进食——对“神奇饮食”与吃播的批判</a>
       </li>
     
   </ul>

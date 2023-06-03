@@ -91,7 +91,8 @@ Diffie-Hellman &amp;amp; Elgamal
 
 素数检测算法的复杂性：目前常用的素数检测算法如试除法、费马测试、Miller-Rabin测试等，这些算法在大素数上的执行时间与输入的位数呈指数关系。随着位数的增加，算法的执行时间呈爆炸式增长，使得寻找大素数变得非常耗时和困难。
 
-2. 欧几里得算法（Euclidean algorithm）计算两个整数最大公约数（GCD）">
+6.3注：大整数分解困难问题是RSA算法的基础。另还有基于离散对数困难问题的Diffie-Hellman密钥交换协议、Elgamal加密以及DSA算法、基于椭圆曲线上离散对数困难问题的椭圆曲线密码体制。
+2. 欧几里得算法（Euclidean algorithm）">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -306,10 +307,13 @@ var _hmt = _hmt || [];
 <blockquote>
 <p>素数检测算法的复杂性：目前常用的素数检测算法如试除法、费马测试、Miller-Rabin测试等，这些算法在大素数上的执行时间与输入的位数呈指数关系。随着位数的增加，算法的执行时间呈爆炸式增长，使得寻找大素数变得非常耗时和困难。</p>
 </blockquote>
+<p>6.3注：大整数分解困难问题是RSA算法的基础。另还有基于离散对数困难问题的Diffie-Hellman密钥交换协议、Elgamal加密以及DSA算法、基于椭圆曲线上离散对数困难问题的椭圆曲线密码体制。</p>
 <h2 id="2-欧几里得算法（Euclidean-algorithm）"><a href="#2-欧几里得算法（Euclidean-algorithm）" class="headerlink" title="2. 欧几里得算法（Euclidean algorithm）"></a>2. <a name='Euclideanalgorithm'></a>欧几里得算法（Euclidean algorithm）</h2><p>计算两个整数最大公约数（GCD）</p>
 <blockquote>
 <p>例如，我们要计算 72 和 30 的最大公约数：<br>a = 72，b = 30。<br>72 除以 30 得到商 2 和余数 12。<br>12 不等于 0，所以将 30 的值赋给 a，将 12 的值赋给 b。<br>a = 30，b = 12。<br>30 除以 12 得到商 2 和余数 6。<br>6 不等于 0，所以将 12 的值赋给 a，将 6 的值赋给 b。<br>a = 12，b = 6。<br>12 除以 6 得到商 2 和余数 0。<br>余数为 0，所以最大公约数为 6。</p>
 </blockquote>
+<h2 id="欧拉函数与欧拉定理"><a href="#欧拉函数与欧拉定理" class="headerlink" title="欧拉函数与欧拉定理"></a>欧拉函数与欧拉定理</h2><p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0">https://zh.wikipedia.org/wiki/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0</a></p>
+<p>整数m＞1，（a，m）＝1，则a^E(m)与1同模m</p>
 <h2 id="3-费马小定理"><a href="#3-费马小定理" class="headerlink" title="3. 费马小定理"></a>3. <a name='-1'></a>费马小定理</h2><p>如果 p 是一个质数，a 是任意不可被 p 整除的整数，则有：</p>
 <pre><code>a^(p-1) ≡ 1 (mod p)
 </code></pre>
@@ -320,22 +324,7 @@ var _hmt = _hmt || [];
 <p>但是反之，满足费马小定理的数不一定是素数。参见<a href=https://zh.wikipedia.org/wiki/%E8%B4%B9%E9%A9%AC%E4%BC%AA%E7%B4%A0%E6%95%B0>费马伪素数</a>。</p>
 <h2 id="4-拓展欧几里得算法"><a href="#4-拓展欧几里得算法" class="headerlink" title="4. 拓展欧几里得算法"></a>4. <a name='-1'></a>拓展欧几里得算法</h2><p>拓展欧几里得算法的基本思想是从最后一步欧几里得算法开始逆向推导，通过反复应用欧几里得算法的辗转相除过程，同时更新贝祖等式的系数。具体步骤如下：</p>
 <blockquote>
-<p>初始化：令 a0 = a，b0 = b，x0 = 1，y0 = 0，x1 = 0，y1 = 1。</p>
-</blockquote>
-<blockquote>
-<p>迭代计算：通过连续应用欧几里得算法的辗转相除过程，更新 a、b 和 x、y 的值，直到余数为 0。</p>
-</blockquote>
-<blockquote>
-<p>计算商和余数：q = a[i-1] // b[i-1]，r = a[i-1] % b[i-1]。</p>
-</blockquote>
-<blockquote>
-<p>更新 a、b：a[i] = b[i-1]，b[i] = r。</p>
-</blockquote>
-<blockquote>
-<p>更新 x、y：x[i] = x[i-2] - q * x[i-1]，y[i] = y[i-2] - q * y[i-1]。</p>
-</blockquote>
-<blockquote>
-<p>输出结果：最大公约数为 b[n-1]，x[n-1] 和 y[n-1] 分别是贝祖等式 ax + by = gcd(a, b) 中的系数。</p>
+<p>初始化：令 a0 = a，b0 = b，x0 = 1，y0 = 0，x1 = 0，y1 = 1。<br>迭代计算：通过连续应用欧几里得算法的辗转相除过程，更新 a、b 和 x、y 的值，直到余数为 0。计算商和余数：q = a[i-1] // b[i-1]，r = a[i-1] % b[i-1]。<br>更新 a、b：a[i] = b[i-1]，b[i] = r。<br>更新 x、y：x[i] = x[i-2] - q * x[i-1]，y[i] = y[i-2] - q * y[i-1]。<br>输出结果：最大公约数为 b[n-1]，x[n-1] 和 y[n-1] 分别是贝祖等式 ax + by = gcd(a, b) 中的系数。</p>
 </blockquote>
 <p>以下是一个例子：</p>
 <img src=/img/eea.jpg>
@@ -389,7 +378,8 @@ var _hmt = _hmt || [];
 <h3 id="SM4算法"><a href="#SM4算法" class="headerlink" title="SM4算法"></a>SM4算法</h3><p>分组长度128bit=密钥长度</p>
 <h1 id="流加密"><a href="#流加密" class="headerlink" title="流加密"></a>流加密</h1><h2 id="9-线性反馈移位寄存器"><a href="#9-线性反馈移位寄存器" class="headerlink" title="9. 线性反馈移位寄存器"></a>9. <a name='-1'></a>线性反馈移位寄存器</h2><p>线性反馈移位寄存器（Linear Feedback Shift Register，简称LFSR）是一种在计算机科学和密码学中常用的序列发生器。它是由多个寄存器和一组反馈函数组成的，通过对寄存器中的位进行移位和异或操作来生成一个伪随机的二进制序列。</p>
 <p>以下为一个例子：</p>
-<h2 id="10-RC4算法"><a href="#10-RC4算法" class="headerlink" title="10. RC4算法"></a>10. <a name='RC4'></a>RC4算法</h2><h1 id="哈希函数"><a href="#哈希函数" class="headerlink" title="哈希函数"></a>哈希函数</h1><p>哈希函数是一种将输入数据（消息）转换为固定长度输出（哈希值）的函数。</p>
+<h2 id="10-RC4算法"><a href="#10-RC4算法" class="headerlink" title="10. RC4算法"></a>10. <a name='RC4'></a>RC4算法</h2><h1 id="哈希函数"><a href="#哈希函数" class="headerlink" title="哈希函数"></a>哈希函数</h1><p>引入哈希函数主要是为了保证数据完整性（这与隐私是不同的）</p>
+<p>哈希函数是一种将输入数据（消息）转换为固定长度输出（哈希值）的函数。</p>
 <ol>
 <li><p>抗原象性（Preimage Resistance）：对于给定的哈希值，很难找到一个与之对应的输入消息。也就是说，对于任意给定的哈希值，计算出其对应的输入消息应该是困难的。这意味着哈希函数应该是单向的，不可逆的。</p>
 </li>
@@ -406,11 +396,16 @@ var _hmt = _hmt || [];
 <blockquote>
 <p>为了抵抗生日攻击，通常的做法是使用更长的哈希值，例如SHA-256（256位哈希值）或SHA-3（Keccak）系列。这增加了哈希值的空间大小，降低了相同哈希值的概率。此外，还有一些专门设计的哈希函数，如HMAC（Hash-based Message Authentication Code）和SHA-3家族中的SHAKE函数，用于抵御生日攻击。</p>
 </blockquote>
+<p>总结来说，即为产生MAC、传输MAC、验证MAC</p>
 <h3 id="10-1-编程”实现”SHA-1-见write-ups吧"><a href="#10-1-编程”实现”SHA-1-见write-ups吧" class="headerlink" title="10.1. 编程”实现”SHA-1: 见write-ups吧"></a>10.1. <a name='SHA-1:write-ups'></a>编程”实现”SHA-1: 见write-ups吧</h3><p>如何利用哈希函数构造MAC？</p>
 <h1 id="公钥密码"><a href="#公钥密码" class="headerlink" title="*公钥密码"></a>*公钥密码</h1><p>这部分需要详细学习（尤其是RSA非常重要）</p>
+<p>对称密码体制缺乏开放的系统，依赖信道的可靠性、密钥管理困难，用户量增加时密钥空间急剧增大、难以实现抗抵赖。</p>
+<p>公钥密码使用两个密钥：公开密钥与秘密密钥，加密解密非对称。模型：KeyGen()-&gt;(pk,sk);Enc(pk,m)-&gt;c;Dec(sk,c)-&gt;m</p>
 <h2 id="11-RSA与DSA算法"><a href="#11-RSA与DSA算法" class="headerlink" title="11. RSA与DSA算法"></a>11. <a name='RSADSA'></a>RSA与DSA算法</h2><p>RSA证明方法：</p>
 <p>安全性基于大整数分解：RSA的安全性基于大整数分解的困难性。证明方法是通过选择两个大素数 p 和 q，并计算它们的乘积 n = p * q。然后选择一个与 (p-1)(q-1) 互质的整数 e 作为公钥指数，以及计算出满足 (d * e) mod ((p-1)(q-1)) = 1 的私钥指数 d。公钥是 (n, e)，私钥是 (n, d)。</p>
 <p>RSA的安全性取决于大整数分解的困难性，即从 n 中分解出 p 和 q 的困难性。大整数分解是一个耗时的计算问题，尚未发现有效的算法可以在可接受的时间内分解大素数的乘积。</p>
+<img src="/img/rsa1.jpg">
+
 <h3 id="11-1-编程“实现”RSA"><a href="#11-1-编程“实现”RSA" class="headerlink" title="11.1. 编程“实现”RSA"></a>11.1. <a name='RSA'></a>编程“实现”RSA</h3><pre><code>// 生成RSA密钥对
 function generateRSAKeyPair() &#123;
   var keySize = 2048; // 密钥大小
@@ -455,13 +450,20 @@ console.log(&quot;Ciphertext:&quot;, ciphertext);
 var decryptedText = rsaDecrypt(ciphertext, privateKey);
 console.log(&quot;Decrypted Text:&quot;, decryptedText);
 </code></pre>
-<p>DSA证明方法：</p>
-<p>安全性基于离散对数问题：DSA的安全性基于离散对数问题的困难性。证明方法是通过选择一个大素数 p，并选择一个模 p 的生成元 g。然后生成一个私钥 x，满足 0 &lt; x &lt; p-1。计算公钥 y = g^x mod p。公钥是 (p, g, y)，私钥是 x。</p>
+<h2 id="DSA证明方法："><a href="#DSA证明方法：" class="headerlink" title="DSA证明方法："></a>DSA证明方法：</h2><p>安全性基于离散对数问题：DSA的安全性基于离散对数问题的困难性。证明方法是通过选择一个大素数 p，并选择一个模 p 的生成元 g。然后生成一个私钥 x，满足 0 &lt; x &lt; p-1。计算公钥 y = g^x mod p。公钥是 (p, g, y)，私钥是 x。</p>
 <p>DSA的安全性取决于离散对数问题的困难性，即计算 g^x mod p 中的 x 的困难性。离散对数问题是一个复杂的计算问题，在<strong>合理的</strong>时间内计算出离散对数是困难的。</p>
-<h2 id="12-Diffie-Hellman-amp-Elgamal"><a href="#12-Diffie-Hellman-amp-Elgamal" class="headerlink" title="12. Diffie-Hellman &amp; Elgamal"></a>12. <a name='Diffie-HellmanElgamal'></a>Diffie-Hellman &amp; Elgamal</h2><p>Diffie-Hellman &amp; Elgamal 都基于数论中的<strong>离散对数问题</strong></p>
+<h2 id="12-Diffie-Hellman-amp-Elgamal"><a href="#12-Diffie-Hellman-amp-Elgamal" class="headerlink" title="12. Diffie-Hellman &amp; Elgamal"></a>12. <a name='Diffie-HellmanElgamal'></a>Diffie-Hellman &amp; Elgamal</h2><p>Diffie-Hellman &amp; Elgamal 也都基于数论中的<strong>离散对数问题</strong></p>
 <p>相关阅读：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/523658036">https://zhuanlan.zhihu.com/p/523658036</a></p>
-<h2 id="13-数字签名-证书"><a href="#13-数字签名-证书" class="headerlink" title="13. 数字签名/证书"></a>13. <a name='-1'></a>数字签名/证书</h2><p>几个点：RSA/DSA签名算法、Elgamal数字签名体制、Schnorr签名体制</p>
-<h2 id="14-椭圆曲线算法"><a href="#14-椭圆曲线算法" class="headerlink" title="14. 椭圆曲线算法"></a>14. <a name='-1'></a>椭圆曲线算法</h2>
+<h2 id="13-数字签名-证书"><a href="#13-数字签名-证书" class="headerlink" title="13. 数字签名/证书"></a>13. <a name='-1'></a>数字签名/证书</h2><p>消息认证（上文哈希）保护通信免受第三方攻击，但不能防止通信中另一方的欺骗和伪造</p>
+<p>几个点：RSA/DSA数字签名算法、Elgamal数字签名体制、Schnorr签名体制</p>
+<h2 id="14-椭圆曲线算法ECC"><a href="#14-椭圆曲线算法ECC" class="headerlink" title="14. 椭圆曲线算法ECC"></a>14. <a name='-1'></a>椭圆曲线算法ECC</h2><p>RSA、Elgamal为了保障安全性，常常采用长度很大的密钥，而椭圆密码体系可以用更小的尺寸得到同样的安全性。</p>
+<p>总结公钥密码：公钥密码解决了对称密码“密钥管理麻烦、开放性差”的缺点，但这不意味著公钥密码的出现使对称密码“过时”了，也不意味着公钥密码体系更安全。同时，公钥密码加密解密速度较慢。</p>
+<h1 id="密钥管理与分配"><a href="#密钥管理与分配" class="headerlink" title="密钥管理与分配"></a>密钥管理与分配</h1><p>最后说下这个，单钥加密体制（也就是对称加密体制）密钥分配的基本方法根据有无密钥分配中心KDC分为两种，密钥会话是有有效期的，其中面向连接协议在每次进行连接时都应更换密钥，而无连接协议可以在固定周期内使用固定密钥。</p>
+<p>公钥加密体制的密钥管理涉及到密钥的分配、如何用“公钥体制”来分配对称密码体制所需的密钥。第一点不赘述。第二点有两种方法：简单分配（可能会被中间人攻击）、具有保密和认证的密钥分配（D-H协商、秘密分割、Shamir门限方案）</p>
+<h1 id="密码协议"><a href="#密码协议" class="headerlink" title="密码协议"></a>密码协议</h1><p>数字承诺：Padersen数字承诺协议（也是基于离散对数问题）</p>
+<p>不经意传输协议：A的秘密以0.5的概率传给B、协议执行完成后，B知道自己是否收到秘密，但A不知道B是否收到。</p>
+<p>交互证明系统：零知识证明协议</p>
+
 	  	  
 	</div>
 
@@ -471,8 +473,7 @@ console.log(&quot;Decrypted Text:&quot;, decryptedText);
 
     
     
-    <a href="/2023/05/29/sha1/" type="button" class="btn btn-default"><i
-                class="fa fa-arrow-circle-o-left"></i> Prev</a>
+    <a type="button" class="btn btn-default disabled"><i class="fa fa-arrow-circle-o-left"></i>Prev</a>
     
 
     <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
