@@ -361,7 +361,33 @@ var _hmt = _hmt || [];
 <h2 id="7-一次一密（One-Time-Pad）："><a href="#7-一次一密（One-Time-Pad）：" class="headerlink" title="7. 一次一密（One-Time Pad）："></a>7. <a name='One-TimePad'></a>一次一密（One-Time Pad）：</h2><p>一次一密是一种理论上具有绝对安全性的加密方法。它使用与明文长度相等的随机密钥进行异或运算，生成密文。密钥只使用一次，然后丢弃，因此称为一次一密。解密时，使用相同的密钥对密文进行异或运算，可以得到原始的明文。</p>
 <p>OTP可以保证<strong>Perfect Secrecy</strong>。<br>联想：HTTPS 协议中的完美前向保密性（Perfect Forward Secrecy）是指在通信过程中，即使长期主密钥（long-term master key）被攻击者获得，之前的通信记录也无法被解密。在 HTTPS 中，完美前向保密性通过使用临时的会话密钥（session key），每次会话都生成一个新的临时密钥，用于加密通信。即使攻击者获取了主密钥，他们也无法通过该主密钥解密之前的通信记录，因为会话密钥已经发生了变化。</p>
 <p>与PFS方法不同，OTP方法在实践中并不常用。</p>
-<h2 id="8-分组密码"><a href="#8-分组密码" class="headerlink" title="8. *分组密码"></a>8. <a name='-1'></a>*分组密码</h2><h1 id="流加密"><a href="#流加密" class="headerlink" title="流加密"></a>流加密</h1><h2 id="9-线性反馈移位寄存器"><a href="#9-线性反馈移位寄存器" class="headerlink" title="9. 线性反馈移位寄存器"></a>9. <a name='-1'></a>线性反馈移位寄存器</h2><p>线性反馈移位寄存器（Linear Feedback Shift Register，简称LFSR）是一种在计算机科学和密码学中常用的序列发生器。它是由多个寄存器和一组反馈函数组成的，通过对寄存器中的位进行移位和异或操作来生成一个伪随机的二进制序列。</p>
+<h2 id="8-分组密码"><a href="#8-分组密码" class="headerlink" title="8. *分组密码"></a>8. <a name='-1'></a>*分组密码</h2><p>扩散与混淆<br>运行模式：*0+<br>OFB、CFB、CBC与ECB</p>
+<h3 id="Feistel密码结构"><a href="#Feistel密码结构" class="headerlink" title="Feistel密码结构"></a>Feistel密码结构</h3><h3 id="DES算法"><a href="#DES算法" class="headerlink" title="DES算法"></a>DES算法</h3><p>明文密文分组长度64位，密钥64位（有效56位）</p>
+<blockquote>
+<p>在 DES 的 ECB 模式中，如果在密文［1］分组中有一个错误，解密后仅相应的明文［2］分组受到影响然而在 CBC 模式中，将有错误传播。C1中的一个错误明显地将影响到 P1和P2的结果<br>(1)P2后的分组是否受到影响？<br>（2）设加密前的明文分组P1中有1比特的错误，问这一错误将在多少个密文分组中传播？<br>对接收者产生什么影响？</p>
+</blockquote>
+<img src="/img/des1.jpg">
+
+<p>** DES的解密变换是加密变换的逆</p>
+<img src="/img/des2.jpg">
+
+<img src="/img/des3.jpg">
+
+<p><strong>DES算法中的轮结构与轮函数</strong>：16轮迭代轮函数共有8个s盒，其中每个i为6bit👉o为4bit。</p>
+<p>*S盒如何将六位数据转换成4位：<br>例如，原始数据{1 0011 1 } ，取头尾数据11，十进制👉3即为行数</p>
+<p>取中间数据0011，十进制👉3即为列数</p>
+<p>在对应DES的S盒中查找就可以{十进制2👉0010                                                                                                                                                                                    }</p>
+<p>二/三重DES</p>
+<h3 id="AES算法"><a href="#AES算法" class="headerlink" title="AES算法"></a>AES算法</h3><p>{此处需要群/域的基础}，见<br><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%BE%A4">https://zh.wikipedia.org/wiki/%E7%BE%A4</a> 中的“定义”，<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%9F%9F_(%E6%95%B0%E5%AD%A6)">https://zh.wikipedia.org/wiki/%E5%9F%9F_(%E6%95%B0%E5%AD%A6)</a></p>
+<img src="/img/aes1.jpg">
+<img src="/img/aes2.jpg">
+<img src="/img/aes3.jpg">
+<img src="/img/aes4.jpg">
+
+<p>*AES算法的分组大小128位，三种密码标准：128、256、192（位）</p>
+<p>**AES算法的过程：AddRoundKey👉SubstituteBytes👉ShiftRows👉MixColumns</p>
+<h3 id="SM4算法"><a href="#SM4算法" class="headerlink" title="SM4算法"></a>SM4算法</h3><p>分组长度128bit=密钥长度</p>
+<h1 id="流加密"><a href="#流加密" class="headerlink" title="流加密"></a>流加密</h1><h2 id="9-线性反馈移位寄存器"><a href="#9-线性反馈移位寄存器" class="headerlink" title="9. 线性反馈移位寄存器"></a>9. <a name='-1'></a>线性反馈移位寄存器</h2><p>线性反馈移位寄存器（Linear Feedback Shift Register，简称LFSR）是一种在计算机科学和密码学中常用的序列发生器。它是由多个寄存器和一组反馈函数组成的，通过对寄存器中的位进行移位和异或操作来生成一个伪随机的二进制序列。</p>
 <p>以下为一个例子：</p>
 <h2 id="10-RC4算法"><a href="#10-RC4算法" class="headerlink" title="10. RC4算法"></a>10. <a name='RC4'></a>RC4算法</h2><h1 id="哈希函数"><a href="#哈希函数" class="headerlink" title="哈希函数"></a>哈希函数</h1><p>哈希函数是一种将输入数据（消息）转换为固定长度输出（哈希值）的函数。</p>
 <ol>
