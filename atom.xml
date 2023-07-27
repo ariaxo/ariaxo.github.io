@@ -166,49 +166,6 @@
   </entry>
   
   <entry>
-    <title>Android Reverse 尝试——分析Smart AppLock并破解密码</title>
-    <link href="http://example.com/2023/05/17/AndroidRev/"/>
-    <id>http://example.com/2023/05/17/AndroidRev/</id>
-    <published>2023-05-17T07:09:15.878Z</published>
-    <updated>2023-05-23T01:42:16.227Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;前期准备&quot;&gt;&lt;a href=&quot;#前期准备&quot; class=&quot;headerlink&quot; title=&quot;前期准备&quot;&gt;&lt;/a&gt;前期准备&lt;/h1&gt;&lt;h2 id=&quot;进入开发者模式，enable-USB侦错&quot;&gt;&lt;a href=&quot;#进入开发者模式，enable-USB侦错&quot; class=&quot;headerlink&quot; title=&quot;进入开发者模式，enable USB侦错&quot;&gt;&lt;/a&gt;进入开发者模式，enable USB侦错&lt;/h2&gt;&lt;img src=&quot;/img/AR1.jpg&quot;&gt;
-
-&lt;h2 id=&quot;透过GOOGLE商店下载应用锁，随便设置一下&quot;&gt;&lt;a href=&quot;#透过GOOGLE商店下载应用锁，随便设置一下&quot; class=&quot;headerlink&quot; title=&quot;透过GOOGLE商店下载应用锁，随便设置一下&quot;&gt;&lt;/a&gt;透过GOOGLE商店下载应用锁，随便设置一下&lt;/h2&gt;&lt;img src=&quot;/img/AR2.jpg&quot;&gt;
-
-&lt;h2 id=&quot;adb-exe&quot;&gt;&lt;a href=&quot;#adb-exe&quot; class=&quot;headerlink&quot; title=&quot;adb.exe&quot;&gt;&lt;/a&gt;adb.exe&lt;/h2&gt;&lt;p&gt;adb.exe是Android Debug Bridge（ADB）的命令行工具。ADB提供了一组命令，可以在计算机和Android设备之间进行通信和交互。通过ADB，开发人员可以在计算机上执行各种操作，包括安装和卸载应用程序、传输文件、执行命令、查看设备日志和调试应用程序等。ADB还可以用于模拟用户操作，如发送按键事件和触摸事件。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;解决adb.exe的闪退&lt;/p&gt;
-&lt;p&gt;右键+shift开放powershell视窗，在powershell中运行adb.exe即可（cmd有同样的功能，不赘述）&lt;/p&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>远程监控的实现（On Windows）</title>
-    <link href="http://example.com/2023/04/26/remote_contrl/"/>
-    <id>http://example.com/2023/04/26/remote_contrl/</id>
-    <published>2023-04-26T07:33:27.574Z</published>
-    <updated>2023-04-26T07:56:47.979Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;IIS-service-enable&quot;&gt;&lt;a href=&quot;#IIS-service-enable&quot; class=&quot;headerlink&quot; title=&quot;IIS service enable&quot;&gt;&lt;/a&gt;IIS service enable&lt;/h1&gt;&lt;p&gt;Similar to enabling Telnet client, enable IIS service in “Turn Windows features on or off” menu.&lt;br&gt;&lt;img src=&quot;\img\W1.png&quot;&gt;&lt;br&gt;To verify that the service has started successfully, open the IIS Manager&lt;br&gt;&lt;img src=&quot;\img\control.png&quot;&gt;&lt;br&gt;and open localhost:80 in browser, see the following page if the service has been successfully started.&lt;br&gt;&lt;img src=&quot;\img\success.png&quot;&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Everytime previewing my post, i use the localhost:4000, so what’s the diff?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;IIS servers typically use port 80 because it is the default port for the HTTP protocol. When a user enters a website URL in their browser, it defaults to port 80 for accessing the site. Therefore, IIS defaults to using port 80 so that users can access websites directly using a domain name or IP address.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Hexo is a static website generator that generates static HTML files locally and publishes them to a web server. When previewING blog locally, Hexo starts a local server and uses port 4000 to provide local access. The 4000 port is not used in production, but only for development and testing purposes.&lt;/em&gt;&lt;/p&gt;
-&lt;hr&gt;
-</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>加速主义政治宣言</title>
     <link href="http://example.com/2023/03/02/AccManifesto/"/>
     <id>http://example.com/2023/03/02/AccManifesto/</id>
@@ -303,48 +260,6 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 </summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>观看女性进食——对“神奇饮食”与吃播的批判</title>
-    <link href="http://example.com/2023/03/01/mukbangCritique/"/>
-    <id>http://example.com/2023/03/01/mukbangCritique/</id>
-    <published>2023-03-01T13:14:46.577Z</published>
-    <updated>2023-03-02T14:41:51.551Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本文是对&lt;a href=&quot;https://scholarworks.unr.edu/bitstream/handle/11714/6027/Gillespie_unr_0139M_12971.pdf&quot;&gt;Samantha Gillespie的论文&lt;/a&gt;的&lt;strong&gt;节选&lt;/strong&gt;翻译&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/img/mukbang.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;摘要&quot;&gt;&lt;a href=&quot;#摘要&quot; class=&quot;headerlink&quot; title=&quot;摘要&quot;&gt;&lt;/a&gt;摘要&lt;/h1&gt;&lt;p&gt;本研究关注吃播现象如何以反叛姿态重构瘦身文化，并揭示了霸权主义在此过程中的变化。观众的言语和对女性在公共场所进食方式的讨论，进一步巩固了瘦身文化叙事框架，虽然这并非他们本意。这种叙事框架是由主导性的叙述构建而成，将女性在公共场所进食视为一种禁忌行为。&lt;/p&gt;
-&lt;h1 id=&quot;理论来源&quot;&gt;&lt;a href=&quot;#理论来源&quot; class=&quot;headerlink&quot; title=&quot;理论来源&quot;&gt;&lt;/a&gt;理论来源&lt;/h1&gt;&lt;h2 id=&quot;女性主义文化视角&quot;&gt;&lt;a href=&quot;#女性主义文化视角&quot; class=&quot;headerlink&quot; title=&quot;女性主义文化视角&quot;&gt;&lt;/a&gt;女性主义文化视角&lt;/h2&gt;&lt;p&gt;从女性主义文化的角度来审视媒体对女性与食物以及饮食行为的关系对女性产生的影响。在Bordo（2003）的研究中，她提到了19世纪维多利亚时代的文化意识形态，这是有记载以来第一个影响性别化饮食的文化因素。&lt;/p&gt;
-&lt;p&gt;食品政治已经支配了几十年的权力流动（Counihan，1992; Goody，1982）。在许多文化中，食品政治直到今天仍在制约种姓、性别、种族和阶级的差异。它确实限制了谁有机会获得食物，谁种植食物，谁有机会获得有营养的食物以及接受烹饪食物的教育（Counihan，1992; Adams，1990）。Bordo（2003）将现今规范女性饮食欲望的文化与维多利亚时代最初的饥饿和限制性饮食的做法联系起来。维多利亚时代还利用媒体传播向女性灌输限制性饮食的意识形态，将女性气质等同于控制饮食和过度放纵的危险（Bordo，2003）。&lt;/p&gt;
-&lt;p&gt;此外，Bordo（2003）利用Dijkstra（1986）的工作，认为这种开始控制女性饮食习惯的现象是从那个时期出现的压迫 “新女性 “的暗流中孕育出来的。Bordo (2003)还将这些规范的普及（女性控制饮食）与男人的推动联系起来。男人对女人的性感到恐惧，历史上，妇女的饥饿感与她们的性能力有关，这可以从 “食人者 “（man-eater）与其他比喻中看出。妇女的性能力和权力来自于她对吞噬男人不可控制的冲动（Bordo，2003）。&lt;/p&gt;
-&lt;p&gt;结果是，这导致了几代女性吃（或不吃）有害习惯的形成。Sadie Stein（2009）在她的文章中指出，媒体和广告业对女性的身体形态和食物选择产生了深远的影响。在情景喜剧和其他类型的娱乐节目中，女性角色经常被描绘成可以大吃大喝，却依然保持苗条的形象。这种呈现方式不仅对女性身体形态产生了负面影响，也对女性对食物的态度和行为产生了影响。女性往往感到内疚和羞耻，因为她们没有遵循社会对她们的饮食行为的规范。&lt;/p&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>现代密码学自学笔记</title>
-    <link href="http://example.com/2023/03/01/cryptonotes/"/>
-    <id>http://example.com/2023/03/01/cryptonotes/</id>
-    <published>2023-03-01T11:09:13.904Z</published>
-    <updated>2023-03-01T12:56:05.748Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;很大程度上是数学原理，很少有技术相关，嗯…而且不会有古典密码学相关&lt;/p&gt;
-&lt;h1 id=&quot;流密码&quot;&gt;&lt;a href=&quot;#流密码&quot; class=&quot;headerlink&quot; title=&quot;流密码&quot;&gt;&lt;/a&gt;流密码&lt;/h1&gt;&lt;p&gt;简而言之，流密码是一种 通过短密钥k产生一串密钥流，进行逐字符加密的体制。&lt;br&gt;为了记忆密钥k，电路中需要有记忆元件，这也是流密码的不同之处&lt;br&gt;目前最常用的是二元加法流。OFB与CTR皆为常用的流密码模式，CTR加密过程多一个计数器&lt;/p&gt;
-&lt;h2 id=&quot;有限状态自动机&quot;&gt;&lt;a href=&quot;#有限状态自动机&quot; class=&quot;headerlink&quot; title=&quot;有限状态自动机&quot;&gt;&lt;/a&gt;有限状态自动机&lt;/h2&gt;&lt;p&gt;简单理解即为state =fEvent=&amp;gt; newState的数学模型&lt;br&gt;fEvent：反馈函数&lt;br&gt;流密码的密钥流产生器即为一种有限状态自动机，见下&lt;/p&gt;
-&lt;h2 id=&quot;移位寄存器&quot;&gt;&lt;a href=&quot;#移位寄存器&quot; class=&quot;headerlink&quot; title=&quot;移位寄存器&quot;&gt;&lt;/a&gt;移位寄存器&lt;/h2&gt;&lt;p&gt;每时刻的state都是一个n维向量，有2^n种可能的状态。&lt;/p&gt;
-&lt;h3 id=&quot;反馈移位寄存器的计算方法&quot;&gt;&lt;a href=&quot;#反馈移位寄存器的计算方法&quot; class=&quot;headerlink&quot; title=&quot;反馈移位寄存器的计算方法&quot;&gt;&lt;/a&gt;反馈移位寄存器的计算方法&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;先输出a1初始状态，移位，最后一位用反馈结果补位
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;线性反馈移位寄存器（LFSR）的计算方法&quot;&gt;&lt;a href=&quot;#线性反馈移位寄存器（LFSR）的计算方法&quot; class=&quot;headerlink&quot; title=&quot;线性反馈移位寄存器（LFSR）的计算方法&quot;&gt;&lt;/a&gt;线性反馈移位寄存器（LFSR）的计算方法&lt;/h3&gt;</summary>
     
     
     
