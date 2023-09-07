@@ -76,14 +76,15 @@
   </entry>
   
   <entry>
-    <title>快速上手密码学</title>
+    <title>数论与密码学手册</title>
     <link href="http://example.com/2023/05/29/crypto/"/>
     <id>http://example.com/2023/05/29/crypto/</id>
     <published>2023-05-29T11:53:51.733Z</published>
-    <updated>2023-06-03T14:32:04.430Z</updated>
+    <updated>2023-09-07T08:55:43.314Z</updated>
     
     
-    <summary type="html">&lt;p&gt;这篇文章会让你快速上手密码学，但要求一些数学基础，如对质数的基本认识、&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E6%A8%A1%E7%AE%97%E6%95%B8&quot;&gt;mod（%）运算（建议应当相当熟悉这个链接以及相关链接的内容）&lt;/a&gt;等。&lt;br&gt;没写完，差很多，有空补…&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E6%A8%A1%E7%AE%97%E6%95%B8&quot;&gt;mod（%）运算（建议应当相当熟悉这个链接以及相关链接的内容）&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;笔者正在恶补数学……&lt;/p&gt;
 &lt;h1 id=&quot;目录&quot;&gt;&lt;a href=&quot;#目录&quot; class=&quot;headerlink&quot; title=&quot;目录&quot;&gt;&lt;/a&gt;目录&lt;/h1&gt;&lt;!-- vscode-markdown-toc --&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;ol&gt;
@@ -161,15 +162,10 @@
 
 
 
-&lt;h1 id=&quot;数学基础&quot;&gt;&lt;a href=&quot;#数学基础&quot; class=&quot;headerlink&quot; title=&quot;数学基础&quot;&gt;&lt;/a&gt;数学基础&lt;/h1&gt;&lt;h2 id=&quot;1-质数-素数&quot;&gt;&lt;a href=&quot;#1-质数-素数&quot; class=&quot;headerlink&quot; title=&quot;1. 质数/素数&quot;&gt;&lt;/a&gt;1. &lt;a name&gt;&lt;/a&gt;质数/素数&lt;/h2&gt;&lt;p&gt;只有1与本身两个因数的正整数&amp;lt;-为什么在密码学中素数的概念如此重要？因为我们常用&lt;strong&gt;大素数的困难性&lt;/strong&gt;构建算法。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;素数的分布特性：素数在自然数中的分布是相对不规则的，即使在一定范围内，素数的数量也难以准确预测。因此，要找到一个大素数需要遍历大量的候选数并进行素性测试。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;素数检测算法的复杂性：目前常用的素数检测算法如试除法、费马测试、Miller-Rabin测试等，这些算法在大素数上的执行时间与输入的位数呈指数关系。随着位数的增加，算法的执行时间呈爆炸式增长，使得寻找大素数变得非常耗时和困难。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h1 id=&quot;数学基础&quot;&gt;&lt;a href=&quot;#数学基础&quot; class=&quot;headerlink&quot; title=&quot;数学基础&quot;&gt;&lt;/a&gt;数学基础&lt;/h1&gt;&lt;h2 id=&quot;1-质数-素数&quot;&gt;&lt;a href=&quot;#1-质数-素数&quot; class=&quot;headerlink&quot; title=&quot;1. 质数/素数&quot;&gt;&lt;/a&gt;1. &lt;a name&gt;&lt;/a&gt;质数/素数&lt;/h2&gt;&lt;p&gt;只有1与本身两个因数的正整数。&lt;/p&gt;
 &lt;p&gt;6.3注：大整数分解困难问题是RSA算法的基础。另还有基于离散对数困难问题的Diffie-Hellman密钥交换协议、Elgamal加密以及DSA算法、基于椭圆曲线上离散对数困难问题的椭圆曲线密码体制。&lt;/p&gt;
-&lt;h2 id=&quot;2-欧几里得算法（Euclidean-algorithm）&quot;&gt;&lt;a href=&quot;#2-欧几里得算法（Euclidean-algorithm）&quot; class=&quot;headerlink&quot; title=&quot;2. 欧几里得算法（Euclidean algorithm）&quot;&gt;&lt;/a&gt;2. &lt;a name=&quot;Euclideanalgorithm&quot;&gt;&lt;/a&gt;欧几里得算法（Euclidean algorithm）&lt;/h2&gt;</summary>
+&lt;p&gt;整除的概念（拓展到多项式即为环）&lt;/p&gt;
+&lt;p&gt;素数的分布（黎曼猜想）、无限性证明（反证法）&lt;/p&gt;</summary>
     
     
     

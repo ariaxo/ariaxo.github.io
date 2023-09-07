@@ -225,7 +225,7 @@ var _hmt = _hmt || [];
 <div class="row">
 	<div class="col-md-8">
 		<h3 class="title">
-			<a href="/2023/05/29/crypto/" >快速上手密码学</a>
+			<a href="/2023/05/29/crypto/" >数论与密码学手册</a>
 		</h3>
 		</div>
 	<div class="col-md-4">
@@ -239,7 +239,8 @@ var _hmt = _hmt || [];
   <div class="row">
 	
 	
-		<p>这篇文章会让你快速上手密码学，但要求一些数学基础，如对质数的基本认识、<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%A8%A1%E7%AE%97%E6%95%B8">mod（%）运算（建议应当相当熟悉这个链接以及相关链接的内容）</a>等。<br>没写完，差很多，有空补…</p>
+		<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%A8%A1%E7%AE%97%E6%95%B8">mod（%）运算（建议应当相当熟悉这个链接以及相关链接的内容）</a></p>
+<p>笔者正在恶补数学……</p>
 <h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><!-- vscode-markdown-toc -->
 <ul>
 <li><ol>
@@ -317,15 +318,10 @@ var _hmt = _hmt || [];
 
 
 
-<h1 id="数学基础"><a href="#数学基础" class="headerlink" title="数学基础"></a>数学基础</h1><h2 id="1-质数-素数"><a href="#1-质数-素数" class="headerlink" title="1. 质数/素数"></a>1. <a name></a>质数/素数</h2><p>只有1与本身两个因数的正整数&lt;-为什么在密码学中素数的概念如此重要？因为我们常用<strong>大素数的困难性</strong>构建算法。</p>
-<blockquote>
-<p>素数的分布特性：素数在自然数中的分布是相对不规则的，即使在一定范围内，素数的数量也难以准确预测。因此，要找到一个大素数需要遍历大量的候选数并进行素性测试。</p>
-</blockquote>
-<blockquote>
-<p>素数检测算法的复杂性：目前常用的素数检测算法如试除法、费马测试、Miller-Rabin测试等，这些算法在大素数上的执行时间与输入的位数呈指数关系。随着位数的增加，算法的执行时间呈爆炸式增长，使得寻找大素数变得非常耗时和困难。</p>
-</blockquote>
+<h1 id="数学基础"><a href="#数学基础" class="headerlink" title="数学基础"></a>数学基础</h1><h2 id="1-质数-素数"><a href="#1-质数-素数" class="headerlink" title="1. 质数/素数"></a>1. <a name></a>质数/素数</h2><p>只有1与本身两个因数的正整数。</p>
 <p>6.3注：大整数分解困难问题是RSA算法的基础。另还有基于离散对数困难问题的Diffie-Hellman密钥交换协议、Elgamal加密以及DSA算法、基于椭圆曲线上离散对数困难问题的椭圆曲线密码体制。</p>
-<h2 id="2-欧几里得算法（Euclidean-algorithm）"><a href="#2-欧几里得算法（Euclidean-algorithm）" class="headerlink" title="2. 欧几里得算法（Euclidean algorithm）"></a>2. <a name="Euclideanalgorithm"></a>欧几里得算法（Euclidean algorithm）</h2>
+<p>整除的概念（拓展到多项式即为环）</p>
+<p>素数的分布（黎曼猜想）、无限性证明（反证法）</p>
 	
 	</div>
   <a type="button" href="/2023/05/29/crypto/#more" class="btn btn-default more">Read More</a>
@@ -663,9 +659,9 @@ var _hmt = _hmt || [];
 		<h4>Tag Cloud</h4>
 		<ul class="tag_box inline list-unstyled">		
 		
-			<li><a href="/tags/websec/">websec<span>2</span></a></li>
-		
 			<li><a href="/tags/HTTP/">HTTP<span>2</span></a></li>
+		
+			<li><a href="/tags/websec/">websec<span>2</span></a></li>
 		
 		 
 		</ul>
@@ -687,7 +683,7 @@ var _hmt = _hmt || [];
       </li>
     
       <li>
-        <a href="/2023/05/29/crypto/" ><i class="fa fa-file-o"></i>快速上手密码学</a>
+        <a href="/2023/05/29/crypto/" ><i class="fa fa-file-o"></i>数论与密码学手册</a>
       </li>
     
       <li>

@@ -6,10 +6,11 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>快速上手密码学 | Voidhead</title>
+  <title>数论与密码学手册 | Voidhead</title>
   <meta name="author" content="Ariax">
   
-  <meta name="description" content="这篇文章会让你快速上手密码学，但要求一些数学基础，如对质数的基本认识、mod（%）运算（建议应当相当熟悉这个链接以及相关链接的内容）等。没写完，差很多，有空补…
+  <meta name="description" content="mod（%）运算（建议应当相当熟悉这个链接以及相关链接的内容）
+笔者正在恶补数学……
 目录
 
 
@@ -84,20 +85,15 @@ Diffie-Hellman &amp;amp; Elgamal
 
 
 
-数学基础1. 质数/素数只有1与本身两个因数的正整数&amp;lt;-为什么在密码学中素数的概念如此重要？因为我们常用大素数的困难性构建算法。
-
-素数的分布特性：素数在自然数中的分布是相对不规则的，即使在一定范围内，素数的数量也难以准确预测。因此，要找到一个大素数需要遍历大量的候选数并进行素性测试。
-
-
-素数检测算法的复杂性：目前常用的素数检测算法如试除法、费马测试、Miller-Rabin测试等，这些算法在大素数上的执行时间与输入的位数呈指数关系。随着位数的增加，算法的执行时间呈爆炸式增长，使得寻找大素数变得非常耗时和困难。
-
+数学基础1. 质数/素数只有1与本身两个因数的正整数。
 6.3注：大整数分解困难问题是RSA算法的基础。另还有基于离散对数困难问题的Diffie-Hellman密钥交换协议、Elgamal加密以及DSA算法、基于椭圆曲线上离散对数困难问题的椭圆曲线密码体制。
-2. 欧几里得算法（Euclidean algorithm）">
+整除的概念（拓展到多项式即为环）
+素数的分布（黎曼猜想）、无限性证明（反证法）">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="快速上手密码学"/>
+  <meta property="og:title" content="数论与密码学手册"/>
   <meta property="og:site_name" content="Voidhead"/>
 
   
@@ -202,7 +198,7 @@ var _hmt = _hmt || [];
 
 	
 		<div class="page-header">
-			<h1> 快速上手密码学</h1>
+			<h1> 数论与密码学手册</h1>
 		</div>
 	
 
@@ -222,7 +218,8 @@ var _hmt = _hmt || [];
 	<div class="mypage">		
 	  		
 
-	  <p>这篇文章会让你快速上手密码学，但要求一些数学基础，如对质数的基本认识、<a href=https://zh.wikipedia.org/wiki/%E6%A8%A1%E7%AE%97%E6%95%B8>mod（%）运算（建议应当相当熟悉这个链接以及相关链接的内容）</a>等。<br>没写完，差很多，有空补…</p>
+	  <p><a href=https://zh.wikipedia.org/wiki/%E6%A8%A1%E7%AE%97%E6%95%B8>mod（%）运算（建议应当相当熟悉这个链接以及相关链接的内容）</a></p>
+<p>笔者正在恶补数学……</p>
 <h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><!-- vscode-markdown-toc -->
 <ul>
 <li><ol>
@@ -300,18 +297,29 @@ var _hmt = _hmt || [];
 
 
 
-<h1 id="数学基础"><a href="#数学基础" class="headerlink" title="数学基础"></a>数学基础</h1><h2 id="1-质数-素数"><a href="#1-质数-素数" class="headerlink" title="1. 质数/素数"></a>1. <a name=''></a>质数/素数</h2><p>只有1与本身两个因数的正整数&lt;-为什么在密码学中素数的概念如此重要？因为我们常用<strong>大素数的困难性</strong>构建算法。</p>
-<blockquote>
-<p>素数的分布特性：素数在自然数中的分布是相对不规则的，即使在一定范围内，素数的数量也难以准确预测。因此，要找到一个大素数需要遍历大量的候选数并进行素性测试。</p>
-</blockquote>
-<blockquote>
-<p>素数检测算法的复杂性：目前常用的素数检测算法如试除法、费马测试、Miller-Rabin测试等，这些算法在大素数上的执行时间与输入的位数呈指数关系。随着位数的增加，算法的执行时间呈爆炸式增长，使得寻找大素数变得非常耗时和困难。</p>
-</blockquote>
+<h1 id="数学基础"><a href="#数学基础" class="headerlink" title="数学基础"></a>数学基础</h1><h2 id="1-质数-素数"><a href="#1-质数-素数" class="headerlink" title="1. 质数/素数"></a>1. <a name=''></a>质数/素数</h2><p>只有1与本身两个因数的正整数。</p>
 <p>6.3注：大整数分解困难问题是RSA算法的基础。另还有基于离散对数困难问题的Diffie-Hellman密钥交换协议、Elgamal加密以及DSA算法、基于椭圆曲线上离散对数困难问题的椭圆曲线密码体制。</p>
-<h2 id="2-欧几里得算法（Euclidean-algorithm）"><a href="#2-欧几里得算法（Euclidean-algorithm）" class="headerlink" title="2. 欧几里得算法（Euclidean algorithm）"></a>2. <a name='Euclideanalgorithm'></a>欧几里得算法（Euclidean algorithm）</h2><p>计算两个整数最大公约数（GCD）</p>
+<p>整除的概念（拓展到多项式即为环）</p>
+<p>素数的分布（黎曼猜想）、无限性证明（反证法）</p>
+<h2 id="Eratoshenes-sieve"><a href="#Eratoshenes-sieve" class="headerlink" title="Eratoshenes sieve"></a>Eratoshenes sieve</h2><p>例：找出小于或等于30的所有素数。</p>
+<p>步骤1：创建一个包含从2到30的所有整数的列表。</p>
+<pre><code>2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
+</code></pre>
+<p>步骤2：从列表中选择第一个数，也就是2，将2的倍数从列表中移除。</p>
+<pre><code>2 3 5 7 9 11 13 15 17 19 21 23 25 27 29
+</code></pre>
+<p>步骤3：选择下一个未被标记的数，也就是3，将3的倍数从列表中移除。</p>
+<pre><code>2 3 5 7 11 13 17 19 23 25 29
+</code></pre>
+<p>步骤4：继续这个过程，选择下一个未被标记的数，直到达到了30的平方根（即5），因为在那之后的数都已经被标记或移除了。</p>
+<p>步骤5：剩下的未被标记的数就是小于或等于30的所有素数。</p>
+<p>E seive是确定性方法，而Miller Rabin素性检验是概率性方法。</p>
+<h2 id="2-欧几里得算法（Euclidean-algorithm）"><a href="#2-欧几里得算法（Euclidean-algorithm）" class="headerlink" title="2. 欧几里得算法（Euclidean algorithm）"></a>2. <a name='Euclideanalgorithm'></a>欧几里得算法（Euclidean algorithm）</h2><p>我的理解中欧几里得算法即为，任意整数都可以被任意正整数线性表示，即a = q*b+r</p>
+<p>欧几里得算法最大的应用是计算两个整数最大公约数（GCD）</p>
 <blockquote>
 <p>例如，我们要计算 72 和 30 的最大公约数：<br>a = 72，b = 30。<br>72 除以 30 得到商 2 和余数 12。<br>12 不等于 0，所以将 30 的值赋给 a，将 12 的值赋给 b。<br>a = 30，b = 12。<br>30 除以 12 得到商 2 和余数 6。<br>6 不等于 0，所以将 12 的值赋给 a，将 6 的值赋给 b。<br>a = 12，b = 6。<br>12 除以 6 得到商 2 和余数 0。<br>余数为 0，所以最大公约数为 6。</p>
 </blockquote>
+<p>而拓展欧几里得算法中GCD（a，b）也可以被a，b线性表示，即GCD（a，b）= s<em>a + t</em>b</p>
 <h2 id="欧拉函数与欧拉定理"><a href="#欧拉函数与欧拉定理" class="headerlink" title="欧拉函数与欧拉定理"></a>欧拉函数与欧拉定理</h2><p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0">https://zh.wikipedia.org/wiki/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0</a></p>
 <p>整数m＞1，（a，m）＝1，则a^E(m)与1同模m</p>
 <h2 id="3-费马小定理"><a href="#3-费马小定理" class="headerlink" title="3. 费马小定理"></a>3. <a name='-1'></a>费马小定理</h2><p>如果 p 是一个质数，a 是任意不可被 p 整除的整数，则有：</p>
@@ -326,9 +334,6 @@ var _hmt = _hmt || [];
 <blockquote>
 <p>初始化：令 a0 = a，b0 = b，x0 = 1，y0 = 0，x1 = 0，y1 = 1。<br>迭代计算：通过连续应用欧几里得算法的辗转相除过程，更新 a、b 和 x、y 的值，直到余数为 0。计算商和余数：q = a[i-1] // b[i-1]，r = a[i-1] % b[i-1]。<br>更新 a、b：a[i] = b[i-1]，b[i] = r。<br>更新 x、y：x[i] = x[i-2] - q * x[i-1]，y[i] = y[i-2] - q * y[i-1]。<br>输出结果：最大公约数为 b[n-1]，x[n-1] 和 y[n-1] 分别是贝祖等式 ax + by = gcd(a, b) 中的系数。</p>
 </blockquote>
-<p>以下是一个例子：</p>
-<img src=/img/eea.jpg>
-
 <p>拓展欧几里得算法在密码学中常用于求解<strong>模逆元</strong>的问题，即找到一个数的乘法逆元（模某个数的余数下的倒数）。</p>
 <h3 id="4-1-求逆元"><a href="#4-1-求逆元" class="headerlink" title="4.1. 求逆元"></a>4.1. <a name='-1'></a>求逆元</h3><h2 id="5-贝祖等式"><a href="#5-贝祖等式" class="headerlink" title="5. 贝祖等式"></a>5. <a name='-1'></a>贝祖等式</h2><p>对于任意两个整数 a 和 b，存在整数 x 和 y，使得它们满足以下等式：</p>
 <pre><code>ax + by = gcd(a, b)
