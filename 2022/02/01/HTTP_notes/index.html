@@ -6,7 +6,7 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>HTTP学习笔记 | Voidhead</title>
+  <title>HTTP及其安全性 | Voidhead</title>
   <meta name="author" content="Ariax">
   
   <meta name="description" content="背景知识1. TCP/IP协议族  以后可能会写TCP/IP的笔记，大概…  通常使用的网络是在TCP/IP协议族的基础上运行的，HTTP属于其子集。
@@ -22,7 +22,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="HTTP学习笔记"/>
+  <meta property="og:title" content="HTTP及其安全性"/>
   <meta property="og:site_name" content="Voidhead"/>
 
   
@@ -127,7 +127,7 @@ var _hmt = _hmt || [];
 
 	
 		<div class="page-header">
-			<h1> HTTP学习笔记</h1>
+			<h1> HTTP及其安全性</h1>
 		</div>
 	
 
@@ -198,6 +198,39 @@ var _hmt = _hmt || [];
 <li>分块传输编码；</li>
 <li>范围请求。</li>
 </ul>
+<h1 id="HTTP的安全漏洞"><a href="#HTTP的安全漏洞" class="headerlink" title="HTTP的安全漏洞"></a>HTTP的安全漏洞</h1><ol>
+<li>窃听；</li>
+<li>伪装；</li>
+<li>篡改。<br>（安全经典三漏洞…）</li>
+</ol>
+<h1 id="HTTP-Secure"><a href="#HTTP-Secure" class="headerlink" title="HTTP Secure"></a>HTTP Secure</h1><p>HTTPS就是被SSL（secure socket layer)/TLS协议代替通信接口部分的HTTP。<br>HTTPS=HTTP+加密+认证+完整性保护。</p>
+<h2 id="通信加密"><a href="#通信加密" class="headerlink" title="通信加密"></a>通信加密</h2><ul>
+<li>SSL（secure socket layer)<br>是独立的协议，其他运行在应用层的协议都可以配合SSL使用。<blockquote>
+<p><strong>公开密钥加密</strong>：在这种方法中，需要一对密钥，一个是私人密钥，另一个则是公开密钥。<br><strong>共享密钥加密</strong>：共享密钥加密是加密和解密都是用相同密钥的一种加密方式，这种算法也被称为“对称加密”<br>证书可以验证密钥正确性。</p>
+</blockquote>
+</li>
+</ul>
+<p>浏览器提示你证书不正确/已过期时发生了什么？</p>
+<ul>
+<li><p>浏览器提示证书不正确或已过期时，实际上发生了以下情况：</p>
+<ol>
+<li><p>浏览器向服务器发起HTTPS请求，服务器会返回自己的SSL证书。</p>
+</li>
+<li><p>浏览器会对服务器返回的SSL证书进行验证，验证证书的颁发机构、证书的有效期、证书中的主题等等，以确保证书的真实性和有效性。</p>
+</li>
+<li><p>如果证书验证失败，浏览器会弹出提示框，告诉用户证书不正确或已过期，并提示用户是否继续访问该网站。如果用户选择继续访问，浏览器会继续建立HTTPS连接，但会在地址栏中显示警告信息，提醒用户存在风险。</p>
+</li>
+</ol>
+</li>
+</ul>
+<p>SSL的速度问题：</p>
+<p>没有根本的解决方案，只能使用SSL加速器（专用服务器）改善问题。</p>
+<ul>
+<li>TLS（transport layer security）</li>
+</ul>
+<h2 id="验证身份"><a href="#验证身份" class="headerlink" title="验证身份"></a>验证身份</h2><p>使用SSL可以验明通信方，使用一种叫<strong>证书</strong>的手段。<br>证书由第三方机构颁发。</p>
+<h2 id="验证完整性"><a href="#验证完整性" class="headerlink" title="验证完整性"></a>验证完整性</h2><p>遭到攻击者拦截并篡改内容的攻击：中间人攻击。</p>
+<h3 id="防止篡改"><a href="#防止篡改" class="headerlink" title="防止篡改"></a>防止篡改</h3><p>使用散列值校验方法：MD5,SHA-1。<br>提供下载服务的网站也会提供PGP（完美隐私）创建的数字签名。<br>都需要用户亲自验证，浏览器无法自动检查。</p>
 
 	  	  
 	</div>
@@ -208,7 +241,7 @@ var _hmt = _hmt || [];
 
     
     
-    <a href="/2022/02/06/HTTPSwebsec/" type="button" class="btn btn-default"><i
+    <a href="/2022/02/16/PofLnotes/" type="button" class="btn btn-default"><i
                 class="fa fa-arrow-circle-o-left"></i> Prev</a>
     
 
@@ -254,7 +287,7 @@ var _hmt = _hmt || [];
   </div>
   <div class="container-narrow">
   <footer> <p>
-  &copy; 2023 Ariax
+  &copy; 2024 Ariax
   
       with help from <a href="http://hexo.io/" target="_blank">Hexo</a>,<a target="_blank" rel="noopener" href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>,<a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a> and <a href="http://getbootstrap.com/" target="_blank">BOOTSTRA.386</a>. 
      <br> Theme by <a target="_blank" rel="noopener" href="http://github.com/wzpan/hexo-theme-freemind/">Freemind.386</a>.    
