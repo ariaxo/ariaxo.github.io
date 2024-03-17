@@ -6,13 +6,30 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>Archives: 2023/5 | Voidhead</title>
+  <title>MNE Phython Notes | Voidhead</title>
   <meta name="author" content="Ariax">
+  
+  <meta name="description" content="EEG ANALYSIS WITH MNEBASICShttps://mne.tools/stable/auto_tutorials/index.html
+ConceptEEG, gradiometers, magnetometers
+Launch MNE
+
+anaconda nav
+
+powershell
+
+conda activate mne
+
+jupyter lab
+
+
+
+Processing Raw dataCompute psd, andplot to visualize some raw data.
+detecting events">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="MNE Phython Notes"/>
   <meta property="og:site_name" content="Voidhead"/>
 
   
@@ -114,201 +131,143 @@ var _hmt = _hmt || [];
   	<div class="content">
     	 
 
-<!-- title -->
-<div class="page-header">
-  <h1 class="archive-title"><i class="fa fa-archive"></i> 2023/5</h1>
-</div>
 
-<div class="row page">
-  <!-- cols -->
-  
-  <div class="col-md-9">
 	
-
-	  <div id="top_search"></div>
-
-	  <div class="archive">
-		
-		
-		
-			
-			
-			<h4 class="archive-ul" data-toggle="collapse" data-target="#2024">2024<b class="caret"></b></h4>
-			<ul id="2024" class="collapse in">
-			
-		
-		<li class="listing-item">
-		<span class="date_class"> 2024-03-17 </span> &raquo;
-		
-		   <span class="title"><a href="/2024/03/17/mne_notes/" >MNE Phython Notes</a></span>
-		
-		</li>			
-		
-		
-		
-			
-			</ul>
-			
-			
-			<h4 class="archive-ul" data-toggle="collapse" data-target="#2023">2023<b class="caret"></b></h4>
-			<ul id="2023" class="collapse in">
-			
-		
-		<li class="listing-item">
-		<span class="date_class"> 2023-06-10 </span> &raquo;
-		
-		   <span class="title"><a href="/2023/06/10/hackersmani_1/" >《黑客宣言》 1. 摘要 By Mckenzie Wark</a></span>
-		
-		</li>			
-		
-		
-		
-		<li class="listing-item">
-		<span class="date_class"> 2023-05-29 </span> &raquo;
-		
-		   <span class="title"><a href="/2023/05/29/crypto/" >数论与密码学手册</a></span>
-		
-		</li>			
-		
-		
-		
-		<li class="listing-item">
-		<span class="date_class"> 2023-03-02 </span> &raquo;
-		
-		   <span class="title"><a href="/2023/03/02/AccManifesto/" >加速主义政治宣言</a></span>
-		
-		</li>			
-		
-		
-		
-			
-			</ul>
-			
-			
-			<h4 class="archive-ul" data-toggle="collapse" data-target="#2022">2022<b class="caret"></b></h4>
-			<ul id="2022" class="collapse in">
-			
-		
-		<li class="listing-item">
-		<span class="date_class"> 2022-10-31 </span> &raquo;
-		
-		   <span class="title"><a href="/2022/10/31/ok/" >An unexpected post after long dissapearance</a></span>
-		
-		</li>			
-		
-		
-		
-		<li class="listing-item">
-		<span class="date_class"> 2022-02-16 </span> &raquo;
-		
-		   <span class="title"><a href="/2022/02/16/PofLnotes/" >《解放的悖论——世俗革命与宗教反革命》笔记</a></span>
-		
-		</li>			
-		
-		
-		
-		<li class="listing-item">
-		<span class="date_class"> 2022-02-01 </span> &raquo;
-		
-		   <span class="title"><a href="/2022/02/01/HTTP_notes/" >HTTP及其安全性</a></span>
-		
-		</li>			
-		
-		</ul>
+		<div class="page-header">
+			<h1> MNE Phython Notes</h1>
 		</div>
-
-</div> <!-- col-md-9/col-md-12 -->
-
-
-<div class="col-md-3">
-	<div id="sidebar">
 	
-			
-  <div id="site_search">
-   <div class="form-group">
-    <input type="text" id="local-search-input" name="q" results="0" placeholder="Search" class="st-search-input st-default-search-input form-control"/>
-   </div>  
-  <div id="local-search-result"></div>
-  </div>
 
 
-		
-			
-	<div class="widget">
-		<h4>Categories</h4>
-		<ul class="tag_box inline list-unstyled">
-		
-			<li><a href="/categories/CS/CN/">CN<span>1</span></a></li>
-		
-			<li><a href="/categories/CS/">CS<span>1</span></a></li>
-		
-			<li><a href="/categories/CS/CN/InfoSec/">InfoSec<span>1</span></a></li>
-		
-		</ul>
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <h1 id="EEG-ANALYSIS-WITH-MNE"><a href="#EEG-ANALYSIS-WITH-MNE" class="headerlink" title="EEG ANALYSIS WITH MNE"></a>EEG ANALYSIS WITH MNE</h1><h2 id="BASICS"><a href="#BASICS" class="headerlink" title="BASICS"></a>BASICS</h2><p><a target="_blank" rel="noopener" href="https://mne.tools/stable/auto_tutorials/index.html">https://mne.tools/stable/auto_tutorials/index.html</a></p>
+<h3 id="Concept"><a href="#Concept" class="headerlink" title="Concept"></a>Concept</h3><p>EEG, gradiometers, magnetometers</p>
+<h3 id="Launch-MNE"><a href="#Launch-MNE" class="headerlink" title="Launch MNE"></a>Launch MNE</h3><code>
+
+<pre><code>anaconda nav
+
+powershell
+
+conda activate mne
+
+jupyter lab
+</code></pre>
+</code>
+
+<h3 id="Processing-Raw-data"><a href="#Processing-Raw-data" class="headerlink" title="Processing Raw data"></a>Processing Raw data</h3><p><code>Compute psd</code>, and<code>plot</code> to visualize some raw data.</p>
+<p>detecting events</p>
+<p>Mark channels as bad:<br><code>raw.info['bads'&#125;+=['EEG 051']</code></p>
+<h4 id="Crop-amp-Filter"><a href="#Crop-amp-Filter" class="headerlink" title="Crop &amp; Filter"></a>Crop &amp; Filter</h4><p>sample code:<br><code></p>
+<pre><code>import matplotlib.pyplot as plt
+
+fig, ax = plt.subplots(2)
+
+raw_eeg_cropped.plot_psd(ax=ax[0], show=False)
+raw_eeg_cropped_filtered.plot_psd(ax=ax[1], show=False)
+
+ax[0].set_title(&#39;PSD before filtering&#39;)
+ax[1].set_title(&#39;PSD after filtering&#39;)
+ax[1].set_xlabel(&#39;Frequency (Hz)&#39;)
+fig.set_tight_layout(True)
+plt.show()
+</code></pre>
+</code>
+
+<p>Output:<br><img src="/img/psd1.jpeg"><br><img src="/img/psd2.jpeg"></p>
+<h2 id="BIDS-Brain-image-data-structure"><a href="#BIDS-Brain-image-data-structure" class="headerlink" title="BIDS(Brain image data structure)"></a>BIDS(Brain image data structure)</h2><p>Write raw data to BIDS:</p>
+<code>
+
+<pre><code>raw.info[&#39;line_freq&#39;] = 60
+subject_info = &#123;
+&#39;birthday&#39;:(1996,10,1),
+&#39;sex&#39;:2,
+&#39;hand&#39;:3
+&#125;
+
+raw.info[&#39;subject_info&#39;] = subject_info
+raw.info
+</code></pre>
+</code>
+
+<p>Reading BIDS data:</p>
+<code>
+
+<pre><code>bids_root = pathlib.Path(&#39;out_data/sample_BIDS&#39;)
+
+bids_path = mne_bids.BIDSPath(subject=&#39;01&#39;,
+                          session=&#39;01&#39;,
+                          task=&#39;audiovisual&#39;,
+                          run=&#39;01&#39;,
+                          datatype=&#39;meg&#39;,
+                          root=bids_root)
+
+raw = mne_bids.read_raw_bids(bids_path)
+</code></pre>
+</code>
+	  	  
 	</div>
 
-		
-			
-	<div class="widget">
-		<h4>Tag Cloud</h4>
-		<ul class="tag_box inline list-unstyled">		
-		
-			<li><a href="/tags/websec/">websec<span>1</span></a></li>
-		
-			<li><a href="/tags/HTTP/">HTTP<span>1</span></a></li>
-		
-		 
-		</ul>
+	<div>
+  	<center>
+	<div class="pagination">
+
+    
+    
+    <a type="button" class="btn btn-default disabled"><i class="fa fa-arrow-circle-o-left"></i>Prev</a>
+    
+
+    <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
+    
+    <a href="/2023/06/10/hackersmani_1/" type="button" class="btn btn-default ">Next<i
+                class="fa fa-arrow-circle-o-right"></i></a>
+    
+
+    
+</div>
+
+    </center>
 	</div>
 
 
-		
-			
-<div class="widget">
-  <h4>Recent Posts</h4>
-  <ul class="entry list-unstyled">
-    
-      <li>
-        <a href="/2024/03/17/mne_notes/" ><i class="fa fa-file-o"></i>MNE Phython Notes</a>
-      </li>
-    
-      <li>
-        <a href="/2023/06/10/hackersmani_1/" ><i class="fa fa-file-o"></i>《黑客宣言》 1. 摘要 By Mckenzie Wark</a>
-      </li>
-    
-      <li>
-        <a href="/2023/05/29/crypto/" ><i class="fa fa-file-o"></i>数论与密码学手册</a>
-      </li>
-    
-      <li>
-        <a href="/2023/03/02/AccManifesto/" ><i class="fa fa-file-o"></i>加速主义政治宣言</a>
-      </li>
-    
-      <li>
-        <a href="/2022/10/31/ok/" ><i class="fa fa-file-o"></i>An unexpected post after lo...</a>
-      </li>
-    
-  </ul>
-</div>
-
-		
-			
-<div class="widget">
-	<h4>Links</h4>
-	<ul class="blogroll list-unstyled">
 	
-		<li><i class=" "></i><a href="links" title="Friends." target="_blank">❀ Friends</a></li>
+	<!-- comment -->
 	
-	</ul>
-</div>
+		<section id="comments" style="margin:10px;padding:10px;background:#fff;">
+		  <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'true' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "4UCwhumBRqjeYaJvb3Sx1URa-gzGzoHsz",
+            app_key: "JrGdUqa7BaWGRmBkL8Swz2Ve",
+            placeholder: "Just go go",
+            avatar:"retro"
+        });
+    }
+</script>
 
-
-		
-	</div> <!-- sidebar -->
-</div> <!-- col-md-3 -->
-
-
-
+		</section>
+	  
 
 	</div>
   </div>

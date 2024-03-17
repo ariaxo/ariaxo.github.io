@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>MNE Phython Notes</title>
+      <link href="/2024/03/17/mne_notes/"/>
+      <url>/2024/03/17/mne_notes/</url>
+      
+        <content type="html"><![CDATA[<h1 id="EEG-ANALYSIS-WITH-MNE"><a href="#EEG-ANALYSIS-WITH-MNE" class="headerlink" title="EEG ANALYSIS WITH MNE"></a>EEG ANALYSIS WITH MNE</h1><h2 id="BASICS"><a href="#BASICS" class="headerlink" title="BASICS"></a>BASICS</h2><p><a href="https://mne.tools/stable/auto_tutorials/index.html">https://mne.tools/stable/auto_tutorials/index.html</a></p><h3 id="Concept"><a href="#Concept" class="headerlink" title="Concept"></a>Concept</h3><p>EEG, gradiometers, magnetometers</p><h3 id="Launch-MNE"><a href="#Launch-MNE" class="headerlink" title="Launch MNE"></a>Launch MNE</h3><code><pre><code>anaconda navpowershellconda activate mnejupyter lab</code></pre></code><h3 id="Processing-Raw-data"><a href="#Processing-Raw-data" class="headerlink" title="Processing Raw data"></a>Processing Raw data</h3><p><code>Compute psd</code>, and<code>plot</code> to visualize some raw data.</p><p>detecting events</p><p>Mark channels as bad:<br><code>raw.info['bads'&#125;+=['EEG 051']</code></p><h4 id="Crop-amp-Filter"><a href="#Crop-amp-Filter" class="headerlink" title="Crop &amp; Filter"></a>Crop &amp; Filter</h4><p>sample code:<br><code></p><pre><code>import matplotlib.pyplot as pltfig, ax = plt.subplots(2)raw_eeg_cropped.plot_psd(ax=ax[0], show=False)raw_eeg_cropped_filtered.plot_psd(ax=ax[1], show=False)ax[0].set_title(&#39;PSD before filtering&#39;)ax[1].set_title(&#39;PSD after filtering&#39;)ax[1].set_xlabel(&#39;Frequency (Hz)&#39;)fig.set_tight_layout(True)plt.show()</code></pre></code><p>Output:<br><img src="/img/psd1.jpeg"><br><img src="/img/psd2.jpeg"></p><h2 id="BIDS-Brain-image-data-structure"><a href="#BIDS-Brain-image-data-structure" class="headerlink" title="BIDS(Brain image data structure)"></a>BIDS(Brain image data structure)</h2><p>Write raw data to BIDS:</p><code><pre><code>raw.info[&#39;line_freq&#39;] = 60subject_info = &#123;&#39;birthday&#39;:(1996,10,1),&#39;sex&#39;:2,&#39;hand&#39;:3&#125;raw.info[&#39;subject_info&#39;] = subject_inforaw.info</code></pre></code><p>Reading BIDS data:</p><code><pre><code>bids_root = pathlib.Path(&#39;out_data/sample_BIDS&#39;)bids_path = mne_bids.BIDSPath(subject=&#39;01&#39;,                          session=&#39;01&#39;,                          task=&#39;audiovisual&#39;,                          run=&#39;01&#39;,                          datatype=&#39;meg&#39;,                          root=bids_root)raw = mne_bids.read_raw_bids(bids_path)</code></pre></code>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>《黑客宣言》 1. 摘要 By Mckenzie Wark</title>
       <link href="/2023/06/10/hackersmani_1/"/>
       <url>/2023/06/10/hackersmani_1/</url>
