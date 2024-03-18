@@ -23,8 +23,10 @@ jupyter lab
 
 
 
-Processing Raw dataCompute psd, andplot to visualize some raw data.
-detecting events">
+Processing Raw dataimport needed packages:
+import matplotlib
+import pathlib
+import mne">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -168,7 +170,20 @@ jupyter lab
 </code></pre>
 </code>
 
-<h3 id="Processing-Raw-data"><a href="#Processing-Raw-data" class="headerlink" title="Processing Raw data"></a>Processing Raw data</h3><p><code>Compute psd</code>, and<code>plot</code> to visualize some raw data.</p>
+<h3 id="Processing-Raw-data"><a href="#Processing-Raw-data" class="headerlink" title="Processing Raw data"></a>Processing Raw data</h3><p>import needed packages:</p>
+<pre><code>import matplotlib
+import pathlib
+import mne
+</code></pre>
+<p>set storage location:</p>
+<pre><code>sample_data_dir = mne.datasets.sample.data_path()
+
+# Convert to a pathlib.Path for more convenience
+sample_data_dir = pathlib.Path(sample_data_dir)
+sample_data_dir
+</code></pre>
+<p>visualize them!</p>
+<p><code>Compute psd</code>, and<code>plot</code> to show raw data.</p>
 <p>detecting events</p>
 <p>Mark channels as bad:<br><code>raw.info['bads'&#125;+=['EEG 051']</code></p>
 <h4 id="Crop-amp-Filter"><a href="#Crop-amp-Filter" class="headerlink" title="Crop &amp; Filter"></a>Crop &amp; Filter</h4><p>sample code:<br><code></p>
@@ -218,6 +233,41 @@ bids_path = mne_bids.BIDSPath(subject=&#39;01&#39;,
 raw = mne_bids.read_raw_bids(bids_path)
 </code></pre>
 </code>
+
+<h2 id="EPOCH-amp-EVOKED"><a href="#EPOCH-amp-EVOKED" class="headerlink" title="EPOCH &amp; EVOKED"></a>EPOCH &amp; EVOKED</h2><p>EPOCH: Signals contracted from continuous EEG signals, divided by time spans. In MNE, EPOCH acts as a method marking continuous assets as time span assets.</p>
+<p>To build EPOCH:</p>
+<pre><code>    import mne
+    from mne import io
+    from mne.datasets import sample
+
+    data_path = sample.data_path()
+
+    #build raw
+    raw = io.read_raw_fif(raw_fname)
+    #build events
+    events = mne.read_events(event_fname)
+    epochs = mne.Epochs(raw, events, event_id, tmin, tmax, proj=True,
+                    picks=picks, baseline=(None, 0), preload=True,
+                    reject=dict(grad=4000e-13, mag=4e-12, eog=150e-6))
+</code></pre>
+<p>EVOKED:  “Evoked Potential (EP)” refers to specific patterns of electrical potentials recorded from the nervous system, particularly specific areas of the brain, in humans or other animals, following stimuli such as flashes or pure tones. The potentials are usually low, thus it’s common practice to average them.</p>
+<p>To build EVOKED:</p>
+<pre><code>#import...
+
+#set storage
+data_path = mne.datasets.sample.data_path()
+
+#read .fif
+fname = op.join(data_path, &#39;MEG&#39;, &#39;sample&#39;, &#39;sample_audvis-ave.fif&#39;)
+
+#set conditions and build
+condition = &#39;left auditory&#39;
+evokeds = mne.read_evokeds(fname, baseline=(None, 0), proj=True)
+print(evokeds)
+</code></pre>
+<p>Draw Global Field Power(GFP)</p>
+<p>Draw EVOKED</p>
+
 	  	  
 	</div>
 

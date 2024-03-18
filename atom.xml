@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-03-17T08:01:47.456Z</updated>
+  <updated>2024-03-18T08:17:21.220Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2024/03/17/mne_notes/"/>
     <id>http://example.com/2024/03/17/mne_notes/</id>
     <published>2024-03-17T06:58:18.641Z</published>
-    <updated>2024-03-17T08:01:47.456Z</updated>
+    <updated>2024-03-18T08:17:21.220Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;EEG-ANALYSIS-WITH-MNE&quot;&gt;&lt;a href=&quot;#EEG-ANALYSIS-WITH-MNE&quot; class=&quot;headerlink&quot; title=&quot;EEG ANALYSIS WITH MNE&quot;&gt;&lt;/a&gt;EEG ANALYSIS WITH MNE&lt;/h1&gt;&lt;h2 id=&quot;BASICS&quot;&gt;&lt;a href=&quot;#BASICS&quot; class=&quot;headerlink&quot; title=&quot;BASICS&quot;&gt;&lt;/a&gt;BASICS&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://mne.tools/stable/auto_tutorials/index.html&quot;&gt;https://mne.tools/stable/auto_tutorials/index.html&lt;/a&gt;&lt;/p&gt;
@@ -38,8 +38,11 @@ jupyter lab
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/code&gt;
 
-&lt;h3 id=&quot;Processing-Raw-data&quot;&gt;&lt;a href=&quot;#Processing-Raw-data&quot; class=&quot;headerlink&quot; title=&quot;Processing Raw data&quot;&gt;&lt;/a&gt;Processing Raw data&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Compute psd&lt;/code&gt;, and&lt;code&gt;plot&lt;/code&gt; to visualize some raw data.&lt;/p&gt;
-&lt;p&gt;detecting events&lt;/p&gt;</summary>
+&lt;h3 id=&quot;Processing-Raw-data&quot;&gt;&lt;a href=&quot;#Processing-Raw-data&quot; class=&quot;headerlink&quot; title=&quot;Processing Raw data&quot;&gt;&lt;/a&gt;Processing Raw data&lt;/h3&gt;&lt;p&gt;import needed packages:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import matplotlib
+import pathlib
+import mne
+&lt;/code&gt;&lt;/pre&gt;</summary>
     
     
     
