@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-03-18T08:17:21.220Z</updated>
+  <updated>2024-03-20T09:20:05.998Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,14 +21,21 @@
     <link href="http://example.com/2024/03/17/mne_notes/"/>
     <id>http://example.com/2024/03/17/mne_notes/</id>
     <published>2024-03-17T06:58:18.641Z</published>
-    <updated>2024-03-18T08:17:21.220Z</updated>
+    <updated>2024-03-20T09:20:05.998Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;EEG-ANALYSIS-WITH-MNE&quot;&gt;&lt;a href=&quot;#EEG-ANALYSIS-WITH-MNE&quot; class=&quot;headerlink&quot; title=&quot;EEG ANALYSIS WITH MNE&quot;&gt;&lt;/a&gt;EEG ANALYSIS WITH MNE&lt;/h1&gt;&lt;h2 id=&quot;BASICS&quot;&gt;&lt;a href=&quot;#BASICS&quot; class=&quot;headerlink&quot; title=&quot;BASICS&quot;&gt;&lt;/a&gt;BASICS&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://mne.tools/stable/auto_tutorials/index.html&quot;&gt;https://mne.tools/stable/auto_tutorials/index.html&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Concept&quot;&gt;&lt;a href=&quot;#Concept&quot; class=&quot;headerlink&quot; title=&quot;Concept&quot;&gt;&lt;/a&gt;Concept&lt;/h3&gt;&lt;p&gt;EEG, gradiometers, magnetometers&lt;/p&gt;
-&lt;h3 id=&quot;Launch-MNE&quot;&gt;&lt;a href=&quot;#Launch-MNE&quot; class=&quot;headerlink&quot; title=&quot;Launch MNE&quot;&gt;&lt;/a&gt;Launch MNE&lt;/h3&gt;&lt;code&gt;
+    <summary type="html">&lt;h1 id=&quot;EEG-ANALYSIS-WITH-MNE&quot;&gt;&lt;a href=&quot;#EEG-ANALYSIS-WITH-MNE&quot; class=&quot;headerlink&quot; title=&quot;EEG ANALYSIS WITH MNE&quot;&gt;&lt;/a&gt;EEG ANALYSIS WITH MNE&lt;/h1&gt;&lt;div class=&quot;container&quot;&gt;
+  **Disclaimer**
+  &lt;div class=&quot;disclaimer&quot;&gt;
+    &lt;p&gt;This post includes codes extracted or modified from referenced articles for educational purposes. If there are any copyright issues, please contact the author for removal.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;pre&gt;&lt;code&gt;anaconda nav
+&lt;p&gt;&lt;a href=&quot;https://mne.tools/stable/auto_tutorials/index.html&quot;&gt;https://mne.tools/stable/auto_tutorials/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Concepts&quot;&gt;&lt;a href=&quot;#Concepts&quot; class=&quot;headerlink&quot; title=&quot;Concepts&quot;&gt;&lt;/a&gt;Concepts&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://www.sensortips.com/featured/what-is-the-difference-between-an-ecg-eeg-emg-and-eog/&quot;&gt;ECG, EEG, EMG, EOG&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;MEG, STI&lt;/p&gt;
+&lt;p&gt;gradiometers, magnetometers&lt;/p&gt;
+&lt;h2 id=&quot;Launch-MNE&quot;&gt;&lt;a href=&quot;#Launch-MNE&quot; class=&quot;headerlink&quot; title=&quot;Launch MNE&quot;&gt;&lt;/a&gt;Launch MNE&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;anaconda nav
 
 powershell
 
@@ -36,13 +43,7 @@ conda activate mne
 
 jupyter lab
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/code&gt;
-
-&lt;h3 id=&quot;Processing-Raw-data&quot;&gt;&lt;a href=&quot;#Processing-Raw-data&quot; class=&quot;headerlink&quot; title=&quot;Processing Raw data&quot;&gt;&lt;/a&gt;Processing Raw data&lt;/h3&gt;&lt;p&gt;import needed packages:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;import matplotlib
-import pathlib
-import mne
-&lt;/code&gt;&lt;/pre&gt;</summary>
+&lt;h2 id=&quot;Work-with-continuous-data&quot;&gt;&lt;a href=&quot;#Work-with-continuous-data&quot; class=&quot;headerlink&quot; title=&quot;Work with continuous data&quot;&gt;&lt;/a&gt;Work with continuous data&lt;/h2&gt;</summary>
     
     
     
@@ -50,23 +51,23 @@ import mne
   </entry>
   
   <entry>
-    <title>《黑客宣言》 1. 摘要 By Mckenzie Wark</title>
+    <title>《黑客宣言》 1. 摘要 --Mckenzie Wark</title>
     <link href="http://example.com/2023/06/10/hackersmani_1/"/>
     <id>http://example.com/2023/06/10/hackersmani_1/</id>
     <published>2023-06-10T15:24:11.267Z</published>
-    <updated>2023-09-04T14:10:20.895Z</updated>
+    <updated>2024-03-20T09:13:20.765Z</updated>
     
     
-    <summary type="html">&lt;p&gt;译注：斜体（在本站默认字体里以“//”标识）意味着此处词性为名词；关于hack：中文里似乎没有意义相近的词语，根据语境会分别翻译成黑客（行为）、破解、骇等，但更多时候直译成hack。&lt;/p&gt;
+    <summary type="html">&lt;p&gt;译注：斜体（在本站默认字体里以“//”标识）意味着此处为名词ABSTRACTION。（没有校队）&lt;/p&gt;
+&lt;p&gt;关于hack：中文里似乎没有意义相近的词语，根据语境会分别翻译成黑客（行为）、破解、骇等，更多时候直译成hack。&lt;/p&gt;
+&lt;p&gt;粗体只是译者有感触的部分——这就是一份随意的、粗略的、个人的翻译。&lt;/p&gt;
 &lt;p&gt;[001]&lt;/p&gt;
 &lt;p&gt;一个双重性，&lt;em&gt;抽象&lt;/em&gt;的双重性，在世界游荡。国家、军队、公司和社群的命运取决于它。所有相互争斗的阶级，无论是统治阶级还是被统治阶级，都崇敬它，但又害怕它。我们的世界，是一个盲目地交叉着手指涉足未知的世界。&lt;/p&gt;
 &lt;p&gt;[002]&lt;/p&gt;
-&lt;p&gt;所有阶级都害怕这个世界无情的抽象化，然而它们的命运却仍然依赖于它。但有一个阶级例外：黑客阶级。我们是&lt;em&gt;抽象&lt;/em&gt;的黑客。我们从原数据中挖掘出新概念、新感知、新感觉。无论我们破解的是编程语言、诗性语言、数学还是音乐，曲线或色彩，我们都是创造新世界的抽象者。无论我们以研究人员、作者、艺术家、生物学家、化学家、音乐家、哲学家还是程序员的身份出现，每一个主体性都只是一个逐渐意识到自己身份的阶级的碎片。&lt;/p&gt;
+&lt;p&gt;所有阶级都害怕这个世界无情的抽象化，然而它们的命运却仍然依赖于它。但有一个阶级例外：黑客阶级。我们是&lt;em&gt;抽象&lt;/em&gt;的黑客。我们从原数据中挖掘出新概念、新感知、新感觉。无论我们破解的是编程语言、诗性语言、数学还是音乐，曲线或色彩，我们都是创造新世界的抽象者。无论我们以研究员、作家、艺术家、生物学家、化学家、音乐家、哲学家还是程序员的身份出现，每一个主体性都只是一个逐渐意识到自己身份的阶级的碎片。&lt;/p&gt;
 &lt;p&gt;[003]&lt;/p&gt;
 &lt;p&gt;然而，我们并不完全知道自己是谁。这就是为什么这本书试图阐明我们的起源、目标和利益。一份黑客宣言：并不是唯一的宣言，因为黑客的本质就是与他人不同，甚至与随时变化的自己而不同。选择hack就是选择不同。一份黑客宣言不能代表拒绝被代表的事物。&lt;/p&gt;
-&lt;p&gt;[004]&lt;/p&gt;
-&lt;p&gt;黑客创造了新事物进入世界的可能性。并不总是伟大的事物，甚至不一定是好的事物，但它们是新的事物。在艺术、科学、哲学和文化领域，在任何可以收集数据、提取信息并通过这些信息为世界创造新可能性的知识生产中，都有黑客从旧的事物中创造出新的事物。虽然我们创造了这些新世界，但我们并不拥有它们。我们创造的东西被抵押给了其他人，被抵押给了其他人的利益，被抵押给了垄断创造我们独自发现的世界的手段的国家和公司。我们不拥有我们所生产的东西——我们被它们所拥有。&lt;/p&gt;
-&lt;p&gt;[005]&lt;/p&gt;</summary>
+&lt;p&gt;[004]&lt;/p&gt;</summary>
     
     
     

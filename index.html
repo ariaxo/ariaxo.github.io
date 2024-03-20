@@ -156,11 +156,18 @@ var _hmt = _hmt || [];
   <div class="row">
 	
 	
-		<h1 id="EEG-ANALYSIS-WITH-MNE"><a href="#EEG-ANALYSIS-WITH-MNE" class="headerlink" title="EEG ANALYSIS WITH MNE"></a>EEG ANALYSIS WITH MNE</h1><h2 id="BASICS"><a href="#BASICS" class="headerlink" title="BASICS"></a>BASICS</h2><p><a target="_blank" rel="noopener" href="https://mne.tools/stable/auto_tutorials/index.html">https://mne.tools/stable/auto_tutorials/index.html</a></p>
-<h3 id="Concept"><a href="#Concept" class="headerlink" title="Concept"></a>Concept</h3><p>EEG, gradiometers, magnetometers</p>
-<h3 id="Launch-MNE"><a href="#Launch-MNE" class="headerlink" title="Launch MNE"></a>Launch MNE</h3><code>
+		<h1 id="EEG-ANALYSIS-WITH-MNE"><a href="#EEG-ANALYSIS-WITH-MNE" class="headerlink" title="EEG ANALYSIS WITH MNE"></a>EEG ANALYSIS WITH MNE</h1><div class="container">
+  **Disclaimer**
+  <div class="disclaimer">
+    <p>This post includes codes extracted or modified from referenced articles for educational purposes. If there are any copyright issues, please contact the author for removal.</p>
+  </div>
+</div>
 
-<pre><code>anaconda nav
+<p><a target="_blank" rel="noopener" href="https://mne.tools/stable/auto_tutorials/index.html">https://mne.tools/stable/auto_tutorials/index.html</a></p>
+<h3 id="Concepts"><a href="#Concepts" class="headerlink" title="Concepts"></a>Concepts</h3><p><a target="_blank" rel="noopener" href="https://www.sensortips.com/featured/what-is-the-difference-between-an-ecg-eeg-emg-and-eog/">ECG, EEG, EMG, EOG</a></p>
+<p>MEG, STI</p>
+<p>gradiometers, magnetometers</p>
+<h2 id="Launch-MNE"><a href="#Launch-MNE" class="headerlink" title="Launch MNE"></a>Launch MNE</h2><pre><code>anaconda nav
 
 powershell
 
@@ -168,13 +175,7 @@ conda activate mne
 
 jupyter lab
 </code></pre>
-</code>
-
-<h3 id="Processing-Raw-data"><a href="#Processing-Raw-data" class="headerlink" title="Processing Raw data"></a>Processing Raw data</h3><p>import needed packages:</p>
-<pre><code>import matplotlib
-import pathlib
-import mne
-</code></pre>
+<h2 id="Work-with-continuous-data"><a href="#Work-with-continuous-data" class="headerlink" title="Work with continuous data"></a>Work with continuous data</h2>
 	
 	</div>
   <a type="button" href="/2024/03/17/mne_notes/#more" class="btn btn-default more">Read More</a>
@@ -187,7 +188,7 @@ import mne
 <div class="row">
 	<div class="col-md-8">
 		<h3 class="title">
-			<a href="/2023/06/10/hackersmani_1/" >《黑客宣言》 1. 摘要 By Mckenzie Wark</a>
+			<a href="/2023/06/10/hackersmani_1/" >《黑客宣言》 1. 摘要 --Mckenzie Wark</a>
 		</h3>
 		</div>
 	<div class="col-md-4">
@@ -201,16 +202,16 @@ import mne
   <div class="row">
 	
 	
-		<p>译注：斜体（在本站默认字体里以“//”标识）意味着此处词性为名词；关于hack：中文里似乎没有意义相近的词语，根据语境会分别翻译成黑客（行为）、破解、骇等，但更多时候直译成hack。</p>
+		<p>译注：斜体（在本站默认字体里以“//”标识）意味着此处为名词ABSTRACTION。（没有校队）</p>
+<p>关于hack：中文里似乎没有意义相近的词语，根据语境会分别翻译成黑客（行为）、破解、骇等，更多时候直译成hack。</p>
+<p>粗体只是译者有感触的部分——这就是一份随意的、粗略的、个人的翻译。</p>
 <p>[001]</p>
 <p>一个双重性，<em>抽象</em>的双重性，在世界游荡。国家、军队、公司和社群的命运取决于它。所有相互争斗的阶级，无论是统治阶级还是被统治阶级，都崇敬它，但又害怕它。我们的世界，是一个盲目地交叉着手指涉足未知的世界。</p>
 <p>[002]</p>
-<p>所有阶级都害怕这个世界无情的抽象化，然而它们的命运却仍然依赖于它。但有一个阶级例外：黑客阶级。我们是<em>抽象</em>的黑客。我们从原数据中挖掘出新概念、新感知、新感觉。无论我们破解的是编程语言、诗性语言、数学还是音乐，曲线或色彩，我们都是创造新世界的抽象者。无论我们以研究人员、作者、艺术家、生物学家、化学家、音乐家、哲学家还是程序员的身份出现，每一个主体性都只是一个逐渐意识到自己身份的阶级的碎片。</p>
+<p>所有阶级都害怕这个世界无情的抽象化，然而它们的命运却仍然依赖于它。但有一个阶级例外：黑客阶级。我们是<em>抽象</em>的黑客。我们从原数据中挖掘出新概念、新感知、新感觉。无论我们破解的是编程语言、诗性语言、数学还是音乐，曲线或色彩，我们都是创造新世界的抽象者。无论我们以研究员、作家、艺术家、生物学家、化学家、音乐家、哲学家还是程序员的身份出现，每一个主体性都只是一个逐渐意识到自己身份的阶级的碎片。</p>
 <p>[003]</p>
 <p>然而，我们并不完全知道自己是谁。这就是为什么这本书试图阐明我们的起源、目标和利益。一份黑客宣言：并不是唯一的宣言，因为黑客的本质就是与他人不同，甚至与随时变化的自己而不同。选择hack就是选择不同。一份黑客宣言不能代表拒绝被代表的事物。</p>
 <p>[004]</p>
-<p>黑客创造了新事物进入世界的可能性。并不总是伟大的事物，甚至不一定是好的事物，但它们是新的事物。在艺术、科学、哲学和文化领域，在任何可以收集数据、提取信息并通过这些信息为世界创造新可能性的知识生产中，都有黑客从旧的事物中创造出新的事物。虽然我们创造了这些新世界，但我们并不拥有它们。我们创造的东西被抵押给了其他人，被抵押给了其他人的利益，被抵押给了垄断创造我们独自发现的世界的手段的国家和公司。我们不拥有我们所生产的东西——我们被它们所拥有。</p>
-<p>[005]</p>
 	
 	</div>
   <a type="button" href="/2023/06/10/hackersmani_1/#more" class="btn btn-default more">Read More</a>
@@ -624,7 +625,7 @@ import mne
       </li>
     
       <li>
-        <a href="/2023/06/10/hackersmani_1/" ><i class="fa fa-file-o"></i>《黑客宣言》 1. 摘要 By Mckenzie Wark</a>
+        <a href="/2023/06/10/hackersmani_1/" ><i class="fa fa-file-o"></i>《黑客宣言》 1. 摘要 --Mckenzie Wark</a>
       </li>
     
       <li>
