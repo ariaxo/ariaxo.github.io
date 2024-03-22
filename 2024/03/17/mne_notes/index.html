@@ -20,13 +20,10 @@ Official tutorial
 ConceptsECG, EEG, EMG, EOG
 MEG, STI
 gradiometers, magnetometers
-Launch MNEanaconda nav
-
-powershell
-
-conda activate mne
-
-jupyter lab
+Launch MNE    anaconda nav
+    powershell
+    conda activate mne
+    jupyter lab
 
 Work with continuous data">
   
@@ -169,218 +166,211 @@ var _hmt = _hmt || [];
 <h3 id="Concepts"><a href="#Concepts" class="headerlink" title="Concepts"></a>Concepts</h3><p><a target="_blank" rel="noopener" href='https://www.sensortips.com/featured/what-is-the-difference-between-an-ecg-eeg-emg-and-eog/'>ECG, EEG, EMG, EOG</a></p>
 <p>MEG, STI</p>
 <p>gradiometers, magnetometers</p>
-<h2 id="Launch-MNE"><a href="#Launch-MNE" class="headerlink" title="Launch MNE"></a>Launch MNE</h2><pre><code>anaconda nav
-
-powershell
-
-conda activate mne
-
-jupyter lab
+<h2 id="Launch-MNE"><a href="#Launch-MNE" class="headerlink" title="Launch MNE"></a>Launch MNE</h2><pre class=" language-[shell]"><code class="language-[shell]">    anaconda nav
+    powershell
+    conda activate mne
+    jupyter lab
 </code></pre>
 <h2 id="Work-with-continuous-data"><a href="#Work-with-continuous-data" class="headerlink" title="Work with continuous data"></a>Work with continuous data</h2><h4 id="Processing-raws"><a href="#Processing-raws" class="headerlink" title="Processing raws"></a>Processing raws</h4><p>REF: </p>
 <p>import needed packages:</p>
-<pre class="line-numbers language-none"><code class="language-none">import matplotlib
+<pre class=" language-[python]"><code class="language-[python]">import matplotlib
 
 import pathlib
 
-import mne<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+import mne
+</code></pre>
 <p>set storage location:</p>
-<pre><code>sample_data_dir = mne.datasets.sample.data_path()
+<pre class=" language-[python]"><code class="language-[python]">    sample_data_dir = mne.datasets.sample.data_path()
 
-# Convert to a pathlib.Path for more convenience
-sample_data_dir = pathlib.Path(sample_data_dir)
-sample_data_dir
+    # Convert to a pathlib.Path for more convenience
+    sample_data_dir = pathlib.Path(sample_data_dir)
+    sample_data_dir
 </code></pre>
 <p>Then use <code>.plot()</code> to visualize them!</p>
 <h4 id="Working-with-events"><a href="#Working-with-events" class="headerlink" title="Working with events"></a>Working with events</h4><p>REF: WORKLAB NOTEBOOK #1</p>
 <p>Converting raw data into events, naming, and extracting them aims to enhance data comprehension and analysis</p>
 <p>Extract events:</p>
-<pre><code>events = mne.find_events(raw)
+<pre class=" language-[python]"><code class="language-[python]">    events = mne.find_events(raw)
 
-event_id = &#123;
-&#39;Auditory/Left&#39;: 1,
-&#39;Auditory/Right&#39;: 2,
-&#39;Visual/Left&#39;: 3,
-&#39;Visual/Right&#39;: 4,
-&#39;Smiley&#39;: 5,
-&#39;Button&#39;: 32
-&#125;
+    event_id = &#123;
+    'Auditory/Left': 1,
+    'Auditory/Right': 2,
+    'Visual/Left': 3,
+    'Visual/Right': 4,
+    'Smiley': 5,
+    'Button': 32
+    &#125;
 
-len(events[events[:, 2] == 32])
-len(events[events[:, 2]==4])+len(events[events[:, 2]==3])
+    len(events[events[:, 2] == 32])
+    len(events[events[:, 2]==4])+len(events[events[:, 2]==3])
 </code></pre>
 <p>Mark channels as bad:<br><code>raw.info['bads'&#125;+=['EEG 051']</code></p>
 <p>Or just manually perform it after visualizing them.</p>
 <h4 id="Crop-amp-Filter"><a href="#Crop-amp-Filter" class="headerlink" title="Crop &amp; Filter"></a>Crop &amp; Filter</h4><p>REF: WORKSHOP NOTEBOOK #1</p>
 <p>Selecting specific portions of the raw data based on predefined criteria or parameters, such as time range, location, or data type, to extract relevant subsets for further analysis.</p>
 <p>NOTE: It’s a diffrent process from “cleaning”.</p>
-<p>Sample code:<br><code></p>
-<pre><code>import matplotlib.pyplot as plt
+<p>Sample code: </p>
+<pre class=" language-[python]"><code class="language-[python]">    import matplotlib.pyplot as plt
 
-fig, ax = plt.subplots(2)
+    fig, ax = plt.subplots(2)
 
-raw_eeg_cropped.plot_psd(ax=ax[0], show=False)
-raw_eeg_cropped_filtered.plot_psd(ax=ax[1], show=False)
+    raw_eeg_cropped.plot_psd(ax=ax[0], show=False)
+    raw_eeg_cropped_filtered.plot_psd(ax=ax[1], show=False)
 
-ax[0].set_title(&#39;PSD before filtering&#39;)
-ax[1].set_title(&#39;PSD after filtering&#39;)
-ax[1].set_xlabel(&#39;Frequency (Hz)&#39;)
-fig.set_tight_layout(True)
-plt.show()
+    ax[0].set_title('PSD before filtering')
+    ax[1].set_title('PSD after filtering')
+    ax[1].set_xlabel('Frequency (Hz)')
+    fig.set_tight_layout(True)
+    plt.show()
 </code></pre>
-</code>
-
 <p>Output:<br><img src="/img/psd1.jpeg"><br><img src="/img/psd2.jpeg"></p>
 <h2 id="BIDS-Brain-image-data-structure"><a href="#BIDS-Brain-image-data-structure" class="headerlink" title="BIDS(Brain image data structure)"></a>BIDS(Brain image data structure)</h2><p>Write raw data to BIDS:</p>
-<code>
+<pre class=" language-[python]"><code class="language-[python]">    raw.info['line_freq'] = 60
+    subject_info = &#123;
+    'birthday':(1996,10,1),
+    'sex':2,
+    'hand':3
+    &#125;
 
-<pre><code>raw.info[&#39;line_freq&#39;] = 60
-subject_info = &#123;
-&#39;birthday&#39;:(1996,10,1),
-&#39;sex&#39;:2,
-&#39;hand&#39;:3
-&#125;
-
-raw.info[&#39;subject_info&#39;] = subject_info
-raw.info
+    raw.info['subject_info'] = subject_info
+    raw.info
 </code></pre>
-</code>
-
 <p>Reading BIDS data:</p>
-<code>
+<pre class=" language-[python]"><code class="language-[python]">    bids_root = pathlib.Path('out_data/sample_BIDS')
 
-<pre><code>bids_root = pathlib.Path(&#39;out_data/sample_BIDS&#39;)
+    bids_path = mne_bids.BIDSPath(subject='01',
+                              session='01',
+                              task='audiovisual',
+                              run='01',
+                              datatype='meg',
+                              root=bids_root)
 
-bids_path = mne_bids.BIDSPath(subject=&#39;01&#39;,
-                          session=&#39;01&#39;,
-                          task=&#39;audiovisual&#39;,
-                          run=&#39;01&#39;,
-                          datatype=&#39;meg&#39;,
-                          root=bids_root)
-
-raw = mne_bids.read_raw_bids(bids_path)
+    raw = mne_bids.read_raw_bids(bids_path)
 </code></pre>
-</code>
-
 <h2 id="EPOCH-amp-EVOKED-Uncontinuous-data"><a href="#EPOCH-amp-EVOKED-Uncontinuous-data" class="headerlink" title="EPOCH &amp; EVOKED - Uncontinuous data"></a>EPOCH &amp; EVOKED - Uncontinuous data</h2><p>REF: NOTEBOOK #3<br><a target="_blank" rel="noopener" href='https://mp.weixin.qq.com/s/eJz5a1Up8fST0P1AcNs6Ig'>脑机接口社区 (Chinese)</a></p>
 <p>EPOCH: Signals contracted from continuous EEG signals, divided by time spans. In MNE, EPOCH acts as a method marking continuous assets as time span assets.</p>
 <p>To build EPOCH:</p>
-<pre class="line-numbers language-none"><code class="language-none">    # Firstly preprocess the raws
+<pre class=" language-[python]"><code class="language-[python]">    # Firstly preprocess the raws
     # Divided into events and then
-tmin &#x3D; -0.3
-tmax &#x3D; 0.5
-baseline &#x3D; (None, 0)
+tmin = -0.3
+tmax = 0.5
+baseline = (None, 0)
 
-epochs &#x3D; mne.Epochs(raw,
-                    events&#x3D;events,
-                    event_id&#x3D;event_id,
-            tmin&#x3D;tmin,
-                    tmax&#x3D;tmax,
-                    baseline&#x3D;baseline,
-                    preload&#x3D;True)
-epochs<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-none"><code class="language-none">Output:
+epochs = mne.Epochs(raw,
+                    events=events,
+                    event_id=event_id,
+            tmin=tmin,
+                    tmax=tmax,
+                    baseline=baseline,
+                    preload=True)
+epochs
+</code></pre>
+<pre class=" language-[python]"><code class="language-[python]">Output:
 
 Not setting metadata
 320 matching events found
 Setting baseline interval to [-0.2996928197375818, 0.0] s
 Applying baseline correction (mode: mean)
-Created an SSP operator (subspace dimension &#x3D; 3)
+Created an SSP operator (subspace dimension = 3)
 3 projection items activated
 Using data from preloaded Raw for 320 events and 481 original time points ...
 0 bad epochs dropped
-Number of events	320
-Events	Auditory&#x2F;Left: 72
-Auditory&#x2F;Right: 73
+Number of events    320
+Events    Auditory/Left: 72
+Auditory/Right: 73
 Button: 16
 Smiley: 15
-Visual&#x2F;Left: 73
-Visual&#x2F;Right: 71
-Time range	-0.300 – 0.499 s
-Baseline	-0.300 – 0.000 s
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+Visual/Left: 73
+Visual/Right: 71
+Time range    -0.300 – 0.499 s
+Baseline    -0.300 – 0.000 s
+</code></pre>
 <p>Also we can select epochs based on experimental criterias</p>
-<pre class="line-numbers language-none"><code class="language-none">epochs[&#39;Right&#39;].copy().pick_types(meg&#x3D;False,eeg&#x3D;True).plot_image()<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class=" language-[python]"><code class="language-[python]">epochs['Right'].copy().pick_types(meg=False,eeg=True).plot_image()
+</code></pre>
 <p>Remember to first build <code>events</code></p>
 <p>EVOKED:  “Evoked Potential (EP)” refers to specific patterns of electrical potentials recorded from the nervous system, particularly specific areas of the brain, in humans or other animals, following stimuli such as flashes or pure tones. The potentials are usually low, thus it’s common practice to average them.</p>
 <p>Creating EVOKED from EPOCHS:</p>
-<pre class="line-numbers language-none"><code class="language-none">evoked_auditory &#x3D; epochs[&#39;Auditory&#39;].average()
-evoked_visual &#x3D; epochs[&#39;Visual&#39;].average()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class=" language-[python]"><code class="language-[python]">evoked_auditory = epochs['Auditory'].average()
+evoked_visual = epochs['Visual'].average()
+</code></pre>
 <p>Reading EVOKED data:</p>
-<pre class="line-numbers language-none"><code class="language-none">evokeds &#x3D; mne.read_evokeds(fname&#x3D;pathlib.Path(&#39;out_data&#39;) &#x2F; &#39;evokeds_ave.fif&#39;)
-evokeds<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class=" language-[python]"><code class="language-[python]">evokeds = mne.read_evokeds(fname=pathlib.Path('out_data') / 'evokeds_ave.fif')
+evokeds
+</code></pre>
 <p>Draw Global Field Power(GFP)</p>
 <p>Draw EVOKED</p>
 <h3 id="Epoched-data-cleaning"><a href="#Epoched-data-cleaning" class="headerlink" title="Epoched data cleaning"></a>Epoched data cleaning</h3><p>Same thing, preprocess raws first</p>
 <p>Then reject artifacts</p>
-<pre class="line-numbers language-none"><code class="language-none">reject_criteria &#x3D; dict(mag&#x3D;3000e-15,     # 3000 fT
-                       grad&#x3D;3000e-13,    # 3000 fT&#x2F;cm
-                       eeg&#x3D;150e-6,       # 150 µV
-                       eog&#x3D;200e-6)       # 200 µV
+<pre class=" language-[python]"><code class="language-[python]">reject_criteria = dict(mag=3000e-15,     # 3000 fT
+                       grad=3000e-13,    # 3000 fT/cm
+                       eeg=150e-6,       # 150 µV
+                       eog=200e-6)       # 200 µV
 
-flat_criteria &#x3D; dict(mag&#x3D;1e-15,          # 1 fT
-                     grad&#x3D;1e-13,         # 1 fT&#x2F;cm
-                     eeg&#x3D;1e-6)           # 1 µV
+flat_criteria = dict(mag=1e-15,          # 1 fT
+                     grad=1e-13,         # 1 fT/cm
+                     eeg=1e-6)           # 1 µV
 
-epochs.drop_bad(reject&#x3D;reject_criteria, flat&#x3D;flat_criteria)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+epochs.drop_bad(reject=reject_criteria, flat=flat_criteria)
+</code></pre>
 <h4 id="SSP-amp-ICA"><a href="#SSP-amp-ICA" class="headerlink" title="SSP &amp; ICA"></a>SSP &amp; ICA</h4><p>REF: NOTEBOOK #4<br>Official tutorial</p>
 <p>The following is basically…summery of the above processes</p>
 <p>We load the raws into BIDS, crop &amp; filter and set events</p>
 <p>finally we create projectors</p>
-<pre class="line-numbers language-none"><code class="language-none">bids_root &#x3D; pathlib.Path(&#39;out_data&#x2F;sample_BIDS&#39;)
+<pre class=" language-[python]"><code class="language-[python]">bids_root = pathlib.Path('out_data/sample_BIDS')
 
-bids_path &#x3D; mne_bids.BIDSPath(subject&#x3D;&#39;01&#39;,
-                              session&#x3D;&#39;01&#39;,
-                              task&#x3D;&#39;audiovisual&#39;,
-                              run&#x3D;&#39;01&#39;,
-                              datatype&#x3D;&#39;meg&#39;,
-                              root&#x3D;bids_root)
+bids_path = mne_bids.BIDSPath(subject='01',
+                              session='01',
+                              task='audiovisual',
+                              run='01',
+                              datatype='meg',
+                              root=bids_root)
 # MNE needs continuous data to work with, 
 # so to create projecters we need to start with
 # raw data again
-raw &#x3D; mne_bids.read_raw_bids(bids_path)
+raw = mne_bids.read_raw_bids(bids_path)
 raw.load_data()
-raw.filter(l_freq&#x3D;0.1, h_freq&#x3D;40)
+raw.filter(l_freq=0.1, h_freq=40)
 
-ecg_projs, ecg_events &#x3D; mne.preprocessing.compute_proj_ecg(raw, n_grad&#x3D;1, n_mag&#x3D;1, n_eeg&#x3D;0,
-                                                           average&#x3D;True)
+ecg_projs, ecg_events = mne.preprocessing.compute_proj_ecg(raw, n_grad=1, n_mag=1, n_eeg=0,
+                                                           average=True)
 
-eog_projs, eog_events &#x3D; mne.preprocessing.compute_proj_eog(raw, n_grad&#x3D;1, n_mag&#x3D;1,n_eeg&#x3D;1, average&#x3D;True)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+eog_projs, eog_events = mne.preprocessing.compute_proj_eog(raw, n_grad=1, n_mag=1,n_eeg=1, average=True)
+</code></pre>
 <p>And for ICA, we ceate EPOCHS and fit</p>
-<pre class="line-numbers language-none"><code class="language-none">epochs_ica.info
+<pre class=" language-[python]"><code class="language-[python]">epochs_ica.info
 
-n_components &#x3D; 0.8  # Should normally be higher, like 0.999!!
-method &#x3D; &#39;picard&#39;
-max_iter &#x3D; 100  # Should normally be higher, like 500 or even 1000!!
-fit_params &#x3D; dict(fastica_it&#x3D;5)
-random_state &#x3D; 42
+n_components = 0.8  # Should normally be higher, like 0.999!!
+method = 'picard'
+max_iter = 100  # Should normally be higher, like 500 or even 1000!!
+fit_params = dict(fastica_it=5)
+random_state = 42
 
-ica &#x3D; mne.preprocessing.ICA(n_components&#x3D;n_components,
+ica = mne.preprocessing.ICA(n_components=n_components,
                             
-                            method&#x3D;method,
-                            max_iter&#x3D;max_iter,
-                            fit_params&#x3D;fit_params,
-                            random_state&#x3D;random_state)
-ica.fit(epochs_ica)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-none"><code class="language-none">OUTPUT:
-Method	picard
-Fit parameters	fastica_it&#x3D;5
-max_iter&#x3D;100
-Fit	82 iterations on epochs (201920 samples)
-ICA components	28
-Available PCA components	364
-Channel types	mag, grad, eeg
-ICA components marked for exclusion	<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                            method=method,
+                            max_iter=max_iter,
+                            fit_params=fit_params,
+                            random_state=random_state)
+ica.fit(epochs_ica)
+</code></pre>
+<pre class=" language-[python]"><code class="language-[python]">OUTPUT:
+Method    picard
+Fit parameters    fastica_it=5
+max_iter=100
+Fit    82 iterations on epochs (201920 samples)
+ICA components    28
+Available PCA components    364
+Channel types    mag, grad, eeg
+ICA components marked for exclusion    
+</code></pre>
 <p>(Output was in table format but im too lazy)</p>
 <p>Then we can detect patterns and… plot scores or some</p>
 <p>Try overlay to see the cleaning process really works:<br><img src="/img/overlay.png"></p>
-<pre class="line-numbers language-none"><code class="language-none">epochs_cleaned&#x3D;ica.apply(epochs.copy())
+<pre class=" language-[python]"><code class="language-[python]">epochs_cleaned=ica.apply(epochs.copy())
 epochs_cleaned.plot()
-epochs.plot()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+epochs.plot()
+</code></pre>
 <h2 id="Time-Frequency"><a href="#Time-Frequency" class="headerlink" title="Time Frequency"></a>Time Frequency</h2><h2 id="Classification"><a href="#Classification" class="headerlink" title="Classification"></a>Classification</h2><h2 id="Transformer"><a href="#Transformer" class="headerlink" title="Transformer"></a>Transformer</h2>
 	  	  
 	</div>
@@ -442,6 +432,7 @@ epochs.plot()<span aria-hidden="true" class="line-numbers-rows"><span></span><sp
       with help from <a href="http://hexo.io/" target="_blank">Hexo</a>,<a target="_blank" rel="noopener" href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>,<a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a> and <a href="http://getbootstrap.com/" target="_blank">BOOTSTRA.386</a>. 
      <br> Theme by <a target="_blank" rel="noopener" href="http://github.com/wzpan/hexo-theme-freemind/">Freemind.386</a>.    
 </p>
+
  </footer>
 </div> <!-- container-narrow -->
   
