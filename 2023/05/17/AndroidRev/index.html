@@ -161,8 +161,8 @@ var _hmt = _hmt || [];
 <p>查看源文件函数调用情况<br><img src="/img/ar14.png"></p>
 <p>查找包含hash算法的函数，可以发现这个算法进行了SHA-1与MD5运算<br><img src="/img/sha.png"></p>
 <p>由此猜测<code>962AA61D74078F2E4390F31368DD8F05540495E5F8218F3E5F939A92BE368D802A63FA9B</code>为SHA-1与MD5的连接值<br>得到SHA-1值：<code>962AA61D74078F2E4390F31368DD8F05540495E5</code><br>MD5：<code>F8218F3E5F939A92BE368D802A63FA9B</code></p>
-<pre><code>SHA-1 算法的摘要长度为 160 位，转化为十六进制字符串为 40 个字符，而 MD5 算法的摘要长度为 128 位，十六进制字符串长度为 32，两者连接长度为 72 个字符，恰好与 pattern_code_hash 的长相同。
-</code></pre>
+<pre class="line-numbers language-none"><code class="language-none">SHA-1 算法的摘要长度为 160 位，转化为十六进制字符串为 40 个字符，而 MD5 算法的摘要长度为 128 位，十六进制字符串长度为 32，两者连接长度为 72 个字符，恰好与 pattern_code_hash 的长相同。<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
 <h2 id="破解Hash"><a href="#破解Hash" class="headerlink" title="破解Hash"></a>破解Hash</h2><img src="/img/sha2.png">
 此数字串应当为节点的映射，得到手势密码。
 

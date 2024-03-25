@@ -11,11 +11,10 @@
   
   <meta name="description" content="function sha1(message) &amp;#123;
   function rotateLeft(n, s) &amp;#123;
-    return (n &lt; s) | (n &gt;&gt;&gt; (32 - s));
+    return (n &amp;lt;&amp;lt; s) | (n &amp;gt;&amp;gt;&amp;gt; (32 - s));
   &amp;#125;
 
-  function toHex(value) &amp;#123;
-    v">
+  function toHex(val">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -145,112 +144,110 @@ var _hmt = _hmt || [];
 	<div class="mypage">		
 	  		
 
-	  <pre class=" language-[javascript]"><code class="language-[javascript]">
+	  <pre class="line-numbers language-[javascript]" data-language="[javascript]"><code class="language-[javascript]">
 function sha1(message) &#123;
   function rotateLeft(n, s) &#123;
-    return (n << s) | (n >>> (32 - s));
+    return (n &lt;&lt; s) | (n &gt;&gt;&gt; (32 - s));
   &#125;
 
   function toHex(value) &#123;
-    var hex = "";
-    for (var i = 0; i < 8; i++) &#123;
-      hex += ((value >>> (28 - i * 4)) & 0xf).toString(16);
+    var hex &#x3D; &quot;&quot;;
+    for (var i &#x3D; 0; i &lt; 8; i++) &#123;
+      hex +&#x3D; ((value &gt;&gt;&gt; (28 - i * 4)) &amp; 0xf).toString(16);
     &#125;
     return hex;
   &#125;
 
   function preProcessMessage(message) &#123;
-    var originalLength = message.length * 8;
-    var appendedOne = 1 << 7;
+    var originalLength &#x3D; message.length * 8;
+    var appendedOne &#x3D; 1 &lt;&lt; 7;
     message.push(appendedOne);
 
-    while (message.length % 64 !== 56) &#123;
+    while (message.length % 64 !&#x3D;&#x3D; 56) &#123;
       message.push(0);
     &#125;
 
-    var lengthBytes = new Array(8);
-    for (var i = 0; i < 8; i++) &#123;
-      lengthBytes[i] = (originalLength >>> (56 - i * 8)) & 0xff;
+    var lengthBytes &#x3D; new Array(8);
+    for (var i &#x3D; 0; i &lt; 8; i++) &#123;
+      lengthBytes[i] &#x3D; (originalLength &gt;&gt;&gt; (56 - i * 8)) &amp; 0xff;
     &#125;
-    message = message.concat(lengthBytes);
+    message &#x3D; message.concat(lengthBytes);
 
     return message;
   &#125;
 
-  var h0 = 0x67452301;
-  var h1 = 0xefcdab89;
-  var h2 = 0x98badcfe;
-  var h3 = 0x10325476;
-  var h4 = 0xc3d2e1f0;
+  var h0 &#x3D; 0x67452301;
+  var h1 &#x3D; 0xefcdab89;
+  var h2 &#x3D; 0x98badcfe;
+  var h3 &#x3D; 0x10325476;
+  var h4 &#x3D; 0xc3d2e1f0;
 
-  var messageBytes = [];
-  for (var i = 0; i < message.length; i++) &#123;
-    messageBytes.push(message.charCodeAt(i) & 0xff);
+  var messageBytes &#x3D; [];
+  for (var i &#x3D; 0; i &lt; message.length; i++) &#123;
+    messageBytes.push(message.charCodeAt(i) &amp; 0xff);
   &#125;
 
-  messageBytes = preProcessMessage(messageBytes);
+  messageBytes &#x3D; preProcessMessage(messageBytes);
 
-  var blocks = messageBytes.length / 64;
-  for (var i = 0; i < blocks; i++) &#123;
-    var words = new Array(80);
-    for (var j = 0; j < 16; j++) &#123;
-      words[j] = (messageBytes[i * 64 + j * 4] << 24) |
-                 (messageBytes[i * 64 + j * 4 + 1] << 16) |
-                 (messageBytes[i * 64 + j * 4 + 2] << 8) |
+  var blocks &#x3D; messageBytes.length &#x2F; 64;
+  for (var i &#x3D; 0; i &lt; blocks; i++) &#123;
+    var words &#x3D; new Array(80);
+    for (var j &#x3D; 0; j &lt; 16; j++) &#123;
+      words[j] &#x3D; (messageBytes[i * 64 + j * 4] &lt;&lt; 24) |
+                 (messageBytes[i * 64 + j * 4 + 1] &lt;&lt; 16) |
+                 (messageBytes[i * 64 + j * 4 + 2] &lt;&lt; 8) |
                  (messageBytes[i * 64 + j * 4 + 3]);
     &#125;
 
-    for (var j = 16; j < 80; j++) &#123;
-      words[j] = rotateLeft((words[j - 3] ^ words[j - 8] ^ words[j - 14] ^ words[j - 16]), 1);
+    for (var j &#x3D; 16; j &lt; 80; j++) &#123;
+      words[j] &#x3D; rotateLeft((words[j - 3] ^ words[j - 8] ^ words[j - 14] ^ words[j - 16]), 1);
     &#125;
 
-    var a = h0;
-    var b = h1;
-    var c = h2;
-    var d = h3;
-    var e = h4;
+    var a &#x3D; h0;
+    var b &#x3D; h1;
+    var c &#x3D; h2;
+    var d &#x3D; h3;
+    var e &#x3D; h4;
 
-    for (var j = 0; j < 80; j++) &#123;
+    for (var j &#x3D; 0; j &lt; 80; j++) &#123;
       var f, k;
-      if (j < 20) &#123;
-        f = (b & c) | ((~b) & d);
-        k = 0x5a827999;
-      &#125; else if (j < 40) &#123;
-        f = b ^ c ^ d;
-        k = 0x6ed9eba1;
-      &#125; else if (j < 60) &#123;
-        f = (b & c) | (b & d) | (c & d);
-        k = 0x8f1bbcdc;
+      if (j &lt; 20) &#123;
+        f &#x3D; (b &amp; c) | ((~b) &amp; d);
+        k &#x3D; 0x5a827999;
+      &#125; else if (j &lt; 40) &#123;
+        f &#x3D; b ^ c ^ d;
+        k &#x3D; 0x6ed9eba1;
+      &#125; else if (j &lt; 60) &#123;
+        f &#x3D; (b &amp; c) | (b &amp; d) | (c &amp; d);
+        k &#x3D; 0x8f1bbcdc;
       &#125; else &#123;
-        f = b ^ c ^ d;
-        k = 0xca62c1d6;
+        f &#x3D; b ^ c ^ d;
+        k &#x3D; 0xca62c1d6;
       &#125;
 
-      var temp = rotateLeft(a, 5) + f + e + k + words[j];
-      e = d;
-      d = c;
-      c = rotateLeft(b, 30);
-      b = a;
-      a = temp;
+      var temp &#x3D; rotateLeft(a, 5) + f + e + k + words[j];
+      e &#x3D; d;
+      d &#x3D; c;
+      c &#x3D; rotateLeft(b, 30);
+      b &#x3D; a;
+      a &#x3D; temp;
     &#125;
 
-    h0 += a;
-    h1 += b;
-    h2 += c;
-    h3 += d;
-    h4 += e;
+    h0 +&#x3D; a;
+    h1 +&#x3D; b;
+    h2 +&#x3D; c;
+    h3 +&#x3D; d;
+    h4 +&#x3D; e;
   &#125;
 
-  var hash = toHex(h0) + toHex(h1) + toHex(h2) + toHex(h3) + toHex(h4);
+  var hash &#x3D; toHex(h0) + toHex(h1) + toHex(h2) + toHex(h3) + toHex(h4);
   return hash;
 &#125;
 
-// 示例用法
-var plaintext = "Hello, SHA-1!";
-var hashedText = sha1(plaintext);
-console.log("Hashed Text:", hashedText);
-</code></pre>
-<!-- flag of hidden posts -->
+&#x2F;&#x2F; 示例用法
+var plaintext &#x3D; &quot;Hello, SHA-1!&quot;;
+var hashedText &#x3D; sha1(plaintext);
+console.log(&quot;Hashed Text:&quot;, hashedText);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><!-- flag of hidden posts -->
 	  	  
 	</div>
 

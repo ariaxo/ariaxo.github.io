@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-03-22T05:36:24.734Z</updated>
+  <updated>2024-03-25T07:32:06.726Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>EZ way to fetch HEXO after restoring operating system</title>
+    <link href="http://example.com/2024/03/25/fetch/"/>
+    <id>http://example.com/2024/03/25/fetch/</id>
+    <published>2024-03-25T07:30:26.733Z</published>
+    <updated>2024-03-25T07:32:06.726Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Just for recording in case this tragedy happens again.&lt;/p&gt;
+&lt;h1 id=&quot;Backup-ssh-folder-important&quot;&gt;&lt;a href=&quot;#Backup-ssh-folder-important&quot; class=&quot;headerlink&quot; title=&quot;Backup .ssh folder (important)&quot;&gt;&lt;/a&gt;Backup .ssh folder (important)&lt;/h1&gt;&lt;p&gt;Basically it contains your RSA pub &amp;amp; priv key and SSH config, which can be troublesome when get lost.&lt;/p&gt;
+&lt;p&gt;Also backup .gitnore file in your projects’ dir.&lt;/p&gt;
+&lt;p&gt;So most turorials on the internet suggest generating RSA keys locally (again) and copying them to github (again). However if you backup the files mentioned above, simply copying &lt;code&gt;.ssh&lt;/code&gt; to the user’s dir works well. For SSH config in remote acc won’t disappear when the system is reinstalled.&lt;/p&gt;
+&lt;h1 id=&quot;RE-Download-GIT-Nodejs-amp-HEXO&quot;&gt;&lt;a href=&quot;#RE-Download-GIT-Nodejs-amp-HEXO&quot; class=&quot;headerlink&quot; title=&quot;(RE)Download GIT, Nodejs &amp;amp; HEXO&quot;&gt;&lt;/a&gt;(RE)Download GIT, Nodejs &amp;amp; HEXO&lt;/h1&gt;&lt;p&gt;Not much to say, just encountered a bug where Nodejs’ autoinst was unable to write its dir to &lt;code&gt;PATH&lt;/code&gt;, so I manually write it.&lt;/p&gt;
+&lt;p&gt;Better restart your pc after this.&lt;/p&gt;
+&lt;p&gt;And &lt;code&gt;npm install&lt;/code&gt;, &lt;code&gt;hexo g; hexo s&lt;/code&gt;. Done.&lt;/p&gt;
+&lt;h1 id=&quot;Problematic-HEXO-D&quot;&gt;&lt;a href=&quot;#Problematic-HEXO-D&quot; class=&quot;headerlink&quot; title=&quot;Problematic HEXO D&quot;&gt;&lt;/a&gt;Problematic &lt;code&gt;HEXO D&lt;/code&gt;&lt;/h1&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>MNE Python Notes</title>
     <link href="http://example.com/2024/03/17/mne_notes/"/>
     <id>http://example.com/2024/03/17/mne_notes/</id>
     <published>2024-03-17T06:58:18.641Z</published>
-    <updated>2024-03-22T05:36:24.734Z</updated>
+    <updated>2024-03-22T06:35:20.198Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;EEG-ANALYSIS-WITH-MNE&quot;&gt;&lt;a href=&quot;#EEG-ANALYSIS-WITH-MNE&quot; class=&quot;headerlink&quot; title=&quot;EEG ANALYSIS WITH MNE&quot;&gt;&lt;/a&gt;EEG ANALYSIS WITH MNE&lt;/h1&gt;&lt;div class=&quot;container&quot;&gt;
@@ -35,11 +57,11 @@
 &lt;h3 id=&quot;Concepts&quot;&gt;&lt;a href=&quot;#Concepts&quot; class=&quot;headerlink&quot; title=&quot;Concepts&quot;&gt;&lt;/a&gt;Concepts&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://www.sensortips.com/featured/what-is-the-difference-between-an-ecg-eeg-emg-and-eog/&quot;&gt;ECG, EEG, EMG, EOG&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;MEG, STI&lt;/p&gt;
 &lt;p&gt;gradiometers, magnetometers&lt;/p&gt;
-&lt;h2 id=&quot;Launch-MNE&quot;&gt;&lt;a href=&quot;#Launch-MNE&quot; class=&quot;headerlink&quot; title=&quot;Launch MNE&quot;&gt;&lt;/a&gt;Launch MNE&lt;/h2&gt;&lt;pre class=&quot; language-[shell]&quot;&gt;&lt;code class=&quot;language-[shell]&quot;&gt;    anaconda nav
-    powershell
-    conda activate mne
-    jupyter lab
-&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;Launch-MNE&quot;&gt;&lt;a href=&quot;#Launch-MNE&quot; class=&quot;headerlink&quot; title=&quot;Launch MNE&quot;&gt;&lt;/a&gt;Launch MNE&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-[shell]&quot; data-language=&quot;[shell]&quot;&gt;&lt;code class=&quot;language-[shell]&quot;&gt;anaconda nav
+powershell
+conda activate mne
+jupyter lab&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h2 id=&quot;Work-with-continuous-data&quot;&gt;&lt;a href=&quot;#Work-with-continuous-data&quot; class=&quot;headerlink&quot; title=&quot;Work with continuous data&quot;&gt;&lt;/a&gt;Work with continuous data&lt;/h2&gt;</summary>
     
     
