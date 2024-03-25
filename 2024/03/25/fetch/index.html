@@ -156,6 +156,15 @@ var _hmt = _hmt || [];
 <h1 id="Problematic-HEXO-D"><a href="#Problematic-HEXO-D" class="headerlink" title="Problematic HEXO D"></a>Problematic <code>HEXO D</code></h1><pre class="line-numbers language-none"><code class="language-none">fatal: detected dubious ownership in repository at &#39;D:&#x2F;blog&#x2F;blog&#x2F;.deploy_git&#39;
 &#39;D:&#x2F;blog&#x2F;blog&#x2F;.deploy_git&#39; is owned by:
 xxxxxxx<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>ERR MESSAGE (username hidden for privacy)</p>
+<pre class="line-numbers language-none"><code class="language-none">fatal: detected dubious ownership in repository at &#39;D:&#x2F;blog&#x2F;blog&#x2F;.deploy_git&#39;
+&#39;D:&#x2F;blog&#x2F;blog&#x2F;.deploy_git&#39; is owned by:
+(inconvertible) 
+but the current user is:
+        DESKTOP-xxxxxxxxx&#x2F;xxxx<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>Based on the error message, it seems to be a user permission issue. You can resolve it by changing the ownership of <code>.deploy_git</code> and <code>.git</code> files. </p>
+<p>I really don’t understand why modern personal computers still have this design of user groups, it’s causing me a lot of trouble. Can’t we just have Linux-like root user privileges?</p>
+
 	  	  
 	</div>
 
