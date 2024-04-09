@@ -6,22 +6,21 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>EZ way to fetch HEXO after restoring operating system | Voidhead</title>
+  <title>Introduction to Neoroscience | Voidhead</title>
   <meta name="author" content="Ariax">
   
-  <meta name="description" content="Just for recording in case this tragedy happens again.
-Backup .ssh folder (important)Basically it contains your RSA pub &amp;amp; priv key and SSH config, which can be troublesome when get lost.
-Also backup .gitnore file in your projects’ dir.
-So most turorials on the internet suggest generating RSA keys locally (again) and copying them to github (again). However if you backup the files mentioned above, simply copying .ssh to the user’s dir works well. For SSH config in remote acc won’t disappear when the system is reinstalled.
-(RE)Download GIT, Nodejs &amp;amp; HEXONot much to say, just encountered a bug where Nodejs’ autoinst was unable to write its dir to PATH, so I manually write it.
-Better restart your pc after this.
-And npm install, hexo g; hexo s. Done.
-Problematic HEXO D">
+  <meta name="description" content="人脑与计算机传统的计算机基于冯诺依曼结构——由独立的中央处理单元（Control unit和Logic unit）对存储单元进行读写控制，这与人脑是相当不同的——人脑中的神经元可以从其他神经元获得电信号，经过处理再传递给别的神经元，之间的连接方法也是可变的，可以说人脑拥有一种自适应、分布式的计算模式。
+神经元 NEORON神经元是一种细胞，通过消耗能量维持细胞膜内外离子浓度的不平衡，从而维持电位差。
+电位神经元受到足够刺激后，钠离子迅速流入细胞内，细胞膜电位升高。刺激停止后，钾离子流出细胞外，细胞膜电位降低。
+这种现象被叫做锋电位。
+然而真正携带信息的不是锋电位本身，而是其出现的时间与放电率。
+正是因为有这样的变化过程，神经元可以用01模型表示。
+树突、轴突与突触">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="EZ way to fetch HEXO after restoring operating system"/>
+  <meta property="og:title" content="Introduction to Neoroscience"/>
   <meta property="og:site_name" content="Voidhead"/>
 
   
@@ -126,7 +125,7 @@ var _hmt = _hmt || [];
 
 	
 		<div class="page-header">
-			<h1> EZ way to fetch HEXO after restoring operating system</h1>
+			<h1> Introduction to Neoroscience</h1>
 		</div>
 	
 
@@ -146,21 +145,26 @@ var _hmt = _hmt || [];
 	<div class="mypage">		
 	  		
 
-	  <p>Just for recording in case this tragedy happens again.</p>
-<h1 id="Backup-ssh-folder-important"><a href="#Backup-ssh-folder-important" class="headerlink" title="Backup .ssh folder (important)"></a>Backup .ssh folder (important)</h1><p>Basically it contains your RSA pub &amp; priv key and SSH config, which can be troublesome when get lost.</p>
-<p>Also backup .gitnore file in your projects’ dir.</p>
-<p>So most turorials on the internet suggest generating RSA keys locally (again) and copying them to github (again). However if you backup the files mentioned above, simply copying <code>.ssh</code> to the user’s dir works well. For SSH config in remote acc won’t disappear when the system is reinstalled.</p>
-<h1 id="RE-Download-GIT-Nodejs-amp-HEXO"><a href="#RE-Download-GIT-Nodejs-amp-HEXO" class="headerlink" title="(RE)Download GIT, Nodejs &amp; HEXO"></a>(RE)Download GIT, Nodejs &amp; HEXO</h1><p>Not much to say, just encountered a bug where Nodejs’ autoinst was unable to write its dir to <code>PATH</code>, so I manually write it.</p>
-<p>Better restart your pc after this.</p>
-<p>And <code>npm install</code>, <code>hexo g; hexo s</code>. Done.</p>
-<h1 id="Problematic-HEXO-D"><a href="#Problematic-HEXO-D" class="headerlink" title="Problematic HEXO D"></a>Problematic <code>HEXO D</code></h1><p>ERR MESSAGE (username hidden for privacy)</p>
-<pre class="line-numbers language-none"><code class="language-none">fatal: detected dubious ownership in repository at &#39;...&#x2F;blog&#x2F;.deploy_git&#39;
-&#39;...&#x2F;blog&#x2F;.deploy_git&#39; is owned by:
-(inconvertible) 
-but the current user is:
-        DESKTOP-xxxxxxxxx&#x2F;xxxx<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Based on the error message, it seems to be a user permission issue. You can resolve it by changing the ownership of <code>.deploy_git</code> and <code>.git</code> files. </p>
-<p>I really don’t understand why modern personal computers still have this design of user groups, it’s causing me a lot of trouble. Can’t we just have Linux-like root user privileges?</p>
+	  <h1 id="人脑与计算机"><a href="#人脑与计算机" class="headerlink" title="人脑与计算机"></a>人脑与计算机</h1><p>传统的计算机基于<a target="_blank" rel="noopener" href='https://en.wikipedia.org/wiki/Von_Neumann_architecture'>冯诺依曼结构</a>——由独立的中央处理单元（Control unit和Logic unit）对存储单元进行读写控制，这与人脑是相当不同的——人脑中的神经元可以从其他神经元获得电信号，经过处理再传递给别的神经元，之间的连接方法也是可变的，可以说人脑拥有一种<strong>自适应、分布式</strong>的计算模式。</p>
+<h1 id="神经元-NEORON"><a href="#神经元-NEORON" class="headerlink" title="神经元 NEORON"></a>神经元 NEORON</h1><p>神经元是一种细胞，通过消耗能量维持细胞膜内外离子浓度的不平衡，从而维持电位差。</p>
+<h2 id="电位"><a href="#电位" class="headerlink" title="电位"></a>电位</h2><p>神经元受到足够刺激后，钠离子迅速流入细胞内，细胞膜电位升高。<br>刺激停止后，钾离子流出细胞外，细胞膜电位降低。</p>
+<p>这种现象被叫做锋电位。</p>
+<p>然而真正携带信息的不是锋电位本身，而是其出现的时间与放电率。</p>
+<p>正是因为有这样的变化过程，神经元可以用01模型表示。</p>
+<h2 id="树突、轴突与突触"><a href="#树突、轴突与突触" class="headerlink" title="树突、轴突与突触"></a>树突、轴突与突触</h2><p>一个神经元细胞包括树突和轴突，突触是一个神经元的树突与另一神经元的轴突之间的<strong>结构</strong>。</p>
+<img src='/img/cns.png'>
+
+<h2 id="突触可塑性"><a href="#突触可塑性" class="headerlink" title="突触可塑性"></a>突触可塑性</h2><h3 id="Long-term-Potentiation"><a href="#Long-term-Potentiation" class="headerlink" title="Long-term Potentiation"></a>Long-term Potentiation</h3><p>Donald Hebb假说: IF A神经元 持续参与激发 B神经元，THEN AB之间的连接强度增强。</p>
+<p>这被称为Hebbian Study。</p>
+<h3 id="Long-term-Depression"><a href="#Long-term-Depression" class="headerlink" title="Long-term Depression"></a>Long-term Depression</h3><h3 id="STDP"><a href="#STDP" class="headerlink" title="STDP"></a>STDP</h3><p>对突触前后放电时间的控制，可以决定刺激产生突触变化的正负。</p>
+<p>Hebbian STDP：突触前锋电位早于后锋电位，强度增加；反之减弱。（也有完全相反的反Hebbian STDP）</p>
+<h3 id="Short-term-Potentiation"><a href="#Short-term-Potentiation" class="headerlink" title="Short-term Potentiation"></a>Short-term Potentiation</h3><p>输入的锋电位序列产生影响依次减弱，直至达到平衡。</p>
+<p>（我想这有些像环境学里的负反馈调节…LTP有点像正反馈调节？）</p>
+<h2 id="神经元的阈值模型"><a href="#神经元的阈值模型" class="headerlink" title="神经元的阈值模型"></a>神经元的阈值模型</h2><p>尽管本身是个复杂的过程，锋电位的产生却可以抽象成<strong>钠离子流入、钾离子流出–&gt;超过阈值，产生锋电位</strong>的模型。神经元是一个01计算设备，对输入的0-1求和，若结果超过阈值，则产生锋电位。</p>
+<p>这也是人工神经网络的构建方法。</p>
+<h2 id="脑解剖学"><a href="#脑解剖学" class="headerlink" title="脑解剖学"></a>脑解剖学</h2><p>*参考教材：Bear（2007），Kandel（2012）</p>
+<p>人类神经系统大致分为CNS(Central)和PNS(Peripheral), CNS构成如下</p>
+<img src='/img/cns.png'>
 
 	  	  
 	</div>
@@ -171,13 +175,12 @@ but the current user is:
 
     
     
-    <a href="/2024/04/08/neuro_basics/" type="button" class="btn btn-default"><i
-                class="fa fa-arrow-circle-o-left"></i> Prev</a>
+    <a type="button" class="btn btn-default disabled"><i class="fa fa-arrow-circle-o-left"></i>Prev</a>
     
 
     <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
     
-    <a href="/2024/03/17/mne_notes/" type="button" class="btn btn-default ">Next<i
+    <a href="/2024/03/25/fetch/" type="button" class="btn btn-default ">Next<i
                 class="fa fa-arrow-circle-o-right"></i></a>
     
 

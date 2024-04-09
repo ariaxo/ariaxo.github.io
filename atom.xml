@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-03-25T08:25:22.472Z</updated>
+  <updated>2024-04-09T07:05:12.135Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Introduction to Neoroscience</title>
+    <link href="http://example.com/2024/04/08/neuro_basics/"/>
+    <id>http://example.com/2024/04/08/neuro_basics/</id>
+    <published>2024-04-08T08:39:10.048Z</published>
+    <updated>2024-04-09T07:05:12.135Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;人脑与计算机&quot;&gt;&lt;a href=&quot;#人脑与计算机&quot; class=&quot;headerlink&quot; title=&quot;人脑与计算机&quot;&gt;&lt;/a&gt;人脑与计算机&lt;/h1&gt;&lt;p&gt;传统的计算机基于&lt;a href=&quot;https://en.wikipedia.org/wiki/Von_Neumann_architecture&quot;&gt;冯诺依曼结构&lt;/a&gt;——由独立的中央处理单元（Control unit和Logic unit）对存储单元进行读写控制，这与人脑是相当不同的——人脑中的神经元可以从其他神经元获得电信号，经过处理再传递给别的神经元，之间的连接方法也是可变的，可以说人脑拥有一种&lt;strong&gt;自适应、分布式&lt;/strong&gt;的计算模式。&lt;/p&gt;
+&lt;h1 id=&quot;神经元-NEORON&quot;&gt;&lt;a href=&quot;#神经元-NEORON&quot; class=&quot;headerlink&quot; title=&quot;神经元 NEORON&quot;&gt;&lt;/a&gt;神经元 NEORON&lt;/h1&gt;&lt;p&gt;神经元是一种细胞，通过消耗能量维持细胞膜内外离子浓度的不平衡，从而维持电位差。&lt;/p&gt;
+&lt;h2 id=&quot;电位&quot;&gt;&lt;a href=&quot;#电位&quot; class=&quot;headerlink&quot; title=&quot;电位&quot;&gt;&lt;/a&gt;电位&lt;/h2&gt;&lt;p&gt;神经元受到足够刺激后，钠离子迅速流入细胞内，细胞膜电位升高。&lt;br&gt;刺激停止后，钾离子流出细胞外，细胞膜电位降低。&lt;/p&gt;
+&lt;p&gt;这种现象被叫做锋电位。&lt;/p&gt;
+&lt;p&gt;然而真正携带信息的不是锋电位本身，而是其出现的时间与放电率。&lt;/p&gt;
+&lt;p&gt;正是因为有这样的变化过程，神经元可以用01模型表示。&lt;/p&gt;
+&lt;h2 id=&quot;树突、轴突与突触&quot;&gt;&lt;a href=&quot;#树突、轴突与突触&quot; class=&quot;headerlink&quot; title=&quot;树突、轴突与突触&quot;&gt;&lt;/a&gt;树突、轴突与突触&lt;/h2&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>EZ way to fetch HEXO after restoring operating system</title>
